@@ -2,55 +2,496 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>양승진 Yang Seungjin — Multidisciplinary Artist</title>
-<meta name="description" content="작가 양승진 · 아우름41 — 작품, 공간을 위한 작품 주문, 공간 전시와 음료·디저트 페어링">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:title" content="YANG SEUNGJIN · 양승진">
+<meta property="og:description" content="Artist · Curator — 작품, 맞춤 기념 작품, 공간 전시, 강의">
+<meta property="og:image" content="https://41aurum.github.io/img/lp/ol_wall.jpg">
+<style>[hidden]{display:none!important}</style>
+<title>YANG SEUNGJIN</title>
+<meta name="description" content="Artist · Curator 양승진 — 작품, 맞춤 기념 작품, 공간 전시, 강의">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;600&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 <style>
-.hub{max-width:480px;margin:0 auto;padding:36px 22px 56px}
-.top{display:flex;align-items:center;justify-content:space-between}
-.top img{width:30px}
-.top span{font-size:11.5px;letter-spacing:.26em;color:var(--mute)}
-.portrait{margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.portrait img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.who{margin-top:26px}
-.who h1{font-size:44px}
-.who p{margin:8px 0 0}
-.links{margin-top:34px;border-top:1px solid var(--ink)}
-.links a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.links a b{font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:-.01em}
-.links a span{font-size:12.5px;color:var(--mute);text-align:right}
-.links a:hover b{color:var(--cobalt)}
-.now{margin-top:30px;display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center}
-.now img{width:84px;height:108px;object-fit:cover}
-.sns{margin-top:30px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px}
+/* Layout: one 460px column like a phone held up in a white-cube room; every block is a link, a work, or a way to commission. */
+:root{
+  --room:#ECEAE5; --paper:#FFFFFF; --ink:#141414; --mute:#77736C; --line:#E6E2DA; --cobalt:#2443C9; --soft:#F6F4F0;
+  --btn-bg:#141414; --btn-fg:#FFFFFF;
+  --display:"Hahmlet","Nanum Myeongjo",Georgia,serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --sign:"Mrs Saint Delafield","Snell Roundhand",cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --room:#0E0E0F; --paper:#18181A; --ink:#F1EFEA; --mute:#A39F97; --line:#2C2C2F; --cobalt:#7F96FF; --soft:#212124;
+  --btn-bg:#F1EFEA; --btn-fg:#141414; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --room:#0E0E0F; --paper:#18181A; --ink:#F1EFEA; --mute:#A39F97; --line:#2C2C2F; --cobalt:#7F96FF; --soft:#212124;
+  --btn-bg:#F1EFEA; --btn-fg:#141414; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--room);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;letter-spacing:-.005em;padding-left:max(0px,env(safe-area-inset-left,0px));padding-right:max(0px,env(safe-area-inset-right,0px))}
+img{display:block;max-width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+.col{max-width:460px;margin:0 auto;background:var(--paper);min-height:100vh;padding-bottom:110px}
+@media (min-width:520px){.col{margin:28px auto;border-radius:34px;min-height:0;box-shadow:0 30px 60px -40px rgba(0,0,0,.35)}}
+.pad{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.sec{padding-top:56px}
+.eyebrow{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)}
+.en{color:var(--mute);font-size:13px;line-height:1.7}
+
+/* top */
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:12px}
+.top img{width:26px;height:26px}
+:root:not([data-theme="light"]) .top img{filter:none}
+.iconbtn{background:none;border:0;color:var(--ink);padding:6px;cursor:pointer;display:flex;align-items:center;gap:6px;font:inherit;font-size:12px}
+.iconbtn svg{width:20px;height:20px}
+
+/* hero */
+.hero{display:block;margin:0 14px;border-radius:22px;overflow:hidden;position:relative;aspect-ratio:4/5;max-width:100%}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero .cap{position:absolute;inset:auto 0 0 0;padding:60px 20px 18px;background:linear-gradient(transparent,rgba(0,0,0,.62));color:#fff}
+.hero .cap b{display:block;font-family:var(--display);font-weight:400;font-size:22px;line-height:1.3}
+.hero .cap span{font-size:12.5px;opacity:.9}
+.banner{display:flex;align-items:center;gap:14px;margin:12px 14px 0;background:var(--btn-bg);color:var(--btn-fg);border-radius:16px;padding:10px 16px 10px 10px;text-decoration:none}
+.banner img{width:52px;height:52px;border-radius:10px;object-fit:cover}
+.banner span{flex:1;text-align:center;font-weight:500;font-size:14px}
+
+/* name */
+.who{text-align:center;padding-top:40px}
+.who h1{font-family:var(--body);font-weight:600;font-size:32px;letter-spacing:.02em;line-height:1.1}
+.who .kr{font-size:26px;margin-top:4px;font-weight:400}
+.who .role{margin-top:14px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.who .role b{color:var(--ink);font-weight:500}
+.series{text-align:center;padding-top:34px}
+.series h2{font-family:var(--display);font-weight:300;font-size:30px;line-height:1.2;letter-spacing:.04em}
+.series p{margin-top:14px;font-family:var(--display);font-size:15px}
+
+/* links */
+.links{display:grid;gap:10px;padding-top:30px}
+.lk{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:14px;text-decoration:none;font-weight:500;font-size:14.5px;text-align:center;padding:10px 16px;border:1px solid var(--line);background:var(--paper);transition:transform .15s}
+.lk small{display:block;font-weight:400;font-size:11.5px;color:var(--mute);margin-top:1px}
+.lk.dark{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.lk.dark small{color:inherit;opacity:.7}
+.lk:active{transform:scale(.985)}
+
+/* bio */
+.bio h3{font-family:var(--body);font-weight:600;font-size:17px;line-height:1.35}
+.bio h3 span{display:block}
+.bio p{margin-top:16px;font-size:14.5px}
+.bio p.en{margin-top:14px}
+
+/* cv */
+.cv h3{font-family:var(--display);font-weight:600;font-size:24px}
+.cv dl{margin:16px 0 0;display:grid;gap:18px}
+.cv dt{font-size:12px;font-weight:600;letter-spacing:.06em}
+.cv dt i{font-style:normal;color:var(--mute);font-weight:400;margin-left:6px;letter-spacing:.12em;font-size:10.5px;text-transform:uppercase}
+.cv ul{list-style:none;margin:6px 0 0;padding:0;font-size:12.5px;line-height:1.6;display:grid;gap:5px}
+.cv li{display:grid;grid-template-columns:92px 1fr;gap:10px}
+.cv li span:first-child{color:var(--mute);font-variant-numeric:tabular-nums}
+.cv li span:last-child{min-width:0}
+.cv .upd{text-align:right;font-size:11.5px;color:var(--mute);margin-top:18px}
+
+/* feature card with text over image */
+.feature{position:relative;border-radius:18px;overflow:hidden;margin:0 14px;aspect-ratio:3/4;max-width:100%}
+.feature img{width:100%;height:100%;object-fit:cover}
+.feature .over{position:absolute;inset:0 0 auto 0;padding:22px 20px 70px;background:linear-gradient(rgba(0,0,0,.6),transparent);color:#fff}
+.feature .over small{font-size:10.5px;letter-spacing:.2em;opacity:.85}
+.feature .over b{display:block;font-weight:600;font-size:26px;letter-spacing:.02em;line-height:1.15;margin-top:4px}
+.feature .over p{font-size:12.5px;line-height:1.65;margin-top:10px;opacity:.95}
+
+/* gallery with thumbs */
+.gal{padding-top:14px}
+.gal .main{margin:0 14px;border-radius:18px;overflow:hidden;background:var(--soft);aspect-ratio:4/5;max-width:100%}
+.gal .main img{width:100%;height:100%;object-fit:cover}
+.gal .main.contain img{object-fit:contain;background:#fff}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding:10px 14px 4px;scrollbar-width:none}
+.thumbs::-webkit-scrollbar{display:none}
+.thumbs button{flex:0 0 66px;height:66px;border-radius:12px;overflow:hidden;border:2px solid transparent;padding:0;background:var(--soft);cursor:pointer}
+.thumbs button[aria-pressed="true"]{border-color:var(--ink)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.gcap{padding-top:10px;text-align:center}
+.gcap b{font-family:var(--display);font-weight:400;font-size:18px;display:block}
+.gcap span{font-size:12px;color:var(--mute)}
+.gcap a{font-size:12.5px;color:var(--cobalt);text-decoration:none;display:inline-block;margin-top:4px}
+.head2{text-align:center}
+.head2 h2{font-weight:600;font-size:18px;line-height:1.35}
+.head2 h2 span{display:block;font-weight:400;font-size:15px}
+
+/* docent list */
+.doc{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--ink)}
+.doc li a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.doc b{font-family:var(--display);font-weight:400;font-size:16px}
+.doc span{font-size:12px;color:var(--mute);white-space:nowrap}
+
+/* steps */
+.svc h3{font-weight:600;font-size:16px}
+.svc h3 small{font-weight:400;color:var(--mute);font-size:12px;margin-left:6px}
+.svc p{font-size:13px;margin-top:6px;color:var(--mute)}
+.svc+.svc{margin-top:22px}
+.steps{list-style:none;margin:18px 0 0;padding:0;counter-reset:s;display:grid;gap:0;border-top:1px solid var(--line)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px}
+.steps li::before{content:counter(s);font-family:var(--display);color:var(--cobalt);font-size:16px;line-height:1.4}
+.steps b{font-weight:500}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 14px;border-radius:18px;overflow:hidden}
+.pair img{width:100%;aspect-ratio:1;object-fit:cover}
+
+/* together */
+.tog{text-align:center}
+.tog .rule{width:1px;height:40px;background:var(--line);margin:0 auto 22px}
+.tog h2{font-family:var(--body);font-weight:400;font-size:28px;letter-spacing:-.01em}
+.tog .lead{font-size:13px;color:var(--mute);margin-top:6px}
+.contacts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:26px}
+.contacts>*{display:grid;justify-items:center;gap:2px;padding:4px 6px;text-decoration:none;min-width:0}
+.contacts>*+*{border-left:1px solid var(--line)}
+.contacts svg{width:22px;height:22px}
+.contacts b{font-weight:400;font-size:13px;margin-top:4px}
+.contacts small{font-size:10px;color:var(--mute);white-space:nowrap;letter-spacing:-.01em}
+.qrs{display:flex;justify-content:center;gap:28px;margin-top:26px}
+.qrs figure{margin:0;display:grid;justify-items:center;gap:6px}
+.qrs .q{width:88px;height:88px;background:#fff;padding:5px;border:1px solid var(--line)}
+.qrs .q svg{width:100%;height:100%;display:block}
+.qrs figcaption{font-size:10px;letter-spacing:.18em}
+.uses{list-style:none;margin:26px auto 0;padding:0;max-width:240px}
+.uses li{padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.uses li small{color:var(--mute);font-size:11.5px;margin-left:6px}
+.sig{font-family:var(--sign);font-size:44px;line-height:1;margin-top:26px;color:var(--ink)}
+.copy{font-size:10.5px;color:var(--mute);margin-top:6px}
+
+/* schedule */
+.sched{margin:0 14px;background:var(--btn-bg);color:var(--btn-fg);border-radius:18px;padding:16px 0 18px}
+.sched h3{text-align:center;font-weight:600;font-size:15px}
+.cards{display:flex;gap:10px;overflow-x:auto;padding:14px 12px 2px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.cards::-webkit-scrollbar{display:none}
+.card{flex:0 0 150px;scroll-snap-align:start;text-align:center}
+.card .ph{width:150px;height:150px;border-radius:12px;overflow:hidden;background:#2a2a2d;display:flex;align-items:center;justify-content:center;padding:12px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph.txt{background:linear-gradient(160deg,#2443C9,#121a4a);font-family:var(--display);font-size:17px;line-height:1.3;color:#fff}
+.card p{font-size:12.5px;line-height:1.45;margin-top:8px}
+.card p small{display:block;opacity:.7;font-size:11px}
+
+/* ask */
+.ask .box{background:var(--soft);border-radius:16px;padding:18px}
+.ask pre{white-space:pre-wrap;font-family:var(--body);font-size:13.5px;line-height:1.7;margin:10px 0 0}
+.ask .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{border:1px solid var(--ink);background:none;color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:12.5px;cursor:pointer;text-decoration:none}
+.chip.solid{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.mail{font-size:15px;font-weight:500;user-select:all}
+
+/* sticky CTA */
+.cta{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:0 max(14px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));pointer-events:none}
+.cta a{pointer-events:auto;display:block;max-width:432px;margin:0 auto;background:var(--paper);color:var(--ink);text-align:center;text-decoration:none;font-weight:600;font-size:14.5px;padding:16px;border-radius:16px;box-shadow:0 10px 30px -8px rgba(0,0,0,.35),0 0 0 1px var(--line)}
+.foot{text-align:center;font-size:11px;color:var(--mute);padding-top:40px}
 </style>
+
 </head>
 <body>
-<main class="hub">
-  <div class="top"><img src="img/logo_w.png" alt="AURUM"><span>DAEJEON · KOREA</span></div>
-  <div class="portrait rise">
-    <img src="img/azure_2022.jpg" alt="「청파도」 2022 작업 초기, 데님 재킷과 코발트 블루">
-    <img src="img/pf_07.jpg" alt="작가 양승진 흑백 프로필">
-  </div>
-  <div class="who rise d2">
-    <h1>양승진</h1>
-    <p class="mute">Yang Seungjin · Multidisciplinary Artist<br>모든 장르를 아우르는 작가 · 전시기획 · 아우름41 대표</p>
-    <p style="font-family:var(--display);font-size:17px">나는 파도를 그려 입고 춤추게 된다.</p>
-  </div>
-  <nav class="links rise d3" aria-label="바로가기">
-    <a href="artist.html#works"><b>작품</b><span>파도, 꽃 · 공간을 위한 작품</span></a>
-    <a href="artist.html#order"><b>주문 · 구매</b><span>원화, 맞춤 기념 작품, 공간 전시</span></a>
-    <a href="artist.html#pairing"><b>작품과 한 잔</b><span>음료·디저트 페어링 · 서명 드로잉</span></a>
-    <a href="studio.html"><b>아우름41 스튜디오</b><span>전시 기획, 굿즈, 영상 · 경력</span></a>
+<div class="col">
+  <header class="top pad">
+    <img src="img/logo_w.png" alt="AURUM">
+    <button class="iconbtn" type="button" id="share" aria-label="이 페이지 주소 복사"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span id="share-t">주소 복사</span></button>
+  </header>
+
+  <a class="hero" href="#wave" aria-label="「파도, 꽃」 작품 보기">
+    <img src="img/lp/ol_wall.jpg" alt="올디콜라 벽면에 걸린 「파도, 꽃」 연작과 관람객">
+    <div class="cap"><span>Recent Exhibition · 2026.11.04 – 11.08</span><b>「파도, 꽃」 × 올디콜라</b><span>작품 6점 · 작품명 칵테일 6종 · 오디오 도슨트</span></div>
+  </a>
+  <a class="banner" href="#ask"><img src="img/lp/hammer_wall.jpg" alt=""><span>용도에 맞춘 맞춤 기념 작품 의뢰</span></a>
+
+  <section class="who pad">
+    <h1>YANG SEUNGJIN</h1>
+    <p class="kr">양승진</p>
+    <p class="role"><b>Artist · Curator</b> &nbsp;작가 · 기획자<br>Founder, AURUM41</p>
+  </section>
+
+  <section class="series pad">
+    <h2>WAVE,<br>FLOWER</h2>
+    <p>나는 파도를 그려 입고 춤추게 된다.</p>
+    <p class="en" style="font-family:var(--display);margin-top:4px">I paint the wave, wear it, and begin to dance.</p>
+  </section>
+
+  <nav class="links pad" aria-label="바로가기">
+    <a class="lk dark" href="#ask"><span>작품 의뢰 · 공간 전시 문의<small>Commission &amp; Exhibition</small></span></a>
+    <a class="lk" href="artist.html"><span>Artist Portfolio 포트폴리오<small>전 작품 · 전시 아카이브</small></span></a>
+    <a class="lk" href="paris.html"><span>「선화동 in Paris」<small>디 블루메 영구 전시 · 대표작</small></span></a>
+    <a class="lk" href="studio.html"><span>AURUM41 Studio<small>전시 기획 · 굿즈 · 영상 · 경력</small></span></a>
+    <a class="lk" href="#docent"><span>오디오 도슨트 6편<small>작가가 직접 읽는 작품 해설 · YouTube</small></span></a>
+    <a class="lk" href="lecture.html"><span>강의 『멍청이 수업』<small>기관 특강 · 워크숍 · 강의 제안서</small></span></a>
+    <a class="lk" href="https://www.instagram.com/aurum_41/"><span>Instagram @aurum_41</span></a>
   </nav>
-  <div class="now">
-    <img src="img/poster.jpg" alt="「파도, 꽃」 전시 포스터">
-    <div class="small"><span class="kicker" style="margin:0 0 4px">Recent</span><b style="font-weight:500">「파도, 꽃」 × 올디콜라</b><br><span class="mute">2026.11.04 – 11.08 · 대전</span></div>
-  </div>
-  <div class="sns"><a href="https://www.instagram.com/aurum_41/">Instagram</a><a href="https://youtu.be/2iz5fPK8Rz4">YouTube</a><span class="mute">41aurum@gmail.com</span></div>
-</main>
+
+  <section class="sec pad bio">
+    <h3><span>Artist Biography</span><span>작가 소개</span></h3>
+    <p>양승진은 대전을 기반으로 활동하는 작가이자 전시 기획자다. 회화와 섬유, 빛과 영상, 퍼포먼스까지 장르의 경계를 두지 않는다. 카페와 바, 옛 관사처럼 기획의 자유가 열린 공간에서 작품과 그 이름을 딴 음료, 작가의 목소리로 녹음한 해설을 하나의 경험으로 엮어 왔다. 관람객이 오래 기억하고 다른 전시와 견주게 될 장면을 만드는 것이 그의 기획 방식이다. 충남대학교 사학과를 졸업했으며, 아우름41 스튜디오와 비영리예술단체 아우름을 이끌고 있다.</p>
+    <p class="en">Yang Seungjin is an artist and curator based in Daejeon, Korea, working across painting, textile, light, video and performance. In cafés, bars and former official residences where curators are free to shape the space, he joins each work with a drink named after it and an audio docent in his own voice, building visits that people remember long after. He studied History at Chungnam National University and leads AURUM41 studio and the non-profit art collective AURUM.</p>
+  </section>
+
+  <section class="sec pad cv">
+    <h3>CV</h3>
+    <dl>
+      <div><dt>학력<i>Education</i></dt><ul><li><span>—</span><span>충남대학교 사학과</span></li></ul></div>
+      <div><dt>개인전<i>Solo</i></dt><ul>
+        <li><span>2026.11</span><span>「파도, 꽃」 × 올디콜라, 대전</span></li>
+        <li><span>2026.02–03</span><span>「파리의 선화동」 · 리스닝 파티, 레인네일, 대전</span></li>
+        <li><span>2023.03</span><span>「파도, 꽃 : Time and Space」, 테미 갤러리(테미오래), 대전</span></li>
+        <li><span>2022.11–23.01</span><span>「파도, 꽃」, 쌍리 카페 갤러리, 대전</span></li>
+      </ul></div>
+      <div><dt>영구 전시<i>Permanent</i></dt><ul><li><span>2026.07</span><span>「선화동 in Paris」, 디 블루메, 대전</span></li></ul></div>
+      <div><dt>단체전 · 퍼포먼스<i>Group</i></dt><ul>
+        <li><span>2026.03</span><span>「1:1 (One to One)」, WWD Gallery</span></li>
+        <li><span>2025.09</span><span>「대전의 결 : 예술로 재구성한 도시 이야기」, WWD Gallery</span></li>
+        <li><span>2025.06</span><span>「반려」 전시 · 거리 퍼포먼스 「iPet」, WWD Gallery</span></li>
+        <li><span>2024.10</span><span>자랑전, WWD Gallery</span></li>
+        <li><span>2024.08</span><span>「대전 속의 삶」, 대전신세계 Art&amp;Science</span></li>
+        <li><span>2024.05–06</span><span>좋세계 「Judgement」, 한남대 조형예술관</span></li>
+        <li><span>2023.12</span><span>차드쇼 베타</span></li>
+        <li><span>2023.11</span><span>노패스트패션 「Color your color」</span></li>
+        <li><span>2023.10</span><span>글로벌 스타트업 메이커 페스티벌 「온조 · 비류」, 충남대학교</span></li>
+        <li><span>2023.04–05</span><span>전시마켓, 아트갤러리 비범</span></li>
+      </ul></div>
+      <div><dt>전시 기획<i>Curating</i></dt><ul>
+        <li><span>2024.12</span><span>오드리삼례 개인전 「너는 저기, 나는 여기」, WWD Gallery 어은점 · 기획 · 디자인 · 설치</span></li>
+        <li><span>—</span><span>오드리삼례 개인전 「떨림」, 테미오래 · 기획 · 연출</span></li>
+        <li><span>2023.03</span><span>「자연과의 조화, 차를 입다」(최창환), 테미 갤러리 · 기획 · 연출</span></li>
+        <li><span>2023.03</span><span>「자연이 그리는 예술」(박미경), 테미 갤러리 · 기획 · 연출</span></li>
+      </ul></div>
+      <div><dt>공공예술 · 프로젝트<i>Projects</i></dt><ul>
+        <li><span>2026.09–10</span><span>「단골 꼴라보!」, 대전 중구 원도심 상권활성화 사업단</span></li>
+        <li><span>2025.02–11</span><span>대화 리인벤트 프로젝트, 대화동 도시재생지원센터</span></li>
+        <li><span>2025</span><span>고리 프로젝트, 대덕구공동체지원센터</span></li>
+      </ul></div>
+      <div><dt>맞춤 기념 작품<i>Commissions</i></dt><ul>
+        <li><span>2026</span><span>「다솜」, 「이즈레」</span></li>
+        <li><span>—</span><span>「천생연분 · 天生緣分」</span></li>
+        <li><span>2025</span><span>「신재용」, 「무투묘르 다니요르」, 「Hammer, Mirror, Coffee Cup」(올디콜라 개업식 기념)</span></li>
+      </ul></div>
+      <div><dt>영화<i>Film</i></dt><ul><li><span>2023.08</span><span>독립영화 「엄마가 이상하다」 주연, 대전시청자미디어센터</span></li></ul></div>
+    </dl>
+    <p class="upd">2026년 11월 수정</p>
+  </section>
+
+  <section class="sec" id="wave">
+    <div class="feature">
+      <img src="img/lp/w1_wave_flower.jpg" alt="「파도, 꽃」">
+      <div class="over"><small>PAINTING SERIES · 2022 · F50 × 6</small><b>WAVE, FLOWER<br>파도, 꽃</b><p>2012년 여수 밤바다의 기억에서 시작한 여섯 점의 연작. 캔버스 밖까지 밀려 나온 물결과 그 위에 피어난 꽃을 그렸다. 작품마다 작가가 직접 녹음한 오디오 도슨트가 있다.</p></div>
+    </div>
+    <div class="gal" data-gal>
+      <div class="main"><img src="img/lp/w5_azure.jpg" alt="청파도"></div>
+      <div class="thumbs" role="group" aria-label="파도, 꽃 연작">
+        <button type="button" aria-pressed="true" data-src="img/lp/w5_azure.jpg" data-t="청파도 · Azure Wave" data-s="2022 · 116.8 × 91 cm" data-y="https://youtu.be/2iz5fPK8Rz4"><img src="img/lp/w5_azure.jpg" alt="청파도"></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/w1_wave_flower.jpg" data-t="파도, 꽃 · Wave, Flower" data-s="2022 · 116.8 × 91 cm" data-y="https://youtu.be/mWF2vR1G3ww"><img src="img/lp/w1_wave_flower.jpg" alt="파도, 꽃"></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/w2_pin_now.jpg" data-t="캔버스, 핀 꽃 · Flowers Blooming on Canvas" data-s="2022, 2026 재구성 · 116.8 × 91 cm" data-y="https://youtu.be/SN3ui506OcM"><img src="img/lp/w2_pin_now.jpg" alt="캔버스, 핀 꽃"></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/w3_closet.jpg" data-t="꽃잎의 옷장 · Closet of Petals" data-s="2022 · 116.8 × 91 cm" data-y="https://youtu.be/NhcG743lVUc"><img src="img/lp/w3_closet.jpg" alt="꽃잎의 옷장"></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/w4_wave.jpg" data-t="파도 · The Wave" data-s="2022 · 116.8 × 91 cm" data-y="https://youtu.be/Q1gMDlT4ZEY"><img src="img/lp/w4_wave.jpg" alt="파도"></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/w6_nightsea.jpg" data-t="밤바다, 달빛 파도, 달빛 · Night Sea" data-s="2022 · 116.8 × 91 cm" data-y="https://youtu.be/D6fcX1dFh5Y"><img src="img/lp/w6_nightsea.jpg" alt="밤바다, 달빛 파도, 달빛"></button>
+      </div>
+      <div class="gcap pad"><b data-cap>청파도 · Azure Wave</b><span data-sub>2022 · 116.8 × 91 cm</span><br><a data-yt href="https://youtu.be/2iz5fPK8Rz4">▶ 오디오 도슨트 듣기</a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="paris">
+    <div class="feature">
+      <img src="img/paris/main.jpg" alt="「선화동 in Paris」">
+      <div class="over"><small>SIGNATURE WORK · 2024 · 116 × 50 cm</small><b>SEONHWA-DONG<br>IN PARIS</b><p>선화동의 노을과 파리의 풍경을 겹친 상상의 풍경. 내가 마음만 먹으면 상상하는 곳으로 나를 이끌어 준다. 2026년부터 디 블루메에서 영구 전시 중.</p></div>
+    </div>
+    <div class="gal" data-gal>
+      <div class="main"><img src="img/paris/dieblume.jpg" alt="디 블루메"></div>
+      <div class="thumbs" role="group" aria-label="선화동 in Paris">
+        <button type="button" aria-pressed="true" data-src="img/paris/dieblume.jpg" data-t="디 블루메 · 영구 전시" data-s="2026.07 – · 대전"><img src="img/paris/dieblume.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/paris/p_framed.jpg" data-t="「선화동 in Paris」" data-s="2024 · 116 × 50 cm"><img src="img/paris/p_framed.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/paris/main.jpg" data-t="「선화동 in Paris」" data-s="2024 대전신세계 Art&amp;Science 「대전 속의 삶」"><img src="img/paris/main.jpg" alt=""></button>
+      </div>
+      <div class="gcap pad"><b data-cap>디 블루메 · 영구 전시</b><span data-sub>2026.07 – · 대전</span><br><a href="paris.html">작품 페이지 보기</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="head2 pad"><h2>More Artworks<span>전 장르 작품</span></h2></div>
+    <div class="gal" data-gal>
+      <div class="main"><img src="img/arc/judgement.jpg" alt="Judgement"></div>
+      <div class="thumbs" role="group" aria-label="작품 아카이브">
+        <button type="button" aria-pressed="true" data-src="img/arc/judgement.jpg" data-t="Judgement" data-s="2024 · 설치 · 좋세계, 한남대 조형예술관"><img src="img/arc/judgement.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/judg_talk.jpg" data-t="Judgement · 작가 토크" data-s="2024 · 좋세계"><img src="img/arc/judg_talk.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/arc/epoch.jpg" data-t="대전 에포크 ; 중구" data-s="2025 · 61 × 91 cm · 「대전의 결」, WWD Gallery"><img src="img/arc/epoch.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/arc/dochung.jpg" data-t="옛 충남도청사, 근현대사박물관 4면" data-s="2022 · 27 × 21.5 cm"><img src="img/arc/dochung.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/ipet_robotdog.jpg" data-t="반려 · iPet" data-s="2025 · 드로잉 · 퍼포먼스 · WWD Gallery"><img src="img/arc/ipet_robotdog.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/cyc_main.jpg" data-t="Color your color" data-s="2023 · 91 × 91 cm · 노패스트패션"><img src="img/arc/cyc_main.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/onjo_main.jpg" data-t="온조 · 비류" data-s="2023 · 섬유 · 글로벌 스타트업 메이커 페스티벌"><img src="img/arc/onjo_main.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/arc/waterfall.jpg" data-t="폭포" data-s="2024 · 애니메이션 · 「대전 속의 삶」"><img src="img/arc/waterfall.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/izre.jpg" data-t="이즈레" data-s="2026 · 맞춤 기념 작품"><img src="img/arc/izre.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/jaeyong.jpg" data-t="신재용" data-s="2025 · 25 × 25 cm · 맞춤 기념 작품"><img src="img/arc/jaeyong.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/arc/cheonsaeng.jpg" data-t="천생연분 · 天生緣分" data-s="맞춤 기념 작품"><img src="img/arc/cheonsaeng.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/temi/t30.jpg" data-t="「파도, 꽃 : Time and Space」" data-s="2023 · 테미 갤러리(테미오래)"><img src="img/temi/t30.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/temi/n_flowerfall.jpg" data-t="「자연이 그리는 예술」 · 기획" data-s="2023 · 테미 갤러리 · 초대 작가 박미경"><img src="img/temi/n_flowerfall.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/temi/c_dyed.jpg" data-t="「자연과의 조화, 차를 입다」 · 기획" data-s="2023 · 테미 갤러리 · 초대 작가 최창환"><img src="img/temi/c_dyed.jpg" alt=""></button>
+      </div>
+      <div class="gcap pad"><b data-cap>Judgement</b><span data-sub>2024 · 설치 · 좋세계, 한남대 조형예술관</span><br><a href="artist.html">전체 포트폴리오 보기</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="head2 pad"><h2>Art × Cocktail<span>작품마다 한 잔</span></h2></div>
+    <div class="gal" data-gal>
+      <div class="main"><img src="img/lp/ck_photo_azure.jpg" alt="청파도 칵테일"></div>
+      <div class="thumbs" role="group" aria-label="작품과 한 잔">
+        <button type="button" aria-pressed="true" data-src="img/lp/ck_photo_azure.jpg" data-t="청파도 칵테일" data-s="「파도, 꽃」 × 올디콜라, 2026"><img src="img/lp/ck_photo_azure.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/ck_photo_wave.jpg" data-t="파도 칵테일" data-s="「파도, 꽃」 × 올디콜라, 2026"><img src="img/lp/ck_photo_wave.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/ck_photo_pin1.jpg" data-t="캔버스, 핀 꽃 칵테일" data-s="「파도, 꽃」 × 올디콜라, 2026"><img src="img/lp/ck_photo_pin1.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck07.jpg" data-t="청파도 칵테일 · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck07.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck12.jpg" data-t="파도꽃 칵테일 · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck12.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck11.jpg" data-t="파도, 꽃 칵테일 · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck11.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck10.jpg" data-t="파도 칵테일 · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck10.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck06.jpg" data-t="밤바다, 달빛 칵테일 · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck06.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-c="1" data-src="img/lp/ck05.jpg" data-t="밤바다, 달빛 칵테일 II · 서명 드로잉" data-s="작품명 칵테일 드로잉 6점, 2026"><img src="img/lp/ck05.jpg" alt=""></button>
+      </div>
+      <div class="gcap pad"><b data-cap>청파도 칵테일</b><span data-sub>「파도, 꽃」 × 올디콜라, 2026</span></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="head2 pad"><h2>Exhibition View<span>공간 전시</span></h2></div>
+    <div class="gal" data-gal>
+      <div class="main"><img src="img/lp/ol_view.jpg" alt="올디콜라 전시 관람"></div>
+      <div class="thumbs" role="group" aria-label="전시 전경">
+        <button type="button" aria-pressed="true" data-src="img/lp/ol_view.jpg" data-t="「파도, 꽃」 × 올디콜라" data-s="2026.11.04 – 11.08 · 대전"><img src="img/lp/ol_view.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/ol_wall.jpg" data-t="「파도, 꽃」 × 올디콜라" data-s="작품 앞 좌석 · 헤드폰 오디오 도슨트"><img src="img/lp/ol_wall.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/poster.jpg" data-t="전시 포스터" data-s="Art Exhibition &amp; Cocktail Pairing"><img src="img/lp/poster.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/dg_st_2661.jpg" data-t="「단골 꼴라보!」 × 올디콜라" data-s="까치 캐릭터 피규어 · 2026"><img src="img/lp/dg_st_2661.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/dg_st_2664.jpg" data-t="「단골 꼴라보!」 × 올디콜라" data-s="까치 전용잔 · 2026"><img src="img/lp/dg_st_2664.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/dg_lb_1F32463F.jpg" data-t="「단골 꼴라보!」 × 올디콜라" data-s="피규어 · 반다나 룩북 · 2026"><img src="img/lp/dg_lb_1F32463F.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" data-src="img/lp/dg_lb_CFF84EFB.jpg" data-t="「단골 꼴라보!」 × 올디콜라" data-s="반다나 · 2026"><img src="img/lp/dg_lb_CFF84EFB.jpg" alt=""></button>
+      </div>
+      <div class="gcap pad"><b data-cap>「파도, 꽃」 × 올디콜라</b><span data-sub>2026.11.04 – 11.08 · 대전</span></div>
+    </div>
+  </section>
+
+  <section class="sec pad" id="docent">
+    <p class="eyebrow">Audio Docent</p>
+    <h2 style="font-family:var(--display);font-size:24px;margin-top:6px">작가의 목소리로 듣는 해설</h2>
+    <ul class="doc">
+      <li><a href="https://youtu.be/2iz5fPK8Rz4"><b>청파도</b><span>YouTube ↗</span></a></li>
+      <li><a href="https://youtu.be/mWF2vR1G3ww"><b>파도, 꽃</b><span>YouTube ↗</span></a></li>
+      <li><a href="https://youtu.be/SN3ui506OcM"><b>캔버스, 핀 꽃</b><span>YouTube ↗</span></a></li>
+      <li><a href="https://youtu.be/NhcG743lVUc"><b>꽃잎의 옷장</b><span>YouTube ↗</span></a></li>
+      <li><a href="https://youtu.be/Q1gMDlT4ZEY"><b>파도</b><span>YouTube ↗</span></a></li>
+      <li><a href="https://youtu.be/D6fcX1dFh5Y"><b>밤바다, 달빛 파도, 달빛</b><span>YouTube ↗</span></a></li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="pair"><img src="img/lp/hammer_wall.jpg" alt="Hammer, Mirror, Coffee Cup"><img src="img/lp/hammer_room.jpg" alt="올디콜라 매장에 걸린 작품"></div>
+    <div class="pad" style="padding-top:20px">
+      <div class="svc"><h3>맞춤 기념 작품<small>Commemorative Commission</small></h3><p>개업식, 기념일, 기념식을 위해 한 사람과 한 공간의 이야기로 작품을 만듭니다. 2025년 올디콜라 개업식에 선물한 「Hammer, Mirror, Coffee Cup」은 지금도 매장에 걸려 있습니다.</p></div>
+      <div class="svc"><h3>공간 전시<small>Space Exhibition</small></h3><p>카페, 바, 상점, 기관의 공간 의도에 맞춰 작품을 설치하고, 음료·디저트 페어링과 헤드폰 오디오 도슨트를 함께 구성합니다.</p></div>
+      <div class="svc"><h3>강의<small>Lecture</small></h3><p>통찰 강의 『멍청이 수업』. 도서관, 대학, 문화재단, 기업을 위한 특강과 워크숍.</p></div>
+      <ol class="steps" aria-label="의뢰가 진행되는 순서">
+        <li><span><b>문의</b> · 인스타그램 DM 또는 메일로 용도와 시기를 알려 주세요.</span></li>
+        <li><span><b>상담</b> · 공간, 받는 분의 이야기, 예산 범위를 함께 정합니다.</span></li>
+        <li><span><b>구성안 · 견적</b> · 작품 구상과 일정, 비용을 문서로 보내 드립니다.</span></li>
+        <li><span><b>제작 · 설치</b> · 확정된 구성안대로 제작하고 공간에 설치합니다.</span></li>
+        <li><span><b>인도</b> · 작품 해설과 함께 전해 드립니다.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec pad tog">
+    <div class="rule"></div>
+    <h2>Let's Create Together</h2>
+    <p class="lead">당신의 공간과 기념일이 한 점의 작품이 됩니다.</p>
+    <div class="contacts">
+      <a href="#ask"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></svg><b>Email</b><small>41aurum@gmail.com</small></a>
+      <a href="https://www.instagram.com/aurum_41/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg><b>Instagram</b><small>@aurum_41</small></a>
+      <a href="artist.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></svg><b>Portfolio</b><small>(Artist Portfolio)</small></a>
+    </div>
+    <div class="qrs" id="qrs">
+      <figure><div class="q" data-qr="https://www.instagram.com/aurum_41/"></div><figcaption>INSTAGRAM</figcaption></figure>
+      <figure><div class="q" data-qr="https://41aurum.github.io/artist.html"></div><figcaption>PORTFOLIO</figcaption></figure>
+    </div>
+    <ul class="uses">
+      <li>Café &amp; Bar<small>카페 · 바</small></li>
+      <li>Gallery<small>갤러리</small></li>
+      <li>Public &amp; Corporate<small>기관 · 기업</small></li>
+      <li>Commemoration<small>개업식 · 기념일</small></li>
+      <li>Lecture<small>강의</small></li>
+    </ul>
+    <p class="sig">Yang Seungjin</p>
+    <p class="copy">© Yang Seungjin · AURUM41 · Daejeon</p>
+  </section>
+
+  <section class="sec">
+    <div class="sched">
+      <h3>&lt; 전시 기록 · Exhibitions &gt;</h3>
+      <div class="cards">
+        <div class="card"><div class="ph" style="padding:0"><img src="img/lp/poster.jpg" alt=""></div><p>「파도, 꽃」 × 올디콜라<small>2026.11.04 – 11.08</small></p></div>
+        <div class="card"><div class="ph" style="padding:0"><img src="img/paris/dieblume.jpg" alt=""></div><p>「선화동 in Paris」 영구 전시<small>디 블루메 · 2026.07 –</small></p></div>
+        <div class="card"><div class="ph txt">1:1<br>One to One</div><p>WWD Gallery 단체전<small>2026.03.02 – 03.09</small></p></div>
+        <div class="card"><div class="ph txt">파리의<br>선화동</div><p>레인네일 개인전 · 리스닝 파티<small>2026.02 – 03</small></p></div>
+        <div class="card"><div class="ph" style="padding:0"><img src="img/arc/epoch_poster.jpg" alt=""></div><p>「대전의 결」 WWD Gallery<small>2025.09.01 – 09.05</small></p></div>
+        <div class="card"><div class="ph" style="padding:0"><img src="img/arc/ipet_poster.jpg" alt=""></div><p>「반려」 WWD Gallery<small>2025.06</small></p></div>
+        <div class="card"><div class="ph" style="padding:0"><img src="img/arc/cyc_poster.jpg" alt=""></div><p>노패스트패션<small>2023.11.06 – 11.10</small></p></div>
+        <div class="card"><div class="ph" style="padding:0"><img src="img/temi/poster_nature.jpg" alt=""></div><p>「자연이 그리는 예술」 기획<small>2023.03.11 – 03.19</small></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pad ask" id="ask">
+    <p class="eyebrow">Commission &amp; Contact</p>
+    <h2 style="font-family:var(--display);font-size:24px;margin-top:6px">작품 의뢰 · 전시 문의</h2>
+    <p style="margin-top:10px;font-size:13.5px;color:var(--mute)">아래 글을 복사해 빈칸을 채운 뒤 인스타그램 DM이나 메일로 보내 주세요.</p>
+    <div class="box">
+      <pre id="tpl">[작품 의뢰]
+용도: 개업식 / 기념일 / 공간 전시 / 강의
+공간 또는 받는 분:
+희망 시기:
+예산 범위:
+연락처:</pre>
+      <div class="row"><button class="chip solid" type="button" id="cp-tpl">문의 글 복사</button><a class="chip" href="https://www.instagram.com/aurum_41/">Instagram DM ↗</a></div>
+    </div>
+    <div class="box" style="margin-top:10px">
+      <p class="eyebrow" style="font-size:10px">Email</p>
+      <p class="mail" id="mail">41aurum@gmail.com</p>
+      <div class="row"><button class="chip" type="button" id="cp-mail">메일 주소 복사</button></div>
+    </div>
+  </section>
+
+  <p class="foot pad">AURUM41 · 대전 중구</p>
+</div>
+
+<div class="cta"><a href="#ask">작품 의뢰하기</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+(function(){
+  document.querySelectorAll('[data-gal]').forEach(function(g){
+    var main=g.querySelector('.main'),img=main.querySelector('img'),cap=g.querySelector('[data-cap]'),sub=g.querySelector('[data-sub]'),yt=g.querySelector('[data-yt]');
+    g.querySelectorAll('.thumbs button').forEach(function(b){
+      b.addEventListener('click',function(){
+        g.querySelectorAll('.thumbs button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+        b.setAttribute('aria-pressed','true');
+        img.src=b.dataset.src;img.alt=b.dataset.t;cap.textContent=b.dataset.t;sub.textContent=b.dataset.s;
+        main.classList.toggle('contain',!!b.dataset.c);
+        if(yt){yt.href=b.dataset.y}
+      });
+    });
+  });
+  function copy(text,btn,done){
+    function sel(){btn.textContent='길게 눌러 복사해 주세요'}
+    try{navigator.clipboard.writeText(text).then(function(){btn.textContent=done},sel)}catch(e){sel()}
+  }
+  document.getElementById('cp-tpl').addEventListener('click',function(){copy(document.getElementById('tpl').textContent,this,'복사됨')});
+  document.getElementById('cp-mail').addEventListener('click',function(){copy('41aurum@gmail.com',this,'복사됨')});
+  document.getElementById('share').addEventListener('click',function(){copy(location.href.split('#')[0],document.getElementById('share-t'),'복사됨')});
+  try{
+    if(typeof qrcode!=='function') throw 0;
+    document.querySelectorAll('[data-qr]').forEach(function(el){
+      var q=qrcode(0,'M');q.addData(el.dataset.qr);q.make();
+      el.innerHTML=q.createSvgTag({cellSize:3,margin:0,scalable:true});
+    });
+  }catch(e){var w=document.getElementById('qrs');if(w)w.hidden=true}
+})();
+</script>
+
 </body>
 </html>

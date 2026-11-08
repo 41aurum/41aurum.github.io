@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>멍청이 수업 · 강의</title>
+<meta name="description" content="작가 양승진의 통찰 강의 『멍청이 수업』 — 기관·도서관·학교·기업 특강과 워크숍">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:end;padding:64px 0 90px}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding:36px 0 60px}.hero figure{order:-1}}
+.hero figure{background:var(--white);padding:clamp(14px,2vw,24px)}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1)}
+.thesis{font-family:var(--display);font-weight:300;font-size:clamp(24px,3vw,38px);line-height:1.45;max-width:24em;letter-spacing:-.02em}
+.thesis em{font-style:normal;color:var(--cobalt)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));border-top:1px solid var(--ink);margin-top:56px}
+.nums div{padding:20px 20px 4px 0}
+.nums b{font-family:var(--display);font-weight:300;font-size:44px;line-height:1;display:block}
+.nums span{font-size:12.5px;color:var(--mute)}
+.toc{list-style:none;margin:0;padding:0;counter-reset:c;border-top:1px solid var(--ink)}
+.toc li{counter-increment:c;display:grid;grid-template-columns:56px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.toc li::before{content:counter(c,decimal-leading-zero);font-family:var(--display);font-size:22px;color:var(--cobalt);grid-row:span 2}
+.toc b{font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:-.01em}
+.toc span{font-size:13.5px;color:var(--mute)}
+.prog{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:0;border-top:1px solid var(--ink)}
+.prog article{padding:28px 28px 30px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.prog .tag{font-size:11px;letter-spacing:.16em;color:var(--cobalt)}
+.prog h3{font-size:24px;font-weight:400;margin:8px 0 10px}
+.prog p{margin:0 0 14px;font-size:14px}
+.prog dl{display:grid;grid-template-columns:52px 1fr;gap:3px 12px;font-size:13px;margin:auto 0 0}
+.prog dt{color:var(--mute)}.prog dd{margin:0}
+/* sample slides */
+.deck{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;margin-top:36px;scrollbar-width:thin}
+.slide{flex:0 0 min(560px,86vw);aspect-ratio:16/9;scroll-snap-align:start;background:var(--white);padding:clamp(18px,3vw,34px);display:flex;flex-direction:column;justify-content:space-between;position:relative;border:1px solid var(--line)}
+.slide .no{font-size:10.5px;letter-spacing:.22em;color:var(--mute)}
+.slide h4{font-family:var(--display);font-weight:300;font-size:clamp(20px,3vw,32px);line-height:1.3;margin:0;letter-spacing:-.02em}
+.slide p{margin:0;font-size:clamp(11.5px,1.4vw,14px);color:var(--mute);line-height:1.6}
+.slide.ink{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.slide.ink p,.slide.ink .no{color:#A9A59D}
+.slide.blue{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+.slide.blue p,.slide.blue .no{color:#C9D2F7}
+.slide .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:clamp(11px,1.4vw,14px)}
+.slide .flow i{font-style:normal;border:1px solid currentColor;padding:4px 10px}
+.slide .flow s{text-decoration:none;color:var(--mute)}
+.slide.pic{padding:0;flex-direction:row}
+.slide.pic img{width:46%;height:100%;object-fit:cover}
+.slide.pic div{padding:clamp(16px,2.6vw,30px);display:flex;flex-direction:column;justify-content:space-between;flex:1}
+.hint{font-size:12px;color:var(--mute);margin-top:6px}
+/* worksheet */
+.ws{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+@media (max-width:860px){.ws{grid-template-columns:1fr}}
+.ws .trip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ws .trip label{display:grid;gap:4px;font-size:11.5px;color:var(--mute)}
+.ws input{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:8px 0;font:inherit;font-size:15px;color:var(--ink);border-radius:0;width:100%}
+.card{background:var(--white);padding:28px;margin-top:20px;border-top:2px solid var(--cobalt)}
+.card .three{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:14px}
+.card .three div{padding:12px 10px 0 0}
+.card .three b{font-family:var(--display);font-weight:400;font-size:19px;display:block}
+.card .three span{font-size:12px;color:var(--mute)}
+.who{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
+@media (max-width:860px){.who{grid-template-columns:1fr}}
+.who .ph{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.who .ph img{width:100%;aspect-ratio:1;object-fit:cover}
+.kitlink{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));border-top:1px solid var(--ink);margin-top:30px}
+.kitlink a{padding:20px 20px 20px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.kitlink b{font-family:var(--display);font-weight:400;font-size:20px;display:block}
+.kitlink span{font-size:13px;color:var(--mute)}
+.kitlink a:hover b{color:var(--cobalt)}
+.form textarea{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:10px 0;font:inherit;font-size:16px;color:var(--ink);border-radius:0;resize:vertical}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="index.html"><img src="img/logo_w.png" alt="">AURUM</a>
+  <nav><a href="artist.html">Works</a><a href="lecture.html" aria-current="page">Lecture</a><a href="studio.html">Studio</a></nav>
+</div></header>
+
+<main class="wrap hero">
+  <div>
+    <span class="kicker rise">Lecture · 작가 양승진의 통찰 수업</span>
+    <h1 class="h-xl rise d2">멍청이<br>수업</h1>
+    <p class="lede rise d3" style="margin-top:26px">우리는 착하게 살라고 배웠지만, 살아남는 법은 배우지 못했습니다. 『멍청이 수업』은 길들여진 생각이 어디서 오는지 과학의 눈으로 관찰하고, 그 깨달음을 한 점의 작품으로 바꾸는 강의입니다.</p>
+    <div class="row rise d3" style="margin-top:30px"><a class="solid" href="#ask">강의 요청</a><a class="cta" href="kit.html">강의 제안서 · 홍보물</a></div>
+  </div>
+  <figure class="rise"><img src="img/pf_03.jpg" alt="작가 양승진 흑백 프로필"><figcaption class="lbl"><b>양승진</b>통찰의 작가 · 비영리예술단체 아우름 대표 · 충남대 사학과</figcaption></figure>
+</main>
+
+<section id="book"><div class="wrap">
+  <span class="kicker">The book · 집필 중</span>
+  <p class="thesis">멍청이는 지능이 모자란 사람이 아닙니다.<br><em>사냥 감각</em>을 잃어버린 사람입니다.</p>
+  <p class="lede" style="margin-top:26px">관찰하고, 판단하고, 움직이고, 그 대가를 계산하는 감각. 그 감각을 잃은 환경에서 자라면 우리는 양보하고 끌려다니는 삶을 ‘옳은 삶’이라 믿게 됩니다. 저 역시 그렇게 살았고, 그것을 깨달은 날부터 이 책을 쓰기 시작했습니다. 누군가를 탓하려는 책이 아닙니다. 유전자와 환경이 보내는 메시지를 호기심으로 읽고, 그것을 아름다움으로 바꾸는 방법을 다룹니다.</p>
+  <div class="nums">
+    <div><b>16</b><span>년 현장 · 2010 국가기록원 B2G부터</span></div>
+    <div><b>15</b><span>건 전시 · 상영 · 공공예술</span></div>
+    <div><b>6</b><span>점 연작, 작가 육성 오디오 도슨트</span></div>
+    <div><b>2</b><span>개국 현장 근무 · 한국, 우즈베키스탄</span></div>
+  </div>
+</div></section>
+
+<section id="toc"><div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(28px,5vw,80px);align-items:start">
+  <div>
+    <span class="kicker">Contents · 강의 구성 6장</span>
+    <h2 class="h-l">관찰에서<br>작품까지</h2>
+    <p style="margin-top:20px">한 장마다 일상의 장면 하나를 놓고 원인을 분석합니다. 위로 대신 원리를, 훈계 대신 관찰을 드립니다. 마지막 장에서는 참여자 각자가 자신을 지키는 세 개의 사물을 고르고 그립니다.</p>
+  </div>
+  <ol class="toc">
+    <li><b>사냥 감각</b><span>멍청이는 어디서 오는가 · 텔레비전으로 세상을 배울 때 생기는 일</span></li>
+    <li><b>보이지 않는 막</b><span>눈에 보이지 않는 것으로 거는 통제 · 나를 감싸고 있는 막을 파악하기</span></li>
+    <li><b>판단력을 낮추는 기제</b><span>보이스피싱의 공포와 불안 · 배려가 오만이 되는 순간</span></li>
+    <li><b>메타인지</b><span>외모, 실루엣, 언어, 설득력 · 타고난 약점을 자신감으로 가꾸기</span></li>
+    <li><b>유리한 자리로</b><span>억울함은 불리한 위치의 신호 · 모든 것은 대가와 협상 · 대중은 익숙함과 이야기를 기억한다</span></li>
+    <li><b>시간을 내 편으로</b><span>시간 압축 · 미래의 나를 불러와 지금의 나를 설득하기 · 작품으로 남기기</span></li>
+  </ol>
+</div></section>
+
+<section id="programs"><div class="wrap">
+  <div class="row" style="justify-content:space-between;align-items:end;margin-bottom:40px">
+    <div><span class="kicker">Programs · 기관 맞춤 강의</span><h2 class="h-l">네 가지 방식</h2></div>
+    <p class="mute small" style="max-width:32em;margin:0">대상과 시간에 맞춰 장을 고르고 사례를 바꿉니다. 강사료는 기관 내부 기준에 맞춰 협의하며, 견적서·강사 이력서·결과보고 자료를 기관 양식으로 제출합니다.</p>
+  </div>
+  <div class="prog">
+    <article><span class="tag">특강 · LECTURE</span><h3>멍청이 수업 특강</h3><p>6장 중 핵심 3장을 한 번에. 일상 사례와 작품 해설로 ‘판단하는 힘’을 깨웁니다.</p>
+      <dl><dt>대상</dt><dd>도서관, 평생학습관, 대학, 기업 교육</dd><dt>시간</dt><dd>90–120분 · 1회</dd><dt>인원</dt><dd>20–150명</dd></dl></article>
+    <article><span class="tag">워크숍 · 4 SESSIONS</span><h3>나를 작품으로</h3><p>관찰 → 연상 → 세 개의 사물 → 드로잉. 마지막 회차에 참여자 작품을 함께 겁니다.</p>
+      <dl><dt>대상</dt><dd>문화재단, 청년센터, 주민자치, 도시재생센터</dd><dt>시간</dt><dd>120분 × 4회</dd><dt>인원</dt><dd>8–20명</dd></dl></article>
+    <article><span class="tag">작품 앞 강연 · TALK</span><h3>작품 앞의 한 잔</h3><p>「파도, 꽃」 원화 앞에서 작품명 음료와 함께 듣는 작가 토크와 오디오 도슨트.</p>
+      <dl><dt>대상</dt><dd>기업 행사, 카페·상점, 갤러리, VIP 모임</dd><dt>시간</dt><dd>60–90분</dd><dt>인원</dt><dd>10–40명</dd></dl></article>
+    <article><span class="tag">실무 · PRACTICE</span><h3>예술가의 기획서</h3><p>공공사업 수행 경험으로 배우는 기획·견적·결과보고. 작품을 일로 만드는 법.</p>
+      <dl><dt>대상</dt><dd>청년 예술인, 창업 지원기관, 대학 창업단</dd><dt>시간</dt><dd>120분 · 1–2회</dd><dt>인원</dt><dd>10–40명</dd></dl></article>
+  </div>
+</div></section>
+
+<section id="sample"><div class="wrap">
+  <span class="kicker">Sample · 특강 1장 미리보기</span>
+  <h2 class="h-l">강의 화면 샘플</h2>
+  <p class="mute small" style="margin-top:12px">옆으로 넘겨 보세요. 실제 강의는 이 형식의 화면 30–40장으로 진행됩니다.</p>
+  <div class="deck" tabindex="0" aria-label="강의 슬라이드 샘플">
+    <div class="slide ink"><span class="no">01 / 08</span><h4>멍청이 수업<br><span style="font-size:.55em;color:#A9A59D">1장 · 사냥 감각</span></h4><p>양승진 · 통찰의 작가 · AURUM</p></div>
+    <div class="slide"><span class="no">02 / 08</span><h4>마지막으로 스스로<br>판단한 것은 언제입니까?</h4><p>오늘 내린 결정 가운데, 남의 말이나 화면 없이 정한 것을 하나 떠올려 보세요.</p></div>
+    <div class="slide"><span class="no">03 / 08</span><h4>멍청이 = 사냥 감각의 상실</h4><div class="flow"><i>관찰</i><s>→</s><i>판단</i><s>→</s><i>행동</i><s>→</s><i>대가 계산</i></div><p>네 단계 중 하나라도 남에게 맡기면 감각은 줄어듭니다.</p></div>
+    <div class="slide blue"><span class="no">04 / 08</span><h4>보이스피싱은<br>왜 통할까?</h4><p>공포와 불안을 먼저 만들고, 판단할 시간을 빼앗습니다. 지능이 아니라 감각의 문제입니다.</p></div>
+    <div class="slide"><span class="no">05 / 08</span><h4>통제는 대부분<br>눈에 보이지 않는 것으로 겁니다</h4><p>선과 악, 도덕, 위아래 … 그 막을 먼저 알아보는 것이 시작입니다.</p></div>
+    <div class="slide"><span class="no">06 / 08</span><h4>억울하다는 것은<br>불리한 자리에 있다는 신호</h4><p>모든 것은 대가이고 협상의 대상입니다. 감정 대신 자리를 바꾸는 법을 배웁니다.</p></div>
+    <div class="slide pic"><img src="img/hammer_wall.jpg" alt="Hammer, Mirror, Coffee Cup"><div><span class="no">07 / 08</span><h4 style="font-size:clamp(17px,2.4vw,26px)">무장하라</h4><p>망치는 친절이라는 무기, 거울은 미소라는 방패, 커피잔은 예의라는 갑옷.<br>— 「Hammer, Mirror, Coffee Cup」 2025</p></div></div>
+    <div class="slide ink"><span class="no">08 / 08</span><h4>과제 · 미래의 나를 불러와<br>지금의 나를 설득하기</h4><p>5년 뒤의 내가 오늘의 나에게 보내는 한 문장을 적어 오세요.</p></div>
+  </div>
+  <p class="hint">← 옆으로 밀기 →</p>
+</div></section>
+
+<section id="worksheet"><div class="wrap ws">
+  <div>
+    <span class="kicker">Worksheet · 워크숍 체험</span>
+    <h2 class="h-l">나를 지키는<br>세 개의 사물</h2>
+    <p style="margin-top:20px">워크숍 마지막 회차의 실제 과제입니다. 나에게 필요한 힘 세 가지를 사물로 바꾸면, 그것이 한 점의 작품 구상이 됩니다. 한글로 생각하는 모든 사람은 연상으로 창조할 수 있습니다.</p>
+    <p class="mute small">입력하면 오른쪽 카드가 바로 바뀝니다. 강의 현장에서는 이 카드를 종이에 그리고 서명합니다.</p>
+  </div>
+  <div>
+    <div class="trip">
+      <label>사물 1<input id="o1" value="망치"></label>
+      <label>사물 2<input id="o2" value="거울"></label>
+      <label>사물 3<input id="o3" value="커피잔"></label>
+      <label>뜻<input id="m1" value="친절이라는 무기"></label>
+      <label>뜻<input id="m2" value="미소라는 방패"></label>
+      <label>뜻<input id="m3" value="예의라는 갑옷"></label>
+    </div>
+    <div class="card" aria-live="polite">
+      <span class="kicker" style="margin:0">My three objects</span>
+      <b id="ct" style="font-family:var(--display);font-weight:400;font-size:24px">망치, 거울, 커피잔</b>
+      <div class="three"><div><b id="c1">망치</b><span id="d1">친절이라는 무기</span></div><div><b id="c2">거울</b><span id="d2">미소라는 방패</span></div><div><b id="c3">커피잔</b><span id="d3">예의라는 갑옷</span></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="speaker"><div class="wrap who">
+  <div class="ph"><img src="img/ol_view.jpg" alt="「파도, 꽃」 전시 관람 현장"><img src="img/ol_wall.jpg" alt="올디콜라 벽면 전시"><img src="img/w5_azure.jpg" alt="청파도"><img src="img/dg_st_2664.jpg" alt="단골 꼴라보 굿즈"></div>
+  <div>
+    <span class="kicker">Speaker · 강사 소개</span>
+    <h2 class="h-l">말하고, 그리고,<br>끝까지 해내는 사람</h2>
+    <p style="margin-top:18px">양승진은 충남대학교 사학과를 나와 국가기록원 B2G 프로젝트, 국제회의(MICE), 웹툰 플랫폼 창업, 우즈베키스탄 해외사업과 정상회담 경제사절단 의전, 도시재생 공공예술을 거쳤습니다. 지금은 대전 원도심에서 비영리예술단체 아우름을 이끌며 그림을 그리고, 그 그림을 사람들이 머무는 공간에 겁니다.</p>
+    <ol class="list" style="margin-top:28px">
+      <li><span class="d">2026</span><b>대전 중구 원도심 상권활성화 사업단 「단골 꼴라보!」 수행</b><span class="t">공공 용역</span></li>
+      <li><span class="d">2026.11</span><b>「파도, 꽃」 × 올디콜라 · 칵테일 페어링 전시</b><span class="t">개인전</span></li>
+      <li><span class="d">2025</span><b>대화동 도시재생 공공예술 프로젝트</b><span class="t">대전 대덕구</span></li>
+      <li><span class="d">2024.08</span><b>대전신세계 Art&amp;Science 「대전 속의 삶」</b><span class="t">기획전</span></li>
+      <li><span class="d">2016–2018</span><b>퍼스툰 창업 · 스마트창작터, OKTA 해외지사화</b><span class="t">대표</span></li>
+    </ol>
+    <div class="row" style="margin-top:24px"><a class="cta" href="artist.html">작품 포트폴리오</a><a class="cta" href="studio.html#career">전체 경력</a></div>
+  </div>
+</div></section>
+
+<section id="kit"><div class="wrap">
+  <span class="kicker">For organizers · 담당자용 자료</span>
+  <h2 class="h-l">바로 쓰는 자료</h2>
+  <div class="kitlink">
+    <a href="kit.html#proposal"><b>강의 제안서 1쪽</b><span>내부 결재용 A4 · 인쇄·PDF 저장</span></a>
+    <a href="kit.html#poster"><b>홍보 포스터</b><span>날짜·장소만 고쳐 쓰는 A4 포스터</span></a>
+    <a href="kit.html#copy"><b>모집 문구</b><span>기관 홈페이지·SNS·문자용 복사 문구</span></a>
+  </div>
+</div></section>
+
+<section id="ask"><div class="wrap feature" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(28px,5vw,80px);align-items:start">
+  <div>
+    <span class="kicker">Request · 강의 요청</span>
+    <h2 class="h-l">강의를<br>요청하는 방법</h2>
+    <p style="margin-top:20px">아래 내용을 채우면 요청 글이 만들어집니다. 복사해서 인스타그램 DM이나 메일로 보내 주시면 맞춤 구성안과 견적서를 보내 드립니다.</p>
+    <p>Instagram <a href="https://www.instagram.com/aurum_41/">@aurum_41</a><br>41aurum@gmail.com</p>
+  </div>
+  <form class="form" id="req" novalidate>
+    <label for="r-org">기관 · 담당자<input id="r-org" placeholder="예: ○○도서관 / 평생교육 담당 김○○"></label>
+    <label for="r-prog">희망 프로그램<select id="r-prog"><option>멍청이 수업 특강</option><option>나를 작품으로 (4회 워크숍)</option><option>작품 앞의 한 잔 (작가 토크)</option><option>예술가의 기획서 (실무)</option><option>아직 정하지 않음 · 추천 요청</option></select></label>
+    <label for="r-who">대상과 인원<input id="r-who" placeholder="예: 성인 40명 / 대학생 25명"></label>
+    <label for="r-when">일정과 장소<input id="r-when" placeholder="예: 12월 둘째 주 평일 저녁 / 2층 강의실"></label>
+    <label for="r-etc">강사료 기준 · 요청 사항<textarea id="r-etc" rows="2" placeholder="예: 내부 기준 적용 / 빔프로젝터 있음"></textarea></label>
+    <div class="row"><button class="solid" type="submit">요청 글 만들기</button><button class="cta" type="button" id="r-copy">복사</button></div>
+    <div class="out" id="r-out" aria-live="polite"></div>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© Yang Seungjin · AURUM · Daejeon</span><span><a href="index.html">Home</a> · <a href="artist.html">Works</a> · <a href="studio.html">Studio</a> · <a href="kit.html">Kit</a></span></div></footer>
+<script>
+(function(){
+  var ids=['o1','o2','o3','m1','m2','m3'];
+  function g(i){return (document.getElementById(i).value||'').trim()||'—'}
+  function sync(){
+    document.getElementById('c1').textContent=g('o1');document.getElementById('c2').textContent=g('o2');document.getElementById('c3').textContent=g('o3');
+    document.getElementById('d1').textContent=g('m1');document.getElementById('d2').textContent=g('m2');document.getElementById('d3').textContent=g('m3');
+    document.getElementById('ct').textContent=g('o1')+', '+g('o2')+', '+g('o3');
+  }
+  ids.forEach(function(i){document.getElementById(i).addEventListener('input',sync)});
+  var o=document.getElementById('r-out'),c=document.getElementById('r-copy');
+  function make(){var v=function(i){return (document.getElementById(i).value||'').trim()||'-'};
+    o.textContent='[강의 요청] '+v('r-prog')+'\n기관·담당: '+v('r-org')+'\n대상·인원: '+v('r-who')+'\n일정·장소: '+v('r-when')+'\n기타: '+v('r-etc');o.classList.add('show');}
+  document.getElementById('req').addEventListener('submit',function(e){e.preventDefault();make();});
+  c.addEventListener('click',function(){if(!o.classList.contains('show'))make();
+    try{navigator.clipboard.writeText(o.textContent).then(function(){c.textContent='복사됨'},function(){c.textContent='글을 길게 눌러 복사해 주세요'})}catch(e){c.textContent='글을 길게 눌러 복사해 주세요'}});
+})();
+</script>
+</body>
+</html>
