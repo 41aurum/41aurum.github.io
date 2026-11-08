@@ -32,6 +32,14 @@ figure{margin:0}
 .proc figure{flex:0 0 74px;margin:0}
 .proc img{width:74px;height:92px;object-fit:cover;display:block}
 .proc figcaption{font-size:10px;color:var(--mute);line-height:1.3;margin-top:4px}
+.doc{display:inline-block;margin-top:10px;font-size:12.5px;letter-spacing:.04em;color:var(--cobalt);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.doc+.doc{margin-left:14px}
+.steps{list-style:none;margin:28px 0 0;padding:0;counter-reset:st;border-top:1px solid var(--ink)}
+.steps li{counter-increment:st;display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(st,decimal-leading-zero);font-family:var(--display);font-size:20px;color:var(--cobalt);grid-row:span 2}
+.steps b{font-weight:500;font-size:15px}
+@media (max-width:860px){#spaces .feature,#pairing .feature{grid-template-columns:1fr!important}}
+.steps span{font-size:13.5px;color:var(--mute);line-height:1.65}
 </style>
 </head>
 <body>
@@ -46,7 +54,7 @@ figure{margin:0}
       <span class="kicker rise">Visual Artist &amp; Curator · Daejeon</span>
       <h1 class="h-xl rise d2">양승진<br><span style="font-size:.42em;letter-spacing:.02em;display:block;margin-top:.5em;color:var(--mute)">Yang Seungjin</span></h1>
       <p class="rise d2" style="margin-top:18px;font-size:15px;letter-spacing:.04em">미술작가 · 전시기획자 · 아우름41 대표</p>
-      <p class="lede rise d3" style="margin-top:28px">대전 원도심을 기반으로 회화와 설치, 공간 기획을 넘나듭니다. 작품이 놓일 공간을 먼저 설계하고, 그 안에서 머무는 시간까지 작품으로 완성합니다. 페어링 한 잔, 작가의 목소리 해설, 한 사람을 위한 커미션 작품까지.</p>
+      <p class="lede rise d3" style="margin-top:28px">대전 원도심을 기반으로 회화와 설치, 공간 기획을 넘나듭니다. 작품이 놓일 공간을 먼저 설계하고, 그 안에서 머무는 시간까지 작품으로 완성합니다. 공간에 맞춘 음료·디저트 페어링, 헤드폰으로 듣는 작가의 목소리 해설, 용도에 맞춰 만드는 맞춤 기념 작품까지.</p>
       <div class="row rise d3" style="margin-top:30px"><a class="solid" href="#order">작품 문의</a><a class="cta" href="#works">작품 보기</a></div>
     </div>
     <figure class="pic rise"><img src="img/azure_2022.jpg" alt="「청파도」 2022년 10월 작업 초기, 흰 물결을 덧칠하기 전"><figcaption class="lbl"><b>청파도, 작업 초기</b>2022.10 · 흰 물결을 덧칠하기 전</figcaption></figure>
@@ -63,6 +71,7 @@ figure{margin:0}
     <div>
       <p class="lbl"><b>선화동 in Paris <span class="mute" style="font-size:12px">Seonhwa-dong in Paris</span></b>2024 · 116 × 50 cm · 삶의 공간과 상상</p>
       <p style="margin-top:16px">늘 같은 자리에서 바라본 선화동의 하늘 위에, 가 본 적 없는 파리를 불러왔습니다. 낮에는 고요한 드로잉으로 머물다가, 빛이 깃드는 순간 선화동의 노을이 파리의 하늘이 됩니다. 상상하는 곳으로 나를 데려가는 작품입니다.</p>
+      <a class="doc" href="https://youtu.be/Ve4NM_s_FVc" target="_blank" rel="noopener">▶ 도슨트 영상 · 선화동 in Paris</a>
       <p class="perm"><span>Permanent Display</span>디 블루메(Die Blume) · 영구 전시<br><small>대전 선화동 · 이 작품은 디 블루메에서만 만날 수 있습니다</small></p>
     </div>
     <video src="img/paris/backlight.mp4" poster="img/paris/main.jpg" autoplay muted loop playsinline aria-label="빛이 깃들 때의 선화동 in Paris"></video>
@@ -85,11 +94,11 @@ figure{margin:0}
 <section id="works"><div class="wrap">
   <div class="row" style="justify-content:space-between;align-items:end;margin-bottom:48px">
     <div><span class="kicker">Series · 2022 – 2026</span><h2 class="h-l">「파도, 꽃」 연작</h2></div>
-    <p class="mute small" style="max-width:30em;margin:0">F50 (116.8 × 91 cm) 6점. 2012년 여수 밤바다의 기억에서 출발해 2022년 가을 완성한 연작입니다. 작품마다 제작 과정과 작가가 직접 녹음한 오디오 도슨트가 있습니다.</p>
+    <p class="mute small" style="max-width:30em;margin:0">F50 (116.8 × 91 cm) 6점. 2012년 여수 밤바다의 기억에서 출발해 2022년 가을 완성한 연작입니다. 작품마다 제작 과정과 작가가 직접 녹음한 오디오 도슨트가 있습니다.<br><a class="doc" href="https://youtu.be/olpJcOgcR4I" target="_blank" rel="noopener">▶ 작품 12점 오디오 도슨트 전편 · 1시간 4분</a></p>
   </div>
   <div class="grid c3">
     <figure><div class="frame"><img src="img/w5_azure.jpg" alt="청파도"></div><figcaption class="lbl"><b>청파도 <span class="mute" style="font-size:12px">Azure Wave</span></b>116.8 × 91 cm · 파괴와 창의 · <a href="https://youtu.be/2iz5fPK8Rz4">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_az_0_2022-10-07.jpg' alt='2022.10.07 빈 캔버스 작업 과정' loading='lazy'><figcaption>2022.10.07 빈 캔버스</figcaption></figure><figure><img src='img/proc/p_az_1_2022-10-07.jpg' alt='10.07 재킷 결합 작업 과정' loading='lazy'><figcaption>10.07 재킷 결합</figcaption></figure><figure><img src='img/proc/p_az_2_2022-10-08.jpg' alt='10.08 코발트 첫 칠 작업 과정' loading='lazy'><figcaption>10.08 코발트 첫 칠</figcaption></figure><figure><img src='img/proc/p_az_3_2022-10-29.jpg' alt='10.29 작업 과정' loading='lazy'><figcaption>10.29</figcaption></figure><figure><img src='img/proc/p_az_4_2022-10-30.jpg' alt='10.30 흰 물결 작업 과정' loading='lazy'><figcaption>10.30 흰 물결</figcaption></figure><figure><img src='img/proc/p_az_5_final.jpg' alt='흰 파도 포말 최종 덧칠 완성' loading='lazy'><figcaption>최종 · 흰 포말 덧칠</figcaption></figure></div></div></figure>
-    <figure><div class="frame"><img src="img/w1_wave_flower.jpg" alt="파도, 꽃"></div><figcaption class="lbl"><b>파도, 꽃 <span class="mute" style="font-size:12px">Wave, Flower</span></b>116.8 × 91 cm · 혁신의 개화 · <a href="https://youtu.be/mWF2vR1G3ww">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_wf_0_2022-11-19.jpg' alt='2022.11.19 바탕 작업 과정' loading='lazy'><figcaption>2022.11.19 바탕</figcaption></figure><figure><img src='img/proc/p_wf_1_2022-11-23.jpg' alt='11.23 솜 결합 작업 과정' loading='lazy'><figcaption>11.23 솜 결합</figcaption></figure></div></div></figure>
+    <figure><div class="frame"><img src="img/w1_wave_flower.jpg" alt="파도, 꽃"></div><figcaption class="lbl"><b>파도, 꽃 <span class="mute" style="font-size:12px">Wave, Flower</span></b>116.8 × 91 cm · 혁신의 개화 · <a href="https://youtu.be/0FKPLl9SEu0">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_wf_0_2022-11-19.jpg' alt='2022.11.19 바탕 작업 과정' loading='lazy'><figcaption>2022.11.19 바탕</figcaption></figure><figure><img src='img/proc/p_wf_1_2022-11-23.jpg' alt='11.23 솜 결합 작업 과정' loading='lazy'><figcaption>11.23 솜 결합</figcaption></figure></div></div></figure>
     <figure><div class="frame"><img src="img/w2_pin_now.jpg" alt="캔버스, 핀 꽃 현재 모습"></div><figcaption class="lbl"><b>캔버스, 핀 꽃 <span class="mute" style="font-size:12px">Flowers Blooming on Canvas</span></b>116.8 × 91 cm · 사물과 생명, 아름다움 · 2026 재구성, 꽃이 진 뒤의 모습 · <a href="https://youtu.be/SN3ui506OcM">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_pin_0_2022-11-25.jpg' alt='2022.11.25 바탕 작업 과정' loading='lazy'><figcaption>2022.11.25 바탕</figcaption></figure><figure><img src='img/w2_pin_2022.jpg' alt='2022 완성' loading='lazy'><figcaption>2022 완성</figcaption></figure><figure><img src='img/w2_pin_now.jpg' alt='2026 재구성' loading='lazy'><figcaption>2026 꽃잎·암술·수술 제거</figcaption></figure></div></div></figure>
     <figure><div class="frame"><img src="img/w3_closet.jpg" alt="꽃잎의 옷장"></div><figcaption class="lbl"><b>꽃잎의 옷장 <span class="mute" style="font-size:12px">Closet of Petals</span></b>116.8 × 91 cm · 감정의 옷과 이미지 · <a href="https://youtu.be/NhcG743lVUc">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_cl_0_2022-11-19.jpg' alt='2022.11.19 바탕 작업 과정' loading='lazy'><figcaption>2022.11.19 바탕</figcaption></figure><figure><img src='img/proc/p_cl_1_2022-11-25.jpg' alt='11.25 꽃잎 작업 과정' loading='lazy'><figcaption>11.25 꽃잎</figcaption></figure></div></div></figure>
     <figure><div class="frame"><img src="img/w4_wave.jpg" alt="파도"></div><figcaption class="lbl"><b>파도 <span class="mute" style="font-size:12px">The Wave</span></b>116.8 × 91 cm · 청량한 시절 · <a href="https://youtu.be/Q1gMDlT4ZEY">도슨트</a></figcaption><div class='proc'><span>Process</span><div><figure><img src='img/proc/p_wv_0_2022-10-29.jpg' alt='2022.10.29 첫 물결 작업 과정' loading='lazy'><figcaption>2022.10.29 첫 물결</figcaption></figure><figure><img src='img/proc/p_wv_1_2022-10-29.jpg' alt='10.29 작업 과정' loading='lazy'><figcaption>10.29</figcaption></figure><figure><img src='img/proc/p_wv_2_2022-11-25.jpg' alt='11.25 작업 과정' loading='lazy'><figcaption>11.25</figcaption></figure></div></div></figure>
@@ -106,52 +115,52 @@ figure{margin:0}
     <article class="arc">
       <figure class="frame free"><img src="img/arc/epoch.jpg" alt="대전 에포크 ; 중구" loading="lazy"></figure>
       <p class="lbl"><b>대전 에포크 ; 중구 <span class="mute" style="font-size:12px">Daejeon Epoch ; Jung-gu</span></b>2025 · 61 × 91 cm · 「대전의 결」 WWD Gallery · 2026 레인네일</p>
-      <p class="small" style="margin-top:8px">백제 테뫼식 산성에서 대전역, 지하상가, 옛 충남도청, 오늘의 중부경찰서까지. 대전 중구에 쌓인 시간을 파르페처럼 겹겹이 쌓아 올렸습니다.</p>
+      <p class="small" style="margin-top:8px">백제 테뫼식 산성에서 대전역, 지하상가, 옛 충남도청, 오늘의 중부경찰서까지. 대전 중구에 쌓인 시간을 파르페처럼 겹겹이 쌓아 올렸습니다.<br><a class="doc" href="https://youtu.be/ndaayfGo8E0" target="_blank" rel="noopener">▶ 도슨트 영상</a><a class="doc" href="https://youtu.be/XjZTdiZYJfA" target="_blank" rel="noopener">▶ 5분 요약</a></p>
       <div class="proc"><span>Process</span><div><figure><img src='img/arc/epoch_p1.jpg' alt='시작' loading='lazy'><figcaption>시작</figcaption></figure><figure><img src='img/arc/epoch_p2.jpg' alt='층을 세우다' loading='lazy'><figcaption>층을 세우다</figcaption></figure><figure><img src='img/arc/epoch_p3.jpg' alt='색을 입히다' loading='lazy'><figcaption>색을 입히다</figcaption></figure><figure><img src='img/arc/epoch_flat.jpg' alt='완성' loading='lazy'><figcaption>완성</figcaption></figure><figure><img src='img/arc/epoch_poster.jpg' alt='2025.09 「대전의 결」' loading='lazy'><figcaption>2025.09 「대전의 결」</figcaption></figure></div></div>
     </article>
     <article class="arc">
       <figure class="frame free"><img src="img/arc/dochung.jpg" alt="옛 충남도청사, 근현대사박물관 4면" loading="lazy"></figure>
       <p class="lbl"><b>옛 충남도청사, 근현대사박물관 4면</b>2022 · 27 × 21.5 cm · 2023 테미 갤러리 · 2023 전시마켓 · 2026 레인네일</p>
-      <p class="small" style="margin-top:8px">벽돌 한 면에도 역사가 기록되고 미래가 담겨져 있다. 철거와 신축으로 바뀌어 가는 도청 일대를 정면, 좌우, 후면 네 개의 면으로 기록했습니다.</p>
+      <p class="small" style="margin-top:8px">벽돌 한 면에도 역사가 기록되고 미래가 담겨져 있다. 철거와 신축으로 바뀌어 가는 도청 일대를 정면, 좌우, 후면 네 개의 면으로 기록했습니다.<br><a class="doc" href="https://youtu.be/mWF2vR1G3ww" target="_blank" rel="noopener">▶ 도슨트 영상</a></p>
       <div class="proc"><span>Process</span><div><figure><img src='img/arc/dochung_sketch.jpg' alt='네 면의 드로잉' loading='lazy'><figcaption>네 면의 드로잉</figcaption></figure></div></div>
     </article>
     <article class="arc">
-      <figure class="frame free"><img src="img/arc/ipet_basket.jpg" alt="반려 · iPet" loading="lazy"></figure>
-      <p class="lbl"><b>반려 · iPet</b>2025.06 · 「반려」 WWD Gallery (Chora Arts) · 거리 퍼포먼스</p>
-      <p class="small" style="margin-top:8px">나의 반려는 디지털 영혼입니다. 산책 바구니에 태운 iPet과 함께 옛 충남도청 뒤편 대전시민대학(현 문화예술원) 일대를 걸으며, 살아 있는 온기와 디지털 반려를 나란히 놓고 묻습니다. 당신의 반려는 어디에 더 가깝나요?</p>
-      <div class="proc"><span>Process</span><div><figure><img src='img/arc/ipet_sculpture.jpg' alt='2025.06.04 언덕 계단의 조형물 앞' loading='lazy'><figcaption>2025.06.04 언덕 계단의 조형물 앞</figcaption></figure><figure><img src='img/arc/ipet_cat.jpg' alt='쓰다듬기' loading='lazy'><figcaption>쓰다듬기</figcaption></figure><figure><img src='img/arc/ipet_main.jpg' alt='산책 중 만난 반려' loading='lazy'><figcaption>산책 중의 교감</figcaption></figure><figure><img src='img/arc/ipet_corgi.jpg' alt='잔디 위의 반려' loading='lazy'><figcaption>잔디 위의 반려</figcaption></figure></div></div>
+      <figure class="frame free"><img src="img/arc/ipet_monitor.jpg" alt="iPet 모니터 드로잉" loading="lazy"></figure>
+      <p class="lbl"><b>반려 · iPet</b>2025.06.09 – 06.13 · 「반려하다」 WWD Gallery 56주년 기념관(한남대 중앙박물관) · Chora Arts · 드로잉 2점, 영상, 거리 퍼포먼스</p>
+      <p class="small" style="margin-top:8px">나의 반려는 디지털 영혼입니다. 모니터 속에 사는 iPet과 로봇 강아지를 드로잉으로 그리고, 산책 바구니에 태운 iPet을 끌고 옛 충남도청 뒤편 대전시민대학(현 문화예술원) 일대를 걸었습니다. 그 산책 영상 「iPet Prototype」은 갤러리 입구 벽면에 빔프로젝터로 상영했습니다. 살아 있는 온기와 디지털 반려를 나란히 놓고 묻습니다. 당신의 반려는 어디에 더 가깝나요?</p>
+      <div class="proc"><span>Works · Exhibition · Performance</span><div><figure><img src='img/arc/ipet_robotdog.jpg' alt='로봇 강아지 드로잉' loading='lazy'><figcaption>로봇 강아지 드로잉</figcaption></figure><figure><img src='img/arc/ipet_install.jpg' alt='전시 전경' loading='lazy'><figcaption>전시 전경 · 드로잉 2점</figcaption></figure><figure><img src='img/arc/ipet_projection.jpg' alt='입구 벽면 빔프로젝터 상영 iPet Prototype' loading='lazy'><figcaption>입구 벽면 상영 「iPet Prototype」</figcaption></figure><figure><img src='img/arc/ipet_artist.jpg' alt='작품 앞의 작가' loading='lazy'><figcaption>작품 앞에서</figcaption></figure><figure><img src='img/arc/ipet_poster.jpg' alt='반려하다 포스터' loading='lazy'><figcaption>「반려하다」 포스터</figcaption></figure><figure><img src='img/arc/ipet_sculpture.jpg' alt='2025.06.04 언덕 계단의 조형물 앞' loading='lazy'><figcaption>2025.06.04 산책 퍼포먼스</figcaption></figure><figure><img src='img/arc/ipet_basket.jpg' alt='산책 바구니에 태운 iPet' loading='lazy'><figcaption>산책 바구니의 iPet</figcaption></figure><figure><img src='img/arc/ipet_cat.jpg' alt='쓰다듬기' loading='lazy'><figcaption>쓰다듬기</figcaption></figure><figure><img src='img/arc/ipet_main.jpg' alt='산책 중의 교감' loading='lazy'><figcaption>산책 중의 교감</figcaption></figure><figure><img src='img/arc/ipet_corgi.jpg' alt='잔디 위의 반려' loading='lazy'><figcaption>잔디 위의 반려</figcaption></figure></div></div>
     </article>
     <article class="arc">
-      <figure class="frame free"><img src="img/arc/judgement.jpg" alt="Judgement" loading="lazy"></figure>
-      <p class="lbl"><b>Judgement</b>2024 · 「좋세계」 한남대 조형예술관</p>
-      <p class="small" style="margin-top:8px">희생과 평등에 관한 설치 작품.</p>
-      
+      <figure class="frame free"><img src="img/arc/judg_dark.jpg" alt="Judgement — 불을 끈 전시실에서 켜진 자동차 헤드라이트" loading="lazy"></figure>
+      <p class="lbl"><b>Judgement</b>2024.05.28 – 06.04 · 「좋세계」 한남대 조형예술관 · LED · 아두이노 · PIR 센서 설치</p>
+      <p class="small" style="margin-top:8px">희생과 평등에 관한 설치 작품. 조명을 끈 전시실, 바닥의 횡단보도 앞에 서면 센서가 움직임을 읽고 정면의 자동차가 빛을 켭니다. 그 빛 앞에서 관람객은 건널지, 멈출지 스스로 판단하게 됩니다.</p>
+      <div class="proc"><span>Exhibition · Process · Interview</span><div><figure><img src='img/arc/judg_cross.jpg' alt='횡단보도와 헤드라이트' loading='lazy'><figcaption>암실 · 횡단보도</figcaption></figure><figure><img src='img/arc/judg_bw2.jpg' alt='흑백 전경' loading='lazy'><figcaption>흑백 전경</figcaption></figure><figure><img src='img/arc/judgement.jpg' alt='관람객과 흑백 전경' loading='lazy'><figcaption>관람객 · 흑백</figcaption></figure><figure><img src='img/arc/judg_interview.jpg' alt='작품 앞 작가 인터뷰' loading='lazy'><figcaption>작품 앞 작가 인터뷰</figcaption></figure><figure><img src='img/arc/judg_talk.jpg' alt='관람객에게 작품 설명' loading='lazy'><figcaption>작품 설명</figcaption></figure><figure><img src='img/arc/judg_led.jpg' alt='LED 헤드라이트 점등 테스트' loading='lazy'><figcaption>LED 점등 테스트</figcaption></figure><figure><img src='img/arc/judg_build1.jpg' alt='회로 제작' loading='lazy'><figcaption>회로 제작</figcaption></figure><figure><img src='img/arc/judg_build2.jpg' alt='아두이노 코딩' loading='lazy'><figcaption>아두이노 코딩</figcaption></figure><figure><img src='img/arc/judg_install.jpg' alt='설치 작업' loading='lazy'><figcaption>2024.05.28 설치</figcaption></figure></div></div>
     </article>
   </div>
-  <h3 class="h-m" style="margin:64px 0 26px">기념 작품 <span class="mute" style="font-size:.6em;letter-spacing:.08em">Commissions</span></h3>
+  <h3 class="h-m" style="margin:64px 0 26px">맞춤 기념 작품 <span class="mute" style="font-size:.6em;letter-spacing:.08em">Commissions</span></h3>
   <div class="grid c3 arcgrid">
     <article class="arc">
       <figure class="frame free"><img src="img/arc/cheonsaeng.jpg" alt="천생연분 · 天生緣分" loading="lazy"></figure>
       <p class="lbl"><b>천생연분 · 天生緣分</b>결혼 기념 · 영화 포스터 형식</p>
-      <p class="small" style="margin-top:8px">두 사람이 하나된 삶으로 결합한다는 것은 거대한 두 세계가 충돌하는 일이다. 한국과 중국, 두 세계가 만나 하나의 우주가 되는 이야기를 영화 포스터로 그렸습니다.</p>
+      <p class="small" style="margin-top:8px">두 사람이 하나된 삶으로 결합한다는 것은 거대한 두 세계가 충돌하는 일이다. 한국과 중국, 두 세계가 만나 하나의 우주가 되는 이야기를 영화 포스터로 그렸습니다.<br><a class="doc" href="https://youtu.be/ctMEH7pUO3M" target="_blank" rel="noopener">▶ 도슨트 영상</a></p>
       
     </article>
     <article class="arc">
       <figure class="frame free"><img src="img/arc/jaeyong.jpg" alt="신재용" loading="lazy"></figure>
       <p class="lbl"><b>신재용</b>2025.07 · 25 × 25 cm · 40세 생일 기념</p>
-      <p class="small" style="margin-top:8px">저 멀리 보이는 하나의 빛은 다양한 우리가 함께 빛나고 있던 것이다. 가장 오래된 친구와 그 가족을 네 개의 빛으로 그렸습니다.</p>
+      <p class="small" style="margin-top:8px">저 멀리 보이는 하나의 빛은 다양한 우리가 함께 빛나고 있던 것이다. 가장 오래된 친구와 그 가족을 네 개의 빛으로 그렸습니다.<br><a class="doc" href="https://youtu.be/hapkghWmFRM" target="_blank" rel="noopener">▶ 도슨트 영상</a></p>
       
     </article>
     <article class="arc">
       <figure class="frame free"><img src="img/arc/izre.jpg" alt="이즈레" loading="lazy"></figure>
       <p class="lbl"><b>이즈레</b>2026 · 결혼 기념</p>
-      <p class="small" style="margin-top:8px">우주에 나를 던지는 모든 행위가 여행이다. 여행과 수영을 반복하며 새로운 공간에 자신의 시간을 던지는 물 위의 정령왕, 이즈레.</p>
+      <p class="small" style="margin-top:8px">우주에 나를 던지는 모든 행위가 여행이다. 여행과 수영을 반복하며 새로운 공간에 자신의 시간을 던지는 물 위의 정령왕, 이즈레.<br><a class="doc" href="https://youtu.be/X6cx8TWePk0" target="_blank" rel="noopener">▶ 도슨트 영상</a></p>
       
     </article>
   </div>
   <ol class="list" style="margin-top:30px">
-    <li><span class="d">2026.06</span><b>다솜 DaSom · 탄생 기념</b><span class="t">기념 작품</span></li>
-    <li><span class="d">2025.09</span><b>무투묘르 다니요르 · 결혼 기념</b><span class="t">기념 작품</span></li>
+    <li><span class="d">2026.06</span><b>다솜 DaSom · 탄생 기념 · <a href="https://youtu.be/1R7pvyH66Bk" target="_blank" rel="noopener">도슨트 영상</a></b><span class="t">맞춤 기념 작품</span></li>
+    <li><span class="d">2025.09</span><b>무투묘르 다니요르 · 결혼 기념</b><span class="t">맞춤 기념 작품</span></li>
     <li><span class="d">2025.06</span><b>Hammer, Mirror, Coffee Cup · 개업식 기념</b><span class="t">올디콜라</span></li>
   </ol>
 </div></section>
@@ -159,7 +168,7 @@ figure{margin:0}
 <section id="space"><div class="wrap feature">
   <div class="duo"><div class="frame free" style="padding:12px"><img src="img/hammer_wall.jpg" alt="Hammer, Mirror, Coffee Cup — 올디콜라 선반 위 3분할 액자"></div><img src="img/hammer_room.jpg" alt="올디콜라 매장 벽면에 놓인 작품"></div>
   <div>
-    <span class="kicker">Commission · 개업식 기념 작품 선물</span>
+    <span class="kicker">Commission · 맞춤 기념 작품</span>
     <h2 class="h-l">Hammer, Mirror,<br>Coffee Cup</h2>
     <p class="lbl" style="margin-top:14px"><i>2025.06.15 · 55 × 28 cm · 세 칸의 이야기</i><br>올디콜라 개업일에 선물해 지금도 매장 선반에 걸려 있습니다.</p>
     <div class="trio">
@@ -167,19 +176,20 @@ figure{margin:0}
       <div><b>거울</b><span class="small mute">미소라는 방패</span></div>
       <div><b>커피잔</b><span class="small mute">예의라는 갑옷</span></div>
     </div>
-    <p style="margin-top:22px">가게를 여는 사람에게 필요한 세 가지를 사물로 그렸습니다. 새로 문을 여는 카페, 바, 사무실을 위해 같은 형식으로 주문받습니다. 공간과 주인의 이야기를 듣고 세 개의 사물을 고릅니다.</p>
-    <p class="small mute" style="margin-top:6px">개업식뿐 아니라 기념일, 기념식을 위한 작품 선물도 같은 방식으로 제작합니다. 결혼, 탄생, 생일, 창립 기념처럼 한 사람과 한 공간의 순간을 작품으로 남깁니다.</p>
-    <a class="cta blue" href="#order">기념 작품 선물 문의</a>
+    <p style="margin-top:22px">가게를 여는 사람에게 필요한 세 가지를 사물로 그려, 개업 날 선물한 작품입니다.</p>
+    <p style="margin-top:12px"><b style="font-weight:500">기념하는 날이 무엇이든, 용도에 맞춰 한 점을 만듭니다.</b> 개업, 결혼, 탄생, 생일, 창립처럼 축하할 순간과 받을 분의 이야기를 들려주시면, 그 사람과 그 공간에 놓일 작품으로 제작해 드립니다.</p>
+    <p class="small mute" style="margin-top:8px">이야기 듣기 → 스케치 시안 확인 → 제작 → 액자·포장 후 전달</p>
+    <a class="cta blue" href="#order">맞춤 기념 작품 문의</a>
   </div>
 </div></section>
 
 <section id="pairing"><div class="wrap">
   <div class="feature" style="grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)">
     <div>
-      <span class="kicker">Art × Cocktail</span>
+      <span class="kicker">Art × Pairing · 올디콜라 사례</span>
       <h2 class="h-l">작품마다<br>한 잔</h2>
       <p style="margin-top:20px">「파도, 꽃」 전시를 위해 작품명 칵테일 6종을 만들고, 잔마다 서명한 드로잉 6점을 그렸습니다. 손님은 작품 앞에서 그 작품의 이름을 가진 술을 마시고, QR로 작가의 해설을 듣습니다.</p>
-      <p class="mute small">공간 전시 의뢰 시 같은 방식의 페어링 메뉴와 드로잉 제작을 함께 진행합니다.</p>
+      <p class="mute small">공간 전시를 의뢰하시면 그 공간의 메뉴에 맞춰 진행합니다. 카페라면 음료와 디저트, 바라면 칵테일처럼, 작품과 어울리는 메뉴를 함께 짜고 페어링 드로잉을 그립니다.</p>
     </div>
     <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:10px">
       <figure><img src="img/ck_nightsea.jpg" alt="밤바다, 달빛 파도, 달빛 칵테일" style="aspect-ratio:3/4;object-fit:cover;width:100%" loading="lazy"><figcaption class="lbl">밤바다, 달빛 파도, 달빛</figcaption></figure>
@@ -236,14 +246,24 @@ figure{margin:0}
     <div>
       <p>흰 벽의 갤러리가 지켜 온 질서를 존중합니다. 다만 제 작업이 가장 멀리 가는 곳은, 기획의 자유가 주어진 공간이었습니다. 공간의 주인과 이야기를 나누고, 빛과 동선, 한 잔의 술과 목소리 해설까지 함께 설계할 때 작품은 그 공간의 기억이 됩니다.</p>
       <p class="mute" style="margin-top:14px">관람객은 그날 마신 잔과 들은 목소리, 앉았던 자리까지 함께 기억합니다. 다른 어떤 전시와도 비교되는, 한 번뿐인 장면으로 남습니다.</p>
+      <h3 class="h-m" style="margin-top:40px">공간 전시, 이렇게 의뢰합니다</h3>
+      <p class="small mute" style="margin-top:6px">카페, 매장, 사무실, 숍 어디든 가능합니다.</p>
+      <ol class="steps">
+        <li><b>공간 상담</b><span>공간을 직접 방문해 콘셉트와 손님층, 이 공간이 전하고 싶은 분위기를 듣습니다.</span></li>
+        <li><b>작품 선정 · 설치 기획</b><span>공간의 의도에 맞는 작품을 고르고, 벽면과 조명, 손님의 동선에 맞춰 배치를 설계합니다.</span></li>
+        <li><b>메뉴 컬래버레이션</b><span>작품과 어울리는 음료·디저트 페어링 메뉴를 사장님과 함께 정하고, 작품명 메뉴와 페어링 드로잉을 준비합니다.</span></li>
+        <li><b>오디오 도슨트</b><span>작품 옆에 QR 코드를, 자리에 헤드폰을 둡니다. 손님은 휴대폰으로 QR을 찍어 작가가 직접 녹음한 해설을 들으며 작품을 감상합니다.</span></li>
+        <li><b>설치 · 운영 · 철수</b><span>작가가 직접 설치하고, 전시 기간 동안 관리한 뒤 원래 공간으로 되돌려 놓습니다.</span></li>
+      </ol>
+      <a class="cta blue" href="#order" style="margin-top:22px">공간 전시 문의</a>
       <ol class="list" style="margin-top:26px">
         <li><span class="d">카페 갤러리</span><b>쌍리 · 첫 개인전, 작품과 공간이 함께 머문 두 달</b><span class="t">2022</span></li>
-        <li><span class="d">옛 관사</span><b>테미오래 · 30일, 세 개의 전시를 기획·연출</b><span class="t">2023</span></li>
+        <li><span class="d">옛 관사</span><b>테미오래 · 30일, 세 개의 전시를 기획·연출 · 오드리삼례 1회 개인전 「떨림」 기획·연출</b><span class="t">2023 –</span></li>
         <li><span class="d">백화점 문화공간</span><b>신세계 Art&amp;Science · 「선화동 in Paris」 첫 공개</b><span class="t">2024</span></li>
-        <li><span class="d">독립 갤러리</span><b>WWD Gallery · 「반려」, 「대전의 결」, 「1:1」, 오드리삼례 개인전 기획</b><span class="t">2024 – 2026</span></li>
+        <li><span class="d">독립 갤러리</span><b>WWD Gallery · 「반려하다」, 「대전의 결」, 「1:1」, 오드리삼례 2회 개인전 기획 (어은점)</b><span class="t">2024 – 2026</span></li>
         <li><span class="d">도시재생 현장</span><b>대화 리인벤트 프로젝트 · 공공예술</b><span class="t">2025</span></li>
-        <li><span class="d">네일숍</span><b>레인네일 · 파리의 선화동, 리스닝 파티</b><span class="t">2026</span></li>
-        <li><span class="d">바</span><b>올디콜라 · 작품 6점, 칵테일 6잔, 오디오 도슨트</b><span class="t">2026</span></li>
+        <li><span class="d">네일숍</span><b>레인네일 · 파리의 선화동, 헤드폰 리스닝 파티</b><span class="t">2026</span></li>
+        <li><span class="d">바</span><b>올디콜라 · 작품 6점, 칵테일 페어링, QR 오디오 도슨트</b><span class="t">2026</span></li>
         <li><span class="d">카페</span><b>디 블루메 · 「선화동 in Paris」 영구 전시</b><span class="t">2026 –</span></li>
       </ol>
     </div>
@@ -259,18 +279,18 @@ figure{margin:0}
     <p style="margin-top:20px">모토는 홍익인간. 이롭게는 못하더라도 누구나 아름답게는 할 수 있다고 믿습니다. 재료를 가리지 않고, 작품이 놓일 공간과 그 앞에 설 사람을 먼저 생각합니다.</p>
     <ol class="list" style="margin-top:34px">
       <li><span class="d">2026.11</span><b>「파도, 꽃」 × 올디콜라 · 작품 6점과 칵테일 페어링</b><span class="t">올디콜라</span></li>
-      <li><span class="d">2026.08</span><b>2026 평화통일 숏폼 공모전 출품 · 「평화 is」</b><span class="t">공모전</span></li>
       <li><span class="d">2026 –</span><b>「선화동 in Paris」 기증 · 영구 전시</b><span class="t">디 블루메</span></li>
       <li><span class="d">2026.03.02–09</span><b>단체전 「1:1 (One to One)」</b><span class="t">WWD Gallery · Chora Arts</span></li>
       <li><span class="d">2026.02–03</span><b>파리의 선화동, 개인전 · 리스닝 파티</b><span class="t">레인네일</span></li>
       <li><span class="d">2025.09.01–05</span><b>단체전 「대전의 결 : 예술로 재구성한 도시 이야기」 · 「대전 에포크 ; 중구」</b><span class="t">WWD Gallery</span></li>
-      <li><span class="d">2025.06</span><b>「반려」 · 「iPet」 전시와 거리 퍼포먼스</b><span class="t">WWD Gallery · Chora Arts</span></li>
+      <li><span class="d">2025.06.09–13</span><b>단체전 「반려하다」 · 「iPet」 드로잉, 영상 상영, 거리 퍼포먼스</b><span class="t">WWD Gallery 56주년 기념관</span></li>
       <li><span class="d">2025.02–11</span><b>대화 리인벤트 프로젝트 · 공공예술</b><span class="t">대화동 도시재생지원센터</span></li>
       <li><span class="d">2025</span><b>고리 프로젝트</b><span class="t">대덕구공동체지원센터 지원사업</span></li>
-      <li><span class="d">2024.12.15–22</span><b>오드리삼례 개인전 「너는 저기, 나는 여기」 · 기획, 디자인, 설치</b><span class="t">WWD Gallery 어은점</span></li>
+      <li><span class="d">2024.12.15–22</span><b>오드리삼례 2회 개인전 「너는 저기, 나는 여기」 · 기획, 디자인, 설치</b><span class="t">WWD Gallery 어은점</span></li>
+      <li><span class="d">–</span><b>오드리삼례 1회 개인전 「떨림」 · 전시 기획, 연출</b><span class="t">테미오래</span></li>
       <li><span class="d">2024.10</span><b>자랑전</b><span class="t">WWD Gallery</span></li>
       <li><span class="d">2024.08</span><b>대전 속의 삶 · 「선화동 in Paris」 「폭포」</b><span class="t">대전신세계 Art&amp;Science</span></li>
-      <li><span class="d">2024.05–06</span><b>좋세계 · 「Judgement」</b><span class="t">한남대 조형예술관</span></li>
+      <li><span class="d">2024.05.28–06.04</span><b>좋세계 · 「Judgement」</b><span class="t">한남대 조형예술관</span></li>
       <li><span class="d">2023.12</span><b>차드쇼 베타</b><span class="t"></span></li>
       <li><span class="d">2023.11</span><b>노패스트패션 · 「Color your color」</b><span class="t">패션플랫폼</span></li>
       <li><span class="d">2023.10</span><b>글로벌 스타트업 메이커 페스티벌 · 「온조」 「비류」</b><span class="t">충남대학교</span></li>
@@ -291,15 +311,13 @@ figure{margin:0}
     <h2 class="h-l">작품을<br>들이는 방법</h2>
     <ol class="list" style="margin-top:32px">
       <li><span class="d">원화</span><b>「파도, 꽃」 연작 구매 · 대여</b><span class="t">견적</span></li>
-      <li><span class="d">개업식 기념 작품 선물</span><b>Hammer, Mirror, Coffee Cup 형식의 3분할 작품</b><span class="t">견적</span></li>
-      <li><span class="d">기념일 · 기념식 작품 선물</span><b>결혼, 탄생, 생일, 창립 기념 맞춤 작품</b><span class="t">견적</span></li>
-      <li><span class="d">맞춤 작품</span><b>생일, 탄생, 결혼을 위한 한 사람의 작품</b><span class="t">견적</span></li>
-      <li><span class="d">공간 전시</span><b>작품 설치, 칵테일 페어링, 오디오 도슨트</b><span class="t">견적</span></li>
+      <li><span class="d">맞춤 기념 작품</span><b>개업, 결혼, 탄생, 생일, 창립 등 기념하는 날과 용도에 맞춰 제작하는 선물 작품</b><span class="t">견적</span></li>
+      <li><span class="d">공간 전시</span><b>카페·매장의 의도에 맞춘 작품 설치, 음료·디저트 컬래버레이션, 헤드폰과 QR 코드로 듣는 오디오 도슨트</b><span class="t">견적</span></li>
     </ol>
   </div>
   <form class="form" id="ask" novalidate>
-    <label for="q-type">문의 종류<select id="q-type"><option>원화 구매</option><option>원화 대여</option><option>개업식 기념 작품 선물</option><option>기념일 · 기념식 작품 선물</option><option>맞춤 작품</option><option>공간 전시 · 페어링</option></select></label>
-    <label for="q-work">원하는 작품이나 이야기<input id="q-work" placeholder="예: 청파도 / 12월 개업식 기념 작품 선물"></label>
+    <label for="q-type">문의 종류<select id="q-type"><option>원화 구매</option><option>원화 대여</option><option>맞춤 기념 작품</option><option>공간 전시</option></select></label>
+    <label for="q-work">원하는 작품이나 이야기<input id="q-work" placeholder="예: 청파도 구매 / 12월 개업 기념 작품 / 카페 공간 전시"></label>
     <label for="q-when">시기와 예산<input id="q-when" placeholder="예: 12월 중순 / 100만 원 안팎"></label>
     <label for="q-name">이름과 연락 방법<input id="q-name" placeholder="예: 홍길동 / 인스타 @id"></label>
     <div class="row"><button class="solid" type="submit">문의 글 만들기</button><button class="cta" type="button" id="q-copy">복사</button></div>
