@@ -41,6 +41,12 @@ for i in range(1, 200):
         "이미지 alt 빈칸": len(re.findall(r'<img(?![^>]*alt="[^"]+")[^>]*>', body)),
         "'모텔' 표기": "위반" if "모텔" in body else "OK",
         "'추정' 표기": "위반" if "추정" in body else "OK",
+        # 옛 'Summary in 🌏English/日本語/中文' 바: 스킨 lang()이 #pg-intl을 보고 만들어 넣음 → 꺼져 있어야 함.
+        # 주의: 별관(/2·/8·/9)의 확정 버튼줄(🇰🇷 한국어 원문/🇬🇧 English/🇯🇵 日本語)도 class="pg-lang"을 쓰므로
+        # 'pg-lang 개수'가 아니라 'Summary in 바 생성 코드·마크업'을 0개로 본다.
+        "옛 Summary 바(pg-lang) 0개": ("OK" if (len(re.findall(r'class="pg-lang"[^>]*>\s*<span class="pg-lang-t">Summary in', body)) == 0
+                                        and not re.search(r"function lang\(\)\{(?! return;)[^}]*?pg-lang", body)) else "부활"),
+        "확정 언어버튼(🇬🇧/🇯🇵)": "OK" if (re.search(r"🇬🇧\s*English|English 판", body) and re.search(r"🇯🇵|日本語版|日本語", body)) else "없음",
         "올디콜라 재료 노출": ("확인 필요" if ("올디콜라" in body and re.search(r"재료|레시피|ingredient", body)) else "OK"),
     }
     rows.append((i, L, t[:40], checks))
