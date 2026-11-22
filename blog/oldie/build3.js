@@ -35,8 +35,8 @@ const strip=e=>T(e).replace(/^.*?·\s*\d+\s*/,'');
 const langA=langDiv?[...langDiv.querySelectorAll('a')]:[];
 const pills=L.pills.map((x,i)=>`<a class="${i==L.self?'on':''}" href="https://aurum41.tistory.com/${x[1]}">${x[0]}</a>`).join('');const _old=langA.map(a=>{const on=/\/5\b/.test(a.getAttribute('href')||'')||a.textContent.includes(L.selfLangHint);return `<a class="${on?'on':''}" href="${a.getAttribute('href')}">${T(a).replace(/[🇰🇷🇬🇧🇯🇵]/gu,'').trim()}</a>`}).join('');
 
-const badge=(n,c,tc)=>`<div class="ag-cap" style="background-image:${cap(c)}"><b style="color:${tc}">${n}</b></div>`;
-const chap=(id,n,kick,title,night)=>`<header class="ag-chap">${badge(n,night?'#D9A92E':'#2B4C9B',night?'#0F2236':'#fff')}<span class="ag-kicker"${night?' style="color:#D9A92E"':''}>${kick}</span><h2 class="ag-h2">${title}</h2></header>`;
+const badge=(n,c,tc)=>`<section class="ag-cap" style="background-image:${cap(c)}"><section class="ag-capn" style="color:${tc}">${n}</section></section>`;
+const chap=(id,n,kick,title,night)=>`<header class="ag-chap">${badge(n,night?'#D9A92E':'#2B4C9B',night?'#0F2236':'#fff')}<span class="ag-kicker"${night?' style="color:#D9A92E"':''}>${kick}</span><section class="ag-h2" role="heading" aria-level="2">${title}</section></header>`;
 
 // works
 const work=(g,k)=>{
@@ -52,7 +52,7 @@ const work=(g,k)=>{
   const vid=other.find(e=>/^▶/.test(T(e)));
   const capP=other.find(e=>e!==q&&e!==spec&&e!==vid&&T(e).length);
   const extra=other.filter(e=>![q,spec,vid,capP].includes(e));
-  const head=`${best&&k!==5?`<span class="ag-best">${T(best)}</span>`:''}<div class="ag-workh"><span class="no">${no}</span><h3>${ttl}</h3><small>${en.toUpperCase()}</small></div>`;
+  const head=`${best&&k!==5?`<span class="ag-best">${T(best)}</span>`:''}<div class="ag-workh"><span class="no">${no}</span><section class="ag-h3" role="heading" aria-level="3">${ttl}</section><small>${en.toUpperCase()}</small></div>`;
   if(k===0){ // webtoon strip
     return `<section class="ag-work ag-strip">${head}<div class="ag-art">${html(art)}</div><div class="g1"></div>${spec?`<p class="ag-capc">${T(spec)}</p>`:''}<div class="g2"></div>${q?`<p class="ag-say">${q.innerHTML}</p>`:''}<div class="g2"></div><div class="ag-pairw">${html(pair)}</div>${capP?`<p class="ag-capc">${capP.innerHTML}</p>`:''}${extra.map(html).join('')}<div class="ag-vid">${html(vid)}</div><div class="g3"></div></section>`;
   }
@@ -82,10 +82,10 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-c-oldie .ag-col{max-width:700px;margin:0 auto}
 .ag-pg{position:fixed;top:0;left:0;height:3px;width:0;background:#2B4C9B;z-index:9999}
 .ag-toc{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:9998;display:flex;flex-direction:column;gap:14px}
-.ag-toc a{border:0!important;background:none!important;padding:0!important;border-radius:0!important;box-shadow:none!important;min-width:0!important;width:auto!important;height:auto!important;display:flex;align-items:center;gap:10px;justify-content:flex-end;text-decoration:none!important;font-size:12px;color:#8a8a8a!important;line-height:1.4}
-.ag-toc a span{opacity:0;transition:opacity .2s}.ag-toc a:hover span,.ag-toc a.on span{opacity:1}
-.ag-toc a i{width:9px;height:9px;border-radius:50%;border:1.5px solid #8a8a8a;display:block}
-.ag-toc a.on i{background:#2B4C9B;border-color:#2B4C9B}.ag-toc a.on{color:#2B4C9B!important}
+.ag-toc button{font-family:inherit;cursor:pointer;border:0!important;background:none!important;padding:0!important;border-radius:0!important;box-shadow:none!important;min-width:0!important;width:auto!important;height:auto!important;display:flex;align-items:center;gap:10px;justify-content:flex-end;text-decoration:none!important;font-size:12px;color:#8a8a8a!important;line-height:1.4}
+.ag-toc button label{opacity:0;transition:opacity .2s;cursor:pointer}.ag-toc button:hover label,.ag-toc button.on label{opacity:1}
+.ag-toc button i{width:9px;height:9px;border-radius:50%;border:1.5px solid #8a8a8a;display:block}
+.ag-toc button.on i{background:#2B4C9B;border-color:#2B4C9B}.ag-toc button.on{color:#2B4C9B!important}
 .ag-lang{display:flex;gap:8px;justify-content:center;padding:6px 0 0}
 .ag-lang a{box-shadow:none!important;font-size:13px;text-decoration:none!important;padding:7px 16px;border:1px solid #e3ddd2;border-radius:999px;background:#fff;color:#22252b!important;line-height:1.5}
 .ag-lang a.on{background:#22252b;color:#fff!important;border-color:#22252b}
@@ -104,7 +104,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-sum .date b{color:#22252b;font-weight:500}
 .ag-chap{padding:120px 0 40px;max-width:700px;margin:0 auto}
 .ag-cap{width:58px;height:58px;background:center/contain no-repeat;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-.ag-cap b{font-family:"Noto Serif KR",serif;font-size:20px;font-weight:400}
+.ag-capn{line-height:1;font-family:"Noto Serif KR",serif;font-size:20px;font-weight:400}
 .ag-h2{font-family:"Noto Serif KR","Noto Serif JP",serif!important;font-weight:400!important;font-size:34px!important;line-height:1.4!important;margin:10px 0 0!important;color:#22252b;letter-spacing:-.3px;border:0!important;padding:0!important;background:none!important}
 .ag-body{max-width:700px;margin:0 auto}
 .ag-pull{max-width:820px;margin:72px auto;padding-left:28px;border-left:2px solid #D9A92E}
@@ -113,7 +113,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-work{max-width:700px;margin:96px auto 0}
 .ag-workh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:0 0 14px}
 .ag-workh .no{font-family:"Noto Serif KR",serif;font-size:44px;color:#2B4C9B;line-height:1}
-.ag-workh h3{margin:0!important;font-family:"Noto Serif KR","Noto Serif JP",serif!important;font-weight:400!important;font-size:24px!important;color:#22252b;border:0!important;padding:0!important;background:none!important}
+.ag-workh .ag-h3{margin:0!important;font-family:"Noto Serif KR","Noto Serif JP",serif!important;font-weight:400!important;font-size:24px!important;color:#22252b;border:0!important;padding:0!important;background:none!important}
 .ag-workh small{font-size:13px;color:#8a8a8a;letter-spacing:.6px}
 .ag-best{display:inline-block;font-size:12px;color:#2B4C9B;border:1px solid #2B4C9B;padding:2px 10px;border-radius:999px;margin-bottom:10px;line-height:1.6}
 .ag-strip{display:flex;flex-direction:column;align-items:center}
@@ -131,11 +131,11 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-breath p{font-family:"Noto Serif KR","Noto Serif JP",serif;font-size:19px;line-height:1.8;color:#22252b;margin:0}
 .ag-dusk{position:relative;height:260px;background:#0F2236;margin:120px calc(50% - 50vw) 0;width:auto}
 .ag-dusk::before{content:"";position:absolute;top:-1px;left:0;right:0;height:60px;background:${dusk} center/100% 100% no-repeat}
-.ag-dusk p{text-align:center;font-family:"Noto Serif KR",serif;font-size:15px;color:#9aa8bb;padding-top:150px;letter-spacing:1px;margin:0}
+.ag-duskl{text-align:center;font-family:"Noto Serif KR",serif;font-size:15px;color:#9aa8bb;padding-top:150px;letter-spacing:1px;margin:0}
 .ag-night{position:relative;background:#0F2236;color:#dfe5ee;padding:10px 0 120px;margin:0 calc(50% - 50vw)}
 .ag-night>*{max-width:700px;margin-left:auto;margin-right:auto}
 .ag-night .ag-chap{padding-top:20px}
-.ag-night .ag-h2,.ag-night .ag-workh h3,.ag-night .ag-say,.ag-night .ag-wq,.ag-night p{color:#fff}
+.ag-night .ag-h2,.ag-night .ag-workh .ag-h3,.ag-night .ag-say,.ag-night .ag-wq,.ag-night p{color:#fff}
 .ag-night .ag-capc{color:#8fa0b5}.ag-night .ag-work{margin-top:40px}
 .ag-c-oldie .ag-tail{max-width:700px;margin:0 auto}
 @media (max-width:1180px){.ag-toc{right:8px}}
@@ -146,7 +146,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
  .ag-duog,.ag-duo.ag-l .ag-duog,.ag-duo.ag-r .ag-duog{grid-template-columns:1fr 1fr;gap:10px}
  .ag-strip .ag-art{width:100%}.ag-strip .ag-pairw{width:78%}
  .ag-toc{right:auto;left:0;top:auto;bottom:0;transform:none;flex-direction:row;width:100%;justify-content:center;gap:0;background:rgba(247,243,236,.94);border-top:1px solid #e3ddd2;padding:8px 4px}
- .ag-toc a{flex:1;justify-content:center;flex-direction:column;gap:3px;font-size:10.5px}.ag-toc a span{opacity:1}
+ .ag-toc button{font-family:inherit;cursor:pointer;flex:1;justify-content:center;flex-direction:column;gap:3px;font-size:10.5px}.ag-toc button label{opacity:1}
  .ag-dusk,.ag-night{margin-left:-20px;margin-right:-20px}
  .ag-night>*{padding:0 20px}
 }
@@ -156,7 +156,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 const L2=L;
 const out=`<div class="ag-c-oldie"><style>${css}</style>
 <div class="ag-pg" id="agpg"></div>
-<nav class="ag-toc" id="agtoc"><a href="#c0"><span>${L.toc[0]}</span><i></i></a><a href="#c1"><span>${L.toc[1]}</span><i></i></a><a href="#c2"><span>${L.toc[2]}</span><i></i></a><a href="#c3"><span>${L.toc[3]}</span><i></i></a><a href="#c4"><span>${L.toc[4]}</span><i></i></a></nav>
+<nav class="ag-toc" id="agtoc">${L.toc.map((t,i)=>`<button type="button" data-t="c${i}"><label>${t}</label><i></i></button>`).join("")}</nav>
 ${html(disc)}
 <nav class="ag-lang">${pills}</nav>
 <section id="c0" class="ag-cover"><div class="ph">${html(wallP)}</div><div class="tx"><span class="ag-kicker">${L.kicker}</span><h1>${L.h1}</h1><p class="dek">${L.dek}</p><div class="meta">${L.meta}</div></div></section>
@@ -167,9 +167,9 @@ ${html(disc)}
 <section id="c2">${chap('c2','02',L.k2,h2title(H2[1]))}<div class="ag-body">${c2intro.map(html).join('')}</div>
 <blockquote class="ag-pull"><q>${pullTxt}</q><cite>${L.cite}</cite></blockquote>
 ${cleanWorks.slice(0,3).join('')}${breath}${cleanWorks.slice(3,5).join('')}</section>
-<div class="ag-dusk"><p>${L.dusk}</p></div>
+<section class="ag-dusk"><section class="ag-duskl">${L.dusk}</section></section>
 <section id="c3" class="ag-night">${chap('c3','03',L.k3,T(groups[5][0]).replace(/^\d+\s*·\s*/,''),true)}${cleanWorks[5]}</section>
 <section id="c4">${chap('c4','04',L.k4,h2title(H2[2]))}<div class="ag-tail">${tail.map(html).join('')}</div></section>
-</div><script>(function(){var pg=document.getElementById("agpg"),ids=["c0","c1","c2","c3","c4"],as=document.querySelectorAll("#agtoc a");function u(){var h=document.documentElement,y=h.scrollTop||document.body.scrollTop;if(pg)pg.style.width=(y/(h.scrollHeight-h.clientHeight)*100)+"%";var cur=0;ids.forEach(function(id,i){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<innerHeight*.4)cur=i});for(var i=0;i<as.length;i++)as[i].className=i==cur?"on":""}addEventListener("scroll",u,{passive:true});u()})()<\/script>`;
+</div><script>(function(){var pg=document.getElementById("agpg"),ids=["c0","c1","c2","c3","c4"],as=document.querySelectorAll("#agtoc button");for(var k=0;k<as.length;k++)as[k].onclick=function(){var e=document.getElementById(this.getAttribute("data-t"));if(e)e.scrollIntoView({behavior:"smooth"})};function u(){var h=document.documentElement,y=h.scrollTop||document.body.scrollTop;if(pg)pg.style.width=(y/(h.scrollHeight-h.clientHeight)*100)+"%";var cur=0;ids.forEach(function(id,i){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<innerHeight*.4)cur=i});for(var i=0;i<as.length;i++)as[i].className=i==cur?"on":""}addEventListener("scroll",u,{passive:true});u()})()<\/script>`;
 return out;
 })
