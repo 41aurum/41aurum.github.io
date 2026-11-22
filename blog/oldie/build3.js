@@ -35,7 +35,7 @@ const strip=e=>T(e).replace(/^.*?·\s*\d+\s*/,'');
 const langA=langDiv?[...langDiv.querySelectorAll('a')]:[];
 const pills=L.pills.map((x,i)=>`<a class="${i==L.self?'on':''}" href="https://aurum41.tistory.com/${x[1]}">${x[0]}</a>`).join('');const _old=langA.map(a=>{const on=/\/5\b/.test(a.getAttribute('href')||'')||a.textContent.includes(L.selfLangHint);return `<a class="${on?'on':''}" href="${a.getAttribute('href')}">${T(a).replace(/[🇰🇷🇬🇧🇯🇵]/gu,'').trim()}</a>`}).join('');
 
-const badge=(n,c,tc)=>`<section class="ag-cap" style="background-image:${cap(c)}"><section class="ag-capn" style="color:${tc}">${n}</section></section>`;
+const badge=(n,c,tc)=>`<section class="ag-cap"><section class="ag-capn">${n}</section></section>`;
 const chap=(id,n,kick,title,night)=>`<header class="ag-chap">${badge(n,night?'#D9A92E':'#2B4C9B',night?'#0F2236':'#fff')}<span class="ag-kicker"${night?' style="color:#D9A92E"':''}>${kick}</span><section class="ag-h2" role="heading" aria-level="2">${title}</section></header>`;
 
 // works
@@ -104,7 +104,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-sum .date b{color:#22252b;font-weight:500}
 .ag-chap{padding:120px 0 40px;max-width:700px;margin:0 auto}
 .ag-cap{width:58px;height:58px;background:center/contain no-repeat;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-.ag-capn{line-height:1;font-family:"Noto Serif KR",serif;font-size:20px;font-weight:400}
+.ag-cap{background-image:${cap('#2B4C9B')}!important}.ag-night .ag-cap{background-image:${cap('#D9A92E')}!important}.ag-capn{color:#fff;line-height:1;font-family:"Noto Serif KR",serif;font-size:20px;font-weight:400}
 .ag-h2{font-family:"Noto Serif KR","Noto Serif JP",serif!important;font-weight:400!important;font-size:34px!important;line-height:1.4!important;margin:10px 0 0!important;color:#22252b;letter-spacing:-.3px;border:0!important;padding:0!important;background:none!important}
 .ag-body{max-width:700px;margin:0 auto}
 .ag-pull{max-width:820px;margin:72px auto;padding-left:28px;border-left:2px solid #D9A92E}
@@ -136,7 +136,7 @@ body:has(.ag-c-oldie) .article-header{display:none!important}
 .ag-night>*{max-width:700px;margin-left:auto;margin-right:auto}
 .ag-night .ag-chap{padding-top:20px}
 .ag-night .ag-h2,.ag-night .ag-workh .ag-h3,.ag-night .ag-say,.ag-night .ag-wq,.ag-night p{color:#fff}
-.ag-night .ag-capc{color:#8fa0b5}.ag-night .ag-work{margin-top:40px}
+.ag-night .ag-capn{color:#0F2236!important}.ag-night .ag-capc{color:#8fa0b5}.ag-night .ag-work{margin-top:40px}
 .ag-c-oldie .ag-tail{max-width:700px;margin:0 auto}
 @media (max-width:1180px){.ag-toc{right:8px}}
 @media (max-width:820px){
@@ -168,7 +168,7 @@ ${html(disc)}
 <blockquote class="ag-pull"><q>${pullTxt}</q><cite>${L.cite}</cite></blockquote>
 ${cleanWorks.slice(0,3).join('')}${breath}${cleanWorks.slice(3,5).join('')}</section>
 <section class="ag-dusk"><section class="ag-duskl">${L.dusk}</section></section>
-<section id="c3" class="ag-night">${chap('c3','03',L.k3,T(groups[5][0]).replace(/^\d+\s*·\s*/,''),true)}${cleanWorks[5]}</section>
+<section id="c3" class="ag-night">${chap('c3','03',L.k3,T(groups[5][0]).replace(/^\d+\s*·\s*/,'').replace(/\s+[A-Z][A-Za-z ,'’]+$/,''),true)}${cleanWorks[5]}</section>
 <section id="c4">${chap('c4','04',L.k4,h2title(H2[2]))}<div class="ag-tail">${tail.map(html).join('')}</div></section>
 </div><script>(function(){var pg=document.getElementById("agpg"),ids=["c0","c1","c2","c3","c4"],as=document.querySelectorAll("#agtoc button");for(var k=0;k<as.length;k++)as[k].onclick=function(){var e=document.getElementById(this.getAttribute("data-t"));if(e)e.scrollIntoView({behavior:"smooth"})};function u(){var h=document.documentElement,y=h.scrollTop||document.body.scrollTop;if(pg)pg.style.width=(y/(h.scrollHeight-h.clientHeight)*100)+"%";var cur=0;ids.forEach(function(id,i){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<innerHeight*.4)cur=i});for(var i=0;i<as.length;i++)as[i].className=i==cur?"on":""}addEventListener("scroll",u,{passive:true});u()})()<\/script>`;
 return out;
