@@ -72,6 +72,13 @@ const pullTxt=(groups[0].find(e=>/^["“]/.test(T(e)))||{textContent:''}).textCo
 const css=`
 body:has(.ag-c-oldie),#wrap:has(.ag-c-oldie),#container:has(.ag-c-oldie),.main:has(.ag-c-oldie),.area-main:has(.ag-c-oldie),.area-view:has(.ag-c-oldie){background:#F7F3EC!important}
 body:has(.ag-c-oldie) .article-header{display:none!important}
+.ag-discband{font-size:13px!important;line-height:1.6;color:#555;background:#fff;border:1px solid #e3ddd2;border-radius:8px;padding:10px 16px;margin:0 0 14px;text-align:center}
+.ag-discimg{display:none!important}
+.main:has(.ag-c-oldie),#container:has(.ag-c-oldie),.area-main:has(.ag-c-oldie),.area-view:has(.ag-c-oldie),.article-view:has(.ag-c-oldie){padding-top:0!important;margin-top:0!important}
+.article-view:has(.ag-c-oldie){display:flex!important;flex-direction:column}
+.article-view:has(.ag-c-oldie)>*{order:1}
+.article-view:has(.ag-c-oldie)>ins.adsbygoogle,.article-view:has(.ag-c-oldie)>.revenue_unit_wrap{order:9}
+
 .main:has(.ag-c-oldie){display:block!important;max-width:1140px}
 .main:has(.ag-c-oldie) .area-main{width:100%!important;max-width:none!important;float:none!important}
 .main:has(.ag-c-oldie) .area-aside{width:100%!important;max-width:none!important;float:none!important;margin-top:120px;border-top:1px solid #e3ddd2;padding-top:40px}
@@ -157,7 +164,7 @@ const L2=L;
 const out=`<div class="ag-c-oldie"><style>${css}</style>
 <div class="ag-pg" id="agpg"></div>
 <nav class="ag-toc" id="agtoc">${L.toc.map((t,i)=>`<button type="button" data-t="c${i}"><label>${t}</label><i></i></button>`).join("")}</nav>
-${html(disc)}
+<section class="ag-discband">${L.disc||(()=>{const k=[...kids].reverse().find(e=>/commission|手数料|アフィリエイト|affiliate/i.test(T(e))&&T(e).length<400);return k?k.innerHTML:''})()}</section><section class="ag-discimg">${html(disc)}</section>
 <nav class="ag-lang">${pills}</nav>
 <section id="c0" class="ag-cover"><div class="ph">${html(wallP)}</div><div class="tx"><span class="ag-kicker">${L.kicker}</span><h1>${L.h1}</h1><p class="dek">${L.dek}</p><div class="meta">${L.meta}</div></div></section>
 <div class="ag-wave"></div>
