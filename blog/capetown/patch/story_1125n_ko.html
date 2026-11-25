@@ -1,0 +1,531 @@
+<div id="agcpt" class="ag-c-cpt" lang="ko">
+<style>
+body:has(.ag-c-cpt) .article-header{display:none!important}
+html:has(.ag-c-cpt),body:has(.ag-c-cpt),#wrap:has(.ag-c-cpt),#container:has(.ag-c-cpt),.main:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt),.contents_style:has(.ag-c-cpt){background:#FDFBF7!important}
+.main:has(.ag-c-cpt),#container:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){padding-top:0!important;margin-top:0!important}
+.main:has(.ag-c-cpt){display:block!important;max-width:1140px}
+.main:has(.ag-c-cpt) .area-main{width:100%!important;max-width:none!important;float:none!important}
+.main:has(.ag-c-cpt) .area-aside{margin-top:120px;border-top:1px solid #D6EBEE;padding-top:40px;width:100%!important;max-width:none!important;float:none!important}
+.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){width:100%!important;max-width:none!important}
+#agcpt{--cps:'Noto Serif KR', serif!important;--teal:#0E8A97!important;--sand:#F2A93B!important;--blue:#0E8A97!important}
+#agcpt .ctw{max-width:700px!important;margin:0 auto!important}
+#agcpt .cp-cover{display:grid!important;grid-template-columns:1.2fr 1fr!important;width:min(1080px,calc(100vw - 48px))!important;margin:30px 0 0 calc(50% - min(540px,calc(50vw - 24px)))!important;background:#fff!important;border:1px solid #D6EBEE!important}
+#agcpt .cp-cfig,#agcpt .cp-cfig figure{margin:0!important;height:100%!important}
+#agcpt .cp-cfig img{width:100%!important;height:100%!important;min-height:460px!important;object-fit:cover!important;display:block!important}
+#agcpt .cp-ct{padding:56px 46px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+#agcpt .cp-kick{font-size:12px!important;letter-spacing:.18em!important;color:var(--teal)!important;margin:0 0 16px!important;line-height:1.6!important}
+#agcpt .cp-line{height:30px!important;font-size:0!important;line-height:0!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important;margin:0 0 20px!important;overflow:hidden!important}
+#agcpt .cp-ridge{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20L36%2031%20L58%2013%20L168%2012%20L186%2022%20L199%2015%20L212%2024%20L225%2014%20L238%2024%20L251%2013%20L264%2024%20L277%2015%20L290%2025%20L303%2016%20L316%2026%20L329%2017%20L342%2027%20L355%2019%20L368%2028%20L381%2022%20L398%2031%20L470%2036%20L600%2037'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-dome{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2038%20H140%20V16%20L142%203%20L144%2016%20V38%20H168%20Q210%204%20252%2038%20H262%20Q288%2018%20314%2038%20H328%20V12%20L330%201%20L332%2012%20V38%20H600'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-wheel{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3Ccircle%20cx%3D'300'%20cy%3D'19'%20r%3D'16'%2F%3E%3Cpath%20d%3D'M300%203%20V35%20M284%2019%20H316%20M289%208%20L311%2030%20M311%208%20L289%2030%20M292%2037%20L300%2019%20L308%2037'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-title{font-family:var(--cps)!important;font-weight:600!important;font-size:36px!important;line-height:1.3!important;margin:0 0 16px!important;color:#1f2a2c!important;word-break:keep-all!important;letter-spacing:0!important}
+#agcpt .cp-sub{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:#3b4446!important;margin:0!important;word-break:keep-all!important}
+#agcpt .cp-meta{border-top:1px solid #D6EBEE!important;margin-top:24px!important;padding-top:14px!important}
+#agcpt .cp-meta p{font-size:13px!important;line-height:1.9!important;color:#6b6b66!important;margin:0!important}
+#agcpt .cp-meta b{color:var(--teal)!important;font-weight:500!important;margin-right:8px!important}
+#agcpt .cp-ccap{text-align:center!important;margin-top:10px!important}
+#agcpt .sec.cp-gs{padding-top:0!important}
+#agcpt .cp-div{margin:56px 0 64px!important;padding:88px 0 0!important;text-align:center!important}
+#agcpt .cp-div .cp-line{height:42px!important;max-width:560px!important;margin:0 auto 28px!important}
+#agcpt .cp-dn{font-family:var(--cps)!important;font-size:30px!important;font-weight:600!important;letter-spacing:.06em!important;color:#1f2a2c!important;margin:0 0 10px!important;line-height:1.4!important}
+#agcpt .cp-ds{font-family:var(--cps)!important;font-size:15px!important;line-height:1.8!important;color:#7a7a72!important;margin:0!important;word-break:keep-all!important}
+#agcpt.arm .cp-div{opacity:0!important;transform:translateY(18px)!important;transition:opacity .9s ease,transform .9s ease!important}
+#agcpt.arm .cp-div.in{opacity:1!important;transform:none!important}
+#agcpt .cp-dots{position:fixed!important;right:26px!important;top:50%!important;transform:translateY(-50%)!important;z-index:98!important;display:flex!important;flex-direction:column!important;gap:11px!important;align-items:flex-end!important;margin:0!important;padding:0!important}
+#agcpt .cp-dots a{padding:0!important;background:none!important;border-radius:0!important;min-height:0!important;box-shadow:none!important;width:auto!important;display:flex!important;align-items:center!important;gap:10px!important;text-decoration:none!important;border:0!important;line-height:1.2!important}
+#agcpt .cp-dots,#agcpt .cp-dots *{font-family:'Noto Sans KR', sans-serif!important}
+#agcpt .cp-dl{font-size:12px!important;color:#8a8a84!important;letter-spacing:.04em!important;white-space:nowrap!important}
+#agcpt .cp-dd{display:block!important;width:9px!important;height:9px!important;border:1px solid #9aa5a3!important;border-radius:50%!important;font-size:0!important;line-height:0!important;background:transparent!important;overflow:hidden!important}
+#agcpt .cp-dots a.on .cp-dl{color:var(--blue)!important;font-weight:500!important}
+#agcpt .cp-dots a.on .cp-dd{background:var(--blue)!important;border-color:var(--blue)!important}
+#agcpt .cp-now{display:none!important}
+#agcpt .eye{border-left:2px solid #0E8A97!important}
+@media (max-width:1240px){#agcpt .cp-dl{display:none!important}}
+@media (prefers-reduced-motion:reduce){#agcpt.arm .cp-div{opacity:1!important;transform:none!important;transition:none!important}}
+@media (max-width:760px){
+#agcpt .cp-cover{grid-template-columns:1fr!important;width:auto!important;margin:20px 0 0!important}
+#agcpt .cp-cfig img{min-height:0!important;height:auto!important;aspect-ratio:4/3!important}
+#agcpt .cp-ct{padding:28px 20px 30px!important}
+#agcpt .cp-title{font-size:28px!important}
+#agcpt .cp-sub{font-size:17px!important}
+#agcpt .cp-div{margin:40px 0 44px!important;padding-top:56px!important}
+#agcpt .cp-dn{font-size:24px!important}
+#agcpt .cp-dots{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:11px!important;background:#FDFBF7!important;border-top:1px solid #D6EBEE!important;padding:9px 12px!important;max-width:100vw!important;box-sizing:border-box!important}
+#agcpt .cp-dots a{gap:0!important}
+#agcpt .cp-dl{display:none!important}
+#agcpt .cp-now{display:inline!important;font-size:12px!important;color:var(--blue)!important;margin-left:4px!important;white-space:nowrap!important;letter-spacing:.04em!important}
+}
+body:has(.ag-c-cpt) ins.adsbygoogle{max-width:100%!important;overflow:hidden!important}
+.article-view:has(.ag-c-cpt)>div[data-tistory-react-app]{order:9!important}
+#agcpt#agcpt .cp-title,#agcpt#agcpt .cp-sub,#agcpt#agcpt .cp-dn,#agcpt#agcpt .cp-ds{font-family:var(--cps)!important}#agcpt .mg-pull{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:var(--teal)!important;border-left:2px solid var(--teal)!important;padding:2px 0 2px 16px!important;margin:22px 0 28px!important;text-wrap:balance}
+#agcpt .mg-spread{margin:40px 0 14px!important}
+#agcpt .mg-spread img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important}
+#agcpt figure.mg-spread.mg-wide{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important;margin-right:0!important}
+#agcpt figure.mg-spread img.mg-mo{display:none!important}
+#agcpt figure.mg-spread.mg-narrow{max-width:560px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt figure.mg-spread.mg-fries{max-width:620px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt .pair.brk{position:relative!important;display:block!important;padding-bottom:8%!important}
+#agcpt .pair.brk figure:first-child{width:78%!important;transform:rotate(-1.6deg)!important;margin:0!important}
+#agcpt .pair.brk figure:last-child{position:absolute!important;right:0!important;bottom:0!important;width:44%!important;transform:rotate(3deg)!important;border:8px solid #fff!important;margin:0!important;box-shadow:0 10px 24px rgba(40,30,20,.16)!important}
+#agcpt .pair.brk figure:last-child img{width:100%!important;height:auto!important;display:block!important}
+@media (max-width:600px){#agcpt figure.mg-spread img.mg-pc{display:none!important}#agcpt figure.mg-spread img.mg-mo{display:block!important}#agcpt figure.mg-spread.mg-wide{width:100%!important;margin-left:0!important}}
+#agcpt .cg{margin:30px 0 6px!important}
+#agcpt .cg .r{display:flex!important;gap:8px!important;margin:0 0 8px!important}
+#agcpt .cg .r>*{min-width:0!important;margin:0!important}
+#agcpt .cg .col{display:flex!important;flex-direction:column!important;gap:8px!important}
+#agcpt .cg img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important;margin:0!important}
+#agcpt .cg-m{font-family:'SFMono-Regular',Menlo,Consolas,monospace!important;font-size:12px!important;letter-spacing:.12em!important;color:#7d8a87!important;margin:2px 0 0!important;text-transform:uppercase}
+#agcpt figure.mg-spread.mg-wine{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important}
+@media (max-width:600px){#agcpt figure.mg-spread.mg-wine{width:100%!important;margin-left:0!important}}
+html:not(#z1):not(#z2) .contents_style .fact{background:#EEF7F8!important;border-color:#D6EBEE!important}html:not(#z1):not(#z2) .contents_style .fact b,html:not(#z1):not(#z2) .contents_style .fact strong{color:#0E8A97!important}#agcpt .btn .bn{font-weight:600}#agcpt .btn .bd::before{content:' — '}@media (max-width:600px){#agcpt .btn .bd{display:block;font-size:.88em;opacity:.8}#agcpt .btn .bd::before{content:''}}</style>
+<div class="ctw"><style>#agcpt .ag-pause .ag-art-l{letter-spacing:.04em}#agcpt .ag-pause .ag-art-p{font-size:15.5px;line-height:1.95}#agcpt .ag-more .btns{margin-top:10px}#agcpt .sec p[data-ke-size],#agcpt #intro > p[data-ke-size]{margin-bottom:18px!important}#agcpt .cp-ccap{margin-bottom:26px!important}#agcpt .ag-pause .ag-art-e{display:block!important}#agcpt .ag-pause .ag-art-f{max-width:none!important;width:auto!important;margin:4px 0 22px!important;text-align:center}#agcpt .ag-pause .ag-art-f img{max-height:440px!important;width:auto!important;max-width:100%!important;margin:0 auto!important}#agcpt .ag-pause .ag-art-b{width:auto!important;max-width:none!important}</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');</style>
+<style>.ctw{--ink:#2b2b2b;--mute:#8a8a8a;--line:#D6EBEE;--accent:#0E8A97;color:var(--ink);font-size:16px;line-height:2;letter-spacing:.02em;word-break:keep-all}
+.ctw *{box-sizing:border-box}.ctw img{display:block;width:100%;height:auto;margin:0}.ctw figure{margin:0}
+.ctw .bar{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:99}
+.ctw h2{font-family:'Noto Serif KR',serif;font-weight:700;font-size:26px;line-height:1.45;margin:0 0 22px;border:0;padding:0}
+.ctw p{margin:0 0 22px}.ctw .num{font-family:'Noto Serif KR',serif;font-size:13px;color:var(--mute);letter-spacing:.2em;margin:0 0 6px}
+.ctw .sec{padding-top:96px}
+.ctw .bleed,.ctw .one,.ctw .pair,.ctw .trio{margin:34px 0 0}
+.ctw .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ctw .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ctw .pair,.ctw .trio{align-items:start}
+.ctw .cap{font-size:13px;line-height:1.7;color:var(--mute);margin:8px 0 26px}
+.ctw .sum{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 2px;margin:8px 0 14px}.ctw .sum b{font-size:12px;letter-spacing:.15em;color:var(--mute)}.ctw .sum ul{margin:6px 0 0;padding-left:18px}
+.ctw .visit{font-size:13px;color:var(--mute)}.ctw .disc-top,.ctw .disc-end{font-size:12px;color:var(--mute);line-height:1.7}
+.ctw .lang{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.ctw .lang span{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--mute)}.ctw .lang .on{border-color:var(--ink);color:var(--ink)}
+.ctw .toc{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.ctw .toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:20px;padding:4px 13px;line-height:1.6}.ctw .toc a:hover{background:var(--ink);color:#fff}
+.ctw .fact{border:1px solid var(--line);background:#fff;padding:18px 22px;font-size:14.5px;line-height:1.9;margin:28px 0}.ctw .fact b{display:block;font-size:12px;letter-spacing:.12em;color:var(--mute);margin-bottom:6px}.ctw .fact ul{margin:0;padding-left:18px}
+.ctw .warn{color:#c0392b}
+.ctw .ad{border:1px solid var(--line);background:#fbfaf7;padding:16px 20px;margin:30px 0}.ctw .adl{font-size:11px;letter-spacing:.15em;color:var(--mute);margin:0 0 4px}.ctw .adisc{font-size:12px;color:var(--mute);line-height:1.6;margin:0 0 12px}
+.ctw .btns{display:flex;flex-wrap:wrap;gap:8px}.ctw .btn{font-size:13.5px;border:1px solid var(--accent);color:var(--accent);border-radius:22px;padding:6px 16px;text-decoration:none;line-height:1.5}.ctw .btn:hover{background:var(--accent);color:#fff}
+.ctw .next{display:block;border:1px solid var(--ink);padding:18px 22px;text-decoration:none;color:var(--ink);margin:40px 0}
+.ctw section{animation:ctf 1s ease both}@keyframes ctf{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ctw section{animation:none}}
+@media (max-width:600px){.ctw h2{font-size:22px}.ctw .pair,.ctw .trio{grid-template-columns:1fr}.ctw .pair img,.ctw .trio img{aspect-ratio:auto}.ctw .bleed{margin-left:-20px;margin-right:-20px}.ctw .sec{padding-top:72px}}
+
+#au-series{display:none!important}
+.article-view:has(.ctw){display:flex!important;flex-direction:column}
+.article-view:has(.ctw)>*{order:1}
+.article-view:has(.ctw)>ins.adsbygoogle,.article-view:has(.ctw)>.revenue_unit_wrap{order:9}
+.area-view:has(.ctw) .article-header{background:linear-gradient(rgba(18,32,36,.30),rgba(18,32,36,.58)),url(https://41aurum.github.io/blog/capetown/ct_2212.jpg) center 40%/cover no-repeat!important}
+.area-view:has(.ctw) .article-header .title-article{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;display:block!important}
+#mainContent:has(.ctw){display:flex!important;flex-direction:column}
+#mainContent:has(.ctw)>*{order:1}
+#mainContent:has(.ctw)>ins.adsbygoogle,#mainContent:has(.ctw)>.revenue_unit_wrap{order:9}
+.ctw .lang a{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--ink);text-decoration:none!important;background:#fff}
+.ctw .lang a.on{border-color:#13314A;background:#13314A;color:#fff}
+.ctw .lang a.on{border-color:#13314A!important;background:#13314A!important;color:#fff!important}
+#article-view .ctw .lang a.on,#mainContent .ctw .lang a.on,body .ctw .lang a.on[href]{border-color:#13314A!important;background:#13314A!important;background-color:#13314A!important;color:#fff!important}
+.ctw .eye{border-left:2px solid #0E8A97;padding:4px 0 4px 18px;margin:30px 0;font-size:15px;line-height:1.95;color:#3a4446}.ctw .eye b{display:block;font-family:'Noto Serif KR',serif;font-size:12px;font-weight:700;letter-spacing:.16em;color:#0E8A97;margin-bottom:4px}
+#agcpt .cp-k{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.2em!important;color:var(--teal)!important;margin:0 0 12px!important;line-height:1.7!important;font-weight:600!important}
+#agcpt .ag-route{margin:22px 0 10px!important;padding:18px 0 14px!important;border-top:1px solid #D6EBEE!important;border-bottom:1px solid #D6EBEE!important}
+#agcpt .ag-route-h{font-size:12px!important;letter-spacing:.15em!important;color:#8a8a8a!important;margin:0 0 14px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-route-l{list-style:none!important;margin:0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:0!important}
+#agcpt .ag-route-l li{list-style:none!important;position:relative!important;margin:0!important;padding:22px 12px 0 0!important;font-size:12.5px!important;line-height:1.65!important;color:#5d6466!important;word-break:keep-all!important}
+#agcpt .ag-route-l li::before{content:''!important;position:absolute!important;left:0!important;top:6px!important;width:8px!important;height:8px!important;border-radius:50%!important;background:var(--teal)!important}
+#agcpt .ag-route-l li::after{content:''!important;position:absolute!important;left:14px!important;right:6px!important;top:10px!important;height:1px!important;background:#CDEBF3!important}
+#agcpt .ag-route-l li:last-child::after{display:none!important}
+#agcpt .ag-route-l li:last-child::before{background:var(--blue)!important}
+#agcpt .ag-route-l li span{display:block!important;font-family:var(--cps)!important;font-size:14px!important;font-weight:700!important;color:#1f2a2c!important;margin:0 0 3px!important;letter-spacing:.04em!important}
+#agcpt .ag-route-l li:last-child span{color:var(--blue)!important}
+#agcpt .ag-art{margin:44px 0!important;background:#fff!important;border:1px solid #D6EBEE!important;border-top:3px solid var(--blue)!important;padding:22px 26px 22px!important}
+#agcpt .ag-art-l{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.24em!important;color:var(--blue)!important;margin:0 0 16px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-art-e+.ag-art-e{border-top:1px solid #E4F2F4!important;margin-top:22px!important;padding-top:22px!important}
+#agcpt .ag-art-has{display:grid!important;grid-template-columns:44% 1fr!important;gap:24px!important;align-items:start!important}
+#agcpt .ag-art-f{margin:0!important}
+#agcpt .ag-art-f img{display:block!important;width:100%!important;height:auto!important;border:1px solid #E4F2F4!important}
+#agcpt .ag-art-c{font-size:11.5px!important;line-height:1.6!important;color:#8a8a8a!important;margin:8px 0 0!important}
+#agcpt .ag-art-t{display:inline-block!important;font-size:11px!important;letter-spacing:.12em!important;color:var(--teal)!important;border:1px solid #CDEBF3!important;border-radius:20px!important;padding:1px 10px!important;margin:0 0 10px!important;line-height:1.7!important}
+#agcpt .ag-art-n{font-family:var(--cps)!important;font-size:19px!important;font-weight:700!important;line-height:1.5!important;color:#1f2a2c!important;margin:0 0 4px!important}
+#agcpt .ag-art-w{font-size:13px!important;line-height:1.7!important;color:#6b6f66!important;margin:0 0 12px!important}
+#agcpt .ag-art-p{font-size:15px!important;line-height:1.9!important;margin:0 0 12px!important;color:#2b2b2b!important}
+#agcpt .ag-art .btns{margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-art-f img[height="1796"]{max-width:62%!important;margin:0 auto!important}#agcpt .ag-route-l{grid-template-columns:1fr!important}#agcpt .ag-route-l li{padding:0 0 12px 22px!important}#agcpt .ag-route-l li::before{top:7px!important}#agcpt .ag-route-l li::after{left:3.5px!important;right:auto!important;top:18px!important;bottom:-2px!important;width:1px!important;height:auto!important}#agcpt .ag-art{padding:18px 18px!important}#agcpt .ag-art-has{grid-template-columns:1fr!important;gap:14px!important}}
+
+/*hq1125b*/
+#agcpt .ag-route-l{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+#agcpt .ctw .ag-route-l li{overflow-wrap:anywhere!important}
+#agcpt[lang=ja] .ag-route-l li,#agcpt[lang=ja] .ag-art,#agcpt[lang=ja] .ag-art *,#agcpt[lang=ja] .cp-k{word-break:normal!important;line-break:strict!important}
+#agcpt .ctw .ag-art p.ag-art-n,#agcpt .ctw .ag-art p.ag-art-l,#agcpt .ctw .ag-route-l li span,#agcpt .ctw .cp-div p.cp-k{font-family:var(--cps)!important}
+#agcpt .ag-route{border-top:0!important;margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-route-l{grid-template-columns:1fr!important}}</style>
+<style>/*hqFX1125*/#agcpt .fxf{position:relative!important}#agcpt .fx{position:absolute!important;display:block!important;border:1.6px solid rgba(63,127,122,.95)!important;border-radius:50%!important;box-shadow:0 0 0 1px rgba(255,255,255,.45)!important;font-size:0!important;line-height:0!important;pointer-events:none!important;background:transparent!important}</style><style>/*hqLB1125*/#agcpt .ctw,#agcpt .cp-cover,#agcpt .cp-div{word-break:keep-all;overflow-wrap:break-word;line-break:strict}#agcpt .cp-title,#agcpt .cp-sub,#agcpt .cp-dn,#agcpt .cp-ds,#agcpt .ctw h2,#agcpt .ctw .cap,#agcpt .cp-ccap,#agcpt .ag-art-n,#agcpt .toc a,#agcpt .btn{text-wrap:balance}#agcpt .ctw p,#agcpt .ctw li{text-wrap:pretty}</style><div id="ctbar" class="bar">&nbsp;</div>
+<nav id="cpdots" class="cp-dots" aria-label="구획"><a href="#cpcover" data-t="cpcover"><span class="cp-dl">표지</span><span class="cp-dd">&nbsp;</span></a><a href="#s1" data-t="s1"><span class="cp-dl">비행과 바다</span><span class="cp-dd">&nbsp;</span></a><a href="#s3" data-t="s3"><span class="cp-dl">와이너리</span><span class="cp-dd">&nbsp;</span></a><a href="#s4" data-t="s4"><span class="cp-dl">테이블마운틴</span><span class="cp-dd">&nbsp;</span></a><a href="#s5" data-t="s5"><span class="cp-dl">기념품과 세관</span><span class="cp-dd">&nbsp;</span></a><a href="#s6" data-t="s6"><span class="cp-dl">이스탄불</span><span class="cp-dd">&nbsp;</span></a><a href="#s9" data-t="s9"><span class="cp-dl">에필로그</span><span class="cp-dd">&nbsp;</span></a><span class="cp-now">표지</span></nav>
+<div class="lang"><a class="on" href="https://aurum41.tistory.com/11">🇰🇷 한국어</a><a href="https://aurum41.tistory.com/16">🇬🇧 English</a><a href="https://aurum41.tistory.com/17">🇯🇵 日本語</a></div>
+<p class="disc-top" data-ke-size="size16">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 Klook 제휴 링크입니다.</p>
+<section id="intro">
+<div id="cpcover" class="cp-cover">
+<div class="cp-cfig">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2210.jpg" alt="열두 봉우리 아래 수영장처럼 파란 캠스베이 전경" width="1600" height="1200" /></figure>
+</div>
+<div class="cp-ct">
+<p class="cp-kick" data-ke-size="size16">AURUM41 GUIDE &middot; 해외 여행</p>
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-title" data-ke-size="size16">남아공 케이프타운 여행</p>
+<p class="cp-sub" data-ke-size="size16">열두&nbsp;봉우리 아래 청록 바다와<br>스무&nbsp;배의 수업료</p>
+<div class="cp-meta">
+<p data-ke-size="size16"><b>방문</b> 2015년&nbsp;10월&nbsp;31일 ~ 11월&nbsp;10일</p>
+<p data-ke-size="size16"><b>경로</b> 인천 &rarr; 이스탄불 &rarr; 케이프타운, 돌아오는 길은 다시 이스탄불</p>
+</div>
+</div>
+</div>
+<p class="cap cp-ccap" data-ke-size="size16">캠스베이 전경</p>
+<p data-ke-size="size16">와인 한&nbsp;모금, 체리 초콜릿 한&nbsp;조각, 그리고 이스탄불 시장에서 낸 스무&nbsp;배의 수업료.</p>
+<p data-ke-size="size16">이 세&nbsp;가지를 얻으려고 비행기를 이틀이나 탔네요.</p>
+<p data-ke-size="size16">안녕하세요, 생각을 연출하는 작가 양승진입니다. 오늘은 2015년 가을, 아프리카 대륙 맨 아래 끝 도시 케이프타운으로 같이 가 볼게요. 바다는 수영장처럼 파랗고, 산은 칼로 자른 듯 평평한 곳이에요. 가는 길에 고생은 제가 다 해 두었으니, 편하게 구경만 하세요. 좋은 건 같이 봐요.</p><p class="mg-pull" data-ke-size="size16">이미 오래전 여행인데, 사진을 다시 펼치니 오늘처럼 생생하네요.</p>
+<nav class="toc"><a href="#s1">① 이틀의 비행</a><a href="#s2">② 대서양의 빛</a><a href="#s3">③ 와이너리</a><a href="#s4">④ 테이블마운틴</a><a href="#s5">⑤ 기념품과 세관</a><a href="#s6">⑥ 이스탄불</a><a href="#s7">⑦ 그랑바자르</a><a href="#s8">⑧ 입맛의 귀국</a><a href="#s9">⑨ 에필로그</a></nav></section>
+<div class="sum"><b>3줄 요약</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc"><li>비행만 이틀. 도착하니 열두&nbsp;봉우리 아래 청록 바다, 그리고 와인과 체리 초콜릿.</li><li>테이블마운틴과 항구, 기념품 가게와 세관 — 선물에도 세금이 붙는다는 걸 배운 날.</li><li>돌아오는 길 이스탄불, 그랑바자르에서 스무&nbsp;배를 내고 배운 흥정. 마지막엔 공항 길의 판자촌.</li></ul>
+</div>
+<div class="ag-route">
+<p class="ag-route-h" data-ke-size="size16">이 글이 좁혀 들어가는 길</p>
+<ul class="ag-route-l" style="list-style-type: disc;" data-ke-list-type="disc">
+<li><span>나라</span>남아공, 돌아오는 길의 튀르키예</li>
+<li><span>지역</span>캠스베이&middot;콘스탄시아&middot;V&amp;A 항구, 이스탄불 옛 도심</li>
+<li><span>먹거리</span>와인과 초콜릿, 마트 과일, 로쿰</li>
+<li><span>풍경</span>열두&nbsp;봉우리, 테이블마운틴, 옛 성벽</li>
+<li><span>문화</span>케이프 더치, 바자르의 흥정, 타운십의 역사</li>
+<li><span>작품</span>쉬는 자리마다 그곳에서 떠오른 작가 한&nbsp;사람</li>
+</ul>
+</div>
+<p class="visit" data-ke-size="size16">방문 기준일: 2015년&nbsp;10월&nbsp;31일 ~ 11월&nbsp;10일 (원본 촬영일 기준). 지금과 다를 수 있습니다.</p>
+<section id="s1" class="sec cp-gs">
+<div class="cp-div" data-g="s1">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">나라 &middot; 지역 &mdash; 남아공, 케이프타운 대서양 해안</p>
+<p class="cp-dn" data-ke-size="size16">비행과 바다</p>
+<p class="cp-ds" data-ke-size="size16">이 장면 한&nbsp;장을 보기까지, 비행기만 이틀이었어요.</p>
+</div>
+<p class="num" data-ke-size="size16">①</p>
+<h2 data-ke-size="size26">이틀의 비행</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1905.jpg" alt="출국 공항 탑승교 너머로 대기 중인 여객기" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">출발. 저 기내식 상자들이 제 몇 끼를 책임질지, 그때는 몰랐죠</p>
+<p data-ke-size="size16">2015년 가을, 업무차 떠난 길이었어요. 인천에서 이스탄불, 거기서 갈아타고 적도를 넘어 아프리카 끝까지.</p>
+<p data-ke-size="size16">말이 '갈아탄다'지, 실제로는 이틀이 걸리더라고요.</p>
+<p data-ke-size="size16">장거리 비행에서 가장 빨리 백기를 드는 건 체력이 아니라 목이에요. 잠깐 졸다 깨면 고개가 한쪽으로 꺾여 있고, 환승 공항 의자에 앉으면 이번엔 허리가 말을 걸어요. 두&nbsp;번째 비행기 탑승구 앞에서 조용히 다짐했죠. 다음엔 목베개부터 챙긴다.</p>
+<p data-ke-size="size16">그 다짐, 여러분께 먼저 넘겨드릴게요.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">광고 &middot; 쿠팡</p>
+<p class="adisc" data-ke-size="size16">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCAGvPrUq" target="_blank" rel="sponsored noopener">목베개</a><a class="btn" href="https://link.coupang.com/a/iUCBQG98Ro" target="_blank" rel="sponsored noopener">압박 양말</a><a class="btn" href="https://link.coupang.com/a/iUCCVPbwTA" target="_blank" rel="sponsored noopener">수면 안대</a></div>
+</aside>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1916.jpg" alt="푸른 하늘 아래 케이프타운 국제공항 터미널" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">케이프타운 국제공항. 지붕도 파도처럼 휘어 있네요</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1917.jpg" alt="케이프타운 공항 도착 직후 바라본 맑은 하늘과 터미널" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">짐 카트가 저보다 먼저 와 있더라고요</p>
+<p data-ke-size="size16">도착.</p>
+<p data-ke-size="size16">이틀 만에 마신 바깥 공기는 건조하고 가벼웠어요. 남반구의 11월은 초여름이라, 한국은 가을 겉옷을 꺼낼 때인데 여기는 반팔이네요.</p>
+<p data-ke-size="size16">도착해서 제일 먼저 확인한 건 풍경이 아니라, 목이 아직 양쪽으로 돌아가는지였어요.</p>
+<p data-ke-size="size16">다행히 돌아가더라고요. 수업료&nbsp;1회차는 목 근육으로 냈어요.</p>
+</section>
+<section id="s2" class="sec">
+<p class="num" data-ke-size="size16">②</p>
+<h2 data-ke-size="size26">대서양의 빛</h2>
+<p data-ke-size="size16">짐 풀고 바로 바다로 나갔어요. 오늘 할 일은 하나, 대서양 노을 보기.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1975.jpg" alt="해 질 녘 대서양 앞, 해안 산책로 울타리 너머 알로에와 금빛 바다" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">알로에는 실루엣이 되고, 바다는 금빛으로 부서지네요</p>
+<p data-ke-size="size16">이 해안은 해가 바다로 져요. 알로에 잎이 까만 실루엣으로 변하고, 울타리 사이로 수면 전체가 금빛으로 부서지네요. 판화처럼 윤곽이 또렷한 저녁이었어요.</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_1980.jpg" alt="노을이 비친 썰물 웅덩이와 검게 젖은 해안 바위" width="1600" height="1200" /><span class="fx" style="left:40%;top:45%;width:40%;height:38%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">웅덩이마다 노을이 하나씩 담겨 있어서, 해는 빼고 웅덩이만 보이게 내려다보며 찍었어요 · 볼 곳: 동그라미 안 웅덩이</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1989.jpg" alt="해안도로를 따라 늘어선 나무 실루엣" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">자전거, 야자수, 하얀 아파트</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1990.jpg" alt="저녁빛이 번지는 케이프타운 해변 도로" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">운동기구 옆 노을. 바다만 빼면 우리 동네 공원이에요</p>
+<p data-ke-size="size16">한국으로 치면 동네 하천 산책로예요. 다른 건 하천 자리에 대서양이 있다는 것뿐이네요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2073.jpg" alt="햇빛에 반짝이는 대서양 수면과 해안 산책로" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">예쁜데, 오래 보고 있기엔 눈이 부셔요</p>
+<p data-ke-size="size16">그런데 이 햇빛, 세요. 풍경을 바라보다 보면 눈이 먼저 부셔서 자꾸 찡그리게 되고, 그늘 없는 해안도로에선 팔이랑 목덜미가 금방 달아올라요. 해수욕장에서 선크림 없이 하루 놀고 난 다음 날의 그 따끔함이에요.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">광고 &middot; 쿠팡</p>
+<p class="adisc" data-ke-size="size16">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCC5P48Au" target="_blank" rel="sponsored noopener">선크림 SPF50+</a><a class="btn" href="https://link.coupang.com/a/iUCDgh1lBc" target="_blank" rel="sponsored noopener">편광 선글라스</a><a class="btn" href="https://link.coupang.com/a/iUCDqkuOzs" target="_blank" rel="sponsored noopener">챙 넓은 모자</a></div>
+</aside>
+<div class="trio">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2192.jpg" alt="캠스베이 언덕 위 바람에 기운 나무 한 그루" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2203.jpg" alt="둥근 화강암 바위가 놓인 맑은 해안" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2205.jpg" alt="해안선을 따라 이어지는 열두 사도 봉우리" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">캠스베이. 필터 아니에요, 원래 이 색이에요</p>
+<p data-ke-size="size16">그리고 하늘이 활짝 갠 날, 캠스베이 언덕에 올라섰어요.</p>
+<p data-ke-size="size16">봉우리 열두&nbsp;개가 어깨를 맞대고 바다를 내려다보고 있어요. 그 발치에서 물빛이 청록에서 남색으로 몇 번이나 바뀌고요. 제주 협재 바다의 그 옥색을 열&nbsp;배 넓게 펼쳐 놓고, 뒤에 설악산 능선을 병풍처럼 세운 풍경. 이틀 비행의 피로가 여기서 한&nbsp;번에 풀리더라고요.</p>
+<div class="fact"><b>열두 사도인데 열여덟&nbsp;개</b>이 봉우리들의 이름은 '열두 사도(Twelve Apostles)'인데, 제가 세어 보니 열여덟&nbsp;개더라고요. 숫자가 안 맞아도 우리 눈이 틀린 게 아니었어요.</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">잠깐, 커피 한&nbsp;잔</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg/1280px-Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" alt="토머스 윌리엄 보울러가 그린 캠스베이 수채화, 둥근 바위와 물웅덩이 뒤로 봉우리가 보인다" width="1280" height="970" />
+<figcaption class="ag-art-c">토머스 윌리엄 보울러 「Camps Bay, Cape of Good Hope」 종이에 수채, 뒷면에 '1850&ndash;53' 기록 &middot; 퍼블릭 도메인(Wikimedia Commons)</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">토머스 윌리엄 보울러 (Thomas William Bowler, 1812–1869)</p><p class="ag-art-p" data-ke-size="size16">이 사진을 고르다가 커피를 한&nbsp;잔 내려놓고 앉았어요. 쉬는 김에 이 바다를 먼저 그린 사람 이야기를 해 볼게요.</p><p class="ag-art-p" data-ke-size="size16">제가 알아보니, 저보다 160여 년 먼저 이 바다를 그린 사람이 있더라고요. 토머스 윌리엄 보울러. 1834년 케이프에 새로 부임한 천문학자의 하인으로 배에서 내린 영국 청년인데, 그 뒤 35년 가까이 이 땅과 바다만 그렸대요.</p><p class="ag-art-p" data-ke-size="size16">그의 수채화 「캠스베이, 희망봉」을 찾아보니 둥근 화강암 바위와 물웅덩이, 그 뒤로 이어지는 봉우리가 그대로 있더라고요. 제 사진 속 바위들도 같은 자리에 같은 모양으로 누워 있고요. 160년 동안 자세 한&nbsp;번 안 바꾼 모델이에요. 풍경화는 모델이 늙지 않는 유일한 장르일지도 모르겠네요.</p><p class="ag-art-p" data-ke-size="size16">저도 바다를 자주 그리는 사람이라 한번 셈을 해 봤어요. 그는 이 장면에 물감과 하루를 썼고, 저는 휴대폰으로 1초를 썼어요. 160년 뒤까지 남은 건 그 하루 쪽이고요. 그래서 요즘은 셔터를 누르기 전에 10초만 그냥 바라보려고 해요.</p><p class="ag-art-p" data-ke-size="size16">이 언덕에 서서 160년 전 그 수채화를 겹쳐 떠올려 보는 것도, 이 여행의 작은 재미 아닐까 싶네요.</p><div class="btns"><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" target="_blank" rel="noopener">작품 정보 (Wikimedia Commons)</a><a class="btn" href="https://en.wikipedia.org/wiki/Thomas_William_Bowler" target="_blank" rel="noopener">화가 소개 (Wikipedia)</a></div></div></div></div>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2197.jpg" alt="나무 그늘 너머로 펼쳐진 캠스베이 해변과 산맥" width="1600" height="1200" /><span class="fx" style="left:44%;top:30%;width:22%;height:50%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2200.jpg" alt="청록색 바다와 하얀 모래가 만나는 캠스베이" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">나무가 바람 방향을 대신 말해 주는 것 같아서, 줄기가 기운 쪽이 보이게 일부러 옆에서 찍었어요 · 볼 곳: 한쪽으로 기운 줄기</p>
+<p data-ke-size="size16">언덕 잔디밭의 나무 한&nbsp;그루가 바다 쪽으로 몸을 기울이고 서 있어요. 이 동네 바람이 늘 한 방향에서 분다는 걸 나무가 먼저 알려 주네요.</p>
+<div class="cg cgA"><div class="r"><div style="flex:2.899 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a1_2212_wide.jpg" alt="캠스베이 바다와 열두 봉우리" width="1600" height="552" /></div></div><div class="r"><div style="flex:0.729 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a2_2208_tall.jpg" alt="바위 사이 웅덩이와 바다" width="560" height="768" /></div><div style="flex:1.920 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a3_2212_detail.jpg" alt="해변과 바위 언덕" width="576" height="300" /></div></div><p class="cg-m" data-ke-size="size16">Camps Bay · 33°57′S 18°23′E</p></div>
+<p class="cap" data-ke-size="size16">물은 이렇게 투명한데, 발은 끝내 안 담갔어요</p>
+<p data-ke-size="size16">물빛이 이렇게 맑은데도 발을 담그지 않았어요. 이 바다는 남극 쪽에서 올라오는 찬 해류가 지나는 곳이라, 청록색인 날에도 물이 생각보다 훨씬 차갑거든요. 여름 계곡물에 발 넣었다가 3초 만에 빼던 그 느낌이에요. 대서양은 보는 바다와 들어가는 바다가 다르더라고요.</p>
+</section>
+<section id="s3" class="sec cp-gs">
+<div class="cp-div" data-g="s3">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">먹거리 &mdash; 콘스탄시아 골짜기의 와인과 초콜릿</p>
+<p class="cp-dn" data-ke-size="size16">와이너리</p>
+<p class="cp-ds" data-ke-size="size16">와인 한&nbsp;모금 뒤에 초콜릿 한&nbsp;조각.</p>
+</div>
+<p class="num" data-ke-size="size16">③</p>
+<h2 data-ke-size="size26">와이너리</h2>
+<p data-ke-size="size16">테이블마운틴 쪽으로 가는 길, 솔직히 오늘의 진짜 목적지는 여기였어요. 남아공에서 가장 오래된 와인 농장, 그루트 콘스탄시아(Groot Constantia).</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2275.jpg" alt="흰 벽 건물과 포도밭, 뒤로 이어지는 산" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">포도밭이 산자락까지. 놀이터도 있는 가족 소풍 장소예요</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2278.jpg" alt="박공지붕 흰 건물 앞의 긴 연못" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">흰 벽, 둥근 박공, 긴 연못. 건물이 알아서 좌우 대칭을 맞춰 주네요</p>
+<p data-ke-size="size16">1685년에 시작된 농장이에요. 흰 회벽에 둥근 박공을 얹은 네덜란드 정착기의 '케이프 더치' 양식이고, 그 앞 긴 연못이 건물을 거꾸로 한&nbsp;번 더 비춰 줘요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2234.jpg" alt="와이너리 전시 공간의 옛 와인 압착기" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">옛 포도 압착기. 뒤에 나비 그림이 걸려 있어요</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2235.jpg" alt="와이너리 벽에 걸린 풍경화와 작은 오크통" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">색색의 집이 늘어선 케이프타운 거리 그림</p>
+<p data-ke-size="size16">안에는 옛 압착기와 그림이 있어요.</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2257.jpg" alt="조명을 낮춘 셀러에 끝없이 누운 오크통" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2261.jpg" alt="세로로 길게 이어진 오크통 행렬" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">셀러. 오크통이 끝이 안 보이게 누워 있어요</p>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2260.jpg" alt="셀러 안 높이 쌓인 오크통 더미" width="1600" height="1200" /><span class="fx" style="left:48%;top:8%;width:26%;height:32%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2265.jpg" alt="대형 오크통 아래 진열된 와인병" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">통마다 와인이 스민 붉은 띠가 같은 높이로 이어지는 게 좋아서 위에서 비스듬히 내려다봤어요 · 볼 곳: 왼쪽 사진, 통 배의 붉은 띠</p>
+<p data-ke-size="size16">계단을 내려가면 셀러예요. 조명을 낮춘 긴 공간에 오크통이 같은 각도로 끝없이 누워 있고, 통 배마다 와인이 스민 붉은 띠가 줄지어 있어요. 장독대에 항아리가 줄지어 선 걸 볼 때의 그 든든함, 딱 그거예요. 다만 여기 항아리엔 된장 대신 와인이 들었네요.</p>
+<p data-ke-size="size16">셀러를 한&nbsp;바퀴 돌고 나니 입이 심심해지더라고요. 마침 이 여행에서 제일 맛있었던 순서가 기다리고 있었어요. 와인과 초콜릿 페어링이요.</p><figure class="mg-spread mg-wine"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_pc_ko.jpg?v=7" alt="와인 한 잔과 체리 초콜릿, 체리 초콜릿 일러스트와 맛의 순서를 적은 지면" width="1600" height="960" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_mo_ko.jpg?v=7" alt="와인 한 잔과 체리 초콜릿, 체리 초콜릿 일러스트와 맛의 순서를 적은 지면" width="1080" height="1700" /></figure>
+<p data-ke-size="size16">방법은 간단해요. 와인 한&nbsp;모금, 초콜릿 한&nbsp;조각. 와인의 떫은맛은 덜 익은 감을 씹었을 때 혀가 오그라드는 그 떫은맛과 같은 성분(탄닌)에서 와요. 그 떫은 자리에 초콜릿이 들어오면 단맛이 떫음을 덮어 주기도 하고, 반대로 와인 향을 확 끌어올리기도 하더라고요. 막걸리엔 파전, 소주엔 삼겹살처럼 여기도 짝이 정해진 술상인 셈이죠.</p>
+<p data-ke-size="size16">제가 놀란 건 초콜릿 쪽이었어요. 저한테 초콜릿은 그냥 '초콜릿 맛' 하나였거든요. 그런데 체리 맛처럼 초콜릿 자체의 맛이 여러 갈래로 나뉘고, 그 맛마다 와인을 하나씩 짝지어 주는 건 처음이었어요. 한&nbsp;조각, 한&nbsp;모금이 매번 신기하더라고요.</p>
+<p data-ke-size="size16">그 전까지 체리는 케이크 위에 올라앉는 쪽인 줄 알았어요. 그날 체리는 초콜릿 안으로 들어가 있었고요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2270.jpg" alt="포도밭 너머 산이 보이는 와이너리 나무 그늘" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">셀러를 나오면 다시 햇빛. 포도밭 위로 큰 나무 그늘</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2281.jpg" alt="와이너리 흰 건물 앞 야외 테이블" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2283.jpg" alt="큰 나무 아래 파라솔을 접어 둔 야외 테라스" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">접힌 파라솔. 다음엔 펼친 날 올게요</p>
+<p data-ke-size="size16">와인 두어 모금에 볕까지 받으니, 테이블마운틴을 오르기도 전에 마음은 이미 정상에 가 있었어요.</p>
+</section>
+<section id="s4" class="sec cp-gs">
+<div class="cp-div" data-g="s4">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">풍경 &mdash; 평평한 산과 그 아래 항구</p>
+<p class="cp-dn" data-ke-size="size16">테이블마운틴</p>
+<p class="cp-ds" data-ke-size="size16">위가 칼로 자른 듯 평평해서 테이블마운틴이에요.</p>
+</div>
+<p class="num" data-ke-size="size16">④</p>
+<h2 data-ke-size="size26">테이블마운틴</h2>
+<p data-ke-size="size16">이제 이 도시의 주인공 차례예요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2053.jpg" alt="시내에서 올려다본 평평한 테이블마운틴" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">도로 끝에 산. 이 도시에선 고개만 들면 산이 보여요</p>
+<div class="cg cgB"><div class="r"><div style="flex:0.533 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b3_2079_tall.jpg" alt="가로등과 나무 너머 산" width="512" height="960" /></div><div class="col" style="flex:2.37 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b2_2079_ridge.jpg" alt="테이블마운틴 평평한 능선" width="1408" height="348" /><img src="https://41aurum.github.io/blog/capetown/mag2/b1_2084_ridge.jpg" alt="다른 길에서 본 같은 능선" width="1504" height="264" /></div></div><p class="cg-m" data-ke-size="size16">Table Mountain · 33°58′S 18°25′E</p></div>
+<p class="cap" data-ke-size="size16">어디서 봐도 같은 산</p>
+<p data-ke-size="size16">케이프타운에서는 어느 길로 고개를 돌려도 이 산이 걸려요. 길을 잃어도 산을 찾으면 방향이 나오고요. 이 도시는 이정표를 해발 1,000m 위에 걸어 두었네요.</p>
+<p data-ke-size="size16">서울에서 북한산 보고 방향 잡는 거랑 같은데, 여기는 꼭대기가 다리미로 편 것처럼 평평해요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2227.jpg" alt="전망 포인트에서 내려다본 케이프타운 시가지" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">전망대. 산자락까지 시내가 차올라 있어요</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2228.jpg" alt="바다와 도시가 함께 보이는 전망대 풍경" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">반대편엔 뾰족한 라이언스헤드</p>
+<p data-ke-size="size16">산을 마주 보는 언덕 전망대에 올랐어요. 볕은 따가운데 바람은 차서, 반팔로 올라왔다가 금방 팔짱을 끼게 되더라고요. 남동풍이 세게 불면 산꼭대기에 흰 구름이 식탁보처럼 덮이는데, 현지에서는 그걸 진짜로 '식탁보(Tablecloth)'라고 불러요. 산 이름에 맞춰 날씨까지 상을 차려 주는 거죠.</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2230.jpg" alt="노란 액자 포토존 안에 담긴 테이블마운틴" width="1600" height="1200" /><span class="fx" style="left:22%;top:35%;width:62%;height:26%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">다들 액자 앞에서 한&nbsp;발씩 물러서길래, 저도 그 자리에 서서 산이 액자 안에 딱 들어오게 맞췄어요 · 볼 곳: 액자 안에 든 테이블마운틴</p>
+<p data-ke-size="size16">전망대엔 커다란 노란 액자가 서 있어요. 틀 하나 세웠을 뿐인데 사람들이 그 안에 산을 담으려고 걸음을 멈추고, 한&nbsp;발 물러서고, 서는 자리를 고르더라고요. 전시장에서 액자가 하는 일을 산 앞에서 그대로 하고 있는 거예요. 작가로서는 좀 샘이 나는 장치였어요.</p>
+<p data-ke-size="size16">정상으로 가는 가장 빠른 길은 1929년에 개통한 케이블카예요. 바람이 세면 쉬는 날이 있어서 날씨를 보고 시간을 잡는 게 마음 편해요.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">광고 &middot; Klook</p>
+<p class="adisc" data-ke-size="size16">이 버튼은 Klook 제휴 링크로, 예약 시 일정액의 수수료를 받을 수 있습니다.</p>
+<div class="btns"><a class="btn" href="https://www.klook.com/ko/search/result/?query=Table%20Mountain%20Cableway&amp;aid=143914" target="_blank" rel="sponsored noopener">테이블마운틴 케이블카 예약</a></div>
+</aside>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2129.jpg" alt="항구와 정박한 배들 뒤의 테이블마운틴" width="1600" height="1200" /><span class="fx" style="left:35%;top:26%;width:60%;height:18%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">국기와 크레인 사이로 그 산이 또 보이길래, 항구에서도 주인공은 산이라는 걸 남기고 싶었어요 · 볼 곳: 국기 뒤 평평한 능선</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2150.jpg" alt="밤에 불을 밝힌 항구의 붉은 시계탑" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">붉은 시계탑 꼭대기에 파란 불이 켜졌어요</p>
+<p data-ke-size="size16">해가 지면 V&amp;A 워터프런트 항구로 가요. 1882년에 지은 붉은 시계탑에 파란 불이 켜지고, 산은 어둠 속으로 들어가요. 이 항구는 밤이 더 밝네요.</p>
+</section>
+<section id="s5" class="sec cp-gs">
+<div class="cp-div" data-g="s5">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">문화 &mdash; 손으로 깎은 물건, 국경을 넘는 선물</p>
+<p class="cp-dn" data-ke-size="size16">기념품과 세관</p>
+<p class="cp-ds" data-ke-size="size16">주는 쪽에게는 마음이지만, 받는 나라 세관에게는 수입품이에요.</p>
+</div>
+<p class="num" data-ke-size="size16">⑤</p>
+<h2 data-ke-size="size26">기념품과 세관</h2>
+<p data-ke-size="size16">여행 중반, 이제 선물을 고를 차례예요.</p>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_pc_ko.jpg?v=7" alt="케이프 식생 일러스트 위에 나무 기린, 새긴 뿔, 얼룩말 가죽 견본을 오려 붙인 기념품 도감 지면" width="1600" height="1240" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_mo_ko.jpg?v=7" alt="케이프 식생 일러스트 위에 나무 기린, 새긴 뿔, 얼룩말 가죽 견본을 오려 붙인 기념품 도감 지면" width="1080" height="2400" /></figure><p data-ke-size="size16">기념품 가게 선반 하나가 통째로 기린이에요. 진열장이 너무 빽빽해서, 제 눈이 오래 머문 것만 따로 데려왔어요. 손으로 깎아서 같은 얼굴이 하나도 없고, 저는 제일 반듯한 것보다 '이것만 다른 것'에 자꾸 손이 가더라고요. 얼룩말 가죽과 뿔 공예품 앞에서는 저도 한&nbsp;번 멈춰 섰고요.</p><div class="fact warnbox"><b>반입 주의</b><span class="warn">동물 가죽&middot;뿔 같은 동물 소재 기념품은 종에 따라 수출&middot;수입 허가가 필요할 수 있습니다. 구매 전 상점에 종과 서류를 묻고, 귀국 전 관세청&middot;농림축산검역본부 안내를 확인하세요.</span></div>
+<p data-ke-size="size16">그리고 저는, 엉뚱한 곳에서 멈춰 세워졌어요.</p>
+<p data-ke-size="size16">한국에서 선물로 챙겨 간 만년필 때문이었어요. 한&nbsp;자루에 3만 원이 넘는 것들이었는데, 남아공 세관에서 한&nbsp;자루마다 10%씩 관세를 냈어요. 정성껏 포장해 간 마음에 세금이 붙는 순간이었죠.</p>
+<p data-ke-size="size16">주는 쪽에게는 마음이지만, 받는 나라 세관에게는 수입품이더라고요.</p>
+<p data-ke-size="size16">덕분에 그 만년필들은 받을 사람보다 남아공 세관에 먼저 인사를 했어요. 수업료&nbsp;2회차, 한&nbsp;자루당 10%.</p>
+<p data-ke-size="size16">처음 손에 쥔 랜드 지폐는 생각보다 빳빳했어요. 초록빛 10랜드엔 코뿔소, 빨간 50랜드엔 사자가 있고, 액수가 클수록 지폐도 조금씩 길어지더라고요. 관세를 내려고 랜드 지폐를 꺼내다 보니, 지폐마다 같은 얼굴이 있더라고요. 넬슨 만델라예요. 궁금해서 찾아보니 2012년부터 모든 지폐 앞면에 만델라가, 뒷면엔 코뿔소·코끼리·사자·버펄로·표범, 이른바 '빅 파이브'가 들어갔대요. 랜드라는 돈은 1961년, 남아공이 영국 파운드를 내려놓고 공화국이 되던 해에 생겼고요. 더 거슬러 올라가 보니 케이프는 1806년부터 영국이 다스렸고, 영국 자치령이던 남아프리카 연방(1910년~) 시절부터 원주민 토지법(1913년) 같은 분리 법이 쌓이다가, 1948년 집권한 국민당 정부가 그걸 아파르트헤이트라는 제도로 굳혔더라고요. 그 제도에 맞서다 27년을 감옥에서 보낸 사람이, 지금 제가 내민 지폐 앞면에 있는 셈이었어요.</p>
+<p data-ke-size="size16">다음에 선물을 들고 국경을 넘을 땐 상대국 면세 한도부터 보려고요. 같은 물건이 여러 개면 상업용으로 볼 수도 있다더라고요.</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">잠깐, 쉬어 가며</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">에스더 말랑구 (Esther Mahlangu, 1935–)</p><p class="ag-art-p" data-ke-size="size16">세관에서 털린 마음을 기린 선반 앞에서 달래다가, 한&nbsp;사람이 떠올랐어요.</p><p class="ag-art-p" data-ke-size="size16">제가 알아보니 에스더 말랑구라는 작가가 있더라고요. 남아공 은데벨레 여성들이 집 바깥벽에 그려 온 굵은 기하학 무늬를 열 살 무렵 어머니와 할머니에게 배워, 캔버스와 금속으로 옮긴 사람이에요.</p><p class="ag-art-p" data-ke-size="size16">1991년엔 BMW 525i 한&nbsp;대를 통째로 은데벨레 무늬로 칠했대요. BMW 아트카를 맡은 첫 여성이자 첫 비서구 작가였고요. 그 차는 32년 만에 남아공으로 돌아와 케이프타운 이지코 미술관에 전시되기도 했어요.</p><p class="ag-art-p" data-ke-size="size16">이 가게와 직접 관계는 없어요. 그래도 하나하나 다른 기린 무늬 앞에서, 할머니 집 흙벽에서 독일 자동차까지 간 그 선을 떠올려 보는 것도 기념품 가게를 구경하는 또 다른 재미 아닐까 싶네요. 제 그림에도 손으로 그은 선이 많아서, 이 이야기를 떠올리면 선 하나를 더 대담하게 긋게 되더라고요.</p><div class="btns"><a class="btn" href="https://www.artcar.bmwgroup.com/en/art-car/text/Esther-Mahlangu-BMW-525i1991-1375.html" target="_blank" rel="noopener">BMW 아트카 소개 (공식)</a><a class="btn" href="https://en.wikipedia.org/wiki/Esther_Mahlangu" target="_blank" rel="noopener">작가 소개 (Wikipedia)</a></div></div></div></div>
+<p data-ke-size="size16">그리고 이 가게에서 동료들 몫 선물을 골랐어요. 돌로 깎은 하마 같은 동물 인형들, 동물 모양 나무로 만든 수제 연필.</p>
+<p data-ke-size="size16">돌이었어요. 이게 나중에 문제가 됩니다.</p>
+</section>
+<section id="s6" class="sec cp-gs">
+<div class="cp-div" data-g="s6">
+<div class="cp-line cp-dome">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">두&nbsp;번째 나라 &mdash; 튀르키예, 이스탄불의 시장과 맛</p>
+<p class="cp-dn" data-ke-size="size16">이스탄불</p>
+<p class="cp-ds" data-ke-size="size16">비싸게 산 게 아니라 비싸게 배운 거예요.</p>
+</div>
+<p class="num" data-ke-size="size16">⑥</p>
+<h2 data-ke-size="size26">이스탄불을 거쳐</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2299.jpg" alt="케이프타운 공항 체크인 홀" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">체크인 홀. 번호 붙은 카운터가 끝없이 이어져요</p>
+<p data-ke-size="size16">돌아가는 길도 이스탄불 경유, 다시 이틀짜리 여정이에요.</p>
+<p data-ke-size="size16">체크인 카운터 저울 위에서 돌 하마들이 일을 냈어요. 어찌나 무겁던지요. 결국 대한항공 마일리지로 수하물 무게를 올렸어요. 수업료&nbsp;3회차는 무게로 냈네요.</p>
+<p data-ke-size="size16">그래도 운이 하나 따랐어요. 이스탄불 환승 대기가 길어서 항공사가 호텔과 식사를 제공해 줬거든요. 공항 근처 숙소에서 한숨 돌리고, 남은 시간을 쪼개 시내로 나가 보기로 했어요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2303.jpg" alt="이스탄불 트램 정류장의 노선 안내판" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">트램 노선표. 읽을 수 있는 건 숫자와 색깔뿐이에요</p>
+<p data-ke-size="size16">ATM에서 현지 돈을 찾고 트램을 탔어요. 읽을 수 있는 건 숫자와 색깔뿐이라, 지도 앱과 휴대폰 배터리가 길잡이였죠.</p>
+<p data-ke-size="size16">ATM에서 돈을 찾는 데는 1분이면 충분했어요.</p>
+<p data-ke-size="size16">리라 지폐는 색이 더 화려했어요. 20리라는 초록, 100리라는 파랑이라 지갑 안이 알록달록해지더라고요. ATM에서 나온 리라 지폐를 보니, 여기도 앞면 얼굴이 하나로 통일돼 있더라고요. 공화국을 세운 무스타파 케말 아타튀르크예요. 찾아보니 튀르키예는 2005년에 화폐 단위에서 0을 여섯 개나 떼어 냈대요. 100만 리라가 1리라가 된 거죠. 남아공 지폐엔 아파르트헤이트를 끝낸 만델라, 튀르키예 지폐엔 공화국을 세운 아타튀르크. 두 나라 모두 '새로 시작한 날'의 얼굴을 지갑에 넣고 다니는 셈이네요. 그리고 그 아타튀르크 몇 장이, 곧 바자르에서 제 수업료가 됩니다.</p>
+<div class="fact"><b>환승이 길다면</b>터키항공은 이스탄불 공항에서 6~24시간 환승하는 자사 승객에게 무료 시내 투어(Touristanbul)를 운영해요.</div>
+</section>
+<section id="s7" class="sec">
+<p class="num" data-ke-size="size16">⑦</p>
+<h2 data-ke-size="size26">그랑바자르 — 스무&nbsp;배의 수업료</h2>
+<p data-ke-size="size16">아치문을 넘는 순간 소리부터 달라져요. 그랑바자르. 1455년 직물 시장에서 시작해 지금은 지붕 덮인 골목이 61개, 가게가 4천 곳이 넘어요. 남대문시장 전체에 지붕을 씌우고 거기에 560년을 얹으면 비슷할까요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2310.jpg" alt="진열장에 걸린 화려한 터키 카펫" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">카펫 진열장은 커다란 견본첩 같아요</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2321.jpg" alt="로쿰과 바클라바가 가득한 과자 가게" width="1600" height="1200" /></figure>
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2322.jpg" alt="탑처럼 쌓아 올린 형형색색 향신료" width="1600" height="1200" /><span class="fx" style="left:30%;top:44%;width:18%;height:22%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">로쿰, 바클라바, 탑처럼 쌓은 향신료. 값이 얼마인지보다 색이 먼저 보여서 진열대 정면에서 찍었어요 · 볼 곳: 오른쪽 사진 가격표의 ₺(리라) 표시</p>
+<p data-ke-size="size16">과자 가게엔 로쿰과, 얇은 반죽을 수십 겹 쌓아 시럽에 적신 바클라바가 쟁반째 놓여 있어요. 바클라바는 생긴 것부터 약과를 백&nbsp;겹으로 펼쳐 놓은 모양이에요. 이 시장은 물건보다 색을 먼저 파는 것 같더라고요.</p>
+<p data-ke-size="size16">그리고 여기서, 어머니께 드릴 기념품과 향수를 샀어요.</p>
+<p data-ke-size="size16">가게 주인이 저를 보자마자 '브로, 브로' 하면서 '코리아? 형제의 나라!' 하는데, 그 한마디에 경계가 스르르 풀리더라고요. 차 한&nbsp;잔이 나오고, 향수병을 하나씩 열어 손등에 뿌려 주는 사이에 값은 이미 정해져 있었고요.</p>
+<p data-ke-size="size16">나중에 알고 보니 시세의 스무&nbsp;배쯤이었어요.</p>
+<p data-ke-size="size16">두&nbsp;배도 아니고 스무&nbsp;배. 이 여행 최고 금액의 수업료예요. 비싸게 산 게 아니라 비싸게 배운 거죠. 흥정은 처음 부른 값에서 '시작'한다는 걸 몸으로 알게 된 값이니까요.</p>
+<p data-ke-size="size16">하나 더. 나중에 알고 보니 튀르키예가 '형제의 나라'라고 부르는 나라가 9개국이 넘더라고요. 시장에서 듣는 '브로'는 장사하시는 분들의 영업용 친근함이었던 거죠. 그 말에 마음이 풀리는 건 좋은데, 지갑까지 같이 풀 필요는 없더라고요.</p>
+<div class="fact"><b>다음엔 이렇게 하려고요</b>처음 부른 값은 출발선으로 듣기. 두세&nbsp;집에서 같은 물건 값을 먼저 물어보기. 마음에 드는 티는 덜 내고, 돌아서는 척이 흥정의 절반이라네요. 현금은 작은 단위로 나눠 두고, 사람 많은 골목에선 가방을 몸 앞으로.</div>
+<p data-ke-size="size16">그런데 이 이야기에는 반전이 있어요.</p>
+<p data-ke-size="size16">어머니 선물은 어머니가 오래 갖고 싶어 하시던 거였어요. 튀르키예 전통 치마를 입고 춤추는 아저씨 도자기 인형. 받으시고 정말 기뻐하셨고, 그 인형은 지금도 집에서 춤추고 있어요. 스무&nbsp;배를 냈는데 11년째 매일 본전을 뽑고 있으니, 계산해 보면 나쁜 장사는 아니었네요.</p>
+<p data-ke-size="size16">터키시 딜라이트, 로쿰도 사 갔어요. 전분과 설탕을 졸여 굳힌 과자라 식감은 말랑한 양갱과 찹쌀떡 사이쯤이에요. 문제는 단맛. 조청을 숟가락째 떠먹는 수준이었어요. 진열장에서 그렇게 고와 보이던 과자를 한&nbsp;입 먹다가 사레가 들렸고, 그 고생은 온 가족이 골고루 나눠 가졌죠.</p>
+<p data-ke-size="size16">지금도 명절에 누가 단 걸 꺼내면 그 얘기가 나와요. 평생&nbsp;안줏거리 하나, 이스탄불에서 샀네요.</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">잠깐, 단맛 좀 가라앉히고</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg/960px-Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg" alt="오스만 함디 베이 「거북이 조련사」, 푸른 타일 방에서 북을 멘 노인이 거북이들을 내려다본다" width="960" height="1796" />
+<figcaption class="ag-art-c">오스만 함디 베이 「거북이 조련사」 1906, 페라 미술관 소장 &middot; 퍼블릭 도메인(Wikimedia Commons)</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">오스만 함디 베이 (Osman Hamdi Bey, 1842–1910)</p><p class="ag-art-p" data-ke-size="size16">사레 가라앉히는 동안, 바자르와 직접 관련은 없지만 이날의 저를 가장 정확하게 그린 그림 이야기를 해 볼게요.</p><p class="ag-art-p" data-ke-size="size16">제가 알아보니 2004년, 거북이 다섯&nbsp;마리가 나오는 그림 한&nbsp;점이 350만 달러에 팔렸더라고요. 오스만 함디 베이의 「거북이 조련사」(1906)예요. 그는 화가이면서 이스탄불 고고학 박물관을 세우고, 1882년엔 미술학교까지 연 사람이래요. 그림은 지금 이스탄불 페라 미술관에 걸려 있고요.</p><p class="ag-art-p" data-ke-size="size16">북을 멘 노인이 거북이들을 가르치려 하는데, 거북이들은 잎만 먹고 있어요. 느린 개혁을 꼬집은 그림으로 흔히 읽힌대요.</p><p class="ag-art-p" data-ke-size="size16">바자르에서 흥정을 배우던 날의 저는 노인보다 거북이 쪽이었어요. 가르침은 다 들렸는데, 속도가 따라가지 못했죠.</p><p class="ag-art-p" data-ke-size="size16">흥정을 스무&nbsp;배 값에 '천천히' 배운 날을 생각하면, 이 그림 속 거북이들이 남 같지 않아요. 바자르를 걷다가 페라 미술관에 들러 이 거북이들을 직접 만나 보는 것도 이스탄불 여행의 재미 아닐까 싶네요. 느린 거북이도 결국 배우긴 하니까요.</p><div class="btns"><a class="btn" href="https://www.peramuseum.org/" target="_blank" rel="noopener">페라 미술관 (공식)</a><a class="btn" href="https://en.wikipedia.org/wiki/The_Tortoise_Trainer" target="_blank" rel="noopener">작품 소개 (Wikipedia)</a></div></div></div></div>
+</section>
+<section id="s8" class="sec">
+<p class="num" data-ke-size="size16">⑧</p>
+<h2 data-ke-size="size26">입맛의 귀국</h2>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_pc_ko.jpg?v=7" alt="두껍고 길게 썬 감자튀김이 빨랫줄에 널려 있고, 윗동은 덜 튀겨 허옇고 끝은 너무 익어 녹아내린 그림" width="1600" height="1100" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_mo_ko.jpg?v=7" alt="두껍고 길게 썬 감자튀김이 빨랫줄에 널려 있고, 윗동은 덜 튀겨 허옇고 끝은 너무 익어 녹아내린 그림" width="1080" height="1760" /></figure><p data-ke-size="size16">감자튀김만 보면 호주랑 남아공에서 먹었던 그 감자튀김이 떠올라요. 두껍고 길게, 손 가는 대로 투박하게 썰었는데, 튀기는 것도 감이 없었는지 덜 튀겨 허연 것과 너무 익어 녹아내리듯 처진 것이 한 접시에 같이 나오더라고요. 겉은 축축하고 속은 퍼석퍼석한, 영국의 잘못된 혀가 전파한 트라우마랄까요.</p><p data-ke-size="size16">그 기억을 안고 이스탄불에 왔으니, 제 입맛은 처음부터 조심스러웠어요.</p><p data-ke-size="size16">바자르 근처 주스 가게에서는 반으로 가른 석류와 오렌지를 상자째 쌓아 놓고, 그 자리에서 압착기로 즙을 짜 줘요. 보기엔 이 여행에서 가장 맛있어 보이는 장면이었어요.</p>
+<p data-ke-size="size16">새콤달콤한 첫맛은 오미자차를 떠올리게 했는데, 석류 껍질 조각이 자꾸 걸려서 한&nbsp;모금마다 수박씨 뱉듯 뱉어야 했어요. 이스탄불 음식들은 화려했는데, 제 입맛은 아직 인천공항에서 출국 수속을 밟고 있었나 봐요. 음식이 잘못한 게 아니라 제 혀가 늦게 도착한 거죠.</p>
+<p data-ke-size="size16">그럴 때 기댈 곳은 의외로 마트 과일 칸이에요.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1999.jpg" alt="손에 든 남아공 마트의 서양배" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">케이프타운 마트에서 집어 든 서양배. 실패 없는 한&nbsp;끼</p>
+<p data-ke-size="size16">케이프타운 마트의 서양배가 그랬어요. 한국 배처럼 아삭한 물맛 대신, 잘 익은 홍시처럼 부드럽게 무너지는 단맛. 마트 과일과 빵으로 한&nbsp;끼를 챙겨 두면, 현지 음식은 실험 삼아 마음 편히 즐길 수 있어요.</p>
+</section>
+<section id="s9" class="sec cp-gs">
+<div class="cp-div" data-g="s9">
+<div class="cp-line cp-wheel">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">역사 &mdash; 도시의 지도에 남은 선</p>
+<p class="cp-dn" data-ke-size="size16">에필로그</p>
+<p class="cp-ds" data-ke-size="size16">가장 오래 남은 장면은 사실 사진에 없어요.</p>
+</div>
+<p class="num" data-ke-size="size16">⑨</p>
+<h2 data-ke-size="size26">에필로그</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2161.jpg" alt="밤하늘 아래 불을 밝힌 대관람차" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">2010년 월드컵 무렵부터 항구에 선 대관람차</p>
+<p data-ke-size="size16">케이프타운의 어느 밤, V&amp;A 워터프런트의 대관람차가 살마다 하얀 불을 켜고 천천히 돌고 있었어요. 관람차는 한&nbsp;바퀴를 다 돌면 제자리로 오죠.</p>
+<div class="cg cgC"><p class="cg-m" data-ke-size="size16" style="margin:0 0 6px!important">Theodosian Walls, İstanbul · 41°01′N 28°55′E</p><div class="r"><div style="flex:0.693 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c1_2308_tower.jpg" alt="허물어진 성벽 탑" width="416" height="600" /></div><div style="flex:1.778 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c3_2308_wall.jpg" alt="성벽 벽돌과 아치" width="896" height="504" /></div></div><div class="r"><div style="flex:4.040 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c2_2305_wide.jpg" alt="흐린 하늘 아래 이어진 성벽" width="1600" height="396" /></div></div></div>
+<p class="cap" data-ke-size="size16">이스탄불 옛 성벽. 무너진 자리까지 그대로 두는 도시</p>
+<p data-ke-size="size16">돌아오는 길 이스탄불의 하늘은 흐렸어요. 439년에 완성된 테오도시우스 성벽의 허물어진 탑이 잔디밭 위에 서 있었고요. 무너진 자리까지 역사로 남겨 두는 도시예요.</p>
+<p data-ke-size="size16">그런데 이 여행에서 가장 오래 남은 장면은 사실 사진에 없어요.</p>
+<p data-ke-size="size16">케이프타운에 도착한 날, 공항에서 시내로 가는 길이었어요. 차창 밖으로 판자를 이어 붙인 집들이 길게 늘어서 있었어요. 바다가 보이는 언덕 위의 집들과, 길가의 그 동네. 같은 도시 안에 너무 다른 풍경이 나란히 있었고, 그 길에서 그 판자촌이 어떤 사람들이 사는 곳인지 분명히 알게 됐어요.</p>
+<div class="fact"><b>타운십과 아파르트헤이트</b>공항과 시내를 잇는 N2 고속도로는 여러 타운십(township)을 끼고 지나요. 아파르트헤이트(인종 분리) 시대에 1950년 집단지역법으로 백인이 아닌 주민을 도심에서 밀어내 따로 살게 한 동네예요. 법은 1991년에, 아파르트헤이트는 1994년 민주 선거로 끝났지만 타운십은 지금도 그 자리에 있어요.</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">이 길과 이어진 작가</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">피터 클라크 (Peter Clarke, 1929–2014)</p><p class="ag-art-p" data-ke-size="size16">제가 알아보니 사이먼스타운에서 태어난 화가이자 시인이더라고요. 1972년, 바로 그 집단지역법 때문에 오션뷰로 강제로 옮겨 가야 했대요. 60년 가까이 목판화와 콜라주로 남아공의 사회를 기록해 '조용한 기록자'로 불렸다고 해요.</p><p class="ag-art-p" data-ke-size="size16">제 차창 밖으로 스쳐 간 동네의 안쪽 삶을, 그는 사진 대신 판화로 남겼어요.</p><div class="btns"><a class="btn" href="https://www.sahistory.org.za/people/peter-clarke" target="_blank" rel="noopener">화가 소개 (South African History Online)</a></div></div></div></div>
+<p data-ke-size="size16">그 길에서 확신했어요. 우리나라가 일본 제국에서 독립하지 못했다면, 저 풍경이 우리의 모습이었을 거라고요.</p>
+<p data-ke-size="size16">지배하는 쪽과 지배당하는 쪽으로 갈린 땅에서는, 누가 바다가 보이는 언덕에 살고 누가 길가 판잣집에 사는지가 태어나기 전에 이미 정해져요. 그 선을 그은 법이 사라진 뒤에도, 선은 도시의 지도에 오래 남고요.</p>
+<p data-ke-size="size16">돌아와서 수업료를 정산해 봤어요.</p><figure class="mg-spread mg-narrow"><img src="https://41aurum.github.io/blog/capetown/mag2/mag_receipt_ko.jpg?v=4" alt="감열지에 찍힌 수업료 영수증 — 목 근육, 만년필 관세, 돌 하마, 시세 스무 배, 합계 남는 장사" width="1080" height="2000" /></figure><p data-ke-size="size16">영수증만 보면 손해 본 여행인데, 받은 것까지 세어 보니 남는 장사였네요.</p>
+<p data-ke-size="size16">힘들었던 것까지 전부, 평생 꺼내 먹을 안줏거리가 됐네요.</p><p data-ke-size="size16">오래전 여행이 오늘처럼 생생했던 게 사진 덕인 줄 알았는데, 다시 보니 영수증 덕이었네요.</p>
+<p data-ke-size="size16">열두&nbsp;봉우리 아래 그 청록 바다를 보러 다시 간다면, 이번엔 그 공항 길도 천천히 보고 싶어요.</p>
+<p data-ke-size="size16">목베개는 챙기고, 감자튀김은 안 시킬 거예요. &hellip;아마도요.</p>
+<div class="fact ag-more"><b>더 볼 것 — 이 글에 다 못 담은 작가와 장소</b><div class="btns"><a class="btn" href="https://en.wikipedia.org/wiki/Gregoire_Boonzaier" target="_blank" rel="noopener"><b class="bn">그레구아르 분자이어</b><span class="bd">케이프타운 골목의 화가</span></a><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_Bowler_-_Table_Bay_-_Google_Art_Project.jpg" target="_blank" rel="noopener">보울러 「Table Bay」 (Wikimedia Commons)</a><a class="btn" href="https://en.wikipedia.org/wiki/Anton_Anreith" target="_blank" rel="noopener">안톤 안라이트 (Wikipedia)</a><a class="btn" href="https://grootconstantia.co.za/our-history/" target="_blank" rel="noopener">그루트 콘스탄시아 역사 (공식)</a><a class="btn" href="https://zeitzmocaa.museum/" target="_blank" rel="noopener">자이츠 MOCAA (공식)</a><a class="btn" href="https://www.masumiyetmuzesi.org/" target="_blank" rel="noopener">오르한 파묵 「순수 박물관」 (공식)</a></div></div>
+<div class="fact"><b>참고한 자료 (2026년&nbsp;11월 확인)</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>열두 사도: Wikipedia「Twelve Apostles (mountains)」, Lonely Planet</li>
+<li>케이프 닥터: Wikipedia「Cape Doctor」 &middot; 대서양 수온: Outdoor Swimmer「The colour of cold」</li>
+<li>케이프 더치: Wikipedia「Cape Dutch architecture」 &middot; 보캅: Wikipedia「Bo-Kaap」</li>
+<li>남아공 와인: Wikipedia「History of South African wine」「Pinotage」</li>
+<li>그루트 콘스탄시아: Wikipedia「Groot Constantia」</li>
+<li>테이블마운틴: Britannica「Table Mountain」 &middot; 케이블카&middot;라이언스헤드: Wikipedia</li>
+<li>V&amp;A&middot;시계탑: Wikipedia「V&amp;A Waterfront」, South African History Online &middot; 대관람차: V&amp;A Waterfront 공식 블로그</li>
+<li>이스탄불 공항 이전: Euronews(2019-04-06) &middot; 투어리스탄불: Turkish Airlines FAQ</li>
+<li>그랑바자르&middot;T1 트램: Wikipedia &middot; 테오도시우스 성벽: World History Encyclopedia</li>
+<li>타운십&middot;아파르트헤이트: Wikipedia「Cape Flats」「Group Areas Act」, Al Jazeera(2026-03-06)</li>
+<li>작품과 사람: Wikimedia Commons(퍼블릭 도메인 작품 이미지 2점) &middot; Wikipedia「Thomas William Bowler」「Maclear's Beacon」「Anton Anreith」「Gregoire Boonzaier」「Esther Mahlangu」「Osman Hamdi Bey」「The Tortoise Trainer」「Peter Clarke (artist)」「Zeitz Museum of Contemporary Art Africa」「The Museum of Innocence (museum)」 &middot; Groot Constantia「Our Legacy」 &middot; BMW Group Art Car &middot; University of Johannesburg 뉴스(말랑구 아트카 귀환)</li>
+<li>와인·감의 떫은맛(탄닌): Wikipedia「Tannin」「Persimmon」 · 로쿰·바클라바: Wikipedia「Turkish delight」「Baklava」</li>
+</ul>
+</div>
+<a class="next" href="https://aurum41.tistory.com/">이어지는 글 &mdash; 아우름41 가이드 전체 글 보기 &rarr;</a></section>
+<p class="disc-end" data-ke-size="size16">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<script>/*hqLangFix*/(function(){function f(){var a=document.querySelectorAll('.ctw .lang a.on');for(var i=0;i<a.length;i++){var s=a[i].style;s.setProperty('background','#13314A','important');s.setProperty('color','#fff','important');s.setProperty('border','1px solid #13314A','important');}}var n=0,t=setInterval(function(){f();if(++n>40)clearInterval(t);},300);})();</script>
+</div>
+<script>/*cpSec*/(function(){var R=document.getElementById('agcpt');if(!R)return;var SERIF='"Noto Serif KR", serif';
+var bar=document.getElementById('ctbar');var as=[].slice.call(R.querySelectorAll('#cpdots a'));var now=R.querySelector('.cp-now');
+function tg(a){return document.getElementById(a.getAttribute('data-t'));}
+as.forEach(function(a){a.addEventListener('click',function(e){var t=tg(a);if(!t)return;e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-10,behavior:'smooth'});});});
+function upd(){var h=document.documentElement.scrollHeight-window.innerHeight;if(bar)bar.style.width=(h>0?Math.min(100,window.pageYOffset/h*100):0)+'%';var cur=0;as.forEach(function(a,i){var t=tg(a);if(t&&t.getBoundingClientRect().top<=window.innerHeight*0.45)cur=i;});as.forEach(function(a,i){if(a.classList.contains('on')!==(i===cur))a.classList.toggle('on',i===cur);});if(now&&as[cur]){var x=as[cur].textContent.replace(/\s+/g,' ').trim();if(now.textContent!==x)now.textContent=x;}}
+window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!rm){R.classList.add('arm');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -10% 0px'});[].forEach.call(R.querySelectorAll('.cp-div'),function(x){io.observe(x);});}
+var SEL='.ag-art,.ag-art *,.ag-route,.ag-route *,.cp-k,.cp-cover,.cp-cover *,.cp-div,.cp-div *,.cp-dots,.cp-dots *,.cp-ccap,.eye,.eye > b';var busy=false;
+function cl(){busy=true;[].forEach.call(R.querySelectorAll(SEL),function(e){if(e.hasAttribute('style'))e.removeAttribute('style');});
+[].forEach.call(document.querySelectorAll('body *'),function(e){var f=getComputedStyle(e).fontFamily||'';if(f.indexOf('Nanum Myeongjo')>-1){e.style.setProperty('font-family',SERIF,'important');}});setTimeout(function(){busy=false;},50);upd();}
+[300,1200,3000,6000,10000].forEach(function(t){setTimeout(cl,t);});window.addEventListener('load',cl);
+if('MutationObserver' in window){var tm=null;var mo=new MutationObserver(function(){if(busy)return;clearTimeout(tm);tm=setTimeout(cl,250);});mo.observe(R,{subtree:true,attributes:true,attributeFilter:['style']});setTimeout(function(){mo.disconnect();},20000);}
+})();</script>
+<script>(function(){function f(){document.querySelectorAll('.contents_style .fact').forEach(function(e){e.style.setProperty('background','#EEF7F8','important');e.style.setProperty('border','1px solid #D6EBEE','important');});}setTimeout(f,0);document.addEventListener('DOMContentLoaded',function(){setTimeout(f,60)});window.addEventListener('load',function(){setTimeout(f,120);setTimeout(f,800)});})();</script></div>
