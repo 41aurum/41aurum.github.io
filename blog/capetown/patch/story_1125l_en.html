@@ -1,0 +1,531 @@
+<div id="agcpt" class="ag-c-cpt" lang="en">
+<style>
+body:has(.ag-c-cpt) .article-header{display:none!important}
+html:has(.ag-c-cpt),body:has(.ag-c-cpt),#wrap:has(.ag-c-cpt),#container:has(.ag-c-cpt),.main:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt),.contents_style:has(.ag-c-cpt){background:#FDFBF7!important}
+.main:has(.ag-c-cpt),#container:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){padding-top:0!important;margin-top:0!important}
+.main:has(.ag-c-cpt){display:block!important;max-width:1140px}
+.main:has(.ag-c-cpt) .area-main{width:100%!important;max-width:none!important;float:none!important}
+.main:has(.ag-c-cpt) .area-aside{margin-top:120px;border-top:1px solid #D6EBEE;padding-top:40px;width:100%!important;max-width:none!important;float:none!important}
+.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){width:100%!important;max-width:none!important}
+#agcpt{--cps:'Noto Serif KR', serif!important;--teal:#0E8A97!important;--sand:#F2A93B!important;--blue:#0E8A97!important}
+#agcpt .ctw{max-width:700px!important;margin:0 auto!important}
+#agcpt .cp-cover{display:grid!important;grid-template-columns:1.2fr 1fr!important;width:min(1080px,calc(100vw - 48px))!important;margin:30px 0 0 calc(50% - min(540px,calc(50vw - 24px)))!important;background:#fff!important;border:1px solid #D6EBEE!important}
+#agcpt .cp-cfig,#agcpt .cp-cfig figure{margin:0!important;height:100%!important}
+#agcpt .cp-cfig img{width:100%!important;height:100%!important;min-height:460px!important;object-fit:cover!important;display:block!important}
+#agcpt .cp-ct{padding:56px 46px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+#agcpt .cp-kick{font-size:12px!important;letter-spacing:.18em!important;color:var(--teal)!important;margin:0 0 16px!important;line-height:1.6!important}
+#agcpt .cp-line{height:30px!important;font-size:0!important;line-height:0!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important;margin:0 0 20px!important;overflow:hidden!important}
+#agcpt .cp-ridge{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20L36%2031%20L58%2013%20L168%2012%20L186%2022%20L199%2015%20L212%2024%20L225%2014%20L238%2024%20L251%2013%20L264%2024%20L277%2015%20L290%2025%20L303%2016%20L316%2026%20L329%2017%20L342%2027%20L355%2019%20L368%2028%20L381%2022%20L398%2031%20L470%2036%20L600%2037'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-dome{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2038%20H140%20V16%20L142%203%20L144%2016%20V38%20H168%20Q210%204%20252%2038%20H262%20Q288%2018%20314%2038%20H328%20V12%20L330%201%20L332%2012%20V38%20H600'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-wheel{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3Ccircle%20cx%3D'300'%20cy%3D'19'%20r%3D'16'%2F%3E%3Cpath%20d%3D'M300%203%20V35%20M284%2019%20H316%20M289%208%20L311%2030%20M311%208%20L289%2030%20M292%2037%20L300%2019%20L308%2037'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-title{font-family:var(--cps)!important;font-weight:600!important;font-size:36px!important;line-height:1.3!important;margin:0 0 16px!important;color:#1f2a2c!important;word-break:keep-all!important;letter-spacing:0!important}
+#agcpt .cp-sub{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:#3b4446!important;margin:0!important;word-break:keep-all!important}
+#agcpt .cp-meta{border-top:1px solid #D6EBEE!important;margin-top:24px!important;padding-top:14px!important}
+#agcpt .cp-meta p{font-size:13px!important;line-height:1.9!important;color:#6b6b66!important;margin:0!important}
+#agcpt .cp-meta b{color:var(--teal)!important;font-weight:500!important;margin-right:8px!important}
+#agcpt .cp-ccap{text-align:center!important;margin-top:10px!important}
+#agcpt .sec.cp-gs{padding-top:0!important}
+#agcpt .cp-div{margin:56px 0 64px!important;padding:88px 0 0!important;text-align:center!important}
+#agcpt .cp-div .cp-line{height:42px!important;max-width:560px!important;margin:0 auto 28px!important}
+#agcpt .cp-dn{font-family:var(--cps)!important;font-size:30px!important;font-weight:600!important;letter-spacing:.06em!important;color:#1f2a2c!important;margin:0 0 10px!important;line-height:1.4!important}
+#agcpt .cp-ds{font-family:var(--cps)!important;font-size:15px!important;line-height:1.8!important;color:#7a7a72!important;margin:0!important;word-break:keep-all!important}
+#agcpt.arm .cp-div{opacity:0!important;transform:translateY(18px)!important;transition:opacity .9s ease,transform .9s ease!important}
+#agcpt.arm .cp-div.in{opacity:1!important;transform:none!important}
+#agcpt .cp-dots{position:fixed!important;right:26px!important;top:50%!important;transform:translateY(-50%)!important;z-index:98!important;display:flex!important;flex-direction:column!important;gap:11px!important;align-items:flex-end!important;margin:0!important;padding:0!important}
+#agcpt .cp-dots a{padding:0!important;background:none!important;border-radius:0!important;min-height:0!important;box-shadow:none!important;width:auto!important;display:flex!important;align-items:center!important;gap:10px!important;text-decoration:none!important;border:0!important;line-height:1.2!important}
+#agcpt .cp-dots,#agcpt .cp-dots *{font-family:'Noto Sans KR', sans-serif!important}
+#agcpt .cp-dl{font-size:12px!important;color:#8a8a84!important;letter-spacing:.04em!important;white-space:nowrap!important}
+#agcpt .cp-dd{display:block!important;width:9px!important;height:9px!important;border:1px solid #9aa5a3!important;border-radius:50%!important;font-size:0!important;line-height:0!important;background:transparent!important;overflow:hidden!important}
+#agcpt .cp-dots a.on .cp-dl{color:var(--blue)!important;font-weight:500!important}
+#agcpt .cp-dots a.on .cp-dd{background:var(--blue)!important;border-color:var(--blue)!important}
+#agcpt .cp-now{display:none!important}
+#agcpt .eye{border-left:2px solid #0E8A97!important}
+@media (max-width:1240px){#agcpt .cp-dl{display:none!important}}
+@media (prefers-reduced-motion:reduce){#agcpt.arm .cp-div{opacity:1!important;transform:none!important;transition:none!important}}
+@media (max-width:760px){
+#agcpt .cp-cover{grid-template-columns:1fr!important;width:auto!important;margin:20px 0 0!important}
+#agcpt .cp-cfig img{min-height:0!important;height:auto!important;aspect-ratio:4/3!important}
+#agcpt .cp-ct{padding:28px 20px 30px!important}
+#agcpt .cp-title{font-size:28px!important}
+#agcpt .cp-sub{font-size:17px!important}
+#agcpt .cp-div{margin:40px 0 44px!important;padding-top:56px!important}
+#agcpt .cp-dn{font-size:24px!important}
+#agcpt .cp-dots{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:11px!important;background:#FDFBF7!important;border-top:1px solid #D6EBEE!important;padding:9px 12px!important;max-width:100vw!important;box-sizing:border-box!important}
+#agcpt .cp-dots a{gap:0!important}
+#agcpt .cp-dl{display:none!important}
+#agcpt .cp-now{display:inline!important;font-size:12px!important;color:var(--blue)!important;margin-left:4px!important;white-space:nowrap!important;letter-spacing:.04em!important}
+}
+body:has(.ag-c-cpt) ins.adsbygoogle{max-width:100%!important;overflow:hidden!important}
+.article-view:has(.ag-c-cpt)>div[data-tistory-react-app]{order:9!important}
+#agcpt#agcpt .cp-title,#agcpt#agcpt .cp-sub,#agcpt#agcpt .cp-dn,#agcpt#agcpt .cp-ds{font-family:var(--cps)!important}#agcpt .mg-pull{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:var(--teal)!important;border-left:2px solid var(--teal)!important;padding:2px 0 2px 16px!important;margin:22px 0 28px!important;text-wrap:balance}
+#agcpt .mg-spread{margin:40px 0 14px!important}
+#agcpt .mg-spread img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important}
+#agcpt figure.mg-spread.mg-wide{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important;margin-right:0!important}
+#agcpt figure.mg-spread img.mg-mo{display:none!important}
+#agcpt figure.mg-spread.mg-narrow{max-width:560px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt figure.mg-spread.mg-fries{max-width:620px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt .pair.brk{position:relative!important;display:block!important;padding-bottom:8%!important}
+#agcpt .pair.brk figure:first-child{width:78%!important;transform:rotate(-1.6deg)!important;margin:0!important}
+#agcpt .pair.brk figure:last-child{position:absolute!important;right:0!important;bottom:0!important;width:44%!important;transform:rotate(3deg)!important;border:8px solid #fff!important;margin:0!important;box-shadow:0 10px 24px rgba(40,30,20,.16)!important}
+#agcpt .pair.brk figure:last-child img{width:100%!important;height:auto!important;display:block!important}
+@media (max-width:600px){#agcpt figure.mg-spread img.mg-pc{display:none!important}#agcpt figure.mg-spread img.mg-mo{display:block!important}#agcpt figure.mg-spread.mg-wide{width:100%!important;margin-left:0!important}}
+#agcpt .cg{margin:30px 0 6px!important}
+#agcpt .cg .r{display:flex!important;gap:8px!important;margin:0 0 8px!important}
+#agcpt .cg .r>*{min-width:0!important;margin:0!important}
+#agcpt .cg .col{display:flex!important;flex-direction:column!important;gap:8px!important}
+#agcpt .cg img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important;margin:0!important}
+#agcpt .cg-m{font-family:'SFMono-Regular',Menlo,Consolas,monospace!important;font-size:12px!important;letter-spacing:.12em!important;color:#7d8a87!important;margin:2px 0 0!important;text-transform:uppercase}
+#agcpt figure.mg-spread.mg-wine{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important}
+@media (max-width:600px){#agcpt figure.mg-spread.mg-wine{width:100%!important;margin-left:0!important}}
+html:not(#z1):not(#z2) .contents_style .fact{background:#EEF7F8!important;border-color:#D6EBEE!important}html:not(#z1):not(#z2) .contents_style .fact b,html:not(#z1):not(#z2) .contents_style .fact strong{color:#0E8A97!important}</style>
+<div class="ctw" lang="en"><style>#agcpt .ag-pause .ag-art-l{letter-spacing:.04em}#agcpt .ag-pause .ag-art-p{font-size:15.5px;line-height:1.95}#agcpt .ag-more .btns{margin-top:10px}#agcpt .sec p[data-ke-size],#agcpt #intro > p[data-ke-size]{margin-bottom:18px!important}#agcpt .cp-ccap{margin-bottom:26px!important}#agcpt .ag-pause .ag-art-e{display:block!important}#agcpt .ag-pause .ag-art-f{max-width:none!important;width:auto!important;margin:4px 0 22px!important;text-align:center}#agcpt .ag-pause .ag-art-f img{max-height:440px!important;width:auto!important;max-width:100%!important;margin:0 auto!important}#agcpt .ag-pause .ag-art-b{width:auto!important;max-width:none!important}</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');</style>
+<style>.ctw{--ink:#2b2b2b;--mute:#8a8a8a;--line:#D6EBEE;--accent:#0E8A97;color:var(--ink);font-size:16px;line-height:2;letter-spacing:.02em;word-break:keep-all}
+.ctw *{box-sizing:border-box}.ctw img{display:block;width:100%;height:auto;margin:0}.ctw figure{margin:0}
+.ctw .bar{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:99}
+.ctw h2{font-family:'Noto Serif KR',serif;font-weight:700;font-size:26px;line-height:1.45;margin:0 0 22px;border:0;padding:0}
+.ctw p{margin:0 0 22px}.ctw .num{font-family:'Noto Serif KR',serif;font-size:13px;color:var(--mute);letter-spacing:.2em;margin:0 0 6px}
+.ctw .sec{padding-top:96px}
+.ctw .bleed,.ctw .one,.ctw .pair,.ctw .trio{margin:34px 0 0}
+.ctw .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ctw .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ctw .pair,.ctw .trio{align-items:start}
+.ctw .cap{font-size:13px;line-height:1.7;color:var(--mute);margin:8px 0 26px}
+.ctw .sum{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 2px;margin:8px 0 14px}.ctw .sum b{font-size:12px;letter-spacing:.15em;color:var(--mute)}.ctw .sum ul{margin:6px 0 0;padding-left:18px}
+.ctw .visit{font-size:13px;color:var(--mute)}.ctw .disc-top,.ctw .disc-end{font-size:12px;color:var(--mute);line-height:1.7}
+.ctw .lang{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.ctw .lang span{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--mute)}.ctw .lang .on{border-color:var(--ink);color:var(--ink)}
+.ctw .toc{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.ctw .toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:20px;padding:4px 13px;line-height:1.6}.ctw .toc a:hover{background:var(--ink);color:#fff}
+.ctw .fact{border:1px solid var(--line);background:#fff;padding:18px 22px;font-size:14.5px;line-height:1.9;margin:28px 0}.ctw .fact b{display:block;font-size:12px;letter-spacing:.12em;color:var(--mute);margin-bottom:6px}.ctw .fact ul{margin:0;padding-left:18px}
+.ctw .warn{color:#c0392b}
+.ctw .ad{border:1px solid var(--line);background:#fbfaf7;padding:16px 20px;margin:30px 0}.ctw .adl{font-size:11px;letter-spacing:.15em;color:var(--mute);margin:0 0 4px}.ctw .adisc{font-size:12px;color:var(--mute);line-height:1.6;margin:0 0 12px}
+.ctw .btns{display:flex;flex-wrap:wrap;gap:8px}.ctw .btn{font-size:13.5px;border:1px solid var(--accent);color:var(--accent);border-radius:22px;padding:6px 16px;text-decoration:none;line-height:1.5}.ctw .btn:hover{background:var(--accent);color:#fff}
+.ctw .next{display:block;border:1px solid var(--ink);padding:18px 22px;text-decoration:none;color:var(--ink);margin:40px 0}
+.ctw section{animation:ctf 1s ease both}@keyframes ctf{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ctw section{animation:none}}
+@media (max-width:600px){.ctw h2{font-size:22px}.ctw .pair,.ctw .trio{grid-template-columns:1fr}.ctw .pair img,.ctw .trio img{aspect-ratio:auto}.ctw .bleed{margin-left:-20px;margin-right:-20px}.ctw .sec{padding-top:72px}}
+
+#au-series{display:none!important}
+.article-view:has(.ctw){display:flex!important;flex-direction:column}
+.article-view:has(.ctw)>*{order:1}
+.article-view:has(.ctw)>ins.adsbygoogle,.article-view:has(.ctw)>.revenue_unit_wrap{order:9}
+.area-view:has(.ctw) .article-header{background:linear-gradient(rgba(18,32,36,.30),rgba(18,32,36,.58)),url(https://41aurum.github.io/blog/capetown/ct_2212.jpg) center 40%/cover no-repeat!important}
+.area-view:has(.ctw) .article-header .title-article{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;display:block!important}
+#mainContent:has(.ctw){display:flex!important;flex-direction:column}
+#mainContent:has(.ctw)>*{order:1}
+#mainContent:has(.ctw)>ins.adsbygoogle,#mainContent:has(.ctw)>.revenue_unit_wrap{order:9}
+.ctw .lang a{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--ink);text-decoration:none!important;background:#fff}
+.ctw .lang a.on{border-color:#13314A;background:#13314A;color:#fff}
+.ctw .lang a.on{border-color:#13314A!important;background:#13314A!important;color:#fff!important}
+#article-view .ctw .lang a.on,#mainContent .ctw .lang a.on,body .ctw .lang a.on[href]{border-color:#13314A!important;background:#13314A!important;background-color:#13314A!important;color:#fff!important}
+.ctw .eye{border-left:2px solid #0E8A97;padding:4px 0 4px 18px;margin:30px 0;font-size:15px;line-height:1.95;color:#3a4446}.ctw .eye b{display:block;font-family:'Noto Serif KR',serif;font-size:12px;font-weight:700;letter-spacing:.16em;color:#0E8A97;margin-bottom:4px}
+#agcpt .cp-k{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.2em!important;color:var(--teal)!important;margin:0 0 12px!important;line-height:1.7!important;font-weight:600!important}
+#agcpt .ag-route{margin:22px 0 10px!important;padding:18px 0 14px!important;border-top:1px solid #D6EBEE!important;border-bottom:1px solid #D6EBEE!important}
+#agcpt .ag-route-h{font-size:12px!important;letter-spacing:.15em!important;color:#8a8a8a!important;margin:0 0 14px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-route-l{list-style:none!important;margin:0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:0!important}
+#agcpt .ag-route-l li{list-style:none!important;position:relative!important;margin:0!important;padding:22px 12px 0 0!important;font-size:12.5px!important;line-height:1.65!important;color:#5d6466!important;word-break:keep-all!important}
+#agcpt .ag-route-l li::before{content:''!important;position:absolute!important;left:0!important;top:6px!important;width:8px!important;height:8px!important;border-radius:50%!important;background:var(--teal)!important}
+#agcpt .ag-route-l li::after{content:''!important;position:absolute!important;left:14px!important;right:6px!important;top:10px!important;height:1px!important;background:#CDEBF3!important}
+#agcpt .ag-route-l li:last-child::after{display:none!important}
+#agcpt .ag-route-l li:last-child::before{background:var(--blue)!important}
+#agcpt .ag-route-l li span{display:block!important;font-family:var(--cps)!important;font-size:14px!important;font-weight:700!important;color:#1f2a2c!important;margin:0 0 3px!important;letter-spacing:.04em!important}
+#agcpt .ag-route-l li:last-child span{color:var(--blue)!important}
+#agcpt .ag-art{margin:44px 0!important;background:#fff!important;border:1px solid #D6EBEE!important;border-top:3px solid var(--blue)!important;padding:22px 26px 22px!important}
+#agcpt .ag-art-l{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.24em!important;color:var(--blue)!important;margin:0 0 16px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-art-e+.ag-art-e{border-top:1px solid #E4F2F4!important;margin-top:22px!important;padding-top:22px!important}
+#agcpt .ag-art-has{display:grid!important;grid-template-columns:44% 1fr!important;gap:24px!important;align-items:start!important}
+#agcpt .ag-art-f{margin:0!important}
+#agcpt .ag-art-f img{display:block!important;width:100%!important;height:auto!important;border:1px solid #E4F2F4!important}
+#agcpt .ag-art-c{font-size:11.5px!important;line-height:1.6!important;color:#8a8a8a!important;margin:8px 0 0!important}
+#agcpt .ag-art-t{display:inline-block!important;font-size:11px!important;letter-spacing:.12em!important;color:var(--teal)!important;border:1px solid #CDEBF3!important;border-radius:20px!important;padding:1px 10px!important;margin:0 0 10px!important;line-height:1.7!important}
+#agcpt .ag-art-n{font-family:var(--cps)!important;font-size:19px!important;font-weight:700!important;line-height:1.5!important;color:#1f2a2c!important;margin:0 0 4px!important}
+#agcpt .ag-art-w{font-size:13px!important;line-height:1.7!important;color:#6b6f66!important;margin:0 0 12px!important}
+#agcpt .ag-art-p{font-size:15px!important;line-height:1.9!important;margin:0 0 12px!important;color:#2b2b2b!important}
+#agcpt .ag-art .btns{margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-art-f img[height="1796"]{max-width:62%!important;margin:0 auto!important}#agcpt .ag-route-l{grid-template-columns:1fr!important}#agcpt .ag-route-l li{padding:0 0 12px 22px!important}#agcpt .ag-route-l li::before{top:7px!important}#agcpt .ag-route-l li::after{left:3.5px!important;right:auto!important;top:18px!important;bottom:-2px!important;width:1px!important;height:auto!important}#agcpt .ag-art{padding:18px 18px!important}#agcpt .ag-art-has{grid-template-columns:1fr!important;gap:14px!important}}
+
+/*hq1125b*/
+#agcpt .ag-route-l{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+#agcpt .ctw .ag-route-l li{overflow-wrap:anywhere!important}
+#agcpt[lang=ja] .ag-route-l li,#agcpt[lang=ja] .ag-art,#agcpt[lang=ja] .ag-art *,#agcpt[lang=ja] .cp-k{word-break:normal!important;line-break:strict!important}
+#agcpt .ctw .ag-art p.ag-art-n,#agcpt .ctw .ag-art p.ag-art-l,#agcpt .ctw .ag-route-l li span,#agcpt .ctw .cp-div p.cp-k{font-family:var(--cps)!important}
+#agcpt .ag-route{border-top:0!important;margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-route-l{grid-template-columns:1fr!important}}</style>
+<style>/*hqFX1125*/#agcpt .fxf{position:relative!important}#agcpt .fx{position:absolute!important;display:block!important;border:1.6px solid rgba(63,127,122,.95)!important;border-radius:50%!important;box-shadow:0 0 0 1px rgba(255,255,255,.45)!important;font-size:0!important;line-height:0!important;pointer-events:none!important;background:transparent!important}</style><style>/*hqLB1125*/#agcpt .ctw,#agcpt .cp-cover,#agcpt .cp-div{word-break:keep-all;overflow-wrap:break-word;line-break:strict}#agcpt .cp-title,#agcpt .cp-sub,#agcpt .cp-dn,#agcpt .cp-ds,#agcpt .ctw h2,#agcpt .ctw .cap,#agcpt .cp-ccap,#agcpt .ag-art-n,#agcpt .toc a,#agcpt .btn{text-wrap:balance}#agcpt .ctw p,#agcpt .ctw li{text-wrap:pretty}</style><div id="ctbar" class="bar">&nbsp;</div>
+<nav id="cpdots" class="cp-dots" aria-label="Sections"><a href="#cpcover" data-t="cpcover"><span class="cp-dl">Cover</span><span class="cp-dd">&nbsp;</span></a><a href="#s1" data-t="s1"><span class="cp-dl">Flight &amp; sea</span><span class="cp-dd">&nbsp;</span></a><a href="#s3" data-t="s3"><span class="cp-dl">Winery</span><span class="cp-dd">&nbsp;</span></a><a href="#s4" data-t="s4"><span class="cp-dl">Table Mountain</span><span class="cp-dd">&nbsp;</span></a><a href="#s5" data-t="s5"><span class="cp-dl">Souvenirs &amp; customs</span><span class="cp-dd">&nbsp;</span></a><a href="#s6" data-t="s6"><span class="cp-dl">Istanbul</span><span class="cp-dd">&nbsp;</span></a><a href="#s9" data-t="s9"><span class="cp-dl">Epilogue</span><span class="cp-dd">&nbsp;</span></a><span class="cp-now">Cover</span></nav>
+<div class="lang"><a href="https://aurum41.tistory.com/11">🇰🇷 한국어</a><a class="on" href="https://aurum41.tistory.com/16">🇬🇧 English</a><a href="https://aurum41.tistory.com/17">🇯🇵 日本語</a></div>
+<p class="disc-top" data-ke-size="size16">This post contains Coupang Partners links, and I receive a commission from them (이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다). Some links are Klook affiliate links.</p>
+<section id="intro">
+<div id="cpcover" class="cp-cover">
+<div class="cp-cfig">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2210.jpg" alt="Camps Bay under twelve peaks, the sea as blue as a swimming pool" width="1600" height="1200" /></figure>
+</div>
+<div class="cp-ct">
+<p class="cp-kick" data-ke-size="size16">AURUM41 GUIDE &middot; Overseas travel</p>
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-title" data-ke-size="size16">Cape Town, South Africa</p>
+<p class="cp-sub" data-ke-size="size16">A turquoise sea under twelve peaks,<br>and a lesson that cost twenty times the&nbsp;price</p>
+<div class="cp-meta">
+<p data-ke-size="size16"><b>Visited</b> October 31 &ndash; November 10, 2015</p>
+<p data-ke-size="size16"><b>Route</b> Incheon &rarr; Istanbul &rarr; Cape Town, and home again via&nbsp;Istanbul</p>
+</div>
+</div>
+</div>
+<p class="cap cp-ccap" data-ke-size="size16">Camps Bay</p>
+<p data-ke-size="size16">A sip of wine, a square of cherry chocolate, and a tuition fee twenty times the going rate, paid at a market in&nbsp;Istanbul.</p>
+<p data-ke-size="size16">To get those three things, I spent two days on planes.</p>
+<p data-ke-size="size16">Hello, I'm Yang Seungjin, an artist who stages ideas (생각을 연출하는 작가, saeng-gak-eul yeon-chul-ha-neun jak-ga). Today I'm taking you back to the autumn of 2015, to Cape Town, the city at the very bottom of the African continent. The sea is pool-blue and the mountain looks sliced flat with a knife. I've already done all the hard parts of getting there, so just sit back and enjoy the view. The good bits, we'll see&nbsp;together.</p><p class="mg-pull" data-ke-size="size16">It was a long time ago, yet opening these photos again, it feels as vivid as&nbsp;today.</p>
+<nav class="toc"><a href="#s1">① Two days of flying</a><a href="#s2">② Atlantic light</a><a href="#s3">③ The winery</a><a href="#s4">④ Table Mountain</a><a href="#s5">⑤ Souvenirs and customs</a><a href="#s6">⑥ Istanbul</a><a href="#s7">⑦ The Grand Bazaar</a><a href="#s8">⑧ My taste buds come home</a><a href="#s9">⑨ Epilogue</a></nav></section>
+<div class="sum"><b>In three lines</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc"><li>Two days of flying. Then a turquoise sea under twelve peaks, and wine with cherry&nbsp;chocolate.</li><li>Table Mountain and the harbour, a souvenir shop and customs &mdash; the day I learned that gifts get taxed&nbsp;too.</li><li>Istanbul on the way home: haggling, learned at twenty times the price in the Grand Bazaar. And last, the shacks along the airport&nbsp;road.</li></ul>
+</div>
+<div class="ag-route">
+<p class="ag-route-h" data-ke-size="size16">How this post narrows in</p>
+<ul class="ag-route-l" style="list-style-type: disc;" data-ke-list-type="disc">
+<li><span>Country</span>South Africa, and T&uuml;rkiye on the way home</li>
+<li><span>Region</span>Camps Bay &middot; Constantia &middot; V&amp;A harbour, Istanbul's old&nbsp;city</li>
+<li><span>Food</span>Wine and chocolate, supermarket fruit, lokum</li>
+<li><span>Scenery</span>Twelve peaks, Table Mountain, old city walls</li>
+<li><span>Culture</span>Cape Dutch houses, bazaar haggling, the history of the&nbsp;townships</li>
+<li><span>Art</span>At every rest stop, one artist the place brought to mind</li>
+</ul>
+</div>
+<p class="visit" data-ke-size="size16">Visit dates: October 31 &ndash; November 10, 2015 (based on the original photo dates). Things may be different&nbsp;now.</p>
+<section id="s1" class="sec cp-gs">
+<div class="cp-div" data-g="s1">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">Country &middot; Region &mdash; South Africa, Cape Town's Atlantic&nbsp;coast</p>
+<p class="cp-dn" data-ke-size="size16">Flight &amp; sea</p>
+<p class="cp-ds" data-ke-size="size16">To see this one view, it took two days on planes.</p>
+</div>
+<p class="num" data-ke-size="size16">①</p>
+<h2 data-ke-size="size26">Two days of flying</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1905.jpg" alt="An airliner waiting beyond the boarding bridge at the departure airport" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Departure. How many of my meals those catering boxes would cover, I had no idea&nbsp;yet</p>
+<p data-ke-size="size16">Autumn 2015, a work trip. Incheon to Istanbul, change planes, then across the equator to the tip of&nbsp;Africa.</p>
+<p data-ke-size="size16">&lsquo;Change planes&rsquo; sounds quick. In practice it's two&nbsp;days.</p>
+<p data-ke-size="size16">On a long-haul flight, the first thing to surrender isn't your stamina &mdash; it's your neck. Doze off for a moment and you wake with your head folded to one side; sit down in a transit-airport chair and now your back starts filing complaints. At the gate for the second flight I made myself a quiet promise: next time, the neck pillow goes in&nbsp;first.</p>
+<p data-ke-size="size16">I'm handing that promise to you now, before you need it.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">Ad &middot; Coupang</p>
+<p class="adisc" data-ke-size="size16">This post contains Coupang Partners links, and I receive a commission from them (이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다).</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCAGvPrUq" target="_blank" rel="sponsored noopener">Neck pillow</a><a class="btn" href="https://link.coupang.com/a/iUCBQG98Ro" target="_blank" rel="sponsored noopener">Compression socks</a><a class="btn" href="https://link.coupang.com/a/iUCCVPbwTA" target="_blank" rel="sponsored noopener">Sleep mask</a></div>
+</aside>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1916.jpg" alt="Cape Town International Airport terminal under a blue sky" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Cape Town International Airport. Even the roof curves like a&nbsp;wave</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1917.jpg" alt="Clear sky and terminal, just after landing in Cape Town" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The luggage trolleys got here before I did</p>
+<p data-ke-size="size16">Arrived.</p>
+<p data-ke-size="size16">After two days, the outside air smelled dry and light. November in the southern hemisphere is early summer. Back in Korea people were pulling out autumn jackets; here it was short&nbsp;sleeves.</p>
+<p data-ke-size="size16">The first thing I checked on arrival wasn't the view. It was whether my neck still turned both&nbsp;ways.</p>
+<p data-ke-size="size16">It did, thankfully. Tuition fee no. 1, paid in neck muscles.</p>
+</section>
+<section id="s2" class="sec">
+<p class="num" data-ke-size="size16">②</p>
+<h2 data-ke-size="size26">Atlantic light</h2>
+<p data-ke-size="size16">Bags down, straight to the sea. Only one thing on today's list: an Atlantic&nbsp;sunset.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1975.jpg" alt="Aloes and a golden sea beyond the fence of the coastal walkway at dusk" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The aloes turn into silhouettes, and the sea breaks into&nbsp;gold</p>
+<p data-ke-size="size16">On this coast the sun sets into the sea. Aloe leaves go black against it, and between the fence posts the whole surface of the water breaks into gold. An evening with outlines as clear as a woodblock&nbsp;print.</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_1980.jpg" alt="Tide pools holding the sunset, and dark wet coastal rocks" width="1600" height="1200" /><span class="fx" style="left:40%;top:45%;width:40%;height:38%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">Every tide pool held a piece of the sunset, so I left the sun out and looked straight down at the pools &middot; Look at: the pool inside the&nbsp;circle</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1989.jpg" alt="Silhouettes of trees along the coastal road" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Bicycles, palm trees, white apartments</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1990.jpg" alt="Evening light spreading over a Cape Town beach road" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Sunset next to the outdoor gym. Take away the sea and it's my neighbourhood&nbsp;park</p>
+<p data-ke-size="size16">In Korea this would be the riverside walking path every neighbourhood has. The only difference: where the stream should be, there's the&nbsp;Atlantic.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2073.jpg" alt="The Atlantic glittering in the sun beside the seafront path" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Lovely &mdash; but too bright to look at for long</p>
+<p data-ke-size="size16">This sunlight is strong, though. Stand there taking in the view and you'll soon be squinting, and on the shadeless coastal road your arms and the back of your neck heat up fast. It's that sting you feel the day after a whole day at the beach without&nbsp;sunscreen.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">Ad &middot; Coupang</p>
+<p class="adisc" data-ke-size="size16">This post contains Coupang Partners links, and I receive a commission from them (이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다).</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCC5P48Au" target="_blank" rel="sponsored noopener">Sunscreen SPF50+</a><a class="btn" href="https://link.coupang.com/a/iUCDgh1lBc" target="_blank" rel="sponsored noopener">Polarized sunglasses</a><a class="btn" href="https://link.coupang.com/a/iUCDqkuOzs" target="_blank" rel="sponsored noopener">Wide-brim hat</a></div>
+</aside>
+<div class="trio">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2192.jpg" alt="A single tree leaning in the wind on the Camps Bay hillside" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2203.jpg" alt="A clear shore with round granite boulders" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2205.jpg" alt="The Twelve Apostles peaks running along the coastline" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Camps Bay. No filter &mdash; it really is this colour</p>
+<p data-ke-size="size16">Then, on a day the sky cleared completely, I stood on the hill above Camps&nbsp;Bay.</p>
+<p data-ke-size="size16">Twelve peaks stand shoulder to shoulder, looking down at the sea. At their feet the water shifts from turquoise to navy again and again. Picture the jade-green sea of Hyeopjae (협재) beach on Jeju Island, spread out ten times wider, with the ridges of Seoraksan (설악산) standing behind it like a folding screen. Two days of flying, and the tiredness melted away right&nbsp;here.</p>
+<div class="fact"><b>Twelve Apostles, eighteen peaks</b>These peaks are called the &lsquo;Twelve Apostles,&rsquo; but when I counted, there were eighteen. If the numbers don't match, it isn't our eyes that are&nbsp;wrong.</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">A pause for coffee</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg/1280px-Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" alt="Thomas William Bowler's watercolour of Camps Bay: round boulders and a tide pool, with the peaks behind" width="1280" height="970" />
+<figcaption class="ag-art-c">Thomas William Bowler, &lsquo;Camps Bay, Cape of Good Hope,&rsquo; watercolour on paper, &lsquo;1850&ndash;53&rsquo; noted on the back &middot; Public domain (Wikimedia&nbsp;Commons)</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">Thomas William Bowler (1812–1869)</p><p class="ag-art-p" data-ke-size="size16">Choosing this photo, I set a cup of coffee down and sat back. While we're resting, here's the story of the man who painted this sea&nbsp;first.</p><p class="ag-art-p" data-ke-size="size16">When I looked into it, someone had painted this sea about 160&nbsp;years before me. Thomas William Bowler: a young Englishman who stepped off the ship in 1834 as the servant of the Cape's newly appointed astronomer, and who then spent nearly 35&nbsp;years painting almost nothing but this land and&nbsp;sea.</p><p class="ag-art-p" data-ke-size="size16">I found his watercolour &lsquo;Camps Bay, Cape of Good Hope&rsquo; &mdash; round granite boulders, a tide pool, the peaks running behind. The boulders in my photo lie in the same spot, in the same shape. A model that hasn't changed its pose in 160&nbsp;years. Landscape may be the only genre where the model never&nbsp;ages.</p><p class="ag-art-p" data-ke-size="size16">I paint the sea a lot myself, so I did the maths. He spent paint and a whole day on this scene; I spent one second with a phone. What's still here 160&nbsp;years later is the day, not the second. So these days I try to just stand and look for ten seconds before I press the&nbsp;shutter.</p><p class="ag-art-p" data-ke-size="size16">Standing on this hill and laying that 160-year-old watercolour over the view in your mind might just be one of the small pleasures of this&nbsp;trip.</p><div class="btns"><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" target="_blank" rel="noopener">About the work (Wikimedia Commons)</a><a class="btn" href="https://en.wikipedia.org/wiki/Thomas_William_Bowler" target="_blank" rel="noopener">About the painter (Wikipedia)</a></div></div></div></div>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2197.jpg" alt="Camps Bay beach and mountains beyond the shade of a tree" width="1600" height="1200" /><span class="fx" style="left:44%;top:30%;width:22%;height:50%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2200.jpg" alt="Camps Bay, where turquoise water meets white sand" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The tree seemed to tell me which way the wind blows, so I shot it from the side to show the lean &middot; Look at: the trunk leaning one&nbsp;way</p>
+<p data-ke-size="size16">A lone tree on the hillside lawn leans toward the sea. Before anyone tells you that the wind here always blows from one direction, the tree already&nbsp;has.</p>
+<div class="cg cgA"><div class="r"><div style="flex:2.899 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a1_2212_wide.jpg" alt="Camps Bay sea and the Twelve Apostles" width="1600" height="552" /></div></div><div class="r"><div style="flex:0.729 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a2_2208_tall.jpg" alt="A rock pool and the sea" width="560" height="768" /></div><div style="flex:1.920 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a3_2212_detail.jpg" alt="The beach and the boulder hill" width="576" height="300" /></div></div><p class="cg-m" data-ke-size="size16">Camps Bay · 33°57′S 18°23′E</p></div>
+<p class="cap" data-ke-size="size16">The water this clear, and I never once put my feet in</p>
+<p data-ke-size="size16">For all that clear water, I didn't dip a toe. A cold current coming up from the Antarctic side runs past this coast, so even on a turquoise day the water is far colder than it looks. Like putting your feet in a mountain stream in summer and pulling them out after three seconds. On the Atlantic, the sea you look at and the sea you get into are two different&nbsp;seas.</p>
+</section>
+<section id="s3" class="sec cp-gs">
+<div class="cp-div" data-g="s3">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">Food &mdash; wine and chocolate in the Constantia valley</p>
+<p class="cp-dn" data-ke-size="size16">Winery</p>
+<p class="cp-ds" data-ke-size="size16">A sip of wine, then a square of chocolate.</p>
+</div>
+<p class="num" data-ke-size="size16">③</p>
+<h2 data-ke-size="size26">The winery</h2>
+<p data-ke-size="size16">On the way toward Table Mountain &mdash; honestly, this was the real destination of the day. Groot Constantia, the oldest wine estate in South&nbsp;Africa.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2275.jpg" alt="White-walled buildings and vineyards, with the mountains behind" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Vineyards all the way up to the foothills. There's even a playground; a family picnic&nbsp;spot</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2278.jpg" alt="A long pond in front of a white gabled building" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">White walls, a rounded gable, a long pond. The building balances itself, left and&nbsp;right</p>
+<p data-ke-size="size16">The farm dates from 1685. White plastered walls topped with rounded gables, the &lsquo;Cape Dutch&rsquo; style of the Dutch settlement era, and a long pond in front that reflects the building once more, upside&nbsp;down.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2234.jpg" alt="An old wine press in the estate's exhibition space" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">An old grape press. A butterfly painting hangs behind it</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2235.jpg" alt="A landscape painting and a small oak barrel on the winery wall" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">A painting of a Cape Town street lined with colourful houses</p>
+<p data-ke-size="size16">Inside: old presses and paintings.</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2257.jpg" alt="Oak barrels lying endlessly in the dimly lit cellar" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2261.jpg" alt="A long column of oak barrels" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The cellar. The barrels lie on and on, out of sight</p>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2260.jpg" alt="Oak barrels stacked high in the cellar" width="1600" height="1200" /><span class="fx" style="left:48%;top:8%;width:26%;height:32%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2265.jpg" alt="Wine bottles displayed beneath a large oak barrel" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">I liked how the red wine-stained bands ran at the same height from barrel to barrel, so I looked down at an angle &middot; Look at: the red band on the barrels, left&nbsp;photo</p>
+<p data-ke-size="size16">Down the stairs is the cellar. In a long, low-lit room, oak barrels lie at the same angle without end, each with a red band where the wine has soaked into its belly. It's the reassuring feeling of seeing rows of crocks on a jangdokdae (장독대), the terrace where Korean families keep their earthenware jars of fermented sauces. Except these crocks hold wine, not doenjang (된장, soybean&nbsp;paste).</p>
+<p data-ke-size="size16">After one lap of the cellar, my mouth wanted something to do. And as it happened, the tastiest part of the whole trip was waiting: a wine and chocolate&nbsp;pairing.</p><figure class="mg-spread mg-wine"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_pc_en.jpg?v=6" alt="A glass of red wine with cherry chocolate, a cherry-chocolate illustration and the tasting order" width="1600" height="960" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_mo_en.jpg?v=6" alt="A glass of red wine with cherry chocolate, a cherry-chocolate illustration and the tasting order" width="1080" height="1540" /></figure>
+<p data-ke-size="size16">It's simple. A sip of wine, a square of chocolate. Wine's dryness comes from the same compounds (tannins) that make your tongue curl when you bite into an unripe persimmon. When chocolate steps into that dry spot, its sweetness sometimes covers the astringency and sometimes lifts the wine's aroma right up. Koreans have fixed pairings &mdash; makgeolli (막걸리, rice wine) with pajeon (파전, scallion pancake), soju with grilled pork belly &mdash; and this was a drinks table with its partners already decided,&nbsp;too.</p>
+<p data-ke-size="size16">What surprised me was the chocolate side. To me, chocolate had always been one flavour: &lsquo;chocolate.&rsquo; But chocolate itself branching into flavours, like cherry, with a wine matched to each one &mdash; that was a first. Every square, every sip, was a small&nbsp;surprise.</p>
+<p data-ke-size="size16">Until then I thought cherries were the ones that sit on top of the cake. That day, the cherry had gone inside the&nbsp;chocolate.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2270.jpg" alt="Shade of a large tree at the winery, with mountains beyond the vineyards" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Out of the cellar, back into the sun. A big tree's shade over the&nbsp;vines</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2281.jpg" alt="Outdoor tables in front of the winery's white building" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2283.jpg" alt="An outdoor terrace with folded parasols under a big tree" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Folded parasols. Next time I'll come on a day they're open</p>
+<p data-ke-size="size16">A couple of sips of wine plus the sunshine, and before I'd even gone up Table Mountain, my mood had already reached the&nbsp;summit.</p>
+</section>
+<section id="s4" class="sec cp-gs">
+<div class="cp-div" data-g="s4">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">Scenery &mdash; a flat mountain and the harbour below</p>
+<p class="cp-dn" data-ke-size="size16">Table Mountain</p>
+<p class="cp-ds" data-ke-size="size16">Its top is flat as if sliced with a knife &mdash; hence Table&nbsp;Mountain.</p>
+</div>
+<p class="num" data-ke-size="size16">④</p>
+<h2 data-ke-size="size26">Table Mountain</h2>
+<p data-ke-size="size16">Now it's the main character's turn.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2053.jpg" alt="Flat-topped Table Mountain, seen from downtown" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">A mountain at the end of the road. In this city you just look up and there it&nbsp;is</p>
+<div class="cg cgB"><div class="r"><div style="flex:0.533 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b3_2079_tall.jpg" alt="The mountain past a lamppost and trees" width="512" height="960" /></div><div class="col" style="flex:2.37 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b2_2079_ridge.jpg" alt="The flat ridge of Table Mountain" width="1408" height="348" /><img src="https://41aurum.github.io/blog/capetown/mag2/b1_2084_ridge.jpg" alt="The same ridge from another street" width="1504" height="264" /></div></div><p class="cg-m" data-ke-size="size16">Table Mountain · 33°58′S 18°25′E</p></div>
+<p class="cap" data-ke-size="size16">Same mountain from every angle</p>
+<p data-ke-size="size16">In Cape Town, whichever street you turn your head down, the mountain is in the frame. Lose your way, find the mountain, and you have your bearings. This city hung its signpost about 1,000&nbsp;m above sea&nbsp;level.</p>
+<p data-ke-size="size16">It's like using Bukhansan (북한산) to find your way around Seoul &mdash; except here the summit is flat, as if someone ran an iron over&nbsp;it.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2227.jpg" alt="Downtown Cape Town seen from the lookout" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The lookout. The city fills right up to the foot of the&nbsp;mountain</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2228.jpg" alt="Lookout view of the sea and the city together" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">Opposite: pointed Lion's Head</p>
+<p data-ke-size="size16">I climbed to a hillside lookout facing the mountain. The sun stings but the wind is cold, so you come up in short sleeves and soon find your arms folded. When the southeaster blows hard, a white cloud spreads over the summit like a cloth, and locals really do call it the &lsquo;Tablecloth.&rsquo; The weather even sets the table to match the mountain's&nbsp;name.</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2230.jpg" alt="Table Mountain framed in a big yellow photo frame" width="1600" height="1200" /><span class="fx" style="left:22%;top:35%;width:62%;height:26%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">Everyone stepped back from the frame, so I stood in the same spot and lined the mountain up right inside it &middot; Look at: Table Mountain inside the&nbsp;frame</p>
+<p data-ke-size="size16">At the lookout stands a giant yellow frame. That's all it is, a frame &mdash; yet people stop, step back, and choose where to stand to fit the mountain inside it. It does exactly what a frame does in a gallery, only in front of a mountain. As an artist, I was a little jealous of that&nbsp;idea.</p>
+<p data-ke-size="size16">The fastest way to the top is the cableway, opened in 1929. It closes on very windy days, so it's easier on the mind to check the weather before picking a&nbsp;time.</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">Ad &middot; Klook</p>
+<p class="adisc" data-ke-size="size16">This button is a Klook affiliate link; I may receive a commission when you&nbsp;book.</p>
+<div class="btns"><a class="btn" href="https://www.klook.com/en-US/search/result/?query=Table%20Mountain%20Cableway&amp;aid=143914" target="_blank" rel="sponsored noopener">Book the Table Mountain Cableway</a></div>
+</aside>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2129.jpg" alt="Table Mountain behind the harbour and moored boats" width="1600" height="1200" /><span class="fx" style="left:35%;top:26%;width:60%;height:18%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">That mountain showed up again between the flags and the crane &mdash; I wanted to keep proof that even at the harbour, the mountain is the star &middot; Look at: the flat ridge behind the&nbsp;flags</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2150.jpg" alt="The harbour's red clock tower lit up at night" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">A blue light comes on at the top of the red clock tower</p>
+<p data-ke-size="size16">After sunset, the V&amp;A Waterfront. A blue light comes on in the red clock tower built in 1882, and the mountain slips into the dark. This harbour is brighter at&nbsp;night.</p>
+</section>
+<section id="s5" class="sec cp-gs">
+<div class="cp-div" data-g="s5">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">Culture &mdash; things carved by hand, gifts that cross&nbsp;borders</p>
+<p class="cp-dn" data-ke-size="size16">Souvenirs &amp; customs</p>
+<p class="cp-ds" data-ke-size="size16">To the giver it's a gesture; to the receiving country's customs, it's an&nbsp;import.</p>
+</div>
+<p class="num" data-ke-size="size16">⑤</p>
+<h2 data-ke-size="size26">Souvenirs and customs</h2>
+<p data-ke-size="size16">Halfway through the trip, time to pick out gifts.</p>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_pc_en.jpg?v=6" alt="A souvenir field-guide page: wooden giraffes, etched horns and a zebra-hide swatch cut out over an illustration of Cape plants" width="1600" height="1240" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_mo_en.jpg?v=6" alt="A souvenir field-guide page: wooden giraffes, etched horns and a zebra-hide swatch cut out over an illustration of Cape plants" width="1080" height="2400" /></figure><p data-ke-size="size16">One entire shelf of the souvenir shop is giraffes. The shelves were so crowded that I brought out only the things my eye kept returning to. Each one is carved by hand, so no two faces match, and my hand kept reaching not for the neatest one but for &lsquo;the one that's different.&rsquo; In front of the zebra hide and the horn crafts, I stopped for a moment&nbsp;too.</p><div class="fact warnbox"><b>Import caution</b><span class="warn">Souvenirs made from animal materials such as hides and horn may need export and import permits depending on the species. Ask the shop about the species and paperwork before you buy, and check your home country's customs and quarantine guidance before you fly&nbsp;back.</span></div>
+<p data-ke-size="size16">And then I was the one stopped &mdash; somewhere I never&nbsp;expected.</p>
+<p data-ke-size="size16">It was the fountain pens I'd brought from Korea as gifts. Each cost over 30,000&nbsp;won (about 25 US dollars), and at South African customs I paid 10% duty on every one. The moment a carefully wrapped gesture got a tax stamped on&nbsp;it.</p>
+<p data-ke-size="size16">To the giver it's a gesture; to the receiving country's customs, it's an&nbsp;import.</p>
+<p data-ke-size="size16">So those pens said hello to South African customs before they ever met the people they were for. Tuition fee no. 2: 10% per&nbsp;pen.</p>
+<p data-ke-size="size16">The first rand notes I held were stiffer than I expected. A green R10 with a rhino, a red R50 with a lion &mdash; and the bigger the value, the longer the note. Taking out rand notes to pay the duty, I noticed every note had the same face: Nelson Mandela. Curious, I looked it up &mdash; since 2012 every banknote carries Mandela on the front and one of the &lsquo;Big Five&rsquo; on the back: rhino, elephant, lion, buffalo, leopard. The rand itself was born in 1961, the year South Africa set aside the British pound and became a republic. Going further back, the Cape was ruled by Britain from 1806; under the Union of South Africa (from 1910), a British dominion, segregation laws such as the Natives Land Act (1913) piled up, and the National Party government that came to power in 1948 hardened them into the system called apartheid. The man who spent 27&nbsp;years in prison fighting that system was right there on the note I was handing&nbsp;over.</p>
+<p data-ke-size="size16">Next time I cross a border with gifts, I'll check the other country's duty-free allowance first. Several of the same item can apparently be treated as commercial&nbsp;goods.</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">A short rest</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">Esther Mahlangu (1935–)</p><p class="ag-art-p" data-ke-size="size16">Soothing my customs-bruised heart in front of the giraffe shelf, I thought of&nbsp;someone.</p><p class="ag-art-p" data-ke-size="size16">When I looked into it, there's an artist called Esther Mahlangu. She learned the bold geometric patterns that South Africa's Ndebele women have painted on the outer walls of their homes from her mother and grandmother at around ten, and carried them onto canvas and&nbsp;metal.</p><p class="ag-art-p" data-ke-size="size16">In 1991 she painted an entire BMW 525i in Ndebele patterns &mdash; the first woman, and the first non-Western artist, to make a BMW Art Car. After 32&nbsp;years abroad, the car came home and was shown at Iziko in Cape&nbsp;Town.</p><p class="ag-art-p" data-ke-size="size16">She has no direct connection to this shop. Still, standing in front of giraffes with no two patterns alike and picturing a line that travelled from her grandmother's mud wall to a German car might be another way to enjoy a souvenir shop. There are a lot of hand-drawn lines in my own paintings, so when I think of her story, I draw the next one a little more&nbsp;boldly.</p><div class="btns"><a class="btn" href="https://www.artcar.bmwgroup.com/en/art-car/text/Esther-Mahlangu-BMW-525i1991-1375.html" target="_blank" rel="noopener">About the BMW Art Car (official)</a><a class="btn" href="https://en.wikipedia.org/wiki/Esther_Mahlangu" target="_blank" rel="noopener">About the artist (Wikipedia)</a></div></div></div></div>
+<p data-ke-size="size16">And in this shop I picked gifts for my colleagues: little animal figures carved from stone, like hippos, and handmade pencils of wood shaped like&nbsp;animals.</p>
+<p data-ke-size="size16">Stone, they were. That becomes a problem later.</p>
+</section>
+<section id="s6" class="sec cp-gs">
+<div class="cp-div" data-g="s6">
+<div class="cp-line cp-dome">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">Second country &mdash; T&uuml;rkiye, Istanbul's market and&nbsp;flavours</p>
+<p class="cp-dn" data-ke-size="size16">Istanbul</p>
+<p class="cp-ds" data-ke-size="size16">I didn't buy it dear. I learned it dear.</p>
+</div>
+<p class="num" data-ke-size="size16">⑥</p>
+<h2 data-ke-size="size26">Through Istanbul</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2299.jpg" alt="Check-in hall at Cape Town airport" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The check-in hall. Numbered counters stretching on and on</p>
+<p data-ke-size="size16">The way home was also via Istanbul &mdash; another two-day&nbsp;journey.</p>
+<p data-ke-size="size16">On the check-in scale, the stone hippos made their move. They were absurdly heavy. In the end I used Korean Air miles to raise my baggage allowance. Tuition fee no. 3, paid in&nbsp;weight.</p>
+<p data-ke-size="size16">Still, one bit of luck came my way. The Istanbul layover was so long that the airline provided a hotel and meals. I caught my breath at a hotel near the airport, then decided to carve out the remaining hours and head into the&nbsp;city.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2303.jpg" alt="Route board at an Istanbul tram stop" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The tram map. All I could read were the numbers and the&nbsp;colours</p>
+<p data-ke-size="size16">I took out local cash at an ATM and got on the tram. All I could read were numbers and colours, so my map app and my phone battery were my&nbsp;guides.</p>
+<p data-ke-size="size16">Getting cash from the ATM took a minute.</p>
+<p data-ke-size="size16">The lira notes were even more colourful: green for 20, blue for 100, and suddenly my wallet looked like a paint box. The lira notes from the ATM also had one face on every front: Mustafa Kemal Atat&uuml;rk, who founded the republic. Looking it up, T&uuml;rkiye knocked six zeros off its currency in 2005 &mdash; a million lira became one. Mandela, who ended apartheid, on South Africa's notes; Atat&uuml;rk, who founded the republic, on T&uuml;rkiye's. Both countries carry the face of a fresh start in their wallets. And a few of those Atat&uuml;rks were about to become my tuition in the&nbsp;bazaar.</p>
+<div class="fact"><b>If your layover is long</b>Turkish Airlines runs a free city tour (Touristanbul) for its own passengers with a 6&ndash;24&nbsp;hour connection at Istanbul&nbsp;Airport.</div>
+</section>
+<section id="s7" class="sec">
+<p class="num" data-ke-size="size16">⑦</p>
+<h2 data-ke-size="size26">The Grand Bazaar &mdash; a twenty-times tuition fee</h2>
+<p data-ke-size="size16">The moment you pass through the arched gate, even the sound changes. The Grand Bazaar. It began as a textile market in 1455 and now has 61 covered streets and over 4,000 shops. Put a roof over the whole of Seoul's Namdaemun Market (남대문시장), add 560&nbsp;years, and you might be&nbsp;close.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2310.jpg" alt="Colourful Turkish carpets hanging in a display" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">A carpet display is one giant sample book</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2321.jpg" alt="A sweet shop full of lokum and baklava" width="1600" height="1200" /></figure>
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2322.jpg" alt="Colourful spices piled up like towers" width="1600" height="1200" /><span class="fx" style="left:30%;top:44%;width:18%;height:22%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">Lokum, baklava, spices stacked like towers. The colours hit me before the prices did, so I shot the display head-on &middot; Look at: the &#8378; (lira) price tags in the right&nbsp;photo</p>
+<p data-ke-size="size16">The sweet shops have lokum, and baklava &mdash; dozens of thin layers of pastry soaked in syrup &mdash; set out by the tray. Baklava looks like yakgwa (약과), the Korean honey cookie, opened out into a hundred layers. This market sells colour before it sells anything&nbsp;else.</p>
+<p data-ke-size="size16">And here I bought a souvenir and perfume for my mother.</p>
+<p data-ke-size="size16">The moment the shopkeeper saw me, it was &lsquo;Bro, bro &mdash; Korea? Brother country!&rsquo; (형제의 나라, hyeong-je-ui na-ra) and with that one line my guard melted away. Tea appeared, perfume bottles were opened one by one and dabbed on the back of my hand, and somewhere in between, the price had already been&nbsp;decided.</p>
+<p data-ke-size="size16">Later I found out I'd paid about twenty times the going&nbsp;rate.</p>
+<p data-ke-size="size16">Not twice. Twenty times. The biggest tuition fee of the trip. I didn't buy it dear; I learned it dear. It was the price of learning, in my bones, that haggling &lsquo;starts&rsquo; at the first price they&nbsp;name.</p>
+<p data-ke-size="size16">One more thing. Later I found out that T&uuml;rkiye calls more than nine countries its &lsquo;brother country.&rsquo; The &lsquo;bro&rsquo; you hear in the market is a shopkeeper's business friendliness. It's nice to let it warm your heart &mdash; just no need to let it open your wallet&nbsp;too.</p>
+<div class="fact"><b>What I'll do next time</b>Hear the first price as the starting line. Ask two or three shops what the same item costs first. Show a little less love for the thing you want; pretending to walk away is half of haggling, they say. Keep cash in small notes, and in crowded lanes wear the bag in&nbsp;front.</div>
+<p data-ke-size="size16">But this story has a twist.</p>
+<p data-ke-size="size16">My mother's gift was something she had wanted for a long time: a ceramic figure of a man in a traditional Turkish skirt, dancing. She was truly delighted, and that figure is still dancing at home today. I paid twenty times the price, but it has been earning its keep every single day for eleven years &mdash; do the maths and it wasn't a bad&nbsp;deal.</p>
+<p data-ke-size="size16">I also brought home Turkish delight, lokum. It's starch and sugar boiled down and set, so the texture lands somewhere between soft yanggaeng (양갱, red-bean jelly) and chapssal-tteok (찹쌀떡, sticky rice cake). The problem was the sweetness &mdash; like eating jocheong (조청, rice syrup) straight off the spoon. One bite of the sweet that looked so pretty in the shop window and I choked on it. That ordeal was shared out evenly among the whole&nbsp;family.</p>
+<p data-ke-size="size16">Even now, whenever someone brings out something sweet at a holiday gathering, that story comes up. A story to tell for the rest of my life &mdash; bought in&nbsp;Istanbul.</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">Wait &mdash; let the sweetness settle</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg/960px-Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg" alt="Osman Hamdi Bey's &lsquo;The Tortoise Trainer&rsquo;: in a room of blue tiles, an old man with a drum looks down at tortoises" width="960" height="1796" />
+<figcaption class="ag-art-c">Osman Hamdi Bey, &lsquo;The Tortoise Trainer,&rsquo; 1906, Pera Museum &middot; Public domain (Wikimedia&nbsp;Commons)</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">Osman Hamdi Bey (1842–1910)</p><p class="ag-art-p" data-ke-size="size16">While the choking settles, here's a painting that has nothing to do with the bazaar, yet captures me on that day most&nbsp;precisely.</p><p class="ag-art-p" data-ke-size="size16">When I looked into it, in 2004 one painting with five tortoises in it sold for 3.5&nbsp;million dollars: Osman Hamdi Bey's &lsquo;The Tortoise Trainer&rsquo; (1906). He was a painter who also founded the Istanbul Archaeology Museums and, in 1882, opened a school of fine arts. The painting now hangs in Istanbul's Pera&nbsp;Museum.</p><p class="ag-art-p" data-ke-size="size16">An old man with a drum tries to train the tortoises, and the tortoises just eat leaves. It's often read as a jab at slow&nbsp;reform.</p><p class="ag-art-p" data-ke-size="size16">On the day I was learning to haggle in the bazaar, I was more tortoise than old man. I heard every lesson; my speed just couldn't keep&nbsp;up.</p><p class="ag-art-p" data-ke-size="size16">Thinking back to the day I learned haggling &lsquo;slowly,&rsquo; at twenty times the price, those tortoises feel like old friends. Dropping into the Pera Museum after the bazaar to meet them in person might be one more pleasure of Istanbul. Even a slow tortoise learns in the&nbsp;end.</p><div class="btns"><a class="btn" href="https://www.peramuseum.org/" target="_blank" rel="noopener">Pera Museum (official)</a><a class="btn" href="https://en.wikipedia.org/wiki/The_Tortoise_Trainer" target="_blank" rel="noopener">About the painting (Wikipedia)</a></div></div></div></div>
+</section>
+<section id="s8" class="sec">
+<p class="num" data-ke-size="size16">⑧</p>
+<h2 data-ke-size="size26">My taste buds come home</h2>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_pc_en.jpg?v=6" alt="Thick, long-cut fries pegged on a washing line, pale at the top and over-fried, melting at the tips" width="1600" height="1100" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_mo_en.jpg?v=6" alt="Thick, long-cut fries pegged on a washing line, pale at the top and over-fried, melting at the tips" width="1080" height="1760" /></figure><p data-ke-size="size16">Whenever I see French fries, the ones I had in Australia and South Africa come back to me. They were cut thick and long, roughly, by a heavy hand &mdash; and fried without much feel for it, so pale, underdone pieces and pieces fried so far they sagged as if melting came out on the same plate. Soggy outside, mealy inside: a trauma spread by Britain's misguided palate, you might&nbsp;say.</p><p data-ke-size="size16">So I arrived in Istanbul with a cautious palate from the very&nbsp;start.</p><p data-ke-size="size16">At the juice stands near the bazaar, halved pomegranates and oranges are piled up by the crate and pressed into juice right in front of you. To look at, it was the most delicious-looking scene of the whole&nbsp;trip.</p>
+<p data-ke-size="size16">The sweet-and-sour first sip reminded me of omija-cha (오미자차, five-flavour berry tea), but bits of pomegranate pith kept getting caught, so I had to spit after every mouthful like spitting out watermelon seeds. Istanbul's food was dazzling; my taste buds, apparently, were still going through departure procedures at Incheon Airport. The food did nothing wrong &mdash; my tongue just arrived&nbsp;late.</p>
+<p data-ke-size="size16">At times like that, the place to lean on is, surprisingly, the supermarket fruit&nbsp;aisle.</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1999.jpg" alt="A pear from a South African supermarket, held in hand" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">A pear I picked up at a Cape Town supermarket. A meal that never&nbsp;fails</p>
+<p data-ke-size="size16">That's what the pear from a Cape Town supermarket was. Instead of the crisp, watery bite of a Korean pear, a sweetness that gives way softly, like a ripe hongsi (홍시, soft persimmon). Secure one meal with supermarket fruit and bread, and you can enjoy the local food as an experiment, with nothing riding on&nbsp;it.</p>
+</section>
+<section id="s9" class="sec cp-gs">
+<div class="cp-div" data-g="s9">
+<div class="cp-line cp-wheel">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">History &mdash; the lines left on a city's map</p>
+<p class="cp-dn" data-ke-size="size16">Epilogue</p>
+<p class="cp-ds" data-ke-size="size16">The scene that stayed with me longest isn't actually in any&nbsp;photo.</p>
+</div>
+<p class="num" data-ke-size="size16">⑨</p>
+<h2 data-ke-size="size26">Epilogue</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2161.jpg" alt="The Ferris wheel lit up under the night sky" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">The big wheel that has stood at the harbour since around the 2010 World&nbsp;Cup</p>
+<p data-ke-size="size16">One night in Cape Town, the big wheel at the V&amp;A Waterfront turned slowly with white lights along its spokes. A Ferris wheel, after one full turn, comes back to where it&nbsp;started.</p>
+<div class="cg cgC"><p class="cg-m" data-ke-size="size16" style="margin:0 0 6px!important">Theodosian Walls, İstanbul · 41°01′N 28°55′E</p><div class="r"><div style="flex:0.693 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c1_2308_tower.jpg" alt="A crumbling wall tower" width="416" height="600" /></div><div style="flex:1.778 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c3_2308_wall.jpg" alt="Wall bricks and arches" width="896" height="504" /></div></div><div class="r"><div style="flex:4.040 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c2_2305_wide.jpg" alt="The walls running under a grey sky" width="1600" height="396" /></div></div></div>
+<p class="cap" data-ke-size="size16">Istanbul's old walls. A city that leaves even the ruins as they&nbsp;are</p>
+<p data-ke-size="size16">On the way home, Istanbul's sky was grey. A crumbling tower of the Theodosian Walls, completed in 439, stood on the grass. A city that keeps even its broken places as&nbsp;history.</p>
+<p data-ke-size="size16">But the scene that stayed with me longest isn't actually in any&nbsp;photo.</p>
+<p data-ke-size="size16">It was the day I arrived in Cape Town, on the road from the airport into the city. Outside the car window, houses pieced together from boards stretched on and on. Houses on the hills with a view of the sea, and that neighbourhood by the road. Two utterly different landscapes side by side in one city &mdash; and on that road, I understood clearly who lives in those&nbsp;shacks.</p>
+<div class="fact"><b>Townships and apartheid</b>The N2 highway linking the airport and the city runs past a number of townships. In the apartheid (racial segregation) era, under the Group Areas Act of 1950, residents who weren't white were pushed out of the city centre and made to live apart in these areas. The law ended in 1991 and apartheid with the democratic election of 1994, but the townships are still where they&nbsp;were.</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">An artist tied to this road</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">Peter Clarke (1929–2014)</p><p class="ag-art-p" data-ke-size="size16">When I looked into it, he was a painter and poet born in Simon's Town. In 1972, under that same Group Areas Act, he was forced to move to Ocean View. For nearly 60&nbsp;years he recorded South African society in woodcuts and collage, and came to be called a &lsquo;quiet&nbsp;chronicler.&rsquo;</p><p class="ag-art-p" data-ke-size="size16">The inner life of the neighbourhoods that flashed past my car window &mdash; he kept it, not in photographs, but in&nbsp;prints.</p><div class="btns"><a class="btn" href="https://www.sahistory.org.za/people/peter-clarke" target="_blank" rel="noopener">About the artist (South African History Online)</a></div></div></div></div>
+<p data-ke-size="size16">On that road I became certain: if Korea had not won its independence from the Japanese Empire, that landscape could have been&nbsp;ours.</p>
+<p data-ke-size="size16">In a land split into those who rule and those who are ruled, who lives on the hill with the sea view and who lives in the roadside shack is decided before anyone is born. Even after the law that drew the line is gone, the line stays on the city's map for a long&nbsp;time.</p>
+<p data-ke-size="size16">Back home, I settled the tuition&nbsp;bill.</p><figure class="mg-spread mg-narrow"><img src="https://41aurum.github.io/blog/capetown/mag2/mag_receipt_en.jpg?v=4" alt="A thermal-paper tuition receipt: neck muscles, pen duty, stone hippos, twenty times the price; total, worth it" width="1080" height="2000" /></figure><p data-ke-size="size16">Going by the receipt it was a losing trip &mdash; but count what I received, and it came out ahead.</p>
+<p data-ke-size="size16">Even the hard parts, all of it, became stories I'll keep telling for the rest of my&nbsp;life.</p><p data-ke-size="size16">I thought the photos were why such an old trip felt as vivid as today. Looking again, it was the&nbsp;receipt.</p>
+<p data-ke-size="size16">If I go back to see that turquoise sea under the twelve peaks, this time I'd like to take the airport road slowly,&nbsp;too.</p>
+<p data-ke-size="size16">The neck pillow comes with me, and I won't order the fries. &hellip;Probably.</p>
+<div class="fact ag-more"><b>More to see &mdash; artists and places that didn't fit in this&nbsp;post</b><div class="btns"><a class="btn" href="https://en.wikipedia.org/wiki/Gregoire_Boonzaier" target="_blank" rel="noopener">Gregoire Boonzaier &mdash; painter of Cape Town's lanes</a><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_Bowler_-_Table_Bay_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Bowler, &lsquo;Table Bay&rsquo; (Wikimedia Commons)</a><a class="btn" href="https://en.wikipedia.org/wiki/Anton_Anreith" target="_blank" rel="noopener">Anton Anreith (Wikipedia)</a><a class="btn" href="https://grootconstantia.co.za/our-history/" target="_blank" rel="noopener">Groot Constantia history (official)</a><a class="btn" href="https://zeitzmocaa.museum/" target="_blank" rel="noopener">Zeitz MOCAA (official)</a><a class="btn" href="https://www.masumiyetmuzesi.org/" target="_blank" rel="noopener">Orhan Pamuk's Museum of Innocence (official)</a></div></div>
+<div class="fact"><b>Sources (checked November 2026)</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Twelve Apostles: Wikipedia &lsquo;Twelve Apostles (mountains)&rsquo;, Lonely&nbsp;Planet</li>
+<li>Cape Doctor: Wikipedia &lsquo;Cape Doctor&rsquo; &middot; Atlantic water temperature: Outdoor Swimmer &lsquo;The colour of&nbsp;cold&rsquo;</li>
+<li>Cape Dutch: Wikipedia &lsquo;Cape Dutch architecture&rsquo; &middot; Bo-Kaap: Wikipedia&nbsp;&lsquo;Bo-Kaap&rsquo;</li>
+<li>South African wine: Wikipedia &lsquo;History of South African wine&rsquo;,&nbsp;&lsquo;Pinotage&rsquo;</li>
+<li>Groot Constantia: Wikipedia &lsquo;Groot Constantia&rsquo;</li>
+<li>Table Mountain: Britannica &lsquo;Table Mountain&rsquo; &middot; Cableway, Lion's Head:&nbsp;Wikipedia</li>
+<li>V&amp;A and clock tower: Wikipedia &lsquo;V&amp;A Waterfront&rsquo;, South African History Online &middot; Ferris wheel: V&amp;A Waterfront official&nbsp;blog</li>
+<li>Istanbul airport move: Euronews (2019-04-06) &middot; Touristanbul: Turkish Airlines&nbsp;FAQ</li>
+<li>Grand Bazaar, T1 tram: Wikipedia &middot; Theodosian Walls: World History&nbsp;Encyclopedia</li>
+<li>Townships and apartheid: Wikipedia &lsquo;Cape Flats&rsquo;, &lsquo;Group Areas Act&rsquo;, Al Jazeera&nbsp;(2026-03-06)</li>
+<li>Artists and works: Wikimedia Commons (2 public-domain artwork images) &middot; Wikipedia &lsquo;Thomas William Bowler&rsquo;, &lsquo;Maclear's Beacon&rsquo;, &lsquo;Anton Anreith&rsquo;, &lsquo;Gregoire Boonzaier&rsquo;, &lsquo;Esther Mahlangu&rsquo;, &lsquo;Osman Hamdi Bey&rsquo;, &lsquo;The Tortoise Trainer&rsquo;, &lsquo;Peter Clarke (artist)&rsquo;, &lsquo;Zeitz Museum of Contemporary Art Africa&rsquo;, &lsquo;The Museum of Innocence (museum)&rsquo; &middot; Groot Constantia &lsquo;Our Legacy&rsquo; &middot; BMW Group Art Car &middot; University of Johannesburg news (return of Mahlangu's Art&nbsp;Car)</li>
+<li>Tannins in wine and persimmon: Wikipedia &lsquo;Tannin&rsquo;, &lsquo;Persimmon&rsquo; &middot; Lokum and baklava: Wikipedia &lsquo;Turkish delight&rsquo;,&nbsp;&lsquo;Baklava&rsquo;</li>
+</ul>
+</div>
+<a class="next" href="https://aurum41.tistory.com/">Keep reading &mdash; all posts on Aurum41 Guide (아우름41 가이드 &middot; a-u-reum, Korean for &lsquo;embracing&rsquo;)&nbsp;&rarr;</a></section>
+<p class="disc-end" data-ke-size="size16">This post contains Coupang Partners links, and I receive a commission from them (이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다).</p>
+<script>/*hqLangFix*/(function(){function f(){var a=document.querySelectorAll('.ctw .lang a.on');for(var i=0;i<a.length;i++){var s=a[i].style;s.setProperty('background','#13314A','important');s.setProperty('color','#fff','important');s.setProperty('border','1px solid #13314A','important');}}var n=0,t=setInterval(function(){f();if(++n>40)clearInterval(t);},300);})();</script>
+</div>
+<script>/*cpSec*/(function(){var R=document.getElementById('agcpt');if(!R)return;var SERIF='"Noto Serif KR", serif';
+var bar=document.getElementById('ctbar');var as=[].slice.call(R.querySelectorAll('#cpdots a'));var now=R.querySelector('.cp-now');
+function tg(a){return document.getElementById(a.getAttribute('data-t'));}
+as.forEach(function(a){a.addEventListener('click',function(e){var t=tg(a);if(!t)return;e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-10,behavior:'smooth'});});});
+function upd(){var h=document.documentElement.scrollHeight-window.innerHeight;if(bar)bar.style.width=(h>0?Math.min(100,window.pageYOffset/h*100):0)+'%';var cur=0;as.forEach(function(a,i){var t=tg(a);if(t&&t.getBoundingClientRect().top<=window.innerHeight*0.45)cur=i;});as.forEach(function(a,i){if(a.classList.contains('on')!==(i===cur))a.classList.toggle('on',i===cur);});if(now&&as[cur]){var x=as[cur].textContent.replace(/\s+/g,' ').trim();if(now.textContent!==x)now.textContent=x;}}
+window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!rm){R.classList.add('arm');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -10% 0px'});[].forEach.call(R.querySelectorAll('.cp-div'),function(x){io.observe(x);});}
+var SEL='.ag-art,.ag-art *,.ag-route,.ag-route *,.cp-k,.cp-cover,.cp-cover *,.cp-div,.cp-div *,.cp-dots,.cp-dots *,.cp-ccap,.eye,.eye > b';var busy=false;
+function cl(){busy=true;[].forEach.call(R.querySelectorAll(SEL),function(e){if(e.hasAttribute('style'))e.removeAttribute('style');});
+[].forEach.call(document.querySelectorAll('body *'),function(e){var f=getComputedStyle(e).fontFamily||'';if(f.indexOf('Nanum Myeongjo')>-1){e.style.setProperty('font-family',SERIF,'important');}});setTimeout(function(){busy=false;},50);upd();}
+[300,1200,3000,6000,10000].forEach(function(t){setTimeout(cl,t);});window.addEventListener('load',cl);
+if('MutationObserver' in window){var tm=null;var mo=new MutationObserver(function(){if(busy)return;clearTimeout(tm);tm=setTimeout(cl,250);});mo.observe(R,{subtree:true,attributes:true,attributeFilter:['style']});setTimeout(function(){mo.disconnect();},20000);}
+})();</script>
+</div>
