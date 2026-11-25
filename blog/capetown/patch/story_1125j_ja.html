@@ -1,0 +1,531 @@
+<div id="agcpt" class="ag-c-cpt" lang="ja">
+<style>
+body:has(.ag-c-cpt) .article-header{display:none!important}
+html:has(.ag-c-cpt),body:has(.ag-c-cpt),#wrap:has(.ag-c-cpt),#container:has(.ag-c-cpt),.main:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt),.contents_style:has(.ag-c-cpt){background:#FDFBF7!important}
+.main:has(.ag-c-cpt),#container:has(.ag-c-cpt),.area-main:has(.ag-c-cpt),.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){padding-top:0!important;margin-top:0!important}
+.main:has(.ag-c-cpt){display:block!important;max-width:1140px}
+.main:has(.ag-c-cpt) .area-main{width:100%!important;max-width:none!important;float:none!important}
+.main:has(.ag-c-cpt) .area-aside{margin-top:120px;border-top:1px solid #D6EBEE;padding-top:40px;width:100%!important;max-width:none!important;float:none!important}
+.area-view:has(.ag-c-cpt),.article-view:has(.ag-c-cpt){width:100%!important;max-width:none!important}
+#agcpt{--cps:'Noto Serif JP','Noto Serif KR', serif!important;--teal:#0E8A97!important;--sand:#F2A93B!important;--blue:#2b4c9b!important}
+#agcpt .ctw{max-width:700px!important;margin:0 auto!important}
+#agcpt .cp-cover{display:grid!important;grid-template-columns:1.2fr 1fr!important;width:min(1080px,calc(100vw - 48px))!important;margin:30px 0 0 calc(50% - min(540px,calc(50vw - 24px)))!important;background:#fff!important;border:1px solid #D6EBEE!important}
+#agcpt .cp-cfig,#agcpt .cp-cfig figure{margin:0!important;height:100%!important}
+#agcpt .cp-cfig img{width:100%!important;height:100%!important;min-height:460px!important;object-fit:cover!important;display:block!important}
+#agcpt .cp-ct{padding:56px 46px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+#agcpt .cp-kick{font-size:12px!important;letter-spacing:.18em!important;color:var(--teal)!important;margin:0 0 16px!important;line-height:1.6!important}
+#agcpt .cp-line{height:30px!important;font-size:0!important;line-height:0!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important;margin:0 0 20px!important;overflow:hidden!important}
+#agcpt .cp-ridge{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20L36%2031%20L58%2013%20L168%2012%20L186%2022%20L199%2015%20L212%2024%20L225%2014%20L238%2024%20L251%2013%20L264%2024%20L277%2015%20L290%2025%20L303%2016%20L316%2026%20L329%2017%20L342%2027%20L355%2019%20L368%2028%20L381%2022%20L398%2031%20L470%2036%20L600%2037'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-dome{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2038%20H140%20V16%20L142%203%20L144%2016%20V38%20H168%20Q210%204%20252%2038%20H262%20Q288%2018%20314%2038%20H328%20V12%20L330%201%20L332%2012%20V38%20H600'%2F%3E%3Cpath%20d%3D'M0%2039%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-wheel{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%2040'%20preserveAspectRatio%3D'xMidYMid%20meet'%3E%3Cg%20fill%3D'none'%20stroke%3D'%233f7f7a'%20stroke-width%3D'1.3'%20stroke-linejoin%3D'round'%20stroke-linecap%3D'round'%3E%3Cpath%20d%3D'M0%2037%20H600'%20stroke%3D'%23c9b08a'%20stroke-width%3D'1'%2F%3E%3Ccircle%20cx%3D'300'%20cy%3D'19'%20r%3D'16'%2F%3E%3Cpath%20d%3D'M300%203%20V35%20M284%2019%20H316%20M289%208%20L311%2030%20M311%208%20L289%2030%20M292%2037%20L300%2019%20L308%2037'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important}
+#agcpt .cp-title{font-family:var(--cps)!important;font-weight:600!important;font-size:36px!important;line-height:1.3!important;margin:0 0 16px!important;color:#1f2a2c!important;word-break:keep-all!important;letter-spacing:0!important}
+#agcpt .cp-sub{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:#3b4446!important;margin:0!important;word-break:keep-all!important}
+#agcpt .cp-meta{border-top:1px solid #D6EBEE!important;margin-top:24px!important;padding-top:14px!important}
+#agcpt .cp-meta p{font-size:13px!important;line-height:1.9!important;color:#6b6b66!important;margin:0!important}
+#agcpt .cp-meta b{color:var(--teal)!important;font-weight:500!important;margin-right:8px!important}
+#agcpt .cp-ccap{text-align:center!important;margin-top:10px!important}
+#agcpt .sec.cp-gs{padding-top:0!important}
+#agcpt .cp-div{margin:56px 0 64px!important;padding:88px 0 0!important;text-align:center!important}
+#agcpt .cp-div .cp-line{height:42px!important;max-width:560px!important;margin:0 auto 28px!important}
+#agcpt .cp-dn{font-family:var(--cps)!important;font-size:30px!important;font-weight:600!important;letter-spacing:.06em!important;color:#1f2a2c!important;margin:0 0 10px!important;line-height:1.4!important}
+#agcpt .cp-ds{font-family:var(--cps)!important;font-size:15px!important;line-height:1.8!important;color:#7a7a72!important;margin:0!important;word-break:keep-all!important}
+#agcpt.arm .cp-div{opacity:0!important;transform:translateY(18px)!important;transition:opacity .9s ease,transform .9s ease!important}
+#agcpt.arm .cp-div.in{opacity:1!important;transform:none!important}
+#agcpt .cp-dots{position:fixed!important;right:26px!important;top:50%!important;transform:translateY(-50%)!important;z-index:98!important;display:flex!important;flex-direction:column!important;gap:11px!important;align-items:flex-end!important;margin:0!important;padding:0!important}
+#agcpt .cp-dots a{padding:0!important;background:none!important;border-radius:0!important;min-height:0!important;box-shadow:none!important;width:auto!important;display:flex!important;align-items:center!important;gap:10px!important;text-decoration:none!important;border:0!important;line-height:1.2!important}
+#agcpt .cp-dots,#agcpt .cp-dots *{font-family:'Noto Sans JP','Noto Sans KR', sans-serif!important}
+#agcpt .cp-dl{font-size:12px!important;color:#8a8a84!important;letter-spacing:.04em!important;white-space:nowrap!important}
+#agcpt .cp-dd{display:block!important;width:9px!important;height:9px!important;border:1px solid #9aa5a3!important;border-radius:50%!important;font-size:0!important;line-height:0!important;background:transparent!important;overflow:hidden!important}
+#agcpt .cp-dots a.on .cp-dl{color:var(--blue)!important;font-weight:500!important}
+#agcpt .cp-dots a.on .cp-dd{background:var(--blue)!important;border-color:var(--blue)!important}
+#agcpt .cp-now{display:none!important}
+#agcpt .eye{border-left:2px solid #0E8A97!important}
+@media (max-width:1240px){#agcpt .cp-dl{display:none!important}}
+@media (prefers-reduced-motion:reduce){#agcpt.arm .cp-div{opacity:1!important;transform:none!important;transition:none!important}}
+@media (max-width:760px){
+#agcpt .cp-cover{grid-template-columns:1fr!important;width:auto!important;margin:20px 0 0!important}
+#agcpt .cp-cfig img{min-height:0!important;height:auto!important;aspect-ratio:4/3!important}
+#agcpt .cp-ct{padding:28px 20px 30px!important}
+#agcpt .cp-title{font-size:28px!important}
+#agcpt .cp-sub{font-size:17px!important}
+#agcpt .cp-div{margin:40px 0 44px!important;padding-top:56px!important}
+#agcpt .cp-dn{font-size:24px!important}
+#agcpt .cp-dots{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:11px!important;background:#FDFBF7!important;border-top:1px solid #D6EBEE!important;padding:9px 12px!important;max-width:100vw!important;box-sizing:border-box!important}
+#agcpt .cp-dots a{gap:0!important}
+#agcpt .cp-dl{display:none!important}
+#agcpt .cp-now{display:inline!important;font-size:12px!important;color:var(--blue)!important;margin-left:4px!important;white-space:nowrap!important;letter-spacing:.04em!important}
+}
+body:has(.ag-c-cpt) ins.adsbygoogle{max-width:100%!important;overflow:hidden!important}
+.article-view:has(.ag-c-cpt)>div[data-tistory-react-app]{order:9!important}
+#agcpt#agcpt .cp-title,#agcpt#agcpt .cp-sub,#agcpt#agcpt .cp-dn,#agcpt#agcpt .cp-ds{font-family:var(--cps)!important}#agcpt .mg-pull{font-family:var(--cps)!important;font-size:19px!important;line-height:1.7!important;color:var(--teal)!important;border-left:2px solid var(--teal)!important;padding:2px 0 2px 16px!important;margin:22px 0 28px!important;text-wrap:balance}
+#agcpt .mg-spread{margin:40px 0 14px!important}
+#agcpt .mg-spread img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important}
+#agcpt figure.mg-spread.mg-wide{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important;margin-right:0!important}
+#agcpt figure.mg-spread img.mg-mo{display:none!important}
+#agcpt figure.mg-spread.mg-narrow{max-width:560px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt figure.mg-spread.mg-fries{max-width:620px!important;margin-left:auto!important;margin-right:auto!important}
+#agcpt .pair.brk{position:relative!important;display:block!important;padding-bottom:8%!important}
+#agcpt .pair.brk figure:first-child{width:78%!important;transform:rotate(-1.6deg)!important;margin:0!important}
+#agcpt .pair.brk figure:last-child{position:absolute!important;right:0!important;bottom:0!important;width:44%!important;transform:rotate(3deg)!important;border:8px solid #fff!important;margin:0!important;box-shadow:0 10px 24px rgba(40,30,20,.16)!important}
+#agcpt .pair.brk figure:last-child img{width:100%!important;height:auto!important;display:block!important}
+@media (max-width:600px){#agcpt figure.mg-spread img.mg-pc{display:none!important}#agcpt figure.mg-spread img.mg-mo{display:block!important}#agcpt figure.mg-spread.mg-wide{width:100%!important;margin-left:0!important}}
+#agcpt .cg{margin:30px 0 6px!important}
+#agcpt .cg .r{display:flex!important;gap:8px!important;margin:0 0 8px!important}
+#agcpt .cg .r>*{min-width:0!important;margin:0!important}
+#agcpt .cg .col{display:flex!important;flex-direction:column!important;gap:8px!important}
+#agcpt .cg img{display:block!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important;margin:0!important}
+#agcpt .cg-m{font-family:'SFMono-Regular',Menlo,Consolas,monospace!important;font-size:12px!important;letter-spacing:.12em!important;color:#7d8a87!important;margin:2px 0 0!important;text-transform:uppercase}
+#agcpt figure.mg-spread.mg-wine{width:min(1080px,calc(100vw - 48px))!important;max-width:none!important;margin-left:calc(50% - min(540px,calc(50vw - 24px)))!important}
+@media (max-width:600px){#agcpt figure.mg-spread.mg-wine{width:100%!important;margin-left:0!important}}
+#agcpt .fact,.contents_style .fact{background:#EEF7F8!important;border-color:#D6EBEE!important}</style>
+<div class="ctw" lang="ja"><style>#agcpt .ag-pause .ag-art-l{letter-spacing:.04em}#agcpt .ag-pause .ag-art-p{font-size:15.5px;line-height:1.95}#agcpt .ag-more .btns{margin-top:10px}#agcpt .sec p[data-ke-size],#agcpt #intro > p[data-ke-size]{margin-bottom:18px!important}#agcpt .cp-ccap{margin-bottom:26px!important}#agcpt .ag-pause .ag-art-e{display:block!important}#agcpt .ag-pause .ag-art-f{max-width:none!important;width:auto!important;margin:4px 0 22px!important;text-align:center}#agcpt .ag-pause .ag-art-f img{max-height:440px!important;width:auto!important;max-width:100%!important;margin:0 auto!important}#agcpt .ag-pause .ag-art-b{width:auto!important;max-width:none!important}</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap');</style>
+<style>.ctw{--ink:#2b2b2b;--mute:#8a8a8a;--line:#D6EBEE;--accent:#2b4c9b;color:var(--ink);font-size:16px;line-height:2;letter-spacing:.02em;word-break:keep-all}
+.ctw *{box-sizing:border-box}.ctw img{display:block;width:100%;height:auto;margin:0}.ctw figure{margin:0}
+.ctw .bar{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:99}
+.ctw h2{font-family:'Noto Serif JP','Noto Serif KR',serif;font-weight:700;font-size:26px;line-height:1.45;margin:0 0 22px;border:0;padding:0}
+.ctw p{margin:0 0 22px}.ctw .num{font-family:'Noto Serif JP','Noto Serif KR',serif;font-size:13px;color:var(--mute);letter-spacing:.2em;margin:0 0 6px}
+.ctw .sec{padding-top:96px}
+.ctw .bleed,.ctw .one,.ctw .pair,.ctw .trio{margin:34px 0 0}
+.ctw .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ctw .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ctw .pair,.ctw .trio{align-items:start}
+.ctw .cap{font-size:13px;line-height:1.7;color:var(--mute);margin:8px 0 26px}
+.ctw .sum{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 2px;margin:8px 0 14px}.ctw .sum b{font-size:12px;letter-spacing:.15em;color:var(--mute)}.ctw .sum ul{margin:6px 0 0;padding-left:18px}
+.ctw .visit{font-size:13px;color:var(--mute)}.ctw .disc-top,.ctw .disc-end{font-size:12px;color:var(--mute);line-height:1.7}
+.ctw .lang{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.ctw .lang span{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--mute)}.ctw .lang .on{border-color:var(--ink);color:var(--ink)}
+.ctw .toc{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.ctw .toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:20px;padding:4px 13px;line-height:1.6}.ctw .toc a:hover{background:var(--ink);color:#fff}
+.ctw .fact{border:1px solid var(--line);background:#fff;padding:18px 22px;font-size:14.5px;line-height:1.9;margin:28px 0}.ctw .fact b{display:block;font-size:12px;letter-spacing:.12em;color:var(--mute);margin-bottom:6px}.ctw .fact ul{margin:0;padding-left:18px}
+.ctw .warn{color:#c0392b}
+.ctw .ad{border:1px solid var(--line);background:#fbfaf7;padding:16px 20px;margin:30px 0}.ctw .adl{font-size:11px;letter-spacing:.15em;color:var(--mute);margin:0 0 4px}.ctw .adisc{font-size:12px;color:var(--mute);line-height:1.6;margin:0 0 12px}
+.ctw .btns{display:flex;flex-wrap:wrap;gap:8px}.ctw .btn{font-size:13.5px;border:1px solid var(--accent);color:var(--accent);border-radius:22px;padding:6px 16px;text-decoration:none;line-height:1.5}.ctw .btn:hover{background:var(--accent);color:#fff}
+.ctw .next{display:block;border:1px solid var(--ink);padding:18px 22px;text-decoration:none;color:var(--ink);margin:40px 0}
+.ctw section{animation:ctf 1s ease both}@keyframes ctf{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ctw section{animation:none}}
+@media (max-width:600px){.ctw h2{font-size:22px}.ctw .pair,.ctw .trio{grid-template-columns:1fr}.ctw .pair img,.ctw .trio img{aspect-ratio:auto}.ctw .bleed{margin-left:-20px;margin-right:-20px}.ctw .sec{padding-top:72px}}
+
+#au-series{display:none!important}
+.article-view:has(.ctw){display:flex!important;flex-direction:column}
+.article-view:has(.ctw)>*{order:1}
+.article-view:has(.ctw)>ins.adsbygoogle,.article-view:has(.ctw)>.revenue_unit_wrap{order:9}
+.area-view:has(.ctw) .article-header{background:linear-gradient(rgba(18,32,36,.30),rgba(18,32,36,.58)),url(https://41aurum.github.io/blog/capetown/ct_2212.jpg) center 40%/cover no-repeat!important}
+.area-view:has(.ctw) .article-header .title-article{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;display:block!important}
+#mainContent:has(.ctw){display:flex!important;flex-direction:column}
+#mainContent:has(.ctw)>*{order:1}
+#mainContent:has(.ctw)>ins.adsbygoogle,#mainContent:has(.ctw)>.revenue_unit_wrap{order:9}
+.ctw .lang a{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:3px 12px;color:var(--ink);text-decoration:none!important;background:#fff}
+.ctw .lang a.on{border-color:#13314A;background:#13314A;color:#fff}
+.ctw .lang a.on{border-color:#13314A!important;background:#13314A!important;color:#fff!important}
+#article-view .ctw .lang a.on,#mainContent .ctw .lang a.on,body .ctw .lang a.on[href]{border-color:#13314A!important;background:#13314A!important;background-color:#13314A!important;color:#fff!important}
+.ctw .eye{border-left:2px solid #0E8A97;padding:4px 0 4px 18px;margin:30px 0;font-size:15px;line-height:1.95;color:#3a4446}.ctw .eye b{display:block;font-family:'Noto Serif JP','Noto Serif KR',serif;font-size:12px;font-weight:700;letter-spacing:.16em;color:#0E8A97;margin-bottom:4px}
+#agcpt .cp-k{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.2em!important;color:var(--teal)!important;margin:0 0 12px!important;line-height:1.7!important;font-weight:600!important}
+#agcpt .ag-route{margin:22px 0 10px!important;padding:18px 0 14px!important;border-top:1px solid #D6EBEE!important;border-bottom:1px solid #D6EBEE!important}
+#agcpt .ag-route-h{font-size:12px!important;letter-spacing:.15em!important;color:#8a8a8a!important;margin:0 0 14px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-route-l{list-style:none!important;margin:0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:0!important}
+#agcpt .ag-route-l li{list-style:none!important;position:relative!important;margin:0!important;padding:22px 12px 0 0!important;font-size:12.5px!important;line-height:1.65!important;color:#5d6466!important;word-break:keep-all!important}
+#agcpt .ag-route-l li::before{content:''!important;position:absolute!important;left:0!important;top:6px!important;width:8px!important;height:8px!important;border-radius:50%!important;background:var(--teal)!important}
+#agcpt .ag-route-l li::after{content:''!important;position:absolute!important;left:14px!important;right:6px!important;top:10px!important;height:1px!important;background:#CDEBF3!important}
+#agcpt .ag-route-l li:last-child::after{display:none!important}
+#agcpt .ag-route-l li:last-child::before{background:var(--blue)!important}
+#agcpt .ag-route-l li span{display:block!important;font-family:var(--cps)!important;font-size:14px!important;font-weight:700!important;color:#1f2a2c!important;margin:0 0 3px!important;letter-spacing:.04em!important}
+#agcpt .ag-route-l li:last-child span{color:var(--blue)!important}
+#agcpt .ag-art{margin:44px 0!important;background:#fff!important;border:1px solid #D6EBEE!important;border-top:3px solid var(--blue)!important;padding:22px 26px 22px!important}
+#agcpt .ag-art-l{font-family:var(--cps)!important;font-size:12px!important;letter-spacing:.24em!important;color:var(--blue)!important;margin:0 0 16px!important;line-height:1.6!important;font-weight:700!important}
+#agcpt .ag-art-e+.ag-art-e{border-top:1px solid #E4F2F4!important;margin-top:22px!important;padding-top:22px!important}
+#agcpt .ag-art-has{display:grid!important;grid-template-columns:44% 1fr!important;gap:24px!important;align-items:start!important}
+#agcpt .ag-art-f{margin:0!important}
+#agcpt .ag-art-f img{display:block!important;width:100%!important;height:auto!important;border:1px solid #E4F2F4!important}
+#agcpt .ag-art-c{font-size:11.5px!important;line-height:1.6!important;color:#8a8a8a!important;margin:8px 0 0!important}
+#agcpt .ag-art-t{display:inline-block!important;font-size:11px!important;letter-spacing:.12em!important;color:var(--teal)!important;border:1px solid #CDEBF3!important;border-radius:20px!important;padding:1px 10px!important;margin:0 0 10px!important;line-height:1.7!important}
+#agcpt .ag-art-n{font-family:var(--cps)!important;font-size:19px!important;font-weight:700!important;line-height:1.5!important;color:#1f2a2c!important;margin:0 0 4px!important}
+#agcpt .ag-art-w{font-size:13px!important;line-height:1.7!important;color:#6b6f66!important;margin:0 0 12px!important}
+#agcpt .ag-art-p{font-size:15px!important;line-height:1.9!important;margin:0 0 12px!important;color:#2b2b2b!important}
+#agcpt .ag-art .btns{margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-art-f img[height="1796"]{max-width:62%!important;margin:0 auto!important}#agcpt .ag-route-l{grid-template-columns:1fr!important}#agcpt .ag-route-l li{padding:0 0 12px 22px!important}#agcpt .ag-route-l li::before{top:7px!important}#agcpt .ag-route-l li::after{left:3.5px!important;right:auto!important;top:18px!important;bottom:-2px!important;width:1px!important;height:auto!important}#agcpt .ag-art{padding:18px 18px!important}#agcpt .ag-art-has{grid-template-columns:1fr!important;gap:14px!important}}
+
+/*hq1125b*/
+#agcpt .ag-route-l{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+#agcpt .ctw .ag-route-l li{overflow-wrap:anywhere!important}
+#agcpt[lang=ja] .ag-route-l li,#agcpt[lang=ja] .ag-art,#agcpt[lang=ja] .ag-art *,#agcpt[lang=ja] .cp-k{word-break:normal!important;line-break:strict!important}
+#agcpt .ctw .ag-art p.ag-art-n,#agcpt .ctw .ag-art p.ag-art-l,#agcpt .ctw .ag-route-l li span,#agcpt .ctw .cp-div p.cp-k{font-family:var(--cps)!important}
+#agcpt .ag-route{border-top:0!important;margin-top:4px!important}
+@media (max-width:600px){#agcpt .ag-route-l{grid-template-columns:1fr!important}}</style>
+<style>/*hqFX1125*/#agcpt .fxf{position:relative!important}#agcpt .fx{position:absolute!important;display:block!important;border:1.6px solid rgba(63,127,122,.95)!important;border-radius:50%!important;box-shadow:0 0 0 1px rgba(255,255,255,.45)!important;font-size:0!important;line-height:0!important;pointer-events:none!important;background:transparent!important}</style><style>/*hqLB1125*/#agcpt .ctw,#agcpt .cp-cover,#agcpt .cp-div{word-break:keep-all;overflow-wrap:break-word;line-break:strict}#agcpt .cp-title,#agcpt .cp-sub,#agcpt .cp-dn,#agcpt .cp-ds,#agcpt .ctw h2,#agcpt .ctw .cap,#agcpt .cp-ccap,#agcpt .ag-art-n,#agcpt .toc a,#agcpt .btn{text-wrap:balance}#agcpt .ctw p,#agcpt .ctw li{text-wrap:pretty}#agcpt[lang=ja] .ctw,#agcpt[lang=ja] .cp-cover,#agcpt[lang=ja] .cp-div{word-break:normal!important;line-break:strict!important}</style><style>/*hqJA*/.ctw[lang=ja],.ctw[lang=ja] p,.ctw[lang=ja] li,.ctw[lang=ja] span,.ctw[lang=ja] a,.ctw[lang=ja] figcaption,.ctw[lang=ja] .cap{font-family:'Noto Sans JP','Noto Sans KR',sans-serif!important}#agcpt[lang=ja] .cp-title,#agcpt[lang=ja] .cp-sub,#agcpt[lang=ja] .cp-dn,#agcpt[lang=ja] .cp-ds,#agcpt[lang=ja] .ag-art-n,#agcpt[lang=ja] .ag-art-l,#agcpt[lang=ja] .cp-k,#agcpt[lang=ja] .ctw h2,#agcpt[lang=ja] .ctw .num{font-family:'Noto Serif JP','Noto Serif KR',serif!important}</style><div id="ctbar" class="bar">&nbsp;</div>
+<nav id="cpdots" class="cp-dots" aria-label="セクション"><a href="#cpcover" data-t="cpcover"><span class="cp-dl">表紙</span><span class="cp-dd">&nbsp;</span></a><a href="#s1" data-t="s1"><span class="cp-dl">フライトと海</span><span class="cp-dd">&nbsp;</span></a><a href="#s3" data-t="s3"><span class="cp-dl">ワイナリー</span><span class="cp-dd">&nbsp;</span></a><a href="#s4" data-t="s4"><span class="cp-dl">テーブルマウンテン</span><span class="cp-dd">&nbsp;</span></a><a href="#s5" data-t="s5"><span class="cp-dl">お土産と税関</span><span class="cp-dd">&nbsp;</span></a><a href="#s6" data-t="s6"><span class="cp-dl">イスタンブール</span><span class="cp-dd">&nbsp;</span></a><a href="#s9" data-t="s9"><span class="cp-dl">エピローグ</span><span class="cp-dd">&nbsp;</span></a><span class="cp-now">表紙</span></nav>
+<div class="lang"><a href="https://aurum41.tistory.com/11">🇰🇷 한국어</a><a href="https://aurum41.tistory.com/16">🇬🇧 English</a><a class="on" href="https://aurum41.tistory.com/17">🇯🇵 日本語</a></div>
+<p class="disc-top" data-ke-size="size16">この記事にはクーパン・パートナーズのリンクが含まれ、一定の手数料を受け取ります（이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다）。一部のリンクはKlookのアフィリエイトリンクです。</p>
+<section id="intro">
+<div id="cpcover" class="cp-cover">
+<div class="cp-cfig">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2210.jpg" alt="十二の峰の下、プールのように青いキャンプスベイの全景" width="1600" height="1200" /></figure>
+</div>
+<div class="cp-ct">
+<p class="cp-kick" data-ke-size="size16">AURUM41 GUIDE &middot; 海外旅行</p>
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-title" data-ke-size="size16">南アフリカ・ケープタウンの旅</p>
+<p class="cp-sub" data-ke-size="size16">十二の峰の下のターコイズの海と、<br>二十倍の授業料</p>
+<div class="cp-meta">
+<p data-ke-size="size16"><b>訪問</b> 2015年10月31日〜11月10日</p>
+<p data-ke-size="size16"><b>ルート</b> 仁川 &rarr; イスタンブール &rarr; ケープタウン、帰りもイスタンブール経由</p>
+</div>
+</div>
+</div>
+<p class="cap cp-ccap" data-ke-size="size16">キャンプスベイの全景</p>
+<p data-ke-size="size16">ワインをひと口、チェリーチョコレートをひとかけ。そしてイスタンブールの市場で払った、相場の二十倍の授業料。</p>
+<p data-ke-size="size16">この三つを手に入れるために、飛行機に二日乗りました。</p>
+<p data-ke-size="size16">こんにちは、考えを演出する作家（생각을 연출하는 작가、センガグル・ヨンチュラヌン・チャッカ）、ヤン・スンジン（양승진）です。今日は2015年の秋、アフリカ大陸のいちばん南の端の街、ケープタウンへご案内します。海はプールのように青く、山はナイフで切ったように平らなところです。道中の苦労は私が全部済ませておいたので、気楽に眺めていてください。いいところは一緒に見ましょう。</p><p class="mg-pull" data-ke-size="size16">ずいぶん前の旅なのに、写真をもう一度広げると、今日のことのように鮮やかです。</p>
+<nav class="toc"><a href="#s1">① 二日間のフライト</a><a href="#s2">② 大西洋の光</a><a href="#s3">③ ワイナリー</a><a href="#s4">④ テーブルマウンテン</a><a href="#s5">⑤ お土産と税関</a><a href="#s6">⑥ イスタンブール</a><a href="#s7">⑦ グランドバザール</a><a href="#s8">⑧ 味覚の帰国</a><a href="#s9">⑨ エピローグ</a></nav></section>
+<div class="sum"><b>3行まとめ</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc"><li>フライトだけで二日。着いてみれば十二の峰の下のターコイズの海、そしてワインとチェリーチョコレート。</li><li>テーブルマウンテンと港、お土産屋と税関――贈り物にも税金がかかると学んだ日。</li><li>帰り道のイスタンブール、グランドバザールで二十倍を払って学んだ値切り。最後は空港道路沿いのバラック街。</li></ul>
+</div>
+<div class="ag-route">
+<p class="ag-route-h" data-ke-size="size16">この記事が絞り込んでいく道</p>
+<ul class="ag-route-l" style="list-style-type: disc;" data-ke-list-type="disc">
+<li><span>国</span>南アフリカ、帰り道のトルコ</li>
+<li><span>地域</span>キャンプスベイ・コンスタンシア・V&amp;A港、イスタンブール旧市街</li>
+<li><span>食</span>ワインとチョコレート、スーパーの果物、ロクム</li>
+<li><span>風景</span>十二の峰、テーブルマウンテン、古い城壁</li>
+<li><span>文化</span>ケープ・ダッチ、バザールの値切り、タウンシップの歴史</li>
+<li><span>作品</span>ひと休みのたびに、その場所で思い浮かんだ作家をひとり</li>
+</ul>
+</div>
+<p class="visit" data-ke-size="size16">訪問基準日：2015年10月31日〜11月10日（元写真の撮影日基準）。現在とは異なる場合があります。</p>
+<section id="s1" class="sec cp-gs">
+<div class="cp-div" data-g="s1">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">国・地域 &mdash; 南アフリカ、ケープタウンの大西洋岸</p>
+<p class="cp-dn" data-ke-size="size16">フライトと海</p>
+<p class="cp-ds" data-ke-size="size16">この一枚の景色を見るまでに、飛行機だけで二日かかりました。</p>
+</div>
+<p class="num" data-ke-size="size16">①</p>
+<h2 data-ke-size="size26">二日間のフライト</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1905.jpg" alt="出発空港の搭乗橋の向こうで待機する旅客機" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">出発。あの機内食の箱が私の何食分を担うのか、そのときはまだ知りませんでした</p>
+<p data-ke-size="size16">2015年の秋、仕事での出張でした。仁川からイスタンブールへ、そこで乗り継いで赤道を越え、アフリカの端まで。</p>
+<p data-ke-size="size16">「乗り継ぎ」と言えば聞こえは軽いですが、実際は二日です。</p>
+<p data-ke-size="size16">長距離フライトで最初に降参するのは、体力ではなく首です。少しうとうとして目を覚ますと首が片側に折れていて、乗り継ぎ空港の椅子に座れば今度は腰が文句を言い出します。二機目の搭乗口の前で、私は静かに誓いました。次は首枕から用意する、と。</p>
+<p data-ke-size="size16">その誓い、いま皆さんに先にお渡ししておきます。</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">広告 &middot; クーパン</p>
+<p class="adisc" data-ke-size="size16">この記事にはクーパン・パートナーズのリンクが含まれ、一定の手数料を受け取ります（이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다）。</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCAGvPrUq" target="_blank" rel="sponsored noopener">首枕</a><a class="btn" href="https://link.coupang.com/a/iUCBQG98Ro" target="_blank" rel="sponsored noopener">着圧ソックス</a><a class="btn" href="https://link.coupang.com/a/iUCCVPbwTA" target="_blank" rel="sponsored noopener">アイマスク</a></div>
+</aside>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1916.jpg" alt="青空の下のケープタウン国際空港ターミナル" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">ケープタウン国際空港。屋根まで波のようにうねっています</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1917.jpg" alt="ケープタウン空港に着いた直後の澄んだ空とターミナル" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">荷物カートのほうが私より先に着いていました</p>
+<p data-ke-size="size16">到着。</p>
+<p data-ke-size="size16">二日ぶりに吸った外の空気は、乾いていて軽やかでした。南半球の11月は初夏。韓国では秋のコートを出すころなのに、ここは半袖です。</p>
+<p data-ke-size="size16">着いて最初に確かめたのは景色ではなく、首がまだ左右に回るかどうかでした。</p>
+<p data-ke-size="size16">幸い、回りました。授業料第1回は首の筋肉で払いました。</p>
+</section>
+<section id="s2" class="sec">
+<p class="num" data-ke-size="size16">②</p>
+<h2 data-ke-size="size26">大西洋の光</h2>
+<p data-ke-size="size16">荷物を置いて、すぐ海へ。今日やることはひとつ、大西洋の夕日を見ること。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1975.jpg" alt="夕暮れの大西洋、遊歩道の柵の向こうのアロエと金色の海" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">アロエはシルエットになり、海は金色に砕けます</p>
+<p data-ke-size="size16">この海岸では、太陽は海に沈みます。アロエの葉が黒いシルエットに変わり、柵のあいだから水面全体が金色に砕けます。版画のように輪郭のくっきりした夕暮れです。</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_1980.jpg" alt="夕焼けを映す潮だまりと黒く濡れた海岸の岩" width="1600" height="1200" /><span class="fx" style="left:40%;top:45%;width:40%;height:38%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">潮だまりごとに夕焼けがひとつずつ映っていたので、太陽は外して潮だまりだけが見えるように見下ろして撮りました ・ 見どころ：丸の中の潮だまり</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1989.jpg" alt="海岸道路に並ぶ木々のシルエット" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">自転車、ヤシの木、白いマンション</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1990.jpg" alt="夕方の光がにじむケープタウンの海沿いの道" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">運動器具の横の夕焼け。海さえなければ、うちの近所の公園です</p>
+<p data-ke-size="size16">韓国で言えば、どの町にもある川沿いの散歩道です。違うのは、川の代わりに大西洋があることだけ。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2073.jpg" alt="日差しにきらめく大西洋と海沿いの遊歩道" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">きれいなのに、長く見ているとまぶしくて</p>
+<p data-ke-size="size16">ただ、この日差しは強いです。景色を眺めているうちに目がまぶしくて思わず顔をしかめ、日陰のない海岸道路では腕と首筋がすぐに火照ってきます。日焼け止めなしで海水浴場で一日過ごした翌日の、あのひりひりです。</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">広告 &middot; クーパン</p>
+<p class="adisc" data-ke-size="size16">この記事にはクーパン・パートナーズのリンクが含まれ、一定の手数料を受け取ります（이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다）。</p>
+<div class="btns"><a class="btn" href="https://link.coupang.com/a/iUCC5P48Au" target="_blank" rel="sponsored noopener">日焼け止め SPF50+</a><a class="btn" href="https://link.coupang.com/a/iUCDgh1lBc" target="_blank" rel="sponsored noopener">偏光サングラス</a><a class="btn" href="https://link.coupang.com/a/iUCDqkuOzs" target="_blank" rel="sponsored noopener">つば広の帽子</a></div>
+</aside>
+<div class="trio">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2192.jpg" alt="キャンプスベイの丘で風に傾いた一本の木" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2203.jpg" alt="丸い花崗岩の岩が横たわる澄んだ海岸" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2205.jpg" alt="海岸線に沿って続く十二使徒の峰" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">キャンプスベイ。フィルターではありません、もともとこの色です</p>
+<p data-ke-size="size16">そして空がすっかり晴れた日、キャンプスベイの丘に立ちました。</p>
+<p data-ke-size="size16">十二の峰が肩を寄せ合って海を見下ろしています。その足元で、水の色がターコイズから紺へと何度も変わります。済州島・挟才（협재、ヒョプチェ）海岸のあの翡翠色を十倍に広げ、背後に雪岳山（설악산、ソラクサン）の稜線を屏風のように立てた風景。二日のフライトの疲れが、ここで一気にほどけました。</p>
+<div class="fact"><b>十二使徒なのに十八</b>この峰々の名前は「十二使徒（Twelve Apostles）」ですが、私が数えてみたら十八ありました。数が合わなくても、間違っているのは私たちの目ではなかったんです。</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">ちょっと、コーヒーを一杯</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg/1280px-Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" alt="トーマス・ウィリアム・ボウラーが描いたキャンプスベイの水彩画。丸い岩と潮だまりの向こうに峰が見える" width="1280" height="970" />
+<figcaption class="ag-art-c">トーマス・ウィリアム・ボウラー「Camps Bay, Cape of Good Hope」紙に水彩、裏面に「1850&ndash;53」の記録 &middot; パブリックドメイン（Wikimedia Commons）</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">トーマス・ウィリアム・ボウラー（Thomas William Bowler, 1812–1869）</p><p class="ag-art-p" data-ke-size="size16">この写真を選びながら、コーヒーを一杯置いて座ったところです。ひと休みついでに、この海を先に描いた人の話をさせてください。</p><p class="ag-art-p" data-ke-size="size16">調べてみると、私より160年ほど前にこの海を描いた人がいました。トーマス・ウィリアム・ボウラー。1834年、ケープに新しく赴任した天文学者の従者として船を降りたイギリスの青年で、それから35年近く、この土地と海ばかりを描いたそうです。</p><p class="ag-art-p" data-ke-size="size16">彼の水彩画「キャンプスベイ、喜望峰」を見つけてみると、丸い花崗岩の岩と潮だまり、その奥に続く峰がそのままありました。私の写真の岩たちも、同じ場所に同じ形で横たわっています。160年間、一度もポーズを変えなかったモデルです。風景画は、モデルが年を取らない唯一のジャンルなのかもしれません。</p><p class="ag-art-p" data-ke-size="size16">私も海をよく描く人間なので、一度計算してみました。彼はこの場面に絵の具と一日を使い、私はスマホで1秒を使いました。160年後まで残ったのは、その一日のほうです。だから最近は、シャッターを押す前に10秒だけ、ただ眺めるようにしています。</p><p class="ag-art-p" data-ke-size="size16">この丘に立って、160年前のあの水彩画を重ねて思い浮かべてみるのも、この旅の小さな楽しみではないでしょうか。</p><div class="btns"><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" target="_blank" rel="noopener">作品情報（Wikimedia Commons）</a><a class="btn" href="https://en.wikipedia.org/wiki/Thomas_William_Bowler" target="_blank" rel="noopener">画家について（Wikipedia）</a></div></div></div></div>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2197.jpg" alt="木陰の向こうに広がるキャンプスベイの浜と山並み" width="1600" height="1200" /><span class="fx" style="left:44%;top:30%;width:22%;height:50%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2200.jpg" alt="ターコイズの海と白い砂が出会うキャンプスベイ" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">木が風の向きを代わりに教えてくれている気がして、幹の傾きが見えるようにわざと横から撮りました ・ 見どころ：片側に傾いた幹</p>
+<p data-ke-size="size16">丘の芝生に立つ一本の木が、海のほうへ体を傾けています。この辺りの風はいつも同じ方向から吹く、と木のほうが先に教えてくれます。</p>
+<div class="cg cgA"><div class="r"><div style="flex:2.899 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a1_2212_wide.jpg" alt="キャンプスベイの海と十二の峰" width="1600" height="552" /></div></div><div class="r"><div style="flex:0.729 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a2_2208_tall.jpg" alt="岩のあいだの潮だまりと海" width="560" height="768" /></div><div style="flex:1.920 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/a3_2212_detail.jpg" alt="浜辺と岩の丘" width="576" height="300" /></div></div><p class="cg-m" data-ke-size="size16">Camps Bay · 33°57′S 18°23′E</p></div>
+<p class="cap" data-ke-size="size16">水はこんなに透明なのに、足は最後まで浸しませんでした</p>
+<p data-ke-size="size16">水の色がこれほど澄んでいても、私は足を浸しませんでした。この海は南極側から上がってくる冷たい海流が通る場所で、ターコイズの日でも水は思ったよりずっと冷たいのです。夏の渓流に足を入れて、3秒で引っ込めたあの感じ。大西洋は、眺める海と入る海が違います。</p>
+</section>
+<section id="s3" class="sec cp-gs">
+<div class="cp-div" data-g="s3">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">食 &mdash; コンスタンシア渓谷のワインとチョコレート</p>
+<p class="cp-dn" data-ke-size="size16">ワイナリー</p>
+<p class="cp-ds" data-ke-size="size16">ワインをひと口、そのあとにチョコレートをひとかけ。</p>
+</div>
+<p class="num" data-ke-size="size16">③</p>
+<h2 data-ke-size="size26">ワイナリー</h2>
+<p data-ke-size="size16">テーブルマウンテンへ向かう道すがら、正直に言うと、今日の本当の目的地はここでした。南アフリカでいちばん古いワイン農園、フロート・コンスタンシア（Groot Constantia）。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2275.jpg" alt="白壁の建物とぶどう畑、その奥に続く山" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">ぶどう畑が山すそまで。遊び場もある家族のピクニックスポット</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2278.jpg" alt="切妻屋根の白い建物の前の長い池" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">白い壁、丸い破風、長い池。建物が勝手に左右をそろえてくれます</p>
+<p data-ke-size="size16">1685年に始まった農園です。白い漆喰の壁に丸い破風をのせた、オランダ入植期の「ケープ・ダッチ」様式。その前の長い池が、建物を逆さまにもう一度映してくれます。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2234.jpg" alt="ワイナリーの展示スペースにある古いワイン圧搾機" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">昔のぶどう圧搾機。後ろに蝶の絵が掛かっています</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2235.jpg" alt="ワイナリーの壁に掛かった風景画と小さなオーク樽" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">色とりどりの家が並ぶケープタウンの街並みの絵</p>
+<p data-ke-size="size16">中には古い圧搾機と絵があります。</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2257.jpg" alt="照明を落としたセラーにどこまでも横たわるオーク樽" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2261.jpg" alt="縦に長く続くオーク樽の列" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">セラー。オーク樽が果てしなく横たわっています</p>
+<div class="pair">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2260.jpg" alt="セラーの中に高く積まれたオーク樽" width="1600" height="1200" /><span class="fx" style="left:48%;top:8%;width:26%;height:32%;">&nbsp;</span></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2265.jpg" alt="大きなオーク樽の下に並ぶワインボトル" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">樽ごとにワインが染みた赤い帯が同じ高さで続いているのが好きで、上から斜めに見下ろしました ・ 見どころ：左の写真、樽の赤い帯</p>
+<p data-ke-size="size16">階段を下りるとセラーです。明かりを落とした長い空間に、オーク樽が同じ角度でどこまでも横たわり、樽の腹ごとにワインの染みた赤い帯が並んでいます。韓国の家の裏手にある醤油や味噌の甕置き場、チャンドクテ（장독대）に甕がずらりと並ぶのを見たときの、あの頼もしさそのものです。ただし、ここの甕には味噌（된장、テンジャン）の代わりにワインが入っています。</p>
+<p data-ke-size="size16">セラーをひと回りすると、口がさびしくなりました。ちょうど、この旅でいちばんおいしかった時間が待っていました。ワインとチョコレートのペアリングです。</p><figure class="mg-spread mg-wine"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_pc_ja.jpg?v=5" alt="赤ワインとチェリーチョコ、チェリーチョコのイラストと味わう順番を書いたページ" width="1600" height="960" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_wine_mo_ja.jpg?v=5" alt="赤ワインとチェリーチョコ、チェリーチョコのイラストと味わう順番を書いたページ" width="1080" height="1540" /></figure>
+<p data-ke-size="size16">やり方は簡単。ワインをひと口、チョコレートをひとかけ。ワインの渋みは、熟していない柿をかじったときに舌がきゅっと縮む、あの渋みと同じ成分（タンニン）から来ています。その渋い場所にチョコレートが入ってくると、甘さが渋みを包むこともあれば、逆にワインの香りをぐっと引き上げることもあります。マッコリ（막걸리）にはチヂミ（파전、パジョン）、焼酎にはサムギョプサル（삼겹살）のように、ここも組み合わせが決まっている酒席なのです。</p>
+<p data-ke-size="size16">私が驚いたのはチョコレートのほうでした。私にとってチョコレートは、ただ「チョコレート味」ひとつだったんです。ところがチェリー味のように、チョコレートそのものの味がいくつにも分かれ、その味ごとにワインを一本ずつ合わせてくれるのは初めてでした。ひとかけ、ひと口が毎回新鮮でした。</p>
+<p data-ke-size="size16">それまでチェリーは、ケーキの上に乗っかる側だと思っていました。その日のチェリーは、チョコレートの中に入っていました。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2270.jpg" alt="ぶどう畑の向こうに山が見えるワイナリーの木陰" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">セラーを出ると、また日差し。ぶどう畑の上に大きな木陰</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2281.jpg" alt="ワイナリーの白い建物の前の屋外テーブル" width="1600" height="1200" /></figure>
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2283.jpg" alt="大きな木の下、パラソルをたたんだ屋外テラス" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">たたまれたパラソル。次は開いている日に来ます</p>
+<p data-ke-size="size16">ワインを二、三口に日差しまで浴びたら、テーブルマウンテンに登る前から、気分はもう山頂でした。</p>
+</section>
+<section id="s4" class="sec cp-gs">
+<div class="cp-div" data-g="s4">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">風景 &mdash; 平らな山と、その下の港</p>
+<p class="cp-dn" data-ke-size="size16">テーブルマウンテン</p>
+<p class="cp-ds" data-ke-size="size16">頂上がナイフで切ったように平らなので、テーブルマウンテンです。</p>
+</div>
+<p class="num" data-ke-size="size16">④</p>
+<h2 data-ke-size="size26">テーブルマウンテン</h2>
+<p data-ke-size="size16">さて、この街の主役の出番です。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2053.jpg" alt="市内から見上げた平らなテーブルマウンテン" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">道の先に山。この街では顔を上げれば山です</p>
+<div class="cg cgB"><div class="r"><div style="flex:0.533 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b3_2079_tall.jpg" alt="街灯と木の向こうの山" width="512" height="960" /></div><div class="col" style="flex:2.37 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/b2_2079_ridge.jpg" alt="テーブルマウンテンの平らな稜線" width="1408" height="348" /><img src="https://41aurum.github.io/blog/capetown/mag2/b1_2084_ridge.jpg" alt="別の通りから見た同じ稜線" width="1504" height="264" /></div></div><p class="cg-m" data-ke-size="size16">Table Mountain · 33°58′S 18°25′E</p></div>
+<p class="cap" data-ke-size="size16">どこから見ても同じ山</p>
+<p data-ke-size="size16">ケープタウンでは、どの道で振り向いてもこの山が目に入ります。道に迷っても、山を探せば方角が分かる。この街は道しるべを標高1,000mの上に掲げています。</p>
+<p data-ke-size="size16">ソウルで北漢山（북한산、プッカンサン）を見て方角をつかむのと同じですが、ここは頂上がアイロンをかけたように平らです。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2227.jpg" alt="展望ポイントから見下ろしたケープタウン市街" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">展望台。山すそまで市街地が満ちています</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2228.jpg" alt="海と街が一緒に見える展望台の風景" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">反対側には尖ったライオンズヘッド</p>
+<p data-ke-size="size16">山と向かい合う丘の展望台に登りました。日差しは痛いのに風は冷たく、半袖で上がってきてすぐ腕組みすることになります。南東風が強く吹くと、山頂に白い雲がテーブルクロスのようにかかり、地元では本当にそれを「テーブルクロス（Tablecloth）」と呼びます。山の名前に合わせて、天気までお膳立てしてくれるわけです。</p>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2230.jpg" alt="黄色い額縁のフォトスポットに収まるテーブルマウンテン" width="1600" height="1200" /><span class="fx" style="left:22%;top:35%;width:62%;height:26%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">みんなが額縁の前で一歩ずつ下がるので、私も同じ場所に立って、山が額縁の中にぴたりと収まるように合わせました ・ 見どころ：額縁の中のテーブルマウンテン</p>
+<p data-ke-size="size16">展望台には大きな黄色い額縁が立っています。枠をひとつ立てただけなのに、人々はその中に山を収めようと足を止め、一歩下がり、立つ場所を選びます。展示室で額縁がする仕事を、山の前でそのままやっているのです。作家としては、ちょっと妬ましい仕掛けでした。</p>
+<p data-ke-size="size16">山頂へのいちばんの近道は、1929年に開通したケーブルカーです。風が強いと運休する日があるので、天気を見て時間を決めておくと気が楽です。</p>
+<aside class="ad">
+<p class="adl" data-ke-size="size16">広告 &middot; Klook</p>
+<p class="adisc" data-ke-size="size16">このボタンはKlookのアフィリエイトリンクで、予約時に一定の手数料を受け取る場合があります。</p>
+<div class="btns"><a class="btn" href="https://www.klook.com/ja/search/result/?query=Table%20Mountain%20Cableway&amp;aid=143914" target="_blank" rel="sponsored noopener">テーブルマウンテン・ケーブルカーを予約</a></div>
+</aside>
+<div class="one">
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2129.jpg" alt="港と停泊する船の向こうのテーブルマウンテン" width="1600" height="1200" /><span class="fx" style="left:35%;top:26%;width:60%;height:18%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">国旗とクレーンのあいだにまたあの山が見えたので、港でも主役は山だということを残したくて ・ 見どころ：国旗の奥の平らな稜線</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2150.jpg" alt="夜に明かりをともした港の赤い時計塔" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">赤い時計塔のてっぺんに青い明かりがともりました</p>
+<p data-ke-size="size16">日が暮れたらV&amp;Aウォーターフロントの港へ。1882年に建てられた赤い時計塔に青い明かりがともり、山は闇の中へ入っていきます。この港は夜のほうが明るいのです。</p>
+</section>
+<section id="s5" class="sec cp-gs">
+<div class="cp-div" data-g="s5">
+<div class="cp-line cp-ridge">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">文化 &mdash; 手で削ったもの、国境を越える贈り物</p>
+<p class="cp-dn" data-ke-size="size16">お土産と税関</p>
+<p class="cp-ds" data-ke-size="size16">贈る側には気持ちでも、受け取る国の税関には輸入品です。</p>
+</div>
+<p class="num" data-ke-size="size16">⑤</p>
+<h2 data-ke-size="size26">お土産と税関</h2>
+<p data-ke-size="size16">旅も半ば。そろそろお土産を選ぶ番です。</p>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_pc_ja.jpg?v=5" alt="ケープの植物のイラストの上に木彫りのキリン、彫刻の角、シマウマの毛皮の見本を切り抜いて並べたおみやげ図鑑のページ" width="1600" height="1240" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_souvenir_mo_ja.jpg?v=5" alt="ケープの植物のイラストの上に木彫りのキリン、彫刻の角、シマウマの毛皮の見本を切り抜いて並べたおみやげ図鑑のページ" width="1080" height="2400" /></figure><p data-ke-size="size16">お土産屋の棚ひとつが、まるごとキリンです。棚があまりにぎっしりなので、私の目が長く止まったものだけ連れてきました。手で削っているので同じ顔はひとつもなく、私はいちばん整ったものより「これだけ違うもの」につい手が伸びました。シマウマの毛皮と角の工芸品の前では、私も一度立ち止まりました。</p><div class="fact warnbox"><b>持ち込み注意</b><span class="warn">毛皮・角など動物素材のお土産は、種によって輸出・輸入の許可が必要な場合があります。購入前に店で種と書類について尋ね、帰国前にご自身の国の税関・動物検疫の案内を確認してください。</span></div>
+<p data-ke-size="size16">そして私は、思いもよらない場所で足止めされました。</p>
+<p data-ke-size="size16">韓国から贈り物として持っていった万年筆のせいでした。一本3万ウォン（2015年当時で約3千円）を超えるもので、南アフリカの税関で一本ごとに10%の関税を払いました。心を込めて包んだ気持ちに、税金がつく瞬間でした。</p>
+<p data-ke-size="size16">贈る側には気持ちでも、受け取る国の税関には輸入品です。</p>
+<p data-ke-size="size16">おかげであの万年筆たちは、受け取る人より先に、南アフリカの税関にあいさつをしました。授業料第2回、一本につき10%。</p>
+<p data-ke-size="size16">初めて手にしたランド紙幣は、思ったよりぱりっとしていました。緑の10ランドにはサイ、赤い50ランドにはライオン。額が大きいほど紙幣も少しずつ長くなっていきます。関税を払おうとランド紙幣を出したら、どの紙幣にも同じ顔がありました。ネルソン・マンデラです。気になって調べてみると、2012年からすべての紙幣の表にマンデラ、裏にはサイ・ゾウ・ライオン・バッファロー・ヒョウの「ビッグファイブ」が入っているそうです。ランドというお金は1961年、南アフリカが英ポンドを手放して共和国になった年に生まれました。さらにさかのぼると、ケープは1806年からイギリスが治め、英自治領だった南アフリカ連邦（1910年〜）の時代から原住民土地法（1913年）のような分離の法律が積み重なり、1948年に政権を取った国民党政府がそれをアパルトヘイトという制度に固めたのでした。その制度に立ち向かって27年を獄中で過ごした人が、いま私が差し出した紙幣の表にいたわけです。</p>
+<p data-ke-size="size16">次に贈り物を持って国境を越えるときは、相手国の免税範囲から確かめるつもりです。同じものが複数あると、商用と見なされることもあるそうです。</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">ちょっと、ひと休み</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">エスター・マーラング（Esther Mahlangu, 1935–）</p><p class="ag-art-p" data-ke-size="size16">税関で打ちのめされた心をキリンの棚の前でなだめていたら、ひとりの人が思い浮かびました。</p><p class="ag-art-p" data-ke-size="size16">調べてみると、エスター・マーラングという作家がいました。南アフリカのンデベレの女性たちが家の外壁に描いてきた太い幾何学模様を、十歳ごろに母と祖母から学び、キャンバスや金属へと移した人です。</p><p class="ag-art-p" data-ke-size="size16">1991年には、BMW 525iを一台まるごとンデベレの模様で塗ったそうです。BMWアートカーを手がけた初の女性であり、初の非西洋の作家でした。その車は32年ぶりに南アフリカへ戻り、ケープタウンのイジコ美術館で展示されたこともあります。</p><p class="ag-art-p" data-ke-size="size16">この店と直接の関係はありません。それでも、ひとつひとつ違うキリンの模様の前で、祖母の家の土壁からドイツの自動車まで届いたあの線を思い浮かべてみるのも、お土産屋を眺めるもうひとつの楽しみではないでしょうか。私の絵にも手で引いた線が多いので、この話を思い出すと、線を一本、もっと大胆に引くようになります。</p><div class="btns"><a class="btn" href="https://www.artcar.bmwgroup.com/en/art-car/text/Esther-Mahlangu-BMW-525i1991-1375.html" target="_blank" rel="noopener">BMWアートカー紹介（公式）</a><a class="btn" href="https://en.wikipedia.org/wiki/Esther_Mahlangu" target="_blank" rel="noopener">作家について（Wikipedia）</a></div></div></div></div>
+<p data-ke-size="size16">そしてこの店で、私は同僚たちへのお土産を選びました。石を削ったカバのような動物の置物と、動物の形の木で作った手作りの鉛筆。</p>
+<p data-ke-size="size16">石でした。これが、あとで問題になります。</p>
+</section>
+<section id="s6" class="sec cp-gs">
+<div class="cp-div" data-g="s6">
+<div class="cp-line cp-dome">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">二つ目の国 &mdash; トルコ、イスタンブールの市場と味</p>
+<p class="cp-dn" data-ke-size="size16">イスタンブール</p>
+<p class="cp-ds" data-ke-size="size16">高く買ったのではなく、高く学んだのです。</p>
+</div>
+<p class="num" data-ke-size="size16">⑥</p>
+<h2 data-ke-size="size26">イスタンブールを経て</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2299.jpg" alt="ケープタウン空港のチェックインホール" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">チェックインホール。番号のついたカウンターがどこまでも続きます</p>
+<p data-ke-size="size16">帰りもイスタンブール経由、またしても二日がかりの旅路です。</p>
+<p data-ke-size="size16">チェックインカウンターのはかりの上で、石のカバたちがやらかしました。とんでもなく重かったのです。結局、大韓航空のマイルで預け荷物の重量枠を上げました。授業料第3回は、重さで払いました。</p>
+<p data-ke-size="size16">それでも運がひとつ味方してくれました。イスタンブールの乗り継ぎ待ちが長く、航空会社がホテルと食事を用意してくれたのです。空港近くの宿でひと息つき、残りの時間を割いて市内へ出ることにしました。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2303.jpg" alt="イスタンブールのトラム停留所の路線案内板" width="1200" height="1600" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">トラムの路線図。読めるのは数字と色だけ</p>
+<p data-ke-size="size16">ATMで現地のお金を引き出し、トラムに乗りました。読めるのは数字と色だけなので、地図アプリとスマホのバッテリーが道案内でした。</p>
+<p data-ke-size="size16">ATMでお金を引き出すのは1分で十分でした。</p>
+<p data-ke-size="size16">リラ紙幣はもっとカラフルでした。20リラは緑、100リラは青で、財布の中が色とりどりになりました。ATMから出てきたリラ紙幣も、表の顔はひとつにそろっていました。共和国を建てたムスタファ・ケマル・アタテュルクです。調べてみると、トルコは2005年に通貨単位からゼロを六つも外したそうです。100万リラが1リラになったわけです。南アフリカの紙幣にはアパルトヘイトを終わらせたマンデラ、トルコの紙幣には共和国を建てたアタテュルク。どちらの国も「新しく始まった日」の顔を財布に入れて歩いているんですね。そしてそのアタテュルク数枚が、まもなくバザールで私の授業料になります。</p>
+<div class="fact"><b>乗り継ぎが長いなら</b>ターキッシュ エアラインズは、イスタンブール空港で6〜24時間乗り継ぐ自社の乗客向けに、無料の市内ツアー（Touristanbul）を運営しています。</div>
+</section>
+<section id="s7" class="sec">
+<p class="num" data-ke-size="size16">⑦</p>
+<h2 data-ke-size="size26">グランドバザール &mdash; 二十倍の授業料</h2>
+<p data-ke-size="size16">アーチの門をくぐった瞬間、音から変わります。グランドバザール。1455年の織物市場に始まり、いまは屋根付きの通りが61本、店は4千軒以上。ソウルの南大門市場（남대문시장、ナムデムン市場）全体に屋根をかけ、そこに560年をのせたら近いでしょうか。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2310.jpg" alt="陳列棚に掛かった華やかなトルコ絨毯" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">絨毯の陳列棚は、巨大な見本帳です</p>
+<div class="pair">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2321.jpg" alt="ロクムとバクラヴァが並ぶお菓子屋" width="1600" height="1200" /></figure>
+<figure class="ph fxf"><img src="https://41aurum.github.io/blog/capetown/ct_2322.jpg" alt="塔のように積み上げた色とりどりのスパイス" width="1600" height="1200" /><span class="fx" style="left:30%;top:44%;width:18%;height:22%;">&nbsp;</span></figure>
+</div>
+<p class="cap" data-ke-size="size16">ロクム、バクラヴァ、塔のように積んだスパイス。値段より先に色が目に入ったので、陳列台を正面から撮りました ・ 見どころ：右の写真の値札の₺（リラ）表示</p>
+<p data-ke-size="size16">お菓子屋には、ロクムと、薄い生地を何十層も重ねてシロップに浸したバクラヴァがトレーごと並んでいます。バクラヴァは見た目からして、韓国の蜜菓子ヤックァ（약과）を百層に広げたような形です。この市場は、品物より先に色を売っています。</p>
+<p data-ke-size="size16">そしてここで、母へのお土産と香水を買いました。</p>
+<p data-ke-size="size16">店の主人は私を見るなり「ブロ、ブロ」と言いながら「コリア？兄弟の国！」（형제의 나라、ヒョンジェエ・ナラ）。そのひと言で、警戒心がすっとほどけてしまいました。お茶が出てきて、香水の瓶をひとつずつ開けて手の甲につけてもらっているうちに、値段はもう決まっていたんです。</p>
+<p data-ke-size="size16">あとで分かったのですが、相場の二十倍ほどでした。</p>
+<p data-ke-size="size16">二倍ではなく二十倍。この旅で最高額の授業料です。高く買ったのではなく、高く学んだのです。値切りは最初に言われた値段から「始まる」のだと、身をもって知った代金ですから。</p>
+<p data-ke-size="size16">もうひとつ。あとで分かったのですが、トルコが「兄弟の国」と呼ぶ国は9か国を超えるそうです。市場で聞く「ブロ」は、商売をする人の営業用の親しみだったんですね。その言葉に心がほどけるのはいいけれど、財布まで一緒にほどく必要はありませんでした。</p>
+<div class="fact"><b>次はこうするつもり</b>最初の値段はスタートラインとして聞く。同じ品物の値段を、まず二、三軒で聞いてみる。気に入った素振りは控えめに、立ち去るふりが値切りの半分だそうです。現金は小額に分けておき、人の多い路地ではバッグを体の前に。</div>
+<p data-ke-size="size16">ところが、この話にはどんでん返しがあります。</p>
+<p data-ke-size="size16">母へのお土産は、母がずっと欲しがっていたものでした。トルコの伝統的なスカートをはいて踊るおじさんの陶器人形。受け取ってとても喜んでくれて、その人形はいまも家で踊っています。二十倍を払ったのに、11年間、毎日元を取り続けているのだから、計算してみれば悪い商売ではありませんでした。</p>
+<p data-ke-size="size16">ターキッシュ・ディライト、ロクムも買って帰りました。でんぷんと砂糖を煮詰めて固めたお菓子で、食感は柔らかい羊羹と、韓国のもち米餅チャプサルトック（찹쌀떡）のあいだくらい。問題は甘さ。韓国の米あめチョチョン（조청）をスプーンですくって食べるくらいでした。ショーケースではあんなにきれいに見えたお菓子をひと口食べてむせてしまい、その苦労は家族全員で均等に分け合いました。</p>
+<p data-ke-size="size16">いまでも、お正月やお盆に誰かが甘いものを出すと、その話になります。一生の酒の肴をひとつ、イスタンブールで買いました。</p>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">ちょっと、甘さを落ち着かせて</p><div class="ag-art-e ag-art-has"><figure class="ag-art-f"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg/960px-Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg" alt="オスマン・ハムディ・ベイ「亀の調教師」。青いタイルの部屋で、太鼓を下げた老人が亀たちを見下ろしている" width="960" height="1796" />
+<figcaption class="ag-art-c">オスマン・ハムディ・ベイ「亀の調教師」1906年、ペラ美術館所蔵 &middot; パブリックドメイン（Wikimedia Commons）</figcaption>
+</figure><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">オスマン・ハムディ・ベイ（Osman Hamdi Bey, 1842–1910）</p><p class="ag-art-p" data-ke-size="size16">むせたのが落ち着くまで、バザールとは直接関係ないけれど、この日の私をいちばん正確に描いた絵の話をさせてください。</p><p class="ag-art-p" data-ke-size="size16">調べてみると、2004年、亀が五匹出てくる一枚の絵が350万ドルで売れていました。オスマン・ハムディ・ベイの「亀の調教師」（1906年）です。彼は画家でありながらイスタンブール考古学博物館を創設し、1882年には美術学校まで開いた人だそうです。絵はいま、イスタンブールのペラ美術館に掛かっています。</p><p class="ag-art-p" data-ke-size="size16">太鼓を下げた老人が亀たちに教えようとしているのに、亀たちは葉っぱを食べているだけ。遅々として進まない改革を皮肉った絵として、よく読まれるそうです。</p><p class="ag-art-p" data-ke-size="size16">バザールで値切りを学んでいた日の私は、老人より亀のほうでした。教えは全部聞こえていたのに、速さがついていきませんでした。</p><p class="ag-art-p" data-ke-size="size16">値切りを二十倍の値段で「ゆっくり」学んだ日を思うと、この絵の亀たちが他人に思えません。バザールを歩いたあとペラ美術館に寄って、この亀たちに会ってみるのもイスタンブールの楽しみではないでしょうか。遅い亀も、結局は学ぶのですから。</p><div class="btns"><a class="btn" href="https://www.peramuseum.org/" target="_blank" rel="noopener">ペラ美術館（公式）</a><a class="btn" href="https://en.wikipedia.org/wiki/The_Tortoise_Trainer" target="_blank" rel="noopener">作品について（Wikipedia）</a></div></div></div></div>
+</section>
+<section id="s8" class="sec">
+<p class="num" data-ke-size="size16">⑧</p>
+<h2 data-ke-size="size26">味覚の帰国</h2>
+<figure class="mg-spread mg-wide"><img class="mg-pc" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_pc_ja.jpg?v=5" alt="太く長く切ったフライドポテトが物干しロープに留められ、上は白く生っぽく、先は揚げすぎて溶けている絵" width="1600" height="1100" /><img class="mg-mo" src="https://41aurum.github.io/blog/capetown/mag2/mag_fries_mo_ja.jpg?v=5" alt="太く長く切ったフライドポテトが物干しロープに留められ、上は白く生っぽく、先は揚げすぎて溶けている絵" width="1080" height="1760" /></figure><p data-ke-size="size16">フライドポテトを見るたびに、オーストラリアと南アフリカで食べたあのポテトが浮かびます。太く長く、ざっくりと不揃いに切ってあって、揚げ加減も感覚まかせだったのか、白く生っぽいものと、揚げすぎて溶けたように垂れたものが同じ皿に一緒に出てきました。外はしっとり、中はパサパサ。イギリスの間違った舌が広めたトラウマ、とでも言いましょうか。</p><p data-ke-size="size16">その記憶を抱えてイスタンブールに来たので、私の口は最初から慎重でした。</p><p data-ke-size="size16">バザール近くのジューススタンドでは、半分に割ったザクロとオレンジを箱ごと積み上げ、その場で圧搾機で搾ってくれます。見た目は、この旅でいちばんおいしそうな光景でした。</p>
+<p data-ke-size="size16">甘酸っぱい最初のひと口は、韓国のオミジャ茶（오미자차、五味子茶）を思わせましたが、ザクロの皮のかけらがずっと引っかかって、ひと口ごとにスイカの種みたいに吐き出さなければなりませんでした。イスタンブールの料理は華やかだったのに、私の味覚はまだ仁川空港で出国手続きをしていたようです。料理が悪いのではなく、私の舌が遅れて到着したのです。</p>
+<p data-ke-size="size16">そんなときに頼れるのは、意外にもスーパーの果物売り場です。</p>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_1999.jpg" alt="手に持った南アフリカのスーパーの洋梨" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">ケープタウンのスーパーで手に取った洋梨。失敗のない一食</p>
+<p data-ke-size="size16">ケープタウンのスーパーの洋梨がまさにそうでした。韓国の梨のようなシャキッとした水気の代わりに、よく熟したホンシ（홍시、熟柿）のように柔らかく崩れる甘さ。スーパーの果物とパンで一食を確保しておけば、現地の料理は実験として気楽に楽しめます。</p>
+</section>
+<section id="s9" class="sec cp-gs">
+<div class="cp-div" data-g="s9">
+<div class="cp-line cp-wheel">&nbsp;</div>
+<p class="cp-k" data-ke-size="size16">歴史 &mdash; 街の地図に残った線</p>
+<p class="cp-dn" data-ke-size="size16">エピローグ</p>
+<p class="cp-ds" data-ke-size="size16">いちばん長く残った場面は、実は写真にありません。</p>
+</div>
+<p class="num" data-ke-size="size16">⑨</p>
+<h2 data-ke-size="size26">エピローグ</h2>
+<div class="one">
+<figure class="ph"><img src="https://41aurum.github.io/blog/capetown/ct_2161.jpg" alt="夜空の下で明かりをともした大観覧車" width="1600" height="1200" /></figure>
+</div>
+<p class="cap" data-ke-size="size16">2010年ワールドカップのころから港に立つ大観覧車</p>
+<p data-ke-size="size16">ケープタウンのある夜、V&amp;Aウォーターフロントの大観覧車は、骨組みに白い明かりをともしてゆっくり回っていました。観覧車は一周すると、元の場所に戻ってきます。</p>
+<div class="cg cgC"><p class="cg-m" data-ke-size="size16" style="margin:0 0 6px!important">Theodosian Walls, İstanbul · 41°01′N 28°55′E</p><div class="r"><div style="flex:0.693 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c1_2308_tower.jpg" alt="崩れた城壁の塔" width="416" height="600" /></div><div style="flex:1.778 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c3_2308_wall.jpg" alt="城壁のれんがとアーチ" width="896" height="504" /></div></div><div class="r"><div style="flex:4.040 1 0"><img src="https://41aurum.github.io/blog/capetown/mag2/c2_2305_wide.jpg" alt="曇り空の下に続く城壁" width="1600" height="396" /></div></div></div>
+<p class="cap" data-ke-size="size16">イスタンブールの古い城壁。崩れた跡までそのまま残す街</p>
+<p data-ke-size="size16">帰り道のイスタンブールの空は曇っていました。439年に完成したテオドシウスの城壁の崩れた塔が、芝生の上に立っていました。崩れた場所まで歴史として残しておく街です。</p>
+<p data-ke-size="size16">けれど、この旅でいちばん長く残った場面は、実は写真にありません。</p>
+<p data-ke-size="size16">ケープタウンに着いた日、空港から市内へ向かう道でした。車窓の外に、板をつぎはぎした家々が長く続いていました。海の見える丘の上の家々と、道端のあの町。同じ街の中に、あまりにも違う風景が並んでいて、その道で私は、あのバラック街がどんな人々の暮らす場所なのかをはっきりと理解しました。</p>
+<div class="fact"><b>タウンシップとアパルトヘイト</b>空港と市内を結ぶN2高速道路は、いくつものタウンシップ（township）に沿って走ります。アパルトヘイト（人種隔離）の時代、1950年の集団地域法のもとで、白人ではない住民を都心から追い出し、別に住まわせた地区です。法律は1991年に、アパルトヘイトは1994年の民主的な選挙で終わりましたが、タウンシップはいまもその場所にあります。</div>
+<div class="ag-art ag-pause"><p class="ag-art-l" data-ke-size="size16">この道とつながる作家</p><div class="ag-art-e"><div class="ag-art-b"><p class="ag-art-n" data-ke-size="size16">ピーター・クラーク（Peter Clarke, 1929–2014）</p><p class="ag-art-p" data-ke-size="size16">調べてみると、サイモンズタウンで生まれた画家であり詩人でした。1972年、まさにその集団地域法によって、オーシャン・ビューへ強制的に移されたそうです。60年近く木版画とコラージュで南アフリカの社会を記録し、「静かな記録者」と呼ばれました。</p><p class="ag-art-p" data-ke-size="size16">私の車窓をかすめていった町の内側の暮らしを、彼は写真ではなく版画で残しました。</p><div class="btns"><a class="btn" href="https://www.sahistory.org.za/people/peter-clarke" target="_blank" rel="noopener">画家について（South African History Online）</a></div></div></div></div>
+<p data-ke-size="size16">その道で、私は確信しました。韓国が大日本帝国から独立できていなかったなら、あの風景が私たちの姿だっただろうと。</p>
+<p data-ke-size="size16">支配する側と支配される側に分かれた土地では、誰が海の見える丘に住み、誰が道端のバラックに住むのかが、生まれる前から決まっています。その線を引いた法律がなくなったあとも、線は街の地図に長く残ります。</p>
+<p data-ke-size="size16">帰ってきて、授業料を精算してみました。</p><figure class="mg-spread mg-narrow"><img src="https://41aurum.github.io/blog/capetown/mag2/mag_receipt_ja.jpg?v=4" alt="感熱紙の授業料領収書 — 首の筋肉、万年筆の関税、石のカバ、相場の二十倍、合計は元は取れた" width="1080" height="2000" /></figure><p data-ke-size="size16">領収書だけ見れば損をした旅ですが、受け取ったものまで数えると、元は取れていました。</p>
+<p data-ke-size="size16">大変だったことまで全部、一生取り出して味わえる酒の肴になりました。</p><p data-ke-size="size16">ずいぶん前の旅が今日のように鮮やかなのは写真のおかげだと思っていましたが、見直してみると領収書のおかげでした。</p>
+<p data-ke-size="size16">十二の峰の下のあのターコイズの海をもう一度見に行くなら、今度はあの空港の道もゆっくり見たいと思います。</p>
+<p data-ke-size="size16">首枕は持っていきます。フライドポテトは頼みません。&hellip;たぶん。</p>
+<div class="fact ag-more"><b>もっと見る &mdash; この記事に入りきらなかった作家と場所</b><div class="btns"><a class="btn" href="https://en.wikipedia.org/wiki/Gregoire_Boonzaier" target="_blank" rel="noopener">グレゴワール・ボーンザイヤー &mdash; ケープタウンの路地の画家</a><a class="btn" href="https://commons.wikimedia.org/wiki/File:Thomas_Bowler_-_Table_Bay_-_Google_Art_Project.jpg" target="_blank" rel="noopener">ボウラー「Table Bay」（Wikimedia Commons）</a><a class="btn" href="https://en.wikipedia.org/wiki/Anton_Anreith" target="_blank" rel="noopener">アントン・アンライト（Wikipedia）</a><a class="btn" href="https://grootconstantia.co.za/our-history/" target="_blank" rel="noopener">フロート・コンスタンシアの歴史（公式）</a><a class="btn" href="https://zeitzmocaa.museum/" target="_blank" rel="noopener">ツァイツMOCAA（公式）</a><a class="btn" href="https://www.masumiyetmuzesi.org/" target="_blank" rel="noopener">オルハン・パムク「無垢の博物館」（公式）</a></div></div>
+<div class="fact"><b>参考資料（2026年11月確認）</b>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>十二使徒：Wikipedia「Twelve Apostles (mountains)」、Lonely Planet</li>
+<li>ケープ・ドクター：Wikipedia「Cape Doctor」・大西洋の水温：Outdoor Swimmer「The colour of cold」</li>
+<li>ケープ・ダッチ：Wikipedia「Cape Dutch architecture」・ボカープ：Wikipedia「Bo-Kaap」</li>
+<li>南アフリカワイン：Wikipedia「History of South African wine」「Pinotage」</li>
+<li>フロート・コンスタンシア：Wikipedia「Groot Constantia」</li>
+<li>テーブルマウンテン：Britannica「Table Mountain」・ケーブルカー、ライオンズヘッド：Wikipedia</li>
+<li>V&amp;A・時計塔：Wikipedia「V&amp;A Waterfront」、South African History Online・大観覧車：V&amp;A Waterfront公式ブログ</li>
+<li>イスタンブール空港の移転：Euronews（2019-04-06）・Touristanbul：Turkish Airlines FAQ</li>
+<li>グランドバザール・T1トラム：Wikipedia・テオドシウスの城壁：World History Encyclopedia</li>
+<li>タウンシップ・アパルトヘイト：Wikipedia「Cape Flats」「Group Areas Act」、Al Jazeera（2026-03-06）</li>
+<li>作品と人：Wikimedia Commons（パブリックドメインの作品画像2点）・Wikipedia「Thomas William Bowler」「Maclear's Beacon」「Anton Anreith」「Gregoire Boonzaier」「Esther Mahlangu」「Osman Hamdi Bey」「The Tortoise Trainer」「Peter Clarke (artist)」「Zeitz Museum of Contemporary Art Africa」「The Museum of Innocence (museum)」・Groot Constantia「Our Legacy」・BMW Group Art Car・ヨハネスブルグ大学ニュース（マーラングのアートカー帰還）</li>
+<li>ワインと柿の渋み（タンニン）：Wikipedia「Tannin」「Persimmon」・ロクム、バクラヴァ：Wikipedia「Turkish delight」「Baklava」</li>
+</ul>
+</div>
+<a class="next" href="https://aurum41.tistory.com/">続けて読む &mdash; アウルム41ガイド（아우름41 가이드 &middot; アウルム＝「包み込む」の意）の全記事 &rarr;</a></section>
+<p class="disc-end" data-ke-size="size16">この記事にはクーパン・パートナーズのリンクが含まれ、一定の手数料を受け取ります（이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다）。</p>
+<script>/*hqLangFix*/(function(){function f(){var a=document.querySelectorAll('.ctw .lang a.on');for(var i=0;i<a.length;i++){var s=a[i].style;s.setProperty('background','#13314A','important');s.setProperty('color','#fff','important');s.setProperty('border','1px solid #13314A','important');}}var n=0,t=setInterval(function(){f();if(++n>40)clearInterval(t);},300);})();</script>
+</div>
+<script>/*cpSec*/(function(){var R=document.getElementById('agcpt');if(!R)return;var SERIF='"Noto Serif JP", serif';
+var bar=document.getElementById('ctbar');var as=[].slice.call(R.querySelectorAll('#cpdots a'));var now=R.querySelector('.cp-now');
+function tg(a){return document.getElementById(a.getAttribute('data-t'));}
+as.forEach(function(a){a.addEventListener('click',function(e){var t=tg(a);if(!t)return;e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-10,behavior:'smooth'});});});
+function upd(){var h=document.documentElement.scrollHeight-window.innerHeight;if(bar)bar.style.width=(h>0?Math.min(100,window.pageYOffset/h*100):0)+'%';var cur=0;as.forEach(function(a,i){var t=tg(a);if(t&&t.getBoundingClientRect().top<=window.innerHeight*0.45)cur=i;});as.forEach(function(a,i){if(a.classList.contains('on')!==(i===cur))a.classList.toggle('on',i===cur);});if(now&&as[cur]){var x=as[cur].textContent.replace(/\s+/g,' ').trim();if(now.textContent!==x)now.textContent=x;}}
+window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!rm){R.classList.add('arm');var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -10% 0px'});[].forEach.call(R.querySelectorAll('.cp-div'),function(x){io.observe(x);});}
+var SEL='.ag-art,.ag-art *,.ag-route,.ag-route *,.cp-k,.cp-cover,.cp-cover *,.cp-div,.cp-div *,.cp-dots,.cp-dots *,.cp-ccap,.eye,.eye > b';var busy=false;
+function cl(){busy=true;[].forEach.call(R.querySelectorAll(SEL),function(e){if(e.hasAttribute('style'))e.removeAttribute('style');});
+[].forEach.call(document.querySelectorAll('body *'),function(e){var f=getComputedStyle(e).fontFamily||'';if(f.indexOf('Nanum Myeongjo')>-1){e.style.setProperty('font-family',SERIF,'important');}});setTimeout(function(){busy=false;},50);upd();}
+[300,1200,3000,6000,10000].forEach(function(t){setTimeout(cl,t);});window.addEventListener('load',cl);
+if('MutationObserver' in window){var tm=null;var mo=new MutationObserver(function(){if(busy)return;clearTimeout(tm);tm=setTimeout(cl,250);});mo.observe(R,{subtree:true,attributes:true,attributeFilter:['style']});setTimeout(function(){mo.disconnect();},20000);}
+})();</script>
+</div>
