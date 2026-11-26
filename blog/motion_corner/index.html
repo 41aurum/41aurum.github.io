@@ -43,6 +43,11 @@ img{max-width:100%;display:block}
 #mc .tx h3{font-size:1.72em!important;font-weight:500!important;line-height:1.25!important;margin:0 0 .35em!important;padding:0!important;border:0!important;background:none!important;color:#14233F!important}
 #mc .tx h4{font-size:.92em!important;font-weight:500!important;line-height:1.5!important;padding:0!important;border:0!important;background:none!important;color:#6E5320!important}
 #mc .tx h4.first{margin-top:0!important}
+#mc .tx ol{padding:0!important;margin:0 0 .6em!important;list-style:none!important}
+#mc .tx li{padding-left:1.5em!important;margin:0 0 .55em!important;list-style:none!important}
+#mc .pgx.tight .tx{line-height:1.68}
+#mc .pgx.tight .tx p,#mc .pgx.tight .tx li{margin-bottom:.55em!important}
+#mc .pgx.tight .tx h4{margin-top:.9em!important}
 #mc .tx h3::before,#mc .tx h3::after,#mc .tx h4::before,#mc .tx h4::after{content:none!important;display:none!important}
 /* 출처 줄은 p가 아닌 div: 다른 글의 "문장 속 링크→알약 단추" 변환 스크립트(p a 대상)를 피함 */
 .mc .tx .k{font-size:.8em;letter-spacing:.04em;color:#46536A;margin:0 0 .9em}
@@ -239,7 +244,9 @@ var lastLeaf=mkLeaf(gens[1],pgL.querySelector(".tx").outerHTML,"","");
 var vw,vh,wp,hp,D,wide,sOpen,sFly,run;
 function fit(el){ // 판면에 글이 넘치면 글자 크기를 0.5px씩 줄임(14px 아래로는 안 줄임)
   var fs=parseFloat(sec.style.getPropertyValue("--fs"))||17;
+  el.classList.remove("tight");
   for(var i=0;i<12&&el.scrollHeight>el.clientHeight+1&&fs>14;i++){ fs-=.5; sec.style.setProperty("--fs",fs+"px"); }
+  if(el.scrollHeight>el.clientHeight+1) el.classList.add("tight");          // 14px에서도 넘치면 줄 간격·문단 간격만 조금 좁힘
   return fs;
 }
 // 블로그 본문 칸이 좁아도(PC 스킨: 본문 700px + 오른쪽 사이드바) 코너는 화면 가로 전체로 펼침
