@@ -15,6 +15,8 @@
 .mc .pgx{position:relative;max-width:560px;margin:0 auto 14px;padding:44px 40px 54px;background:#FBF9F4 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp);background-size:256px;box-shadow:0 1px 0 #E6E0D2,0 2px 0 #F3EFE6,0 3px 0 #E2DBCC}
 .mc .pgx .tx{font-family:var(--f-display);font-weight:300;font-size:var(--fs,17px);line-height:1.8;color:#1B2433;word-break:keep-all}
 .mc .tx p{margin:0 0 .9em}
+#mc .tx,#mc .tx p,#mc .tx li,#mc .tx h3,#mc .tx h4,#mc .tx div{font-family:var(--f-display)!important;letter-spacing:normal}
+#mc .tx p,#mc .tx li{font-size:inherit!important;line-height:inherit!important;color:inherit}
 /* 출처 줄은 p가 아닌 div: 다른 글의 "문장 속 링크→알약 단추" 변환 스크립트(p a 대상)를 피함 */
 .mc .tx .k{font-size:.8em;letter-spacing:.04em;color:#46536A;margin:0 0 .9em}
 .mc .tx h3{font-family:var(--f-display);font-weight:500;font-size:1.72em;line-height:1.25;letter-spacing:-.02em;margin:0 0 .35em;color:#14233F}
@@ -28,8 +30,8 @@
 .mc .tx .sg p{margin:0;flex:1;font-style:normal}
 .mc .tx .sg img{width:2.4em;opacity:.85}
 .mc .tx .rf{font-size:.8em;line-height:1.7;color:#4E4A42;margin:.6em 0 0}
-.mc .tx .rf a,.mc .tx .rf a:hover,.mc .tx .rf a:visited{color:inherit!important;background:none!important;border:0!important;border-radius:0!important;padding:0!important;margin:0!important;box-shadow:none!important;font:inherit!important;display:inline!important;text-decoration:underline!important;text-decoration-thickness:.5px!important;text-underline-offset:.2em!important}
-.mc .tx .rf a::before,.mc .tx .rf a::after{display:none!important;content:none!important}
+#mc .tx .rf a,#mc .tx .rf a:hover,#mc .tx .rf a:visited{color:inherit!important;background:none!important;border:0!important;border-radius:0!important;padding:0!important;margin:0!important;box-shadow:none!important;font:inherit!important;display:inline!important;text-decoration:underline!important;text-decoration-thickness:.5px!important;text-underline-offset:.2em!important}
+#mc .tx .rf a::before,#mc .tx .rf a::after{display:none!important;content:none!important}
 .mc .tx h3,.mc .tx h4,.mc .tx p,.mc .tx ol,.mc .tx li{background:none;border-left:0;box-shadow:none}
 .mc .fo{position:absolute;bottom:20px;left:40px;right:40px;display:flex;justify-content:space-between;font-family:var(--f-display);font-weight:300;font-size:12.5px;letter-spacing:.06em;color:#6B665C}
 
@@ -211,7 +213,15 @@ function fit(el){ // 판면에 글이 넘치면 글자 크기를 0.5px씩 줄임
   for(var i=0;i<12&&el.scrollHeight>el.clientHeight+1&&fs>14;i++){ fs-=.5; sec.style.setProperty("--fs",fs+"px"); }
   return fs;
 }
+// 블로그 본문 칸이 좁아도(PC 스킨: 본문 700px + 오른쪽 사이드바) 코너는 화면 가로 전체로 펼침
+function breakout(){
+  var cw=document.documentElement.clientWidth; runEl.style.left="0px"; runEl.style.width="";
+  if(cw<900){ runEl.style.position=""; return; }
+  var r=sec.getBoundingClientRect(); if(r.width>=cw-4) return;
+  runEl.style.position="relative"; runEl.style.zIndex="5"; runEl.style.left=(-r.left)+"px"; runEl.style.width=cw+"px";
+}
 function measure(){
+  breakout();
   vw=stage.clientWidth||innerWidth; vh=stage.clientHeight||innerHeight; wide=vw>=vh*1.05&&vw>=760;
   if(wide){ wp=Math.round(Math.min((vw-160)/2,540,(vh-190)/1.36)); hp=Math.round(wp*1.36); }
   else { wp=Math.round(Math.min(vw-24,520)); hp=Math.round(Math.min(vh-84,wp*1.72)); }
