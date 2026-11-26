@@ -1,0 +1,53 @@
+{
+ "afr9v3_black_paper_draw.png": {
+  "style": "black",
+  "face": 42,
+  "wall": 12,
+  "mat": 84,
+  "slice": 138,
+  "size": [
+   876,
+   876
+  ],
+  "bytes": 426349,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.08
+  }
+ },
+ "afr9v3_black_paper_draw_mo.png": {
+  "style": "black",
+  "face": 42,
+  "wall": 12,
+  "mat": 52,
+  "slice": 106,
+  "size": [
+   812,
+   812
+  ],
+  "bytes": 300870,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.05
+  }
+ },
+ "afr9v3_oak_paper_oil.png": {
+  "style": "brown_oak",
+  "face": 42,
+  "wall": 12,
+  "mat": 26,
+  "slice": 80,
+  "size": [
+   760,
+   760
+  ],
+  "bytes": 293578,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.025
+  }
+ }
+}
