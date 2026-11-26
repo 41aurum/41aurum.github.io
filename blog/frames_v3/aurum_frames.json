@@ -1,0 +1,895 @@
+{
+ "format": "aurum_frames_v2",
+ "date": "2026-11-26",
+ "replaces": "aurum_frames_v1(z7 CSS 단색 띠) — 대표님 16:50 \"그림판·엑셀 느낌\" 지적",
+ "textures": {
+  "brown_walnut": {
+   "source": "Poly Haven (polyhaven.com, 공식 배포처 dl.polyhaven.org)",
+   "license": "CC0 — 출처 표기 의무 없음, 상업 사용 가능",
+   "asset_page": "https://polyhaven.com/a/walnut_veneer",
+   "file": "tex/walnut_veneer_vgrain*.png",
+   "capture": "2K diffuse를 브라우저 100% 표시 상태로 캡처(컨테이너 직접 다운로드는 프록시 차단)"
+  },
+  "brown_oak": {
+   "source": "Poly Haven (polyhaven.com, 공식 배포처 dl.polyhaven.org)",
+   "license": "CC0 — 출처 표기 의무 없음, 상업 사용 가능",
+   "asset_page": "https://polyhaven.com/a/oak_veneer_01",
+   "file": "tex/oak_veneer_01_vgrain*.png",
+   "capture": "2K diffuse를 브라우저 100% 표시 상태로 캡처(컨테이너 직접 다운로드는 프록시 차단)"
+  },
+  "black": {
+   "source": "Poly Haven (polyhaven.com, 공식 배포처 dl.polyhaven.org)",
+   "license": "CC0 — 출처 표기 의무 없음, 상업 사용 가능",
+   "asset_page": "https://polyhaven.com/a/black_oak_veneer",
+   "file": "tex/black_oak_veneer_vgrain*.png",
+   "capture": "2K diffuse를 브라우저 100% 표시 상태로 캡처(컨테이너 직접 다운로드는 프록시 차단)"
+  },
+  "white": {
+   "source": "Poly Haven (polyhaven.com, 공식 배포처 dl.polyhaven.org)",
+   "license": "CC0 — 출처 표기 의무 없음, 상업 사용 가능",
+   "asset_page": "https://polyhaven.com/a/black_walnut_veneer_01",
+   "file": "tex/black_walnut_veneer_01_vgrain*.png",
+   "capture": "2K diffuse를 브라우저 100% 표시 상태로 캡처(컨테이너 직접 다운로드는 프록시 차단)"
+  }
+ },
+ "styles": {
+  "brown_walnut": {
+   "tex": "walnut_veneer",
+   "tone": [
+    96,
+    66,
+    47
+   ],
+   "gain": 1.25,
+   "face": 0.042,
+   "lip": 0.013,
+   "lipdark": 0.8
+  },
+  "brown_oak": {
+   "tex": "oak_veneer_01",
+   "tone": [
+    170,
+    132,
+    92
+   ],
+   "gain": 1.0,
+   "face": 0.042,
+   "lip": 0.013,
+   "lipdark": 0.86
+  },
+  "black": {
+   "tex": "black_oak_veneer",
+   "tone": [
+    30,
+    28,
+    27
+   ],
+   "gain": 0.26,
+   "face": 0.036,
+   "lip": 0.012,
+   "lipdark": 0.8
+  },
+  "white": {
+   "tex": "black_walnut_veneer_01",
+   "tone": [
+    236,
+    234,
+    229
+   ],
+   "gain": 0.16,
+   "face": 0.036,
+   "lip": 0.012,
+   "lipdark": 0.955
+  }
+ },
+ "rules": {
+  "grain": "위·아래 변 가로결, 좌·우 변 세로결, 45도 마이터(부드러운 이음선)",
+  "light": "왼쪽 위 하나 — 벽 그림자 오른쪽 아래",
+  "gloss": "없음(유리 반사·광택 금지)",
+  "art_pixels": "무변경 — render 후 자동 대조(차 0 아니면 중단)",
+  "thickness": "앞면 = 작품 가로폭 4.2%(브라운)·3.6%(검정·화이트), 이너프레임 1.2~1.3%"
+ },
+ "ikea_reference": {
+  "RÖDALM": "섬유판+페이퍼포일, 블랙·화이트·월넛·오크·자작 무늬, 30×40 ₩9,900, 깊이 3cm(2026-11-26 ikea.com/kr 확인)",
+  "KNOPPÄNG": "섬유판+페이퍼포일, 블랙·화이트, 50×70 바깥 52×72×2cm ₩19,900, 매트 포함",
+  "LOMVIKEN": "알루미늄 분체도장, 블랙·화이트·알루미늄·골드, 50×70 바깥 51.5×71.5×2cm ₩29,900, 매트 포함",
+  "FISKBO": "블랙·화이트·회청, 50×70 ₩9,900(세일)",
+  "SANNAHED": "블랙·화이트·자작, 25×25 ₩7,900",
+  "VÄSTANHED": "블랙·화이트 20×25 ₩8,900",
+  "KLOTKÖRSBÄR": "오크 무늬/다크브라운 50×70 ₩29,900",
+  "HOVSTA·RIBBA": "한국 이케아 액자 목록에 없음(판매 확인 안 됨)"
+ },
+ "nine_slice": {
+  "afr9_brown_walnut_in.png": {
+   "style": "brown_walnut",
+   "inner": true,
+   "slice_px": 50,
+   "src_art_px": 900,
+   "size": [
+    1000,
+    1000
+   ],
+   "bytes": 255882,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_brown_walnut_in.png"
+  },
+  "afr9_brown_oak_in.png": {
+   "style": "brown_oak",
+   "inner": true,
+   "slice_px": 50,
+   "src_art_px": 900,
+   "size": [
+    1000,
+    1000
+   ],
+   "bytes": 286418,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_brown_oak_in.png"
+  },
+  "afr9_black_in.png": {
+   "style": "black",
+   "inner": true,
+   "slice_px": 43,
+   "src_art_px": 900,
+   "size": [
+    986,
+    986
+   ],
+   "bytes": 148131,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_black_in.png"
+  },
+  "afr9_black.png": {
+   "style": "black",
+   "inner": false,
+   "slice_px": 32,
+   "src_art_px": 900,
+   "size": [
+    964,
+    964
+   ],
+   "bytes": 113587,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_black.png"
+  },
+  "afr9_white_in.png": {
+   "style": "white",
+   "inner": true,
+   "slice_px": 43,
+   "src_art_px": 900,
+   "size": [
+    986,
+    986
+   ],
+   "bytes": 127442,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_white_in.png"
+  },
+  "afr9_white.png": {
+   "style": "white",
+   "inner": false,
+   "slice_px": 32,
+   "src_art_px": 900,
+   "size": [
+    964,
+    964
+   ],
+   "bytes": 99206,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_white.png"
+  },
+  "afr9_brown_walnut.png": {
+   "style": "brown_walnut",
+   "inner": false,
+   "slice_px": 38,
+   "src_art_px": 900,
+   "size": [
+    976,
+    976
+   ],
+   "bytes": 200895,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_brown_walnut.png"
+  },
+  "afr9_brown_oak.png": {
+   "style": "brown_oak",
+   "inner": false,
+   "slice_px": 38,
+   "src_art_px": 900,
+   "size": [
+    976,
+    976
+   ],
+   "bytes": 223879,
+   "url": "https://41aurum.github.io/blog/frames_v2/afr9_brown_oak.png"
+  }
+ },
+ "assignment": {
+  "/5": {
+   "양승진": "brown_walnut + 이너프레임, 매트 없음 — 12점 동일(CSS border-image, PC 22px·모바일 12px)",
+   "alt": "brown_oak 같은 구조(p5_aufr5_v2_oak.html)"
+  },
+  "/11": {
+   "Thomas William Bowler": "brown_oak + 이너프레임 + 흰 매트(ov_bowler_*_fv2.jpg)",
+   "Osman Hamdi Bey": "brown_walnut + 이너프레임(ov_osman_*_fv2.jpg)"
+  }
+ },
+ "renders": {
+  "brown_walnut/aurum41guide_oldiecola_04_padokot_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    844,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 42,
+   "art_box": [
+    88,
+    88,
+    844,
+    1100
+   ],
+   "out_px": [
+    1020,
+    1276
+   ],
+   "src": "aurum41guide_oldiecola_04_padokot.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_05_padokot_drawing_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    800,
+    800
+   ],
+   "face_px": 34,
+   "lip_px": 10,
+   "mat_px": 0,
+   "total_px": 44,
+   "margin_px": 40,
+   "art_box": [
+    84,
+    84,
+    800,
+    800
+   ],
+   "out_px": [
+    968,
+    968
+   ],
+   "src": "aurum41guide_oldiecola_05_padokot_drawing.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_06_pinkkot_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    825,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 41,
+   "art_box": [
+    87,
+    87,
+    825,
+    1100
+   ],
+   "out_px": [
+    999,
+    1274
+   ],
+   "src": "aurum41guide_oldiecola_06_pinkkot.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_08_closet_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    885,
+    1100
+   ],
+   "face_px": 37,
+   "lip_px": 12,
+   "mat_px": 0,
+   "total_px": 49,
+   "margin_px": 44,
+   "art_box": [
+    93,
+    93,
+    885,
+    1100
+   ],
+   "out_px": [
+    1071,
+    1286
+   ],
+   "src": "aurum41guide_oldiecola_08_closet.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_09_pado_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    880,
+    1100
+   ],
+   "face_px": 37,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 48,
+   "margin_px": 44,
+   "art_box": [
+    92,
+    92,
+    880,
+    1100
+   ],
+   "out_px": [
+    1064,
+    1284
+   ],
+   "src": "aurum41guide_oldiecola_09_pado.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_11_pado_drawing_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    800,
+    800
+   ],
+   "face_px": 34,
+   "lip_px": 10,
+   "mat_px": 0,
+   "total_px": 44,
+   "margin_px": 40,
+   "art_box": [
+    84,
+    84,
+    800,
+    800
+   ],
+   "out_px": [
+    968,
+    968
+   ],
+   "src": "aurum41guide_oldiecola_11_pado_drawing.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_12_cheongpado_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    825,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 41,
+   "art_box": [
+    87,
+    87,
+    825,
+    1100
+   ],
+   "out_px": [
+    999,
+    1274
+   ],
+   "src": "aurum41guide_oldiecola_12_cheongpado.jpg"
+  },
+  "brown_walnut/aurum41guide_oldiecola_15_bambada_afr.jpg": {
+   "style": "brown_walnut",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    946,
+    1100
+   ],
+   "face_px": 40,
+   "lip_px": 12,
+   "mat_px": 0,
+   "total_px": 52,
+   "margin_px": 47,
+   "art_box": [
+    99,
+    99,
+    946,
+    1100
+   ],
+   "out_px": [
+    1144,
+    1298
+   ],
+   "src": "aurum41guide_oldiecola_15_bambada.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_04_padokot_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    844,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 42,
+   "art_box": [
+    88,
+    88,
+    844,
+    1100
+   ],
+   "out_px": [
+    1020,
+    1276
+   ],
+   "src": "aurum41guide_oldiecola_04_padokot.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_05_padokot_drawing_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    800,
+    800
+   ],
+   "face_px": 34,
+   "lip_px": 10,
+   "mat_px": 0,
+   "total_px": 44,
+   "margin_px": 40,
+   "art_box": [
+    84,
+    84,
+    800,
+    800
+   ],
+   "out_px": [
+    968,
+    968
+   ],
+   "src": "aurum41guide_oldiecola_05_padokot_drawing.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_06_pinkkot_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    825,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 41,
+   "art_box": [
+    87,
+    87,
+    825,
+    1100
+   ],
+   "out_px": [
+    999,
+    1274
+   ],
+   "src": "aurum41guide_oldiecola_06_pinkkot.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_08_closet_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    885,
+    1100
+   ],
+   "face_px": 37,
+   "lip_px": 12,
+   "mat_px": 0,
+   "total_px": 49,
+   "margin_px": 44,
+   "art_box": [
+    93,
+    93,
+    885,
+    1100
+   ],
+   "out_px": [
+    1071,
+    1286
+   ],
+   "src": "aurum41guide_oldiecola_08_closet.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_09_pado_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    880,
+    1100
+   ],
+   "face_px": 37,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 48,
+   "margin_px": 44,
+   "art_box": [
+    92,
+    92,
+    880,
+    1100
+   ],
+   "out_px": [
+    1064,
+    1284
+   ],
+   "src": "aurum41guide_oldiecola_09_pado.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_11_pado_drawing_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    800,
+    800
+   ],
+   "face_px": 34,
+   "lip_px": 10,
+   "mat_px": 0,
+   "total_px": 44,
+   "margin_px": 40,
+   "art_box": [
+    84,
+    84,
+    800,
+    800
+   ],
+   "out_px": [
+    968,
+    968
+   ],
+   "src": "aurum41guide_oldiecola_11_pado_drawing.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_12_cheongpado_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    825,
+    1100
+   ],
+   "face_px": 35,
+   "lip_px": 11,
+   "mat_px": 0,
+   "total_px": 46,
+   "margin_px": 41,
+   "art_box": [
+    87,
+    87,
+    825,
+    1100
+   ],
+   "out_px": [
+    999,
+    1274
+   ],
+   "src": "aurum41guide_oldiecola_12_cheongpado.jpg"
+  },
+  "brown_oak/aurum41guide_oldiecola_15_bambada_afr.jpg": {
+   "style": "brown_oak",
+   "inner": true,
+   "mat": false,
+   "art_px": [
+    946,
+    1100
+   ],
+   "face_px": 40,
+   "lip_px": 12,
+   "mat_px": 0,
+   "total_px": 52,
+   "margin_px": 47,
+   "art_box": [
+    99,
+    99,
+    946,
+    1100
+   ],
+   "out_px": [
+    1144,
+    1298
+   ],
+   "src": "aurum41guide_oldiecola_15_bambada.jpg"
+  }
+ },
+ "v2_1": {
+  "date": "2026-11-26",
+  "change": "soft mitre (SS3, piece weights tau=0.3px, gaussian seam), rim=4% of outer frame width",
+  "nine": {
+   "afr9_brown_walnut_in.png": {
+    "style": "brown_walnut",
+    "inner": true,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 194165
+   },
+   "afr9_brown_oak_in.png": {
+    "style": "brown_oak",
+    "inner": true,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 215434
+   },
+   "afr9_black_in.png": {
+    "style": "black",
+    "inner": true,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 130355
+   },
+   "afr9_black.png": {
+    "style": "black",
+    "inner": false,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 130999
+   },
+   "afr9_white_in.png": {
+    "style": "white",
+    "inner": true,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 112238
+   },
+   "afr9_white.png": {
+    "style": "white",
+    "inner": false,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 112809
+   },
+   "afr9_brown_walnut.png": {
+    "style": "brown_walnut",
+    "inner": false,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 199214
+   },
+   "afr9_brown_oak.png": {
+    "style": "brown_oak",
+    "inner": false,
+    "slice_px": 39,
+    "size": [
+     978,
+     978
+    ],
+    "bytes": 220278
+   }
+  },
+  "p5_css": "frag/p5_aufr5_v21.html: border-width min(capPx, k vw) per width group; slice 39 / 1 stretch",
+  "p11": "ov_*_fv2.jpg re-rendered rim=0.04 (bowler oak+inner+mat, osman walnut+inner)"
+ },
+ "v3": {
+  "date": "2026-11-26",
+  "version": "v3",
+  "rule": "대표님 18:10·18:18 판정: 드로잉 = 검정 + 흰 종이 속지(넓게), 유화·사진류 = 오크(/11 보울러 톤) + 흰 종이 속지(좁게). 이너프레임 = 흰 톤 종이 속지(이전 \"단차\" 해석 폐기).",
+  "defaults": {
+   "drawing": "black + mat paper (테 4% · 옆벽 1.1% · 속지 8%, 모바일 5%)",
+   "oil": "brown_oak + mat paper (4% · 1.1% · 2.5%)",
+   "photo": "brown_oak + mat paper (4% · 1.1% · 2.5%)"
+  },
+  "basis": "긴 변 비율. 실측: Hammer(RÖDALM 3칸) 테 3.8%·옆벽 1.1%·속지 6.7~8.5%·창 단면 0.27%, RÖDALM 30×40 속지 10.7%, KNOPPÄNG 50×70 속지 7.6%",
+  "mat_paper": "aurum_ds2/03_배경지 W2 종이2 수채화지 중목(대표님 덧바름 드로잉 2025-08-16) — 평균색만 #F4EFE5(따뜻한 흰)로",
+  "assets": {
+   "afr9v3_black_paper_draw.png": {
+    "style": "black",
+    "face": 42,
+    "wall": 12,
+    "mat": 84,
+    "slice": 138,
+    "size": [
+     876,
+     876
+    ],
+    "bytes": 426349,
+    "ratio_of_long_side": {
+     "face": 0.04,
+     "wall": 0.011,
+     "mat": 0.08
+    },
+    "url": "https://41aurum.github.io/blog/frames_v3/afr9v3_black_paper_draw.png"
+   },
+   "afr9v3_black_paper_draw_mo.png": {
+    "style": "black",
+    "face": 42,
+    "wall": 12,
+    "mat": 52,
+    "slice": 106,
+    "size": [
+     812,
+     812
+    ],
+    "bytes": 300870,
+    "ratio_of_long_side": {
+     "face": 0.04,
+     "wall": 0.011,
+     "mat": 0.05
+    },
+    "url": "https://41aurum.github.io/blog/frames_v3/afr9v3_black_paper_draw_mo.png"
+   },
+   "afr9v3_oak_paper_oil.png": {
+    "style": "brown_oak",
+    "face": 42,
+    "wall": 12,
+    "mat": 26,
+    "slice": 80,
+    "size": [
+     760,
+     760
+    ],
+    "bytes": 293578,
+    "ratio_of_long_side": {
+     "face": 0.04,
+     "wall": 0.011,
+     "mat": 0.025
+    },
+    "url": "https://41aurum.github.io/blog/frames_v3/afr9v3_oak_paper_oil.png"
+   }
+  },
+  "p5": {
+   "fragment": "frames_v3/frag/p5_aufr5_v3.html",
+   "sha256": "122381d465ceb61b06fb249c5e904ac860315bc26f496c8559306ae990f4d0c2",
+   "sizes": [
+    {
+     "f": "04_padokot.jpg",
+     "media": "oil",
+     "pc_cell": 574,
+     "pc_border": 54,
+     "pc_art": 466,
+     "mo_cell": 374,
+     "mo_border": 35.4,
+     "mo_art": 303
+    },
+    {
+     "f": "05_padokot_drawing",
+     "media": "drawing",
+     "pc_cell": 420,
+     "pc_border": 55,
+     "pc_art": 310,
+     "mo_cell": 292,
+     "mo_border": 29.5,
+     "mo_art": 233
+    },
+    {
+     "f": "06_pinkkot",
+     "media": "oil",
+     "pc_cell": 408,
+     "pc_border": 39,
+     "pc_art": 330,
+     "mo_cell": 182,
+     "mo_border": 17.6,
+     "mo_art": 147
+    },
+    {
+     "f": "07b_pin_drawing",
+     "media": "drawing",
+     "pc_cell": 272,
+     "pc_border": 36,
+     "pc_art": 200,
+     "mo_cell": 182,
+     "mo_border": 18.4,
+     "mo_art": 145
+    },
+    {
+     "f": "08_closet.jpg",
+     "media": "oil",
+     "pc_cell": 272,
+     "pc_border": 25,
+     "pc_art": 222,
+     "mo_cell": 182,
+     "mo_border": 16.6,
+     "mo_art": 149
+    },
+    {
+     "f": "08b_closet_drawing",
+     "media": "drawing",
+     "pc_cell": 408,
+     "pc_border": 53,
+     "pc_art": 302,
+     "mo_cell": 182,
+     "mo_border": 18.4,
+     "mo_art": 145
+    },
+    {
+     "f": "09_pado.jpg",
+     "media": "oil",
+     "pc_cell": 408,
+     "pc_border": 37,
+     "pc_art": 334,
+     "mo_cell": 182,
+     "mo_border": 16.7,
+     "mo_art": 149
+    },
+    {
+     "f": "11_pado_drawing",
+     "media": "drawing",
+     "pc_cell": 272,
+     "pc_border": 36,
+     "pc_art": 200,
+     "mo_cell": 182,
+     "mo_border": 18.4,
+     "mo_art": 145
+    },
+    {
+     "f": "12_cheongpado",
+     "media": "oil",
+     "pc_cell": 272,
+     "pc_border": 26,
+     "pc_art": 220,
+     "mo_cell": 182,
+     "mo_border": 17.6,
+     "mo_art": 147
+    },
+    {
+     "f": "14_cheong_drawing",
+     "media": "drawing",
+     "pc_cell": 408,
+     "pc_border": 53,
+     "pc_art": 302,
+     "mo_cell": 182,
+     "mo_border": 18.4,
+     "mo_art": 145
+    },
+    {
+     "f": "15_bambada",
+     "media": "oil",
+     "pc_cell": 408,
+     "pc_border": 35,
+     "pc_art": 338,
+     "mo_cell": 150,
+     "mo_border": 12.9,
+     "mo_art": 124
+    },
+    {
+     "f": "17_bam_drawing",
+     "media": "drawing",
+     "pc_cell": 272,
+     "pc_border": 36,
+     "pc_art": 200,
+     "mo_cell": 150,
+     "mo_border": 15.2,
+     "mo_art": 120
+    }
+   ]
+  },
+  "p11_osman_sample": "frames_v3/견본_11_오스만_월넛공개본_vs_오크속지_발행안함.jpg (발행 안 함, 총괄 판정 대기)"
+ }
+}
