@@ -1,0 +1,122 @@
+[
+{
+"f": "04_padokot.jpg",
+"media": "oil",
+"pc_cell": 574,
+"pc_border": 81,
+"pc_art": 412,
+"mo_cell": 374,
+"mo_border": 41.6,
+"mo_art": 291
+},
+{
+"f": "05_padokot_drawing",
+"media": "drawing",
+"pc_cell": 420,
+"pc_border": 55,
+"pc_art": 310,
+"mo_cell": 292,
+"mo_border": 26.3,
+"mo_art": 239
+},
+{
+"f": "06_pinkkot",
+"media": "oil",
+"pc_cell": 408,
+"pc_border": 59,
+"pc_art": 290,
+"mo_cell": 182,
+"mo_border": 20.6,
+"mo_art": 141
+},
+{
+"f": "07b_pin_drawing",
+"media": "drawing",
+"pc_cell": 272,
+"pc_border": 35,
+"pc_art": 202,
+"mo_cell": 182,
+"mo_border": 16.4,
+"mo_art": 149
+},
+{
+"f": "08_closet.jpg",
+"media": "oil",
+"pc_cell": 272,
+"pc_border": 37,
+"pc_art": 198,
+"mo_cell": 182,
+"mo_border": 19.5,
+"mo_art": 143
+},
+{
+"f": "08b_closet_drawing",
+"media": "drawing",
+"pc_cell": 408,
+"pc_border": 53,
+"pc_art": 302,
+"mo_cell": 182,
+"mo_border": 16.4,
+"mo_art": 149
+},
+{
+"f": "09_pado.jpg",
+"media": "oil",
+"pc_cell": 408,
+"pc_border": 56,
+"pc_art": 296,
+"mo_cell": 182,
+"mo_border": 19.6,
+"mo_art": 143
+},
+{
+"f": "11_pado_drawing",
+"media": "drawing",
+"pc_cell": 272,
+"pc_border": 35,
+"pc_art": 202,
+"mo_cell": 182,
+"mo_border": 16.4,
+"mo_art": 149
+},
+{
+"f": "12_cheongpado",
+"media": "oil",
+"pc_cell": 272,
+"pc_border": 39,
+"pc_art": 194,
+"mo_cell": 182,
+"mo_border": 20.6,
+"mo_art": 141
+},
+{
+"f": "14_cheong_drawing",
+"media": "drawing",
+"pc_cell": 408,
+"pc_border": 53,
+"pc_art": 302,
+"mo_cell": 182,
+"mo_border": 16.4,
+"mo_art": 149
+},
+{
+"f": "15_bambada",
+"media": "oil",
+"pc_cell": 408,
+"pc_border": 53,
+"pc_art": 302,
+"mo_cell": 150,
+"mo_border": 15.3,
+"mo_art": 119
+},
+{
+"f": "17_bam_drawing",
+"media": "drawing",
+"pc_cell": 272,
+"pc_border": 35,
+"pc_art": 202,
+"mo_cell": 150,
+"mo_border": 13.5,
+"mo_art": 123
+}
+]
