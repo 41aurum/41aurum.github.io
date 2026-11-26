@@ -16,6 +16,7 @@
 .mc4 .fl{position:absolute;left:5%;right:5%;top:3.5%;height:52%;display:flex;gap:4%;perspective:900px;pointer-events:none}
 .mc4 .fl .col{flex:1;transform:rotateX(7deg);transform-origin:50% 100%;font-size:calc(var(--u)*14);line-height:1.56;text-align:justify;word-break:keep-all;color:var(--ink)}
 .mc4 .fl .ln{display:block;opacity:0;transform:translateY(calc(var(--u)*160)) scale(.92);filter:blur(4px);color:#ffd08a;text-shadow:0 0 calc(var(--u)*10) rgba(255,170,70,.95),0 0 calc(var(--u)*3) rgba(255,214,150,.9);transition:transform 2.2s cubic-bezier(.2,.7,.2,1),opacity 1.4s ease,filter 1.8s ease,color 1.6s ease 1.6s,text-shadow 1.6s ease 1.6s}
+.mc4 .fl:not(.armed) .ln{transition:none!important}
 .mc4 .fl.up .ln{opacity:1;transform:none;filter:none;color:#2a1f16;text-shadow:0 0 calc(var(--u)*5) rgba(255,246,228,.95),0 0 calc(var(--u)*14) rgba(255,240,215,.8)}
 .mc4 .fl.down .ln{opacity:0;transform:translateY(calc(var(--u)*240)) scale(.9);filter:blur(3px);transition-duration:1.3s,1s,1s,.3s,.3s;transition-delay:0s!important}
 .mc4 .fl h3{font-weight:500;font-size:1.5em;margin:.1em 0 .25em;letter-spacing:.02em}
@@ -253,7 +254,7 @@ function play(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}
 var near=false,magicDone=false,printOn=false,started=false;
 new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!near){near=true;src(vSea);src(vMagic);src(vAmb);layout();
   vSea.addEventListener("canplay",function o(){vSea.removeEventListener("canplay",o);if(!started){play(vSea);setTimeout(function(){show(vSea);M.phase="sea";lg("sea");},300);}});}});},{rootMargin:"120% 0px"}).observe(sec);
-function startMagic(){if(started)return;started=true;M.phase="magic-fx";lg("fx start");
+function startMagic(){if(started)return;started=true;guard();fl.classList.add("armed");M.phase="magic-fx";lg("fx start");
   dusk.style.opacity=.55;T0=performance.now();running=true;requestAnimationFrame(frame);if(sound&&fxA){fxA.currentTime=0;fxA.play().catch(function(){});}
   setTimeout(function(){vMagic.currentTime=0;play(vMagic);setTimeout(function(){show(vMagic);dusk.style.opacity=.15;M.phase="magic-video";lg("magic video");},120);},4600);
   vMagic.addEventListener("ended",function(){vAmb.currentTime=0;play(vAmb);show(vAmb);magicDone=true;M.phase="float";lg("float");dusk.style.opacity=0;
