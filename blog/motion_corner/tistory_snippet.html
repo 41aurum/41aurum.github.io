@@ -1,0 +1,400 @@
+<p data-ke-size="size16">[시험] 작가 소개 연출 — 비공개 시험 글(알팀 움직임반). 아래 사진 다음에 코너가 나옵니다.</p>
+<figure><img src="https://41aurum.github.io/blog/capetown/ct_1975.jpg" alt="해안 산책로, 해를 등진 알로에와 나무 울타리 너머 노을 바다" width="1600" height="1200"></figure>
+<p data-ke-size="size16">케이프타운 서쪽 해안에서는 해가 바다로 진다. 그래서 저녁 산책로에서는 해가 정면에 있다.</p>
+<!-- ▼▼▼ 작가 코너: 이 section 하나를 본문 HTML에 넣음 ▼▼▼ -->
+<section class="mc" id="mc" aria-label="작가 코너 시차 — 토머스 윌리엄 보울러" data-base="https://41aurum.github.io/blog/motion_corner/assets/" data-sea-mp4="" data-sea-webm="">
+<style>
+@font-face{font-family:'Hahmlet';font-style:normal;font-display:swap;font-weight:300;src:url(https://41aurum.github.io/blog/motion_corner/assets/fonts/hahmlet-300-sub.woff2) format('woff2');}
+@font-face{font-family:'Hahmlet';font-style:normal;font-display:swap;font-weight:500;src:url(https://41aurum.github.io/blog/motion_corner/assets/fonts/hahmlet-500-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:400;src:url(https://41aurum.github.io/blog/motion_corner/assets/fonts/pretendard-400-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:500;src:url(https://41aurum.github.io/blog/motion_corner/assets/fonts/pretendard-500-sub.woff2) format('woff2');}
+.mc{--ink:#14233F;--ink-mute:#615E55;--cobalt:#1559A9;--rule:#D9D0BE;--f-display:"Hahmlet","Noto Serif KR",serif;--f-body:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+/* ── 기본(스크립트 없음·움직임 줄이기·앱 보기): 종이 두 쪽이 차례로 ── */
+.mc{position:relative;margin:28px 0 0}
+.mc .mc-stage-only{display:none}
+.mc .pgx{position:relative;max-width:560px;margin:0 auto 14px;padding:44px 40px 54px;background:#FBF9F4 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp);background-size:256px;box-shadow:0 1px 0 #E6E0D2,0 2px 0 #F3EFE6,0 3px 0 #E2DBCC}
+.mc .pgx .tx{font-family:var(--f-display);font-weight:300;font-size:var(--fs,17px);line-height:1.8;color:#1B2433;word-break:keep-all}
+.mc .tx p{margin:0 0 .9em}
+.mc .tx .k{font-size:.8em;letter-spacing:.04em;color:#46536A;margin:0 0 .9em}
+.mc .tx h3{font-family:var(--f-display);font-weight:500;font-size:1.72em;line-height:1.25;letter-spacing:-.02em;margin:0 0 .35em;color:#14233F}
+.mc .tx .a{font-size:.86em;line-height:1.6;color:#4E4A42;margin:0 0 1.1em;padding-bottom:1em;border-bottom:.5px solid #CFC6B4}
+.mc .tx .hk{font-size:1.06em;margin:0 0 1.2em}
+.mc .tx h4{font-family:var(--f-display);font-weight:500;font-size:.92em;letter-spacing:.06em;color:#6E5320;margin:1.3em 0 .35em}
+.mc .tx ol{margin:0 0 .6em;padding:0;list-style:none;counter-reset:n}
+.mc .tx li{counter-increment:n;position:relative;padding-left:1.5em;margin:0 0 .6em}
+.mc .tx li::before{content:counter(n) ".";position:absolute;left:0;top:0;color:#6E5320;font-weight:500}
+.mc .tx .sg{display:flex;align-items:center;gap:.8em;margin:1.2em 0 .5em}
+.mc .tx .sg p{margin:0;flex:1;font-style:normal}
+.mc .tx .sg img{width:2.4em;opacity:.85}
+.mc .tx .rf{font-size:.8em;line-height:1.7;color:#4E4A42;margin:.6em 0 0}
+.mc .tx .rf a{color:inherit;text-decoration:underline;text-decoration-thickness:.5px;text-underline-offset:.2em}
+.mc .fo{position:absolute;bottom:20px;left:40px;right:40px;display:flex;justify-content:space-between;font-family:var(--f-display);font-weight:300;font-size:12.5px;letter-spacing:.06em;color:#6B665C}
+
+/* ── 움직임 켜짐 ── */
+.mc.on .mc-run{height:var(--run,330vh)}
+.mc.on .mc-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;contain:layout paint;background:#0A2454}
+.mc.on .mc-stage-only{display:block}
+.mc.on .bg,.mc.on .gl,.mc.on .vd{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 50%;max-width:none;margin:0}
+.mc.on .gl,.mc.on .vd{opacity:0;transition:opacity .6s}
+.mc.on .gl.ready,.mc.on .vd.ready{opacity:1}
+.mc.on .shade{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 60%,rgba(8,16,34,0) 40%,rgba(8,16,34,.35));opacity:0;pointer-events:none}
+.mc.on .ff{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.mc.on .book{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+.mc.on .sp{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d}
+.mc.on .sp *{box-sizing:border-box}
+.mc.on .bx{position:absolute;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.mc.on .bx-fore{left:0;top:calc(var(--hp)/-2 + 4px);width:var(--D);height:calc(var(--hp) - 8px);transform-origin:0 50%;transform:translate3d(calc(var(--wp) - 4px),0,4px) rotateY(90deg)}
+.mc.on .bx-top{left:0;top:calc(var(--hp)/-2 + 4px - var(--D));width:calc(var(--wp) - 4px);height:var(--D);transform-origin:50% 100%;transform:translateZ(4px) rotateX(90deg)}
+.mc.on .bx-bot{left:0;top:calc(var(--hp)/2 - 4px);width:calc(var(--wp) - 4px);height:var(--D);transform-origin:50% 0;transform:translateZ(4px) rotateX(-90deg)}
+.mc.on .bx-spine{left:calc(var(--D)*-1 - 6px);top:calc(var(--hp)/-2);width:calc(var(--D) + 10px);height:var(--hp);transform-origin:100% 50%;transform:translateZ(6px) rotateY(-90deg);background:#22404a url(https://41aurum.github.io/blog/motion_corner/assets/cloth_f2.webp);background-size:256px;display:flex;align-items:center;justify-content:center}
+.mc.on .bx-spine{box-shadow:inset 0 0 0 999px rgba(4,10,20,.28),inset -3px 0 4px rgba(0,0,0,.35)}
+.mc.on .bx-spine span{writing-mode:vertical-rl;font-family:var(--f-display);font-weight:300;font-size:18px;letter-spacing:.3em;color:#EDE8DC}
+.mc.on .bx-back{left:0;top:calc(var(--hp)/-2);width:var(--wp);height:var(--hp);background:#22404a url(https://41aurum.github.io/blog/motion_corner/assets/cloth_f2.webp);background-size:256px;transform:translateZ(calc(var(--D)*-1)) rotateY(180deg)}
+.mc.on .bx-fore{background:repeating-linear-gradient(90deg,rgba(120,108,88,.22) 0 .6px,transparent .6px 1.6px),repeating-linear-gradient(90deg,rgba(120,108,88,.1) 0 .5px,transparent .5px 2.7px),#F0ECE2 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp)}
+.mc.on .bx-top,.mc.on .bx-bot{background:repeating-linear-gradient(0deg,rgba(120,108,88,.22) 0 .6px,transparent .6px 1.6px),repeating-linear-gradient(0deg,rgba(120,108,88,.1) 0 .5px,transparent .5px 2.7px),#F0ECE2 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp)}
+/* 펼친 책 덩어리(위 면 = 인쇄된 쪽, 아래·바깥 = 장 끝 겹) */
+.mc.on .blk{position:absolute;top:calc(var(--hp)/-2);width:var(--wp);height:var(--hp);background:#FBF9F4 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp);background-size:256px;overflow:hidden}
+.mc.on .blkR{left:0}.mc.on .blkL{left:calc(var(--wp)*-1)}
+.mc.on .gR::before,.mc.on .gL::before{content:"";position:absolute;top:0;bottom:0;width:18%;pointer-events:none;z-index:3}
+.mc.on .gR::before{left:0;background:linear-gradient(90deg,rgba(26,30,40,.30),rgba(26,30,40,.12) 22%,rgba(26,30,40,.04) 55%,rgba(26,30,40,0))}
+.mc.on .gL::before{right:0;background:linear-gradient(270deg,rgba(26,30,40,.30),rgba(26,30,40,.12) 22%,rgba(26,30,40,.04) 55%,rgba(26,30,40,0))}
+.mc.on .cast{position:absolute;inset:0;pointer-events:none;z-index:4;background:linear-gradient(var(--cd,90deg),rgba(12,20,36,var(--ca,0)) 0,rgba(12,20,36,var(--ca,0)) var(--ce0,0px),rgba(12,20,36,0) var(--ce1,0px))}
+/* 넘어가는 장: 여러 조각으로 휘어 넘어감 */
+.mc.on .pp{position:absolute;left:0;top:calc(var(--hp)/-2);width:0;height:var(--hp);transform-style:preserve-3d;transform-origin:0 50%}
+.mc.on .st{position:absolute;top:0;left:var(--sw);width:var(--sw);height:var(--hp);transform-style:preserve-3d;transform-origin:0 50%}
+.mc.on .pp>.st{left:0}
+.mc.on .fc{position:absolute;left:0;top:0;width:calc(var(--sw) + .8px);height:100%;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.mc.on .fc.b{transform:rotateY(180deg);left:-.8px}
+.mc.on .in{position:absolute;top:0;width:var(--wp);height:var(--hp);background:#FBF9F4 url(https://41aurum.github.io/blog/motion_corner/assets/paper_w2.webp);background-size:256px}
+.mc.on .in.ep{background:#F6F4EE url(https://41aurum.github.io/blog/motion_corner/assets/paper_w3.webp);background-size:256px}
+.mc.on .in.cv{background:#22404a url(https://41aurum.github.io/blog/motion_corner/assets/cloth_f2.webp);background-size:256px}
+.mc.on .lit{position:absolute;inset:0;background:#0b1626;opacity:0;pointer-events:none}
+/* 인쇄된 판면 */
+.mc.on .pgx{position:absolute;top:calc(var(--hp)/-2);width:var(--wp);height:var(--hp);margin:0;max-width:none;padding:var(--pt) var(--px) 0;box-shadow:none;overflow:hidden;visibility:hidden;transform:translateZ(.6px)}
+.mc.on .pgx.show{visibility:visible}
+.mc.on .pgL{left:calc(var(--wp)*-1)}.mc.on .pgR{left:0}
+.mc.on .fo{left:var(--px);right:var(--px);bottom:calc(var(--pt)*.55)}
+.mc.on .gen{position:absolute;inset:0;padding:var(--pt) var(--px) 0}
+.mc.on .gen .tx{font-size:var(--fs)}
+.mc.on .blk .gen{display:none}.mc.on .blk[data-v="0"] .g0,.mc.on .blk[data-v="1"] .g1,.mc.on .blk[data-v="2"] .g2,.mc.on .blk[data-v="3"] .g3{display:block}
+/* 글씨가 한 번 빛났다가 먹색으로 */
+.mc.on .pgx .tx>*{transition:color 1.3s ease,text-shadow 1.6s ease}
+.mc.on .pgx .tx>.glow{color:#8A5A12;text-shadow:0 0 5px rgba(255,214,150,.95),0 0 14px rgba(255,190,100,.55),0 0 26px rgba(255,180,90,.25);transition:color .35s ease,text-shadow .35s ease}
+/* 표지 */
+.cvx{position:absolute;inset:0;padding:13% 12% 13% 15%;box-shadow:inset 9px 0 0 -6px rgba(0,0,0,.28),inset 14px 0 10px -10px rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:space-between;color:#EFEBE2}
+.cvx img{width:24%}
+.cvx .t{font-family:var(--f-display);font-weight:300;font-size:calc(var(--wp)*.085);line-height:1.15;letter-spacing:-.02em}
+.cvx .t small{display:block;font-size:.42em;margin-top:.6em;opacity:.8;letter-spacing:.02em}
+.cvx .by{font-size:13px;opacity:.75;letter-spacing:.08em;margin:0}
+.epx{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-weight:300;font-size:22px;color:#1559A9;letter-spacing:.3em}
+@media (prefers-reduced-motion:reduce){.mc .gl,.mc .vd,.mc .ff{display:none!important}}
+</style>
+  <div class="mc-run">
+  <div class="mc-stage">
+    <img class="bg mc-stage-only" src="https://41aurum.github.io/blog/motion_corner/assets/sea_1440_wm.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" width="1440" height="1080">
+    <canvas class="gl mc-stage-only" aria-hidden="true"></canvas>
+    <div class="shade mc-stage-only"></div>
+    <div class="book"><div class="sp">
+      <div class="bx bx-back mc-stage-only"></div>
+      <div class="bx bx-fore mc-stage-only"></div>
+      <div class="bx bx-top mc-stage-only"></div>
+      <div class="bx bx-bot mc-stage-only"></div>
+      <div class="bx bx-spine mc-stage-only"><span>시차 時差</span></div>
+      <div class="blk blkR gR mc-stage-only" data-v="0"><div class="cast"></div></div>
+      <div class="blk blkL gL mc-stage-only" data-v="1"><div class="cast" style="--cd:270deg"></div></div>
+      <!-- 실제 글(선택·번역·화면 읽기 가능): 펼쳐진 두 쪽에 인쇄처럼 얹힘 -->
+      <article class="pgx pgL gL" lang="ko">
+        <div class="tx">
+          <p class="k">시차 時差 · 160여 년 뒤의 관객</p>
+          <h3>캠스베이 언덕에서</h3>
+          <p class="a">토머스 윌리엄 보울러<br>Thomas William Bowler, 1812–1869</p>
+          <p class="hk">캠스베이 언덕 난간 너머로 셔터를 눌렀어요. 둥근 바위, 청록 바다, 그 뒤 능선. 같은 세 겹을 160여 년 먼저 종이에 옮긴 사람이 있었어요.</p>
+          <h4>여기서 본 것</h4>
+          <p>길가 난간 너머로 둥근 화강암 바위가 바다까지 굴러 내려가 있었어요. 그 뒤로 청록 바다, 맨 뒤에 열두 사도 능선. 사진을 다시 펼쳐 보니 세 겹으로 딱 나뉘어 있더라고요.</p>
+        </div>
+        <div class="fo" aria-hidden="true"><span>28</span><span>보울러</span></div>
+      </article>
+      <article class="pgx pgR gR" lang="ko">
+        <div class="tx">
+          <h4 style="margin-top:0">알아보니</h4>
+          <p>보울러의 캠스베이 수채화도 똑같이 세 겹이에요. 앞에 둥근 바위, 가운데 바다, 뒤에 능선. 저도 제 「파도」가 호쿠사이의 파도와 닮았다는 걸 다 그리고 나서야 알고 당황한 적이 있어요. 그때 배운 게, 좋은 풍경은 보는 사람에게 비슷한 구도를 쥐여 준다는 거예요.</p>
+          <h4>그림에서 두 군데만</h4>
+          <ol>
+            <li>앞 바위 사이 물웅덩이. 하늘 색이 그대로 비쳐 있어요. 앞에서 제가 노을 담긴 웅덩이를 내려다보며 찍었던 그 물이, 보울러 그림에도 있더라고요.</li>
+            <li>수평선 끝의 작은 배와 새 떼. 손톱만 한 배 하나가 바다가 얼마나 넓은지 다 말해 줘요.</li>
+          </ol>
+          <div class="sg"><p>제가 고른 줄 알았던 구도는, 바다가 160년째 내주던 자리였어요.</p><img src="https://41aurum.github.io/blog/motion_corner/assets/sign_yang.svg" alt="양승진 서명" width="44" height="55" loading="lazy"></div>
+          <p class="rf">그림 출처 <a href="https://commons.wikimedia.org/wiki/File:Thomas_william_bowler_camps_bay_cape_of_good_hope112057%29.jpg" rel="noopener">작품 정보</a> · <a href="https://en.wikipedia.org/wiki/Thomas_William_Bowler" rel="noopener">화가 소개</a> — 퍼블릭 도메인. 사진·글 양승진(AURUM 41).</p>
+        </div>
+        <div class="fo" aria-hidden="true"><span>시차 時差</span><span>29</span></div>
+      </article>
+    </div></div>
+    <canvas class="ff mc-stage-only" aria-hidden="true"></canvas>
+    <template class="tpl-cover"><div class="cvx"><img src="https://41aurum.github.io/blog/motion_corner/assets/ring_paper.svg" alt=""><div class="t">시차 時差<small>늦게 도착한 관객들</small></div><p class="by">AURUM 41 · 양승진</p></div><div class="epx">時差</div></template>
+    <template class="tpl-gen">
+      <div class="tx"><p class="k">이스탄불 · 109년</p><h4 style="margin-top:0">오스만 함디 베이</h4><p>그랑바자르 문 위에는 벽돌을 반달로 쌓은 아치와 하얀 육각 창이 있어요. 백 년쯤 전 그림 속 방에도 같은 아치와 같은 육각이 있었죠. 문 앞에 서서 한참을 올려다봤어요.</p><p>그림 속 방의 빛은 왼쪽 높은 창에서 들어와요. 제가 선 시장 골목의 빛도 같은 쪽에서 비스듬히 떨어지고 있었어요.</p></div>
+      <div class="tx"><p class="k">케이프타운 · 43년</p><h4 style="margin-top:0">피터 클라크</h4><p>도착한 날, 공항에서 시내로 가는 차 안에서 셔터를 서른 번 넘게 눌렀어요. 사진에 남은 건 난간과 산자락이에요. 클라크의 판화에도 낮은 담장과 그 너머 산이 겹으로 서 있어요.</p><p>담장 너머를 보는 눈높이가, 차창 너머를 보던 제 눈높이와 거의 같았어요.</p></div>
+      <div class="tx"><p class="k">요하네스버그 · 24년</p><h4 style="margin-top:0">에스더 말랑구</h4><p>집 벽에 그린 무늬는 선 하나도 쉬지 않고 이어져요. 바깥 테두리부터 안쪽으로, 굵은 선 옆에 가는 선을 하나씩 붙여 가며 면을 채우죠.</p><p>시장에서 본 담요 무늬가 바로 그 순서로 짜여 있었어요. 손이 기억하는 순서였어요.</p></div>
+      <div class="tx"><p class="k">차례</p><p>109년 · 오스만 함디 베이<br>43년 · 피터 클라크<br>24년 · 에스더 말랑구<br>160여 년 · 토머스 윌리엄 보울러</p><p>늦게 도착한 관객들. 같은 자리에 먼저 와 있던 사람의 그림을, 한참 뒤에야 알아보는 이야기예요.</p></div>
+    </template>
+  </div>
+  </div>
+<script>
+(function(){
+"use strict";
+var sec=document.getElementById("mc"); if(!sec) return;
+var BASE=sec.getAttribute("data-base")||"assets/";
+var q; try{q=new URLSearchParams(location.search);}catch(e){q={get:function(){return null;}};}
+var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var save=navigator.connection&&navigator.connection.saveData;
+var ok3d=window.CSS&&CSS.supports&&CSS.supports("transform-style","preserve-3d");
+window.__mc={mode:"static"};
+if(rm||save||!ok3d||!window.IntersectionObserver||q.get("static")==="1"){ window.__mc.why=rm?"reduced-motion":save?"save-data":!ok3d?"no-3d":"forced"; return; }
+for(var an=sec.parentElement;an&&an!==document.body&&an!==document.documentElement;an=an.parentElement){
+  var ov=getComputedStyle(an); if(/(hidden|auto|scroll)/.test(ov.overflowY+" "+ov.overflowX)&&q.get("force")!=="1"){
+    window.__mc={mode:"static",why:"overflow:"+an.tagName+"."+(an.className||"")+"#"+(an.id||"")+" "+ov.overflowX+"/"+ov.overflowY}; return; } }
+sec.classList.add("on");
+var $=function(s){return sec.querySelector(s);};
+var runEl=$(".mc-run"), stage=$(".mc-stage"), book=$(".book"), sp=$(".sp"), bg=$(".bg"), cvs=$(".gl"), shade=$(".shade"), ffc=$(".ff");
+var pgL=$(".pgL"), pgR=$(".pgR"), blkR=$(".blkR"), blkL=$(".blkL"), bx=[].slice.call(sec.querySelectorAll(".bx"));
+var castR=blkR.querySelector(".cast"), castL=blkL.querySelector(".cast");
+var pgRc=document.createElement("div"); pgRc.className="cast"; pgRc.setAttribute("aria-hidden","true"); pgR.appendChild(pgRc);
+var genT=$(".tpl-gen"), gens=[].slice.call((genT.content||genT).children).map(function(n){return n.outerHTML;});
+var covT=$(".tpl-cover"), cov=[].slice.call((covT.content||covT).children).map(function(n){return n.outerHTML;});
+// 책 덩어리 위 면에도 인쇄된 쪽(넘기는 동안 아래 쪽이 비어 보이지 않게)
+[blkR,blkL].forEach(function(b){ gens.forEach(function(h,i){ var d=document.createElement("div"); d.className="gen g"+i; d.setAttribute("aria-hidden","true"); d.innerHTML=h; b.insertBefore(d,b.firstChild); }); });
+
+// ── 장 만들기(조각 N개로 휘게)
+function face(side,html,k,kind,gut){
+  var f=document.createElement("div"); f.className="fc"+(side==="b"?" b":"");
+  var inn=document.createElement("div"); inn.className="in "+(kind||"")+(gut?" "+gut:""); inn.style.left="calc(var(--sw) * -"+k+")";
+  inn.innerHTML=kind==="cv"||kind==="ep"?html:'<div class="gen" style="display:block">'+html+'</div>';
+  var l=document.createElement("div"); l.className="lit"; f.appendChild(inn); f.appendChild(l); return {el:f,lit:l};
+}
+var N=6;
+function mkLeaf(fH,bH,fk,bk){
+  var root=document.createElement("div"); root.className="pp"; root.setAttribute("aria-hidden","true");
+  var par=root, st=[];
+  for(var k=0;k<N;k++){ var s=document.createElement("div"); s.className="st";
+    var F=face("f",fH,k,fk,fk==="cv"?"":"gR"), B=face("b",bH,N-1-k,bk,bk==="cv"?"":"gL");
+    s.appendChild(F.el); s.appendChild(B.el); par.appendChild(s); par=s; st.push({el:s,lf:F.lit,lb:B.lit}); }
+  root.style.display="none"; sp.appendChild(root); return {root:root,st:st,vis:false};
+}
+var cover=mkLeaf(cov[0],cov[1],"cv","ep");
+var POOL=7, pool=[]; for(var j=0;j<POOL;j++) pool.push(mkLeaf(gens[j%4],gens[(j+2)%4],"",""));
+// 마지막 장: 뒷면이 왼쪽 실제 글과 같은 모습(넘어와 내려앉는 순간 실제 글로 바꿔 끼움)
+var lastLeaf=mkLeaf(gens[1],pgL.querySelector(".tx").outerHTML,"","");
+
+// ── 치수(가로 화면 기준, 세로 화면은 한 쪽씩 보며 넘김)
+var vw,vh,wp,hp,D,wide,sOpen,sFly,run;
+function fit(el){ // 판면에 글이 넘치면 글자 크기를 0.5px씩 줄임(14px 아래로는 안 줄임)
+  var fs=parseFloat(sec.style.getPropertyValue("--fs"))||17;
+  for(var i=0;i<12&&el.scrollHeight>el.clientHeight+1&&fs>14;i++){ fs-=.5; sec.style.setProperty("--fs",fs+"px"); }
+  return fs;
+}
+function measure(){
+  vw=stage.clientWidth||innerWidth; vh=stage.clientHeight||innerHeight; wide=vw>=vh*1.05&&vw>=760;
+  if(wide){ wp=Math.round(Math.min((vw-160)/2,540,(vh-190)/1.36)); hp=Math.round(wp*1.36); }
+  else { wp=Math.round(Math.min(vw-24,520)); hp=Math.round(Math.min(vh-84,wp*1.72)); }
+  D=Math.round(wp*0.15);
+  var px=Math.round(wp*(wide?0.095:0.075)), pt=Math.round(hp*0.075);
+  var S=sec.style; S.setProperty("--wp",wp+"px"); S.setProperty("--hp",hp+"px"); S.setProperty("--D",D+"px"); S.setProperty("--sw",(wp/N)+"px");
+  S.setProperty("--px",px+"px"); S.setProperty("--pt",pt+"px"); S.setProperty("--fs",(wide?Math.min(17.5,wp/30):Math.min(16,wp/22.5)).toFixed(1)+"px");
+  pgL.classList.add("show"); pgR.classList.add("show");
+  // 판면 아래 쪽 번호 자리만큼 비움
+  [pgL,pgR].forEach(function(p){ p.style.paddingBottom=Math.round(pt*1.4)+"px"; });
+  fit(pgL); fit(pgR);
+  book.style.perspective=Math.round(Math.max(1500,vh*2.1))+"px"; book.style.perspectiveOrigin="50% 50%";
+  sOpen=wide?1:Math.min(1,(vw-16)/(2*wp)); sFly=wide?0.62:0.8;
+  run=wide?300:360; S.setProperty("--run",run+"vh");
+  sizeFF();
+}
+
+function cl(x){return x<0?0:x>1?1:x;} function seg(x,a,b){return cl((x-a)/(b-a));}
+function eo(t){return 1-Math.pow(1-t,3);} function eio(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;} function lerp(a,b,t){return a+(b-a)*t;}
+var DEG=Math.PI/180, R=[-16,6,4,3,2,1];
+function bend(L,t,curlA){
+  var acc=0,sn=Math.sin(Math.PI*t);
+  for(var k=0;k<N;k++){ var rel=R[k]*(1-2*t)*.6+(k===0?-180*t:-curlA*sn*(.55+.45*k/N)); acc+=rel;
+    L.st[k].el.style.transform="rotateY("+rel.toFixed(2)+"deg)";
+    var c=Math.abs(Math.cos(acc*DEG)), a=(0.2*(1-c)).toFixed(3); L.st[k].lf.style.opacity=a; L.st[k].lb.style.opacity=a; }
+}
+function show(L,v){ if(L.vis!==v){ L.root.style.display=v?"":"none"; L.vis=v; L.root.style.willChange=v?"transform":"auto"; } }
+function cast(el,a,e0,e1){ var s=el.style; if(a<=.002){s.setProperty("--ca","0");return;} s.setProperty("--ca",a.toFixed(3)); s.setProperty("--ce0",Math.max(0,e0).toFixed(1)+"px"); s.setProperty("--ce1",Math.max(1,e1).toFixed(1)+"px"); }
+function edges(n,dir){ var o=[]; for(var i=1;i<=n;i++){ o.push((dir*i*.62).toFixed(2)+"px "+(i*.95).toFixed(2)+"px 0 "+(i%4===0?"#D6CFBF":i%2?"#F3EFE6":"#E6E0D2")); }
+  o.push((dir*n*.62).toFixed(1)+"px "+(n*.95+6).toFixed(1)+"px 18px rgba(4,10,24,.45)"); return o.join(","); }
+
+// ── 시간표(초): 스크롤이 코너에 닿아 멈추면 정해진 빠르기로 재생, 위로 돌아가면 되감음
+var TL=8.0, K=34;               // 촤라락 넘어가는 장 수
+var F0=3.15, F1=5.45, FD=.34;   // 넘김 시작·끝, 한 장 넘어가는 시간
+var starts=[]; for(var k=0;k<K;k++){ var u=k/(K-1); starts.push(F0+(F1-F0-FD)*(u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2)); }
+var T=0, target=0, lastNow=0, playing=false, glowed=false;
+var lastEdge=-1;
+function render(){
+  var p=progress();
+  // 날아오기
+  var fly=eo(seg(T,0,2.5)), face=eio(seg(T,1.7,2.75)), c=eio(seg(T,2.55,3.25));
+  var cx=vw/2, cy=vh/2+(wide?6:0);
+  var s=lerp(sFly,sOpen,eio(seg(T,1.6,3.3)));
+  // 닫힌 책 가운데 → 펼친 책 가운데(제본선)로
+  var closedX=cx-wp*s/2, openX=cx;
+  var gx=lerp(closedX,openX,c);
+  // 세로 화면: 펼친 뒤 왼쪽 쪽 → 오른쪽 쪽으로 천천히 시선 이동(스크롤)
+  if(!wide){ var dol=eio(seg(T,5.7,6.6)); var pan=eio(seg(p,.42,.72));
+    var sRead=Math.min(1,(vw-20)/wp); s=lerp(s,sRead,dol); gx=lerp(gx,lerp(cx+wp*s/2,cx-wp*s/2,pan),dol); }
+  var arc=1-fly;
+  var x=gx+arc*vw*.42, y=cy-arc*vh*.38+Math.sin(T*2.1)*3*(1-c), z=-arc*2600;
+  var ry=lerp(42,0,face)+arc*30, rx=lerp(24,wide?6:4,face)+arc*10, rz=lerp(-9,0,face)*(1)+arc*-14;
+  sp.style.transform="translate3d("+x.toFixed(1)+"px,"+y.toFixed(1)+"px,"+z.toFixed(1)+"px) scale("+s.toFixed(4)+") rotateX("+rx.toFixed(2)+"deg) rotateY("+ry.toFixed(2)+"deg) rotateZ("+rz.toFixed(2)+"deg)";
+  sp.style.opacity=""; book.style.visibility=T>0.02?"visible":"hidden";
+  // 표지
+  show(cover,T<starts[0]+FD+.05); cover.root.style.transform="translateZ("+(lerp(5,2.4,c)+Math.sin(Math.PI*c)*3).toFixed(2)+"px)"; bend(cover,c,4);
+  for(var b=0;b<bx.length;b++) bx[b].style.visibility=c<.98?"visible":"hidden";
+  // 촤라락
+  var landed=-1, active=0;
+  for(var j=0;j<POOL;j++) pool[j].busy=false;
+  var cR=0,cR0=0,cR1=0,cL=0,cL0=0,cL1=0;
+  for(var k=0;k<K;k++){
+    var t=eio(seg(T,starts[k],starts[k]+FD)); if(t>=1) landed=k;
+    if(t>0&&t<1){ var L=k===K-1?lastLeaf:pool[k%POOL]; L.busy=true; show(L,true); bend(L,t,24);
+      L.root.style.transform="translateZ("+(1.2+Math.sin(Math.PI*t)*4).toFixed(2)+"px)"; active++;
+      var th=t*Math.PI,sn=Math.sin(th),cs=Math.cos(th),pen=hp*.05*sn+8, a=.30*Math.pow(sn,.6);
+      if(cs>0&&a>cR){cR=a;cR0=wp*cs*.85;cR1=wp*cs+pen;} if(cs<=0&&a>cL){cL=a;cL0=-wp*cs*.85;cL1=-wp*cs+pen;} }
+  }
+  for(var j2=0;j2<POOL;j2++) if(!pool[j2].busy) show(pool[j2],false);
+  var lt=eio(seg(T,starts[K-1],starts[K-1]+FD)); if(!(lt>0&&lt<1)) show(lastLeaf,false);
+  cast(castR,cR,cR0,cR1); cast(castL,cL,cL0,cL1);
+  // 펼친 덩어리: 오른쪽은 얇아지고 왼쪽은 두꺼워짐
+  var ratio=(landed+1)/K, opened=c>=.98;
+  var nR=Math.round(lerp(26,13,ratio)), nL=Math.round(lerp(3,15,ratio));
+  if(nR*100+nL!==lastEdge){ blkR.style.boxShadow=edges(nR,1); blkL.style.boxShadow=edges(nL,-1); lastEdge=nR*100+nL; }
+  blkR.style.visibility=c>0?"visible":"hidden"; blkL.style.visibility=c>.5?"visible":"hidden";
+  if(landed>=0){ blkL.setAttribute("data-v",String(((landed%POOL)+2)%4)); }
+  blkR.setAttribute("data-v",String(((landed+1)%POOL)%4));
+  // 실제 글: 오른쪽은 마지막 장이 들릴 때부터, 왼쪽은 마지막 장이 내려앉으면
+  var rOn=T>=starts[K-1]+.02, lOn=lt>=1;
+  pgR.style.visibility=rOn?"visible":"hidden"; pgL.style.visibility=lOn?"visible":"hidden";
+  cast(pgRc,rOn&&lt<1?cR:0,cR0,cR1);
+  // 글씨 빛남(한 번)
+  // 글씨 빛남: 시간표에 묶어 한 줄씩(되감으면 다시)
+  var TG=starts[K-1]+FD+.25;
+  for(var g=0;g<glowEls.length;g++){ var on=T>=TG+g*.13&&T<TG+g*.13+.55; if(on!==glowEls[g]._g){ glowEls[g].classList.toggle("glow",on); glowEls[g]._g=on; } }
+  if(T>=TG&&!glowed){ glowed=true; ffBurst(); } if(T<TG) glowed=false;
+  shade.style.opacity=(seg(T,2.5,4)*.9).toFixed(3);
+  window.__mc.T=+T.toFixed(3); window.__mc.p=+p.toFixed(4); window.__mc.active=active;
+}
+var glowEls=[].slice.call(pgL.querySelector(".tx").children).concat([].slice.call(pgR.querySelector(".tx").children));
+function progress(){ var r=runEl.getBoundingClientRect(), total=runEl.offsetHeight-vh; return cl(-r.top/total); }
+var idleT=null, lastScroll=0;
+function onScroll(){ lastScroll=performance.now(); if(!inView) return; var p=progress();
+  if(p<=.004) setTarget(0); else if(p>.02){ if(target<TL){ clearTimeout(idleT); idleT=setTimeout(function(){ if(progress()>.02) setTarget(TL); },160); } }
+  if(!playing) requestAnimationFrame(function(){ render(); });
+}
+function setTarget(v){ target=v; if(!playing){ playing=true; lastNow=performance.now(); requestAnimationFrame(step); } }
+function step(now){
+  var dt=Math.min(.05,(now-lastNow)/1000); lastNow=now;
+  if(T<target) T=Math.min(target,T+dt); else if(T>target) T=Math.max(target,T-dt*3);
+  render(); ffActive=T>0&&T<TL+5;
+  if(T!==target) requestAnimationFrame(step); else playing=false;
+}
+addEventListener("scroll",onScroll,{passive:true});
+addEventListener("resize",function(){ sec.style.removeProperty("--fs"); measure(); lastEdge=-1; render(); sizeGL(); },{passive:true});
+
+// ── 반딧불(작고 따뜻한 점빛, 깜빡임). 책을 데려오고, 펼친 뒤 흩어졌다가 글이 빛날 때 잠깐 모임
+var fx=ffc.getContext("2d"), fdpr=1, P=[], ffActive=false, ffRun=false, ffLast=0, spr=null, burstT=-9;
+function sizeFF(){ fdpr=Math.min(devicePixelRatio||1,2); ffc.width=Math.round(vw*fdpr); ffc.height=Math.round(vh*fdpr);
+  spr=document.createElement("canvas"); spr.width=spr.height=48; var g=spr.getContext("2d"), rg=g.createRadialGradient(24,24,0,24,24,24);
+  rg.addColorStop(0,"rgba(255,246,214,1)"); rg.addColorStop(.18,"rgba(255,222,150,.85)"); rg.addColorStop(.45,"rgba(255,196,110,.22)"); rg.addColorStop(1,"rgba(255,180,90,0)"); g.fillStyle=rg; g.fillRect(0,0,48,48); }
+function seed(){ P=[]; for(var i=0;i<42;i++) P.push({x:Math.random()*vw,y:Math.random()*vh,vx:0,vy:0,ph:Math.random()*6.28,f:.7+Math.random()*1.1,r:1.6+Math.random()*2.4,o:Math.random()*6.28,ra:.55+Math.random()*.6}); }
+function bookCenter(){ var r=sp.getBoundingClientRect(), s=stage.getBoundingClientRect(); return {x:r.left-s.left,y:r.top-s.top}; }
+function ffBurst(){ burstT=performance.now(); }
+function ffLoop(now){
+  if(!ffActive||!inView){ ffRun=false; fx.clearRect(0,0,ffc.width,ffc.height); return; }
+  requestAnimationFrame(ffLoop); if(now-ffLast<32) return; var dt=Math.min(.06,(now-ffLast)/1000); ffLast=now;
+  var bc=bookCenter(), carry=1-seg(T,2.3,3.6), after=seg(T,3.6,4.6), fade=1-seg(T,TL+1,TL+5);
+  var glowing=cl(1-(now-burstT)/2600);
+  fx.setTransform(fdpr,0,0,fdpr,0,0); fx.clearRect(0,0,vw,vh); fx.globalCompositeOperation="lighter";
+  for(var i=0;i<P.length;i++){ var q=P[i], t=now/1000;
+    var ax=Math.sin(t*q.f*.7+q.o)*14, ay=Math.cos(t*q.f*.55+q.o*1.7)*12-4;      // 떠다님
+    if(carry>0){ var ang=t*(.9+q.f*.4)+q.o, rad=(wp*.55+q.r*28)*(.5+.5*carry); var tx=bc.x+(wide?0:0)+Math.cos(ang)*rad, ty=bc.y+Math.sin(ang)*rad*.55;
+      ax+=(tx-q.x)*1.6*carry; ay+=(ty-q.y)*1.6*carry; }
+    if(glowing>0&&i%3===0){ var gx2=bc.x+(i%2?1:-1)*wp*.5, gy2=bc.y+(Math.sin(q.o)*hp*.3); ax+=(gx2-q.x)*.9*glowing; ay+=(gy2-q.y)*.9*glowing; }
+    q.vx+=(ax-q.vx)*.06; q.vy+=(ay-q.vy)*.06; q.x+=q.vx*dt*2.2; q.y+=q.vy*dt*2.2-(after*8*dt);
+    if(q.y<-30) q.y=vh+20; if(q.x<-30) q.x=vw+20; if(q.x>vw+30) q.x=-20;
+    var keep=i<14?1:1-after*.85;                                                   // 펼친 뒤엔 몇 개만 남음
+    var bl=.5+.5*Math.sin(t*q.f*2.4+q.ph); bl=bl*bl*(3-2*bl);                         // 반딧불 깜빡임
+    var al=(.25+.75*bl)*keep*fade*seg(T,.05,.6)*(glowing>0&&i%3===0?1:1);
+    if(al<.02) continue; var sz=q.r*7*(.85+.3*bl);
+    fx.globalAlpha=al; fx.drawImage(spr,q.x-sz/2,q.y-sz/2,sz,sz);
+  }
+  fx.globalAlpha=1; fx.globalCompositeOperation="source-over";
+}
+function ffStart(){ if(ffRun||!inView) return; ffRun=true; ffLast=performance.now(); requestAnimationFrame(ffLoop); }
+setInterval(function(){ if(ffActive&&inView) ffStart(); },250);
+
+// ── 바다: 생성 영상이 있으면 영상(화면 가까이 올 때만 받음), 없으면 사진 1장 + 마스크 WebGL
+var seaMp4=sec.getAttribute("data-sea-mp4"), seaWebm=sec.getAttribute("data-sea-webm"), vd=null;
+var gl=null,prog,uT,uW,uR,uA,uB,glReady=false,running=false,inView=false,near=false;
+var WB=[0.0347,0.7407,0.1660,0.9602];
+var VS="attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;v.y=1.-v.y;gl_Position=vec4(p,0.,1.);}";
+var FS=["precision mediump float;varying vec2 v;uniform sampler2D T,M;uniform float t,w;uniform vec2 R,A;uniform vec4 B;",
+"vec2 cover(vec2 q){vec2 s=R/A;float k=max(s.x,s.y);vec2 sz=A*k/R;vec2 off=(1.-1./sz)*vec2(.52,.5);return q/sz+off;}",
+"float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}",
+"float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}",
+"float foam(vec3 c){float L=dot(c,vec3(.3,.59,.11));float mx=max(c.r,max(c.g,c.b)),mn=min(c.r,min(c.g,c.b));float sa=(mx-mn)/(mx+.001);return smoothstep(.50,.76,L)*(1.-smoothstep(.10,.26,sa));}",
+"void main(){vec2 uv=cover(v);vec4 m=texture2D(M,uv);",
+" float wk=smoothstep(-.03,0.,min(min(uv.x-B.x,B.z-uv.x),min(uv.y-B.y,B.w-uv.y)));",
+" float bb=m.b*255.;float id=bb>=127.5?floor((bb-128.)/20.+.5):0.;float gk=bb<127.5?bb/120.:0.;float fq=.55+id*.13;float ph=id*1.7;",
+" float sw=sin(t*fq*2.2+ph+uv.y*3.)*.62+sin(t*fq*3.7+ph*2.3)*.38;",
+" vec2 so=vec2(sw*(.55+.45*w),abs(sw)*.18)*m.g*.0046*(.6+.8*w)*(1.-wk);",
+" vec2 b=uv-so;vec4 c0=texture2D(T,b);vec4 col=c0;float wm=m.r*(1.-wk);",
+" if(wm>.01){float yN=clamp((uv.y-.2)/.42,0.,1.);float pr=mix(.12,1.,yN);float k=mix(900.,260.,yN);",
+"  vec2 d=vec2(sin(uv.y*k+t*1.5+sin(uv.x*23.+t*.4)*1.8)*.0011,cos(uv.y*k*.8-t*1.1+uv.x*37.)*.0008)*pr;",
+"  float c=t*.16;float p0=fract(c),p1=fract(c+.5);float x=abs(p0-.5)*2.;vec2 fl=vec2(.0012,-.0105)*pr;",
+"  vec2 o0=(d+fl*(p0-.5))*wm,o1=(d+fl*(p1-.5))*wm;",
+"  float g0=smoothstep(.35,.85,texture2D(M,b+o0).r),g1=smoothstep(.35,.85,texture2D(M,b+o1).r);",
+"  vec4 a0=mix(c0,texture2D(T,b+o0),g0),a1=mix(c0,texture2D(T,b+o1),g1);col=mix(a0,a1,x);",
+"  float cyc=t/6.8+n(vec2(uv.x*2.6,3.1))*.55;",
+"  for(int j=0;j<2;j++){float ph2=fract(cyc+float(j)*.5);float env=sin(ph2*3.14159);env*=env;",
+"   float push=ph2*(.006+.028*pr)*(.75+.5*w);vec2 su=b-vec2(sin(uv.y*40.+t*.7)*.0008,push);",
+"   vec3 cs=texture2D(T,su).rgb;float fm=foam(cs)*smoothstep(.3,.8,texture2D(M,su).r);",
+"   col.rgb=mix(col.rgb,max(col.rgb,cs*1.03+vec3(.02)),fm*env*(.55+.25*(1.-ph2)));}",
+"  float gl=pow(n(vec2(uv.x*260.+t*.9,uv.y*820.-t*2.)),9.)*gk;col.rgb+=vec3(1.,.93,.78)*gl*.22;}",
+" gl_FragColor=vec4(col.rgb,1.);}"].join("\n");
+function initSea(){
+  if(seaMp4||seaWebm){ if(vd) return; vd=document.createElement("video"); vd.className="vd"; vd.muted=true; vd.loop=true; vd.playsInline=true; vd.setAttribute("playsinline",""); vd.setAttribute("muted",""); vd.setAttribute("aria-hidden","true"); vd.preload="auto"; vd.poster=bg.currentSrc||bg.src;
+    if(seaWebm){var a=document.createElement("source");a.src=seaWebm;a.type="video/webm";vd.appendChild(a);} if(seaMp4){var b=document.createElement("source");b.src=seaMp4;b.type="video/mp4";vd.appendChild(b);}
+    vd.addEventListener("playing",function(){vd.classList.add("ready");}); bg.parentNode.insertBefore(vd,cvs); cvs.style.display="none"; seaPlay(); return; }
+  if(gl||q.get("gl")==="0") return;
+  try{ gl=cvs.getContext("webgl",{antialias:false,alpha:false,powerPreference:"low-power"}); }catch(e){}
+  if(!gl){ window.__mc.gl="none"; return; }
+  function sh(t,s){var o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw gl.getShaderInfoLog(o);return o;}
+  try{ prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(prog);gl.useProgram(prog); }catch(e){ window.__mc.gl="err:"+e; gl=null; return; }
+  var bf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,bf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+  var lp=gl.getAttribLocation(prog,"p");gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+  uT=gl.getUniformLocation(prog,"t");uW=gl.getUniformLocation(prog,"w");uR=gl.getUniformLocation(prog,"R");uA=gl.getUniformLocation(prog,"A");uB=gl.getUniformLocation(prog,"B");
+  gl.uniform1i(gl.getUniformLocation(prog,"T"),0);gl.uniform1i(gl.getUniformLocation(prog,"M"),1);gl.uniform4f(uB,WB[0],WB[1],WB[2],WB[3]);
+  var left=2; function load(src,unit){var im=new Image();im.crossOrigin="anonymous";im.onload=function(){var tx=gl.createTexture();gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,tx);
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,im);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+    if(--left===0){glReady=true;sizeGL();cvs.classList.add("ready");seaPlay();}};im.onerror=function(){window.__mc.gl="img-error";};im.src=src;}
+  load(bg.currentSrc||bg.src,0); load(BASE+"sea_mask.webp",1);
+}
+function sizeGL(){ if(!gl) return; var d=Math.min(devicePixelRatio||1,1.5); cvs.width=Math.round(cvs.clientWidth*d); cvs.height=Math.round(cvs.clientHeight*d); gl.viewport(0,0,cvs.width,cvs.height); gl.uniform2f(uR,cvs.width,cvs.height); gl.uniform2f(uA,1440,1080); }
+var t0=performance.now(), lastDraw=0, wind=.45, frames=0;
+function loop(now){ if(!running) return; requestAnimationFrame(loop); if(now-lastDraw<31) return; lastDraw=now; var idle=now-lastScroll>350; wind+=((idle?1:.45)-wind)*.04;
+  gl.uniform1f(uT,(now-t0)/1000); gl.uniform1f(uW,wind); gl.drawArrays(gl.TRIANGLE_STRIP,0,4); frames++; window.__mc.frames=frames; }
+function seaPlay(){ if(!inView||document.hidden) return; if(vd){ var pr=vd.play(); if(pr&&pr.catch) pr.catch(function(){}); return; } if(running||!glReady) return; running=true; requestAnimationFrame(loop); }
+function seaStop(){ running=false; if(vd) vd.pause(); }
+document.addEventListener("visibilitychange",function(){ document.hidden?seaStop():seaPlay(); });
+new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting&&!near){ near=true; bg.loading="eager"; initSea(); } }); },{rootMargin:"100% 0px"}).observe(sec);
+new IntersectionObserver(function(es){ es.forEach(function(e){ inView=e.isIntersecting; if(inView){ seaPlay(); onScroll(); } else seaStop(); }); },{threshold:0}).observe(stage);
+
+measure(); seed();
+window.__mc={mode:"motion",p:0,T:0,frames:0,TL:TL,isRunning:function(){return running;},seek:function(v){T=v;target=v;render();}};
+render();
+})();
+</script>
+</section>
+<!-- ▲▲▲ 작가 코너 끝 ▲▲▲ -->
+<p data-ke-size="size16">코너 다음 본문 자리(시험).</p>

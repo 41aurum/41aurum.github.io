@@ -1,0 +1,5 @@
+/* 시제품용 글꼴: Hahmlet·Pretendard(모두 OFL 1.1)를 이 쪽에 쓰인 글자만 뽑은 부분집합. 실제 블로그는 디자인 체계 1판의 웹폰트 연결(구글 폰트·jsdelivr)을 블로그 전체가 함께 씀 */
+@font-face{font-family:'Hahmlet';font-style:normal;font-display:swap;font-weight:300;src:url(fonts/hahmlet-300-sub.woff2) format('woff2');}
+@font-face{font-family:'Hahmlet';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/hahmlet-500-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/pretendard-400-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/pretendard-500-sub.woff2) format('woff2');}
