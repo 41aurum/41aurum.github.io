@@ -1,0 +1,397 @@
+{
+ "설명": "초 단위 큐. 파도 부서짐(물보라)과 소리 마루를 같은 시각에 맞춤. 웹은 '마법 시작(스크롤 6% 지점)'=0 기준 상대시각, 유튜브판·웹시연판은 영상 절대시각.",
+ "sea_loop": {
+  "length_s": 7.125,
+  "wave_crash_visual_s": [
+   3.4
+  ],
+  "wave_sound_peak_s": [
+   3.5
+  ],
+  "note": "Veo 원본 소리 마루 2.4s → 1.1s 늦춰 물보라 순간에 맞춤(잰 값: 화면 물보라 3.4s 시작, 4.0~4.5s 최대)"
+ },
+ "web_relative_to_trigger": [
+  {
+   "t": 0.3,
+   "cue": "logo_ring_draw_start",
+   "sound": "불티 탁탁 시작(그리는 머리 따라 밀도↑)"
+  },
+  {
+   "t": 1.7,
+   "cue": "logo_ring_draw_end",
+   "sound": ""
+  },
+  {
+   "t": 0.9,
+   "cue": "hangul_ignite",
+   "sound": "낮은 금속 종 G4(392Hz)"
+  },
+  {
+   "t": 2.0,
+   "cue": "hangul_to_AURUM",
+   "sound": "종 C5(523Hz) 2.05s"
+  },
+  {
+   "t": 2.5,
+   "cue": "AURUM_complete",
+   "sound": ""
+  },
+  {
+   "t": 2.45,
+   "cue": "ash_blow_start",
+   "sound": "재 쓸림 바람(왼→오 팬)"
+  },
+  {
+   "t": 3.9,
+   "cue": "ash_gone",
+   "sound": ""
+  },
+  {
+   "t": 3.3,
+   "cue": "single_point",
+   "sound": "숨 고르는 저음 시작"
+  },
+  {
+   "t": 4.0,
+   "cue": "vertical_light_grow",
+   "sound": "180→520Hz 상승음"
+  },
+  {
+   "t": 4.8,
+   "cue": "vertical_light_full",
+   "sound": ""
+  },
+  {
+   "t": 4.72,
+   "cue": "magic_video_in",
+   "sound": "영상 소리로 교차 0.9s"
+  },
+  {
+   "t": 4.72,
+   "cue": "light_column",
+   "sound": "빛 기둥(Veo 원본 2.7s)"
+  },
+  {
+   "t": 6.02,
+   "cue": "book_condensed",
+   "sound": "입자→책 물질화(Veo 원본 4.0s)"
+  },
+  {
+   "t": 7.32,
+   "cue": "book_settled",
+   "sound": "착지 '툭' (Veo 소리)"
+  },
+  {
+   "t": 8.32,
+   "cue": "cover_lift",
+   "sound": "바람 돌풍 + 표지 열림"
+  },
+  {
+   "t": 8.82,
+   "cue": "page_riffle_start",
+   "sound": "촤라락 시작"
+  },
+  {
+   "t": 11.82,
+   "cue": "page_riffle_end",
+   "sound": "촤라락 끝(점점 느려짐)"
+  },
+  {
+   "t": 12.32,
+   "cue": "pages_rest_middle",
+   "sound": "가운데서 머묾"
+  },
+  {
+   "t": 13.32,
+   "cue": "half_page_lift",
+   "sound": "한 장 반쯤 들림→복귀"
+  },
+  {
+   "t": 14.72,
+   "cue": "magic_end",
+   "sound": "상시 바람 반복으로 이음"
+  }
+ ],
+ "youtube_1920x1080_20s": {
+  "schedule": {
+   "mode": "yt",
+   "size": [
+    1920,
+    1080
+   ],
+   "fps": 30,
+   "end": 20.0,
+   "sea_offset": 1.0,
+   "fx_start": 0.2,
+   "magic_start": 4.8,
+   "ambient_start": 14.766666666666666,
+   "float_start": 14.916666666666666,
+   "line_stagger": 0.15
+  },
+  "events": [
+   {
+    "t": 0.5,
+    "cue": "logo_ring_draw_start",
+    "sound": "불티 탁탁 시작(그리는 머리 따라 밀도↑)"
+   },
+   {
+    "t": 1.1,
+    "cue": "hangul_ignite",
+    "sound": "낮은 금속 종 G4(392Hz)"
+   },
+   {
+    "t": 1.9,
+    "cue": "logo_ring_draw_end",
+    "sound": ""
+   },
+   {
+    "t": 2.2,
+    "cue": "hangul_to_AURUM",
+    "sound": "종 C5(523Hz) 2.05s"
+   },
+   {
+    "t": 2.65,
+    "cue": "ash_blow_start",
+    "sound": "재 쓸림 바람(왼→오 팬)"
+   },
+   {
+    "t": 2.7,
+    "cue": "AURUM_complete",
+    "sound": ""
+   },
+   {
+    "t": 3.5,
+    "cue": "single_point",
+    "sound": "숨 고르는 저음 시작"
+   },
+   {
+    "t": 4.1,
+    "cue": "ash_gone",
+    "sound": ""
+   },
+   {
+    "t": 4.2,
+    "cue": "vertical_light_grow",
+    "sound": "180→520Hz 상승음"
+   },
+   {
+    "t": 4.92,
+    "cue": "magic_video_in",
+    "sound": "영상 소리로 교차 0.9s"
+   },
+   {
+    "t": 4.92,
+    "cue": "light_column",
+    "sound": "빛 기둥(Veo 원본 2.7s)"
+   },
+   {
+    "t": 5.0,
+    "cue": "vertical_light_full",
+    "sound": ""
+   },
+   {
+    "t": 6.22,
+    "cue": "book_condensed",
+    "sound": "입자→책 물질화(Veo 원본 4.0s)"
+   },
+   {
+    "t": 7.52,
+    "cue": "book_settled",
+    "sound": "착지 '툭' (Veo 소리)"
+   },
+   {
+    "t": 8.52,
+    "cue": "cover_lift",
+    "sound": "바람 돌풍 + 표지 열림"
+   },
+   {
+    "t": 9.02,
+    "cue": "page_riffle_start",
+    "sound": "촤라락 시작"
+   },
+   {
+    "t": 12.02,
+    "cue": "page_riffle_end",
+    "sound": "촤라락 끝(점점 느려짐)"
+   },
+   {
+    "t": 12.52,
+    "cue": "pages_rest_middle",
+    "sound": "가운데서 머묾"
+   },
+   {
+    "t": 13.52,
+    "cue": "half_page_lift",
+    "sound": "한 장 반쯤 들림→복귀"
+   },
+   {
+    "t": 14.917,
+    "cue": "text_rise_start",
+    "sound": "(소리 없음: 바람 앰비언스 유지)"
+   },
+   {
+    "t": 14.92,
+    "cue": "magic_end",
+    "sound": "상시 바람 반복으로 이음"
+   },
+   {
+    "t": 16.517,
+    "cue": "text_gold_to_ink_start",
+    "sound": ""
+   }
+  ],
+  "wave_crash_s": [
+   2.4
+  ]
+ },
+ "web_demo_1440x900": {
+  "schedule": {
+   "mode": "web",
+   "size": [
+    1440,
+    900
+   ],
+   "fps": 30,
+   "end": 37.15,
+   "sea_offset": 0.0,
+   "fx_start": 1.5,
+   "magic_start": 6.1,
+   "ambient_start": 16.066666666666666,
+   "float_start": 16.216666666666665,
+   "line_stagger": 0.22,
+   "push_start": 23.216666666666665,
+   "print_start": 31.15
+  },
+  "events": [
+   {
+    "t": 1.8,
+    "cue": "logo_ring_draw_start",
+    "sound": "불티 탁탁 시작(그리는 머리 따라 밀도↑)"
+   },
+   {
+    "t": 2.4,
+    "cue": "hangul_ignite",
+    "sound": "낮은 금속 종 G4(392Hz)"
+   },
+   {
+    "t": 3.2,
+    "cue": "logo_ring_draw_end",
+    "sound": ""
+   },
+   {
+    "t": 3.5,
+    "cue": "hangul_to_AURUM",
+    "sound": "종 C5(523Hz) 2.05s"
+   },
+   {
+    "t": 3.95,
+    "cue": "ash_blow_start",
+    "sound": "재 쓸림 바람(왼→오 팬)"
+   },
+   {
+    "t": 4.0,
+    "cue": "AURUM_complete",
+    "sound": ""
+   },
+   {
+    "t": 4.8,
+    "cue": "single_point",
+    "sound": "숨 고르는 저음 시작"
+   },
+   {
+    "t": 5.4,
+    "cue": "ash_gone",
+    "sound": ""
+   },
+   {
+    "t": 5.5,
+    "cue": "vertical_light_grow",
+    "sound": "180→520Hz 상승음"
+   },
+   {
+    "t": 6.22,
+    "cue": "magic_video_in",
+    "sound": "영상 소리로 교차 0.9s"
+   },
+   {
+    "t": 6.22,
+    "cue": "light_column",
+    "sound": "빛 기둥(Veo 원본 2.7s)"
+   },
+   {
+    "t": 6.3,
+    "cue": "vertical_light_full",
+    "sound": ""
+   },
+   {
+    "t": 7.52,
+    "cue": "book_condensed",
+    "sound": "입자→책 물질화(Veo 원본 4.0s)"
+   },
+   {
+    "t": 8.82,
+    "cue": "book_settled",
+    "sound": "착지 '툭' (Veo 소리)"
+   },
+   {
+    "t": 9.82,
+    "cue": "cover_lift",
+    "sound": "바람 돌풍 + 표지 열림"
+   },
+   {
+    "t": 10.32,
+    "cue": "page_riffle_start",
+    "sound": "촤라락 시작"
+   },
+   {
+    "t": 13.32,
+    "cue": "page_riffle_end",
+    "sound": "촤라락 끝(점점 느려짐)"
+   },
+   {
+    "t": 13.82,
+    "cue": "pages_rest_middle",
+    "sound": "가운데서 머묾"
+   },
+   {
+    "t": 14.82,
+    "cue": "half_page_lift",
+    "sound": "한 장 반쯤 들림→복귀"
+   },
+   {
+    "t": 16.217,
+    "cue": "text_rise_start",
+    "sound": "(소리 없음: 바람 앰비언스 유지)"
+   },
+   {
+    "t": 16.22,
+    "cue": "magic_end",
+    "sound": "상시 바람 반복으로 이음"
+   },
+   {
+    "t": 17.817,
+    "cue": "text_gold_to_ink_start",
+    "sound": ""
+   },
+   {
+    "t": 23.217,
+    "cue": "push_in_start",
+    "sound": "바람·종이 사락"
+   },
+   {
+    "t": 31.15,
+    "cue": "print_glow_start",
+    "sound": ""
+   },
+   {
+    "t": 34.45,
+    "cue": "print_ink_settled",
+    "sound": ""
+   }
+  ],
+  "wave_crash_s": [
+   3.4
+  ]
+ },
+ "정밀도": "Veo 영상 안의 사건 시각은 2~5fps 접촉판·움직임량으로 잰 값(±0.25s). 코드 불티 시각은 코드 값 그대로(정확)."
+}

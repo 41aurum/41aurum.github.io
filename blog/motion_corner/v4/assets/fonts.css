@@ -1,0 +1,4 @@
+/* 시제품용 글꼴: Hahmlet(OFL 1.1) 가변 굵기, 이 쪽에 쓰인 글자만 뽑은 부분집합 / Pretendard(OFL 1.1) */
+@font-face{font-family:'Hahmlet';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/hahmlet-var-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/pretendard-400-sub.woff2) format('woff2');}
+@font-face{font-family:'Pretendard';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/pretendard-500-sub.woff2) format('woff2');}
