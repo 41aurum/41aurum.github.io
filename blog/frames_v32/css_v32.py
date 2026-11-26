@@ -1,6 +1,6 @@
 import json
 P='html body .ag-c-oldie.ag-c-oldie img[data-filename*="oldiecola_%s"]'
-Q='html body .ag-c-oldie.ag-c-oldie figure[data-filename*="oldiecola_%s"]>span'
+Q='html body .ag-c-oldie.ag-c-oldie figure[data-filename*="oldiecola_%s"] span'
 AW={'04_padokot.jpg':844,'05_padokot_drawing':420,'06_pinkkot':825,'07b_pin_drawing':420,'08_closet.jpg':885,'08b_closet_drawing':420,'09_pado.jpg':880,'11_pado_drawing':420,'12_cheongpado':825,'14_cheong_drawing':420,'15_bambada':946,'17_bam_drawing':420}  # 본문 img width 속성(=최대 표시 폭)
 CUT=0.0065  # 창(매트 두께 0.4%) 그림자 도달: 0.4%×cot(높이 20~80도 면광원)×위 성분 0.77 → 대부분 0.3% 안에서 풀리고 0.65%에서 0 (긴 변 기준)
 BASE='https://41aurum.github.io/blog/frames_v32/'
@@ -36,8 +36,8 @@ css=f'''<style id="aufr5">/* 아우름 액자 v3.2 (26-11-26 19:09 대표님 판
 {sel('oil')}{{border-image:url({BASE}{IMG['oil'][0]}) {SL['oil'][0]} / 1 stretch!important}}
 {chr(10).join(pc)}
 {selq}{{display:block!important;position:relative!important}}
-{selq.replace('>span','>span>img')}{{display:block!important}}
-{selq.replace(',',':after,').replace('>span'+chr(10),'>span'+chr(10))}::after{{content:'';position:absolute;pointer-events:none;background:linear-gradient(to bottom,rgba(40,33,26,.15),rgba(40,33,26,.07) 30%,rgba(40,33,26,.025) 65%,rgba(40,33,26,0)) top left no-repeat,linear-gradient(to right,rgba(40,33,26,.15),rgba(40,33,26,.06) 30%,rgba(40,33,26,.02) 65%,rgba(40,33,26,0)) top left no-repeat}}
+{selq.replace(' span',' span img')}{{display:block!important}}
+{selq.replace(',',':after,')}::after{{content:'';position:absolute;pointer-events:none;background:linear-gradient(to bottom,rgba(40,33,26,.15),rgba(40,33,26,.07) 30%,rgba(40,33,26,.025) 65%,rgba(40,33,26,0)) top left no-repeat,linear-gradient(to right,rgba(40,33,26,.15),rgba(40,33,26,.06) 30%,rgba(40,33,26,.02) 65%,rgba(40,33,26,0)) top left no-repeat}}
 {chr(10).join(sp)}
 @media (max-width:640px){{
 {sel('drawing')}{{border-image:url({BASE}{IMG['drawing'][1]}) {SL['drawing'][1]} / 1 stretch!important}}
