@@ -148,12 +148,15 @@ function unclip(){for(var an=sec.parentElement;an&&an!==document.body&&an!==docu
   an.style.setProperty("overflow-x",ov.overflowX==="hidden"?"clip":ov.overflowX,"important");an.style.setProperty("overflow-y",ov.overflowY==="hidden"?"clip":ov.overflowY,"important");fixedOv.push(an.tagName+"#"+(an.id||""));}return "";}
 function breakout(){var cw=document.documentElement.clientWidth;st.style.marginLeft="";st.style.width="";if(cw<900)return;
   var r=sec.getBoundingClientRect();if(r.width>=cw-4)return;st.style.marginLeft=(-r.left)+"px";st.style.width=cw+"px";st.style.position="sticky";st.style.zIndex="5";}
-function guard(){[].forEach.call(sec.querySelectorAll(".pg [style],.fl h3[style],.fl h4[style]"),function(e){if(!e.classList.contains("glow")&&!e.closest(".fl"))e.removeAttribute("style");else if(e.tagName==="H3"||e.tagName==="H4"){var keep=e.style.transitionDelay;e.removeAttribute("style");if(keep)e.style.transitionDelay=keep;}});
+function guard(){[].forEach.call(sec.querySelectorAll(".fl .ln,.fl .ln *,.pg .in,.pg .in *,.pg .rh,.pg .fo"),function(e){if(!e.hasAttribute("style"))return;
+  var td=e.style.transitionDelay,ad=e.style.animationDelay,ok=!/!important|font-size|line-height|opacity/.test(e.getAttribute("style"));if(ok)return;
+  e.removeAttribute("style");if(td)e.style.transitionDelay=td;if(ad)e.style.animationDelay=ad;});
   [].forEach.call(sec.querySelectorAll("a.au-inl"),function(a){a.classList.remove("au-inl");});}
 function bottomInset(){var m=0;try{[].forEach.call(document.querySelectorAll("body *"),function(e){if(sec.contains(e))return;var c=getComputedStyle(e);if(c.position!=="fixed"&&c.position!=="sticky")return;var r=e.getBoundingClientRect();
   if(r.height>0&&r.height<140&&r.bottom>=innerHeight-2&&r.top>innerHeight*.6&&r.width>innerWidth*.5)m=Math.max(m,r.height);});}catch(err){}return m;}
 var badOv=q.get("force")==="1"?"":unclip();
-if(window.MutationObserver){var mo=new MutationObserver(function(){mo.disconnect();guard();mo.observe(sec,{subtree:true,attributes:true,attributeFilter:["style","class"]});});}
+if(window.MutationObserver){var moT=[fl].concat(pgs),mo=new MutationObserver(function(){mo.disconnect();guard();moT.forEach(function(n){mo.observe(n,{subtree:true,attributes:true,attributeFilter:["style"]});});});
+  moT.forEach(function(n){mo.observe(n,{subtree:true,attributes:true,attributeFilter:["style"]});});}
 
 /* ---- 쪽 네 꼭짓점(1280×720 기준, 다가가기 영상 마지막 프레임에서 잰 값) ---- */
 var QUAD={L:[[227,46],[612,44],[614,673],[222,678]],R:[[632,40],[1043,46],[1050,672],[630,673]]};
