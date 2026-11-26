@@ -94,8 +94,9 @@
 .mc.on .gen .tx{font-size:var(--fs)}
 .mc.on .blk .gen{display:none}.mc.on .blk[data-v="0"] .g0,.mc.on .blk[data-v="1"] .g1,.mc.on .blk[data-v="2"] .g2,.mc.on .blk[data-v="3"] .g3{display:block}
 /* 글씨가 한 번 빛났다가 먹색으로 */
-.mc.on .pgx .tx>*{transition:color 1.3s ease,text-shadow 1.6s ease}
-.mc.on .pgx .tx>.glow{color:#8A5A12;text-shadow:0 0 5px rgba(255,214,150,.95),0 0 14px rgba(255,190,100,.55),0 0 26px rgba(255,180,90,.25);transition:color .35s ease,text-shadow .35s ease}
+/* 빛 번짐은 그림자 하나·짧은 전환만(큰 번짐을 여러 겹 움직이면 글자 판 전체를 매 프레임 다시 그려 끊김 — 실측 100ms대 프레임) */
+.mc.on .pgx .tx>*{transition:color .9s ease}
+.mc.on .pgx .tx>.glow{color:#8A5A12;text-shadow:0 0 7px rgba(255,206,130,.9);transition:color .3s ease}
 /* 표지 */
 .cvx{position:absolute;inset:0;padding:13% 12% 13% 15%;box-shadow:inset 9px 0 0 -6px rgba(0,0,0,.28),inset 14px 0 10px -10px rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:space-between;color:#EFEBE2}
 .cvx img{width:24%}
