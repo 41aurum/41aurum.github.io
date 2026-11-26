@@ -1,0 +1,128 @@
+{
+ "format": "aurum_frames_v1",
+ "date": "2026-11-26",
+ "source": {
+  "ikea": {
+   "RÖDALM_30x40_black": {
+    "outer_cm": [
+     32,
+     42
+    ],
+    "depth_cm": 3,
+    "picture_cm": [
+     30,
+     40
+    ],
+    "mat_window_cm": [
+     20,
+     29
+    ],
+    "face_cm_from_spec": 1.0
+   },
+   "RÖDALM_3opening_55x28_black": {
+    "outer_cm": [
+     57,
+     30
+    ],
+    "depth_cm": 3,
+    "openings_cm": [
+     12,
+     17
+    ],
+    "count": 3,
+    "note": "대표님 「Hammer, Mirror, Etiquette」(55×28×3cm)와 규격 일치 — 실물 확인"
+   },
+   "RÖDALM_9opening_46x61_black": {
+    "outer_cm": [
+     48,
+     63
+    ],
+    "depth_cm": 3,
+    "openings_cm": [
+     10,
+     15
+    ],
+    "count": 9
+   },
+   "materials": "테·이너프레임: 섬유판+페이퍼포일(무광), 전면: 폴리스티렌, 속지: 종이",
+   "inner_frame": "작품을 전면에 붙이거나 이너프레임 뒤로 두어 깊이감(공식 설명)"
+  },
+  "measured_photo": {
+   "file": "img/hammer_wall.jpg",
+   "px_per_cm": 13.05,
+   "visible_black_face_cm": 2.2,
+   "face_ratio_of_outer_width": 0.038,
+   "inner_side_wall_visible_cm": [
+    0.85,
+    1.4
+   ],
+   "mat_top_cm": 4.8,
+   "mat_side_cm": 3.8,
+   "light": "위에서 — 위 안쪽 그림자, 옆벽 회색 띠"
+  }
+ },
+ "kinds": {
+  "black_full": {
+   "css_px_pc": {
+    "face": 14,
+    "lip": 7
+   },
+   "css_px_mobile": {
+    "face": 8,
+    "lip": 4
+   },
+   "face": "#1C1C1C",
+   "lip": "#2B2B2B",
+   "use": "대표님 캔버스 회화(실제 전시는 무액자 → 뢰달름 '속지 없이 이너프레임 뒤' 구성)"
+  },
+  "black_mat": {
+   "css_px_pc": {
+    "face": 12,
+    "mat": 26
+   },
+   "css_px_mobile": {
+    "face": 7,
+    "mat": 12
+   },
+   "face": "#1C1C1C",
+   "mat": "#F7F5F0",
+   "use": "드로잉·종이 작품(Hammer·레인네일 실물과 같은 유형)"
+  },
+  "white_mat": {
+   "css_px_pc": {
+    "face": 14,
+    "lip": 7
+   },
+   "face": "#F3F2EE",
+   "lip": "#E9E7E1",
+   "edge": "#D6D2C8",
+   "use": "채도 높은 빨강·주황 작품(빨강+검정 금지 규칙) — 예: 캔버스, 핀 꽃"
+  },
+  "oak_mat": {
+   "face": "#C4A376",
+   "lip": "#B09167",
+   "mat": "#FAF7F0",
+   "use": "옛 수채화(보울러) — 모래빛 바위·종이 톤과 맞춤"
+  },
+  "walnut_full": {
+   "face": "#563C2A",
+   "lip": "#402D20",
+   "use": "옛 유화(오스만 함디 베이) — 붉은 옷이라 검은 테 금지, 벽돌·흙빛과 맞춤"
+  },
+  "nine_grid": {
+   "status": "보류",
+   "reason": "9장 묶음 드로잉 없음(칵테일 드로잉 6점)"
+  }
+ },
+ "shadow": {
+  "inner_top": "inset 0 7~9px 8~9px -5~-7px rgba(0,0,0,.42~.85)",
+  "inner_left": "inset 5~7px 0 6~8px -5~-7px",
+  "wall": "0 16px 22px -14px rgba(28,24,20,.5), 0 2px 3px rgba(28,24,20,.16)"
+ },
+ "css": "blog/frames/aurum_frames_5.css",
+ "renderer": "/home/claude/b17/code/rodalm.py",
+ "applied": {
+  "/5": "2026-11-26 공개 발행 — 캔버스 5 검은 full, 핀꽃 화이트, 드로잉 6 검은 mat",
+  "/11": "보울러 참나무 mat, 거북이 조련사 호두나무 full (그림 안에 렌더)"
+ }
+}
