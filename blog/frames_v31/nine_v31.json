@@ -1,0 +1,70 @@
+{
+ "afr9v31_black_white_draw.png": {
+  "style": "black",
+  "face": 42,
+  "wall": 12,
+  "mat": 94,
+  "slice": 148,
+  "size": [
+   896,
+   896
+  ],
+  "bytes": 153521,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.09
+  }
+ },
+ "afr9v31_black_white_draw_mo.png": {
+  "style": "black",
+  "face": 42,
+  "wall": 12,
+  "mat": 52,
+  "slice": 106,
+  "size": [
+   812,
+   812
+  ],
+  "bytes": 137833,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.05
+  }
+ },
+ "afr9v31_oak_white_oil.png": {
+  "style": "brown_oak",
+  "face": 42,
+  "wall": 12,
+  "mat": 80,
+  "slice": 134,
+  "size": [
+   868,
+   868
+  ],
+  "bytes": 255389,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.076
+  }
+ },
+ "afr9v31_oak_white_oil_mo.png": {
+  "style": "brown_oak",
+  "face": 42,
+  "wall": 12,
+  "mat": 52,
+  "slice": 106,
+  "size": [
+   812,
+   812
+  ],
+  "bytes": 239069,
+  "ratio_of_long_side": {
+   "face": 0.04,
+   "wall": 0.011,
+   "mat": 0.05
+  }
+ }
+}
