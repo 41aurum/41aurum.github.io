@@ -223,8 +223,10 @@ var vw,vh,wp,hp,D,wide,sOpen,sFly,run;
 function fit(el){ // 판면에 글이 넘치면 글자 크기를 0.5px씩 줄임(14px 아래로는 안 줄임)
   var fs=parseFloat(sec.style.getPropertyValue("--fs"))||17;
   el.classList.remove("tight");
-  for(var i=0;i<12&&el.scrollHeight>el.clientHeight+1&&fs>14;i++){ fs-=.5; sec.style.setProperty("--fs",fs+"px"); }
-  if(el.scrollHeight>el.clientHeight+1) el.classList.add("tight");          // 14px에서도 넘치면 줄 간격·문단 간격만 조금 좁힘
+  // scrollHeight는 아래 여백을 빼고 재는 경우가 있어(실측: 출처 줄이 쪽 번호와 겹침) 글 덩어리 높이로 직접 잼(변형과 무관한 offset 값)
+  var over=function(){ var tx=el.querySelector(".tx"), pb=parseFloat(el.style.paddingBottom)||0; return tx.offsetTop+tx.offsetHeight>el.clientHeight-pb+1; };
+  for(var i=0;i<12&&over()&&fs>14;i++){ fs-=.5; sec.style.setProperty("--fs",fs+"px"); }
+  if(over()) el.classList.add("tight");          // 14px에서도 넘치면 줄 간격·문단 간격만 조금 좁힘
   return fs;
 }
 // 블로그 본문 칸이 좁아도(PC 스킨: 본문 700px + 오른쪽 사이드바) 코너는 화면 가로 전체로 펼침
@@ -255,7 +257,7 @@ function measure(){
   pgL.classList.add("show"); pgR.classList.add("show");
   // 판면 아래 쪽 번호 자리만큼 비움
   [pgL,pgR].forEach(function(p){ p.style.paddingBottom=Math.round(pt*1.4)+"px"; });
-  fit(pgL); fit(pgR);
+  fit(pgL); fit(pgR); fit(pgL);
   book.style.perspective=Math.round(Math.max(1500,vh*2.1))+"px"; book.style.perspectiveOrigin="50% 50%";
   sOpen=wide?1:Math.min(1,(vw-16)/(2*wp)); sFly=wide?0.62:0.8;
   run=wide?300:360; S.setProperty("--run",run+"vh");
