@@ -155,9 +155,21 @@ var save=navigator.connection&&navigator.connection.saveData;
 var ok3d=window.CSS&&CSS.supports&&CSS.supports("transform-style","preserve-3d");
 window.__mc={mode:"static"};
 if(rm||save||!ok3d||!window.IntersectionObserver||q.get("static")==="1"){ window.__mc.why=rm?"reduced-motion":save?"save-data":!ok3d?"no-3d":"forced"; return; }
-for(var an=sec.parentElement;an&&an!==document.body&&an!==document.documentElement;an=an.parentElement){
-  var ov=getComputedStyle(an); if(/(hidden|auto|scroll)/.test(ov.overflowY+" "+ov.overflowX)&&q.get("force")!=="1"){
-    window.__mc={mode:"static",why:"overflow:"+an.tagName+"."+(an.className||"")+"#"+(an.id||"")+" "+ov.overflowX+"/"+ov.overflowY}; return; } }
+// 스킨 바깥 상자에 overflow:hidden이 걸려 있으면 화면 고정(sticky)이 안 먹음.
+// 보이는 모양은 같고 스크롤 상자만 만들지 않는 overflow:clip으로 바꿔 줌(크롬 90·사파리 16 이상). 진짜 스크롤 상자(auto/scroll)면 정지판.
+var CLIP=window.CSS&&CSS.supports&&CSS.supports("overflow","clip"), fixed=[];
+function unclip(){
+  for(var an=sec.parentElement;an&&an!==document.body&&an!==document.documentElement;an=an.parentElement){
+    var ov=getComputedStyle(an), o=ov.overflowX+" "+ov.overflowY; if(!/(hidden|auto|scroll)/.test(o)) continue;
+    if(/(auto|scroll)/.test(o)||!CLIP) return "overflow:"+an.tagName+"."+(an.className||"")+"#"+(an.id||"")+" "+o;
+    an.style.setProperty("overflow-x",ov.overflowX==="hidden"?"clip":ov.overflowX,"important"); an.style.setProperty("overflow-y",ov.overflowY==="hidden"?"clip":ov.overflowY,"important");
+    fixed.push(an.tagName+"."+(an.className||"")+"#"+(an.id||""));
+  } return "";
+}
+var bad=q.get("force")==="1"?"":unclip();
+if(bad){ window.__mc={mode:"static",why:bad}; return; }
+addEventListener("load",function(){ var b2=unclip(); if(window.__mc) window.__mc.unclipped=fixed.slice(); if(b2&&window.__mc) window.__mc.lateOverflow=b2; });
+setTimeout(function(){ unclip(); if(window.__mc) window.__mc.unclipped=fixed.slice(); },1500);
 sec.classList.add("on");
 var $=function(s){return sec.querySelector(s);};
 var runEl=$(".mc-run"), stage=$(".mc-stage"), book=$(".book"), sp=$(".sp"), bg=$(".bg"), cvs=$(".gl"), shade=$(".shade"), ffc=$(".ff");
@@ -402,7 +414,7 @@ new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecti
 new IntersectionObserver(function(es){ es.forEach(function(e){ inView=e.isIntersecting; if(inView){ seaPlay(); onScroll(); } else seaStop(); }); },{threshold:0}).observe(stage);
 
 measure(); seed();
-window.__mc={mode:"motion",p:0,T:0,frames:0,TL:TL,isRunning:function(){return running;},seek:function(v){T=v;target=v;render();}};
+window.__mc={mode:"motion",unclipped:fixed.slice(),p:0,T:0,frames:0,TL:TL,isRunning:function(){return running;},seek:function(v){T=v;target=v;render();}};
 render();
 })();
 </script>
