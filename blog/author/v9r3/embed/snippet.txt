@@ -1,0 +1,107 @@
+<div class="au9" data-base="https://41aurum.github.io/blog/author/v9r3/" style="position:relative;max-width:100%;margin:40px auto;">
+<style>
+@font-face{font-family:au9hh;font-weight:400;src:url(https://41aurum.github.io/blog/author/v9r3/embed/au9_hh400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:au9hh;font-weight:600;src:url(https://41aurum.github.io/blog/author/v9r3/embed/au9_hh600.woff2) format("woff2");font-display:swap}
+@font-face{font-family:au9nsk;src:url(https://41aurum.github.io/blog/author/v9r3/embed/au9_nsk.woff2) format("woff2");font-display:swap}
+.au9{--au9-dusk:#F4E2BE;--au9-ink:#14233F;font-family:au9hh,au9nsk,"Noto Serif KR",serif!important;line-height:1.4!important}
+.au9 .au9-stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#141a22 url(https://41aurum.github.io/blog/author/v9r3/assets/sea_poster.jpg) center/cover no-repeat;border-radius:2px}
+.au9 .au9-stage video,.au9 .au9-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;object-fit:cover;background:transparent}
+.au9 .au9-stage::after{content:"";position:absolute;inset:0;background:rgba(12,16,22,.16);pointer-events:none;transition:opacity .6s}
+.au9.is-open .au9-stage::after,.au9.is-open .au9-cap{opacity:0;pointer-events:none}
+.au9 .au9-cap{position:absolute;right:4.2%;bottom:7.5%;z-index:2;text-align:right;color:var(--au9-dusk);text-shadow:0 1px 10px rgba(8,10,14,.6),0 0 2px rgba(8,10,14,.4);transition:opacity .6s}
+.au9 .au9-kick{display:block;font-size:14px!important;font-weight:400;letter-spacing:.02em;opacity:.92;margin:0 0 6px}
+.au9 .au9-title{display:block;font-size:30px!important;font-weight:600;letter-spacing:-.01em;margin:0 0 4px;line-height:1.2!important}
+.au9 .au9-sub{display:block;font-size:16px!important;font-weight:400;opacity:.9;margin:0 0 18px}
+.au9 a.au9-btn,.au9 button.au9-btn{display:inline-flex!important;align-items:center;gap:9px;min-height:44px;padding:0 22px;border:1px solid var(--au9-dusk)!important;border-radius:3px;background:var(--au9-dusk)!important;color:var(--au9-ink)!important;font:600 16px/1 au9hh,"Noto Serif KR",serif!important;text-decoration:none!important;text-shadow:none!important;box-shadow:0 2px 14px rgba(8,10,14,.28);cursor:pointer;transition:background .2s,transform .2s}
+.au9 a.au9-btn:hover,.au9 button.au9-btn:hover{background:#EBD3A3!important;transform:translateY(-1px)}
+.au9 a.au9-btn:focus-visible,.au9 button.au9-btn:focus-visible{outline:2px solid var(--au9-dusk);outline-offset:3px}
+.au9 .au9-btn svg{width:18px;height:18px;flex:none}
+.au9 .au9-bar{display:none;justify-content:flex-end;gap:10px;margin-top:10px}
+.au9.is-open .au9-bar{display:flex}
+.au9 .au9-bar .au9-btn{min-height:40px;padding:0 16px;font-size:14px!important;background:transparent!important;color:var(--au9-ink)!important;border-color:rgba(20,35,63,.55)!important;box-shadow:none}
+.au9 .au9-bar .au9-btn:hover{background:rgba(244,226,190,.55)!important}
+.au9 .au9-stage:fullscreen{aspect-ratio:auto;border-radius:0}
+@media (max-width:600px){
+ .au9 .au9-stage{aspect-ratio:4/5;background-image:url(https://41aurum.github.io/blog/author/v9r3/assets/sea_portrait_poster.jpg);background-position:50% 12%}
+ .au9 .au9-stage video{object-position:50% 12%}
+ .au9 .au9-cap{left:6%;right:6%;bottom:6%;text-align:center}
+ .au9 .au9-title{font-size:24px!important}
+ .au9 .au9-sub{font-size:15px!important;margin-bottom:14px}
+ .au9 .au9-kick{font-size:14px!important}
+}
+@media (prefers-reduced-motion:reduce){.au9 *{transition:none!important}}
+</style>
+<div class="au9-stage" role="group" aria-label="작가 소개 · 캠스베이 언덕에서">
+<div class="au9-cap">
+<span class="au9-kick">작가 소개 · 이 이야기를 책으로</span>
+<span class="au9-title">캠스베이 언덕에서</span>
+<span class="au9-sub">시차 時差 · 160여 년 뒤의 관객</span>
+<a class="au9-btn au9-open" href="https://41aurum.github.io/blog/author/v9r3/index.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5z"/><path d="M12 6.5v13"/></svg><span>책 펼쳐 보기</span></a>
+</div>
+</div>
+<div class="au9-bar">
+<button type="button" class="au9-btn au9-full">전체 화면</button>
+<a class="au9-btn au9-new" href="https://41aurum.github.io/blog/author/v9r3/index.html" target="_blank" rel="noopener">새 창에서 보기</a>
+<button type="button" class="au9-btn au9-close">닫기</button>
+</div>
+<script>
+(function(){
+  var root=document.currentScript&&document.currentScript.parentNode;
+  if(!root||!root.classList||!root.classList.contains('au9')) root=document.querySelector('.au9:not([data-au9-ready])');
+  if(!root||root.getAttribute('data-au9-ready')) return;
+  root.setAttribute('data-au9-ready','1');
+  var BASE=root.getAttribute('data-base');
+  var stage=root.querySelector('.au9-stage');
+  var mqNarrow=window.matchMedia('(max-width:600px)');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var save=navigator.connection&&navigator.connection.saveData;
+  var video=null, frame=null;
+  function srcSet(){ return mqNarrow.matches?['sea_portrait.webm','sea_portrait.mp4']:['sea_1280.webm','sea_1280.mp4']; }
+  function makeVideo(){
+    if(reduce||save||video||frame) return;
+    video=document.createElement('video');
+    video.muted=true; video.loop=true; video.playsInline=true; video.autoplay=true;
+    video.setAttribute('muted',''); video.setAttribute('playsinline',''); video.setAttribute('aria-hidden','true');
+    video.preload='none';
+    var s=srcSet();
+    var a=document.createElement('source'); a.src=BASE+'assets/'+s[0]; a.type='video/webm';
+    var b=document.createElement('source'); b.src=BASE+'assets/'+s[1]; b.type='video/mp4';
+    video.appendChild(a); video.appendChild(b);
+    video.style.opacity='0'; video.style.transition='opacity .8s';
+    video.addEventListener('playing',function(){video.style.opacity='1';});
+    stage.insertBefore(video,stage.firstChild);
+  }
+  function inView(on){
+    if(on){ makeVideo(); if(video){ var p=video.play(); if(p&&p.catch)p.catch(function(){}); } }
+    else if(video){ video.pause(); }
+  }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ inView(e.isIntersecting); }); },{rootMargin:'200px 0px'}).observe(stage);
+  } else { inView(true); }
+  mqNarrow.addEventListener&&mqNarrow.addEventListener('change',function(){ if(video){ video.remove(); video=null; inView(true);} });
+  function inlineOK(){ return stage.clientWidth>=600 && window.matchMedia('(pointer: fine)').matches; }
+  root.querySelector('.au9-open').addEventListener('click',function(e){
+    if(!inlineOK()) return;               /* 휴대폰·태블릿: 새 창(기본 동작) */
+    e.preventDefault();
+    if(video){ video.pause(); video.remove(); video=null; }
+    frame=document.createElement('iframe');
+    frame.src=BASE+'index.html'; frame.title='작가 소개 책 · 캠스베이 언덕에서';
+    frame.setAttribute('allow','autoplay; fullscreen'); frame.setAttribute('allowfullscreen','');
+    frame.setAttribute('loading','eager');
+    stage.appendChild(frame); root.classList.add('is-open');
+    frame.addEventListener('load',function(){ try{frame.focus();}catch(_){ } });
+    /* 본문 폭(700)에서는 책 글씨가 14px 아래로 작아지므로 바로 전체 화면으로 연다. 거절되면 본문 안에서 보이고 아래 버튼이 남는다 */
+    var f=stage.requestFullscreen||stage.webkitRequestFullscreen;
+    if(f){ try{ var r=f.call(stage); if(r&&r.catch) r.catch(function(){}); }catch(_){ } }
+  });
+  root.querySelector('.au9-full').addEventListener('click',function(){
+    var el=stage; var f=el.requestFullscreen||el.webkitRequestFullscreen;
+    if(f){ f.call(el); if(frame) frame.focus(); } else { window.open(BASE+'index.html','_blank','noopener'); }
+  });
+  root.querySelector('.au9-close').addEventListener('click',function(){
+    if(frame){ frame.remove(); frame=null; } root.classList.remove('is-open'); inView(true);
+  });
+})();
+</script>
+</div>
+<!-- ===== /au9 ===== -->
