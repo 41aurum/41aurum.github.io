@@ -30,6 +30,15 @@
  .au9 .au9-kick{font-size:14px!important}
 }
 @media (prefers-reduced-motion:reduce){.au9 *{transition:none!important}}
+/* 스킨의 '본문 링크=버튼' 규칙(!important, 26-11-27 비공개 글 실측)보다 우선하도록 */
+.tt_article_useless_p_margin .au9 a.au9-btn:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5),.tt_article_useless_p_margin .au9 button.au9-btn:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){background:var(--au9-dusk)!important;background-color:var(--au9-dusk)!important;color:var(--au9-ink)!important;border:1px solid var(--au9-dusk)!important;border-radius:3px!important;font-family:au9hh,"Noto Serif KR",serif!important;font-size:16px!important;font-weight:600!important;padding:0 22px!important;min-height:44px!important;text-decoration:none!important}
+.tt_article_useless_p_margin .au9 .au9-btn:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5) span{font-family:au9hh,"Noto Serif KR",serif!important;font-size:16px!important;color:var(--au9-ink)!important}
+.tt_article_useless_p_margin .au9 .au9-bar .au9-btn:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){background:transparent!important;background-color:transparent!important;border-color:rgba(20,35,63,.55)!important;font-size:14px!important;min-height:40px!important;padding:0 16px!important}
+.tt_article_useless_p_margin .au9 .au9-cap span:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-family:au9hh,au9nsk,"Noto Serif KR",serif!important;color:var(--au9-dusk)!important}
+.tt_article_useless_p_margin .au9 .au9-cap .au9-kick:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-size:14px!important}
+.tt_article_useless_p_margin .au9 .au9-cap .au9-title:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-size:30px!important}
+.tt_article_useless_p_margin .au9 .au9-cap .au9-sub:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-size:16px!important}
+@media (max-width:600px){.tt_article_useless_p_margin .au9 .au9-cap .au9-title:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-size:24px!important}.tt_article_useless_p_margin .au9 .au9-cap .au9-sub:not(.z1):not(.z2):not(.z3):not(.z4):not(.z5){font-size:15px!important}}
 </style>
 <div class="au9-stage" role="group" aria-label="작가 소개 · 캠스베이 언덕에서">
 <div class="au9-cap">
